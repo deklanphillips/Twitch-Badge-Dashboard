@@ -594,3 +594,27 @@ a.badge-tile:hover { transform: translateY(-3px); border-color: var(--purple); }
   .search-wrap { max-width: none; }
   .tabs { overflow-x: auto; }
 }
+
+/* --- Home page social cards --- */
+.social-section { margin-bottom: 28px; }
+.social-heading { font-size: 20px; font-weight: 800; margin: 0 0 4px; }
+.social-sub { color: var(--text-muted); margin: 0 0 14px; font-size: 14px; }
+.social-cards { display: flex; gap: 12px; flex-wrap: wrap; }
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 22px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  min-width: 220px;
+  transition: filter 0.15s, transform 0.15s;
+}
+.social-card:hover { filter: brightness(1.12); transform: translateY(-2px); }
+.social-card.twitch { background: #9147ff; }
+.social-card.discord { background: #5865f2; }
+.social-icon { width: 34px; height: 34px; flex-shrink: 0; }
+.social-text { display: flex; flex-direction: column; line-height: 1.25; }
+.social-text strong { font-size: 17px; font-weight: 800; }
+.social-text span { font-size: 13px; opacity: 0.85; }
