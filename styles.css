@@ -174,7 +174,7 @@ body.with-sidebar { flex-direction: row; }
   pointer-events: none;
 }
 
-#searchInput, #channelInput {
+#searchInput, #channelInput, #badgeSearchInput {
   width: 100%;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -185,7 +185,7 @@ body.with-sidebar { flex-direction: row; }
   font-size: 0.9rem;
 }
 
-#searchInput:focus, #channelInput:focus {
+#searchInput:focus, #channelInput:focus, #badgeSearchInput:focus {
   outline: none;
   border-color: var(--purple);
   box-shadow: 0 0 0 3px var(--purple-soft);
@@ -252,6 +252,7 @@ body.with-sidebar { flex-direction: row; }
 
 .event-bar {
   position: absolute;
+  text-decoration: none;
   height: 48px;
   border-radius: 8px;
   padding: 0.35rem 0.7rem;
@@ -266,6 +267,7 @@ body.with-sidebar { flex-direction: row; }
 .event-bar.live { background: var(--purple); color: #fff; box-shadow: 0 0 0 1px rgba(0, 245, 147, 0.7); }
 .event-bar.upcoming { background: var(--purple); color: #fff; opacity: 0.9; }
 .event-bar.ended { background: #3a3a44; color: var(--text-muted); }
+.event-bar:hover { filter: brightness(1.15); cursor: pointer; }
 
 .bar-title {
   font-size: 0.82rem;

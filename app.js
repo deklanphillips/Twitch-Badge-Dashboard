@@ -97,8 +97,13 @@ function render() {
   visible.forEach((event, i) => {
     const start = Date.parse(event.start);
     const end = Date.parse(event.end);
-    const bar = document.createElement("div");
+    const bar = document.createElement("a");
     bar.className = `event-bar ${event.status}`;
+    // Events with a `badge: {set, version}` field link straight to that badge;
+    // otherwise fall back to a badge search for the event name.
+    bar.href = event.badge
+      ? `badge.html?set=${encodeURIComponent(event.badge.set)}&version=${encodeURIComponent(event.badge.version)}`
+      : `badges.html?q=${encodeURIComponent(event.name)}`;
     bar.style.left = `${((start - windowStart) / DAY_MS) * DAY_WIDTH}px`;
     bar.style.width = `${Math.max(((end - start) / DAY_MS) * DAY_WIDTH, 60)}px`;
     bar.style.top = `${HEADER_HEIGHT + i * ROW_HEIGHT + 8}px`;

@@ -3,23 +3,27 @@ const statusMessage = document.getElementById("statusMessage");
 const sourceTabs = document.querySelectorAll("#sourceTabs .tab");
 const channelForm = document.getElementById("channelForm");
 const channelInput = document.getElementById("channelInput");
+const badgeSearchWrap = document.getElementById("badgeSearchWrap");
+const badgeSearchInput = document.getElementById("badgeSearchInput");
 
 let currentSource = "global";
+let loadedSets = [];
+let loadedHeading = "";
+let badgeQuery = "";
 
 function showStatus(text) {
   statusMessage.textContent = text;
   statusMessage.hidden = !text;
 }
 
-function renderBadgeSets(sets, heading) {
+function renderBadgeSets() {
   badgeGrid.replaceChildren();
-  if (!sets.length) {
-    showStatus(`No badges found${heading ? ` for ${heading}` : ""}.`);
-    return;
-  }
-  showStatus("");
-  for (const set of sets) {
+  let shown = 0;
+  for (const set of loadedSets) {
     for (const version of set.versions) {
+      const title = version.title || set.set_id;
+      if (badgeQuery && !`${title} ${set.set_id}`.toLowerCase().includes(badgeQuery)) continue;
+      shown++;
       const link = document.createElement("a");
       link.className = "badge-tile";
       if (currentSource === "global") {
@@ -27,14 +31,23 @@ function renderBadgeSets(sets, heading) {
       }
       const img = document.createElement("img");
       img.src = version.image_url_4x || version.image_url_2x || version.image_url_1x;
-      img.alt = version.title || set.set_id;
+      img.alt = title;
       img.loading = "lazy";
       const name = document.createElement("p");
       name.className = "badge-title";
-      name.textContent = version.title || set.set_id;
+      name.textContent = title;
       link.append(img, name);
       badgeGrid.append(link);
     }
+  }
+  if (!shown) {
+    showStatus(
+      badgeQuery
+        ? `No badges match "${badgeQuery}".`
+        : `No badges found${loadedHeading ? ` for ${loadedHeading}` : ""}.`
+    );
+  } else {
+    showStatus("");
   }
 }
 
@@ -45,7 +58,9 @@ async function loadBadges(url, heading) {
     const res = await fetch(url);
     const data = await res.json();
     if (!res.ok) throw new Error(data.error || `Request failed (${res.status})`);
-    renderBadgeSets(data.data, heading);
+    loadedSets = data.data;
+    loadedHeading = heading || "";
+    renderBadgeSets();
   } catch (err) {
     showStatus(
       err.message.includes("TWITCH_CLIENT_ID")
@@ -55,6 +70,11 @@ async function loadBadges(url, heading) {
   }
 }
 
+badgeSearchInput.addEventListener("input", () => {
+  badgeQuery = badgeSearchInput.value.trim().toLowerCase();
+  renderBadgeSets();
+});
+
 sourceTabs.forEach((tab) =>
   tab.addEventListener("click", () => {
     sourceTabs.forEach((t) => t.classList.toggle("active", t === tab));
@@ -62,6 +82,7 @@ sourceTabs.forEach((tab) =>
     const isChannel = currentSource === "channel";
     channelForm.hidden = !isChannel;
     if (isChannel) {
+      loadedSets = [];
       showStatus("Enter a channel name above to load its badges.");
       badgeGrid.replaceChildren();
       channelInput.focus();
@@ -76,6 +97,12 @@ channelForm.addEventListener("submit", (e) => {
   const login = channelInput.value.trim().toLowerCase();
   if (login) loadBadges(`/api/badges/channel?login=${encodeURIComponent(login)}`, login);
 });
+
+const initialQuery = new URLSearchParams(location.search).get("q");
+if (initialQuery) {
+  badgeSearchInput.value = initialQuery;
+  badgeQuery = initialQuery.trim().toLowerCase();
+}
 
 if (location.hash === "#channel") {
   document.querySelector('[data-source="channel"]').click();

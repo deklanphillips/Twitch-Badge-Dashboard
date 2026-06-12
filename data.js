@@ -1,6 +1,8 @@
 // Badge drop events. Edit this list to add real events.
 // Dates are ISO 8601 (UTC). emoji is used as placeholder badge art —
 // swap for an `image` URL if you have official badge images.
+// Optionally add `badge: { set: "set-id", version: "1" }` to link an event
+// directly to its Twitch badge detail page from the schedule.
 const BADGE_EVENTS = [
   {
     name: "Subtember Celebration Badge",
