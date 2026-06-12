@@ -194,7 +194,7 @@ async function load() {
       // TwitchCon badges are skipped except 2026, which is still earnable by
       // buying a TwitchCon ticket.
       const isOldTwitchCon = /twitchcon/i.test(set.set_id) && !set.set_id.includes("2026");
-      if (!BUILTIN_SETS.has(set.set_id) && !/staff|leader|clips?-|twitchiversary/i.test(set.set_id) && !isOldTwitchCon) {
+      if (!BUILTIN_SETS.has(set.set_id) && !/staff|leader|clips?-|twitchiversary|intern/i.test(set.set_id) && !isOldTwitchCon) {
         const desc = version.description || "";
         // Try to extract the category name from common description phrasings:
         // "in the X category" / "in the X game" / "to a(n) X streamer"
