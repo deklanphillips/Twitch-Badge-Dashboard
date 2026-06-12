@@ -249,6 +249,40 @@ body {
 .countdown.upcoming { color: #c39bff; border-color: rgba(145, 71, 255, 0.4); }
 .countdown.ended { color: var(--text-muted); }
 
+/* Live badge tiles */
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.9rem;
+  padding-bottom: 3rem;
+}
+
+.badge-tile {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 0.75rem;
+  text-align: center;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.badge-tile:hover { transform: translateY(-3px); border-color: var(--purple); }
+.badge-tile img { width: 56px; height: 56px; image-rendering: -webkit-optimize-contrast; }
+
+.badge-title {
+  margin: 0.6rem 0 0.15rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.badge-set {
+  margin: 0;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+
 .empty-state {
   text-align: center;
   color: var(--text-muted);
