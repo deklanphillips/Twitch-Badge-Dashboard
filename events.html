@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events — Twitch Badge Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="with-sidebar">
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <svg class="brand-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M4.265 3 3 6.236v13.223h4.502V21l2.531.001L12.279 19.5h3.799L21 14.785V3H4.265Zm15.047 10.978-2.886 2.885h-4.612l-2.245 2.245v-2.245H5.812V4.687h13.5v9.291ZM16.687 7.5h-1.689v5.063h1.689V7.5Zm-4.5 0H10.5v5.063h1.687V7.5Z"/>
+      </svg>
+      <span>Badge<strong>Drops</strong></span>
+    </a>
+    <nav class="side-nav">
+      <a href="index.html" class="side-link">🏠 Home</a>
+      <a href="events.html" class="side-link active">📅 Events</a>
+      <p class="side-section">Twitch</p>
+      <a href="badges.html" class="side-link">⚡ Global Badges</a>
+      <a href="badges.html#channel" class="side-link">🎯 Channel Badges</a>
+      <a href="emotes.html" class="side-link">😀 Global Emotes</a>
+    </nav>
+  </aside>
+
+  <main class="main-col">
+    <div class="container-fluid">
+      <section class="page-head">
+        <p class="breadcrumb">HOME / EVENTS</p>
+        <h1>Events</h1>
+        <p class="subtitle">Current and upcoming Twitch badge events.</p>
+      </section>
+
+      <section class="controls">
+        <div class="tabs" id="statusTabs">
+          <button class="tab active" data-status="all">All <span class="count" data-count="all"></span></button>
+          <button class="tab" data-status="live">Live <span class="count" data-count="live"></span></button>
+          <button class="tab" data-status="upcoming">Upcoming <span class="count" data-count="upcoming"></span></button>
+          <button class="tab" data-status="ended">Ended <span class="count" data-count="ended"></span></button>
+        </div>
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+          </svg>
+          <input type="search" id="searchInput" placeholder="Search events, badges, channels..." />
+        </div>
+      </section>
+
+      <section class="schedule-panel">
+        <div class="schedule-head">
+          <h2>Schedule</h2>
+          <div class="legend">
+            <span class="legend-item"><span class="legend-line"></span> Current Time</span>
+            <span class="legend-item"><span class="legend-dot live-dot"></span> Live</span>
+            <span class="legend-item"><span class="legend-dot upcoming-dot"></span> Upcoming</span>
+            <span class="legend-item"><span class="legend-dot ended-dot"></span> Ended</span>
+          </div>
+        </div>
+        <div class="timeline-scroll" id="timelineScroll">
+          <div class="timeline" id="timeline">
+            <div class="timeline-days" id="timelineDays"></div>
+            <div class="timeline-rows" id="timelineRows"></div>
+            <div class="now-line" id="nowLine"></div>
+          </div>
+        </div>
+      </section>
+
+      <p class="empty-state" id="emptyState" hidden>No events match your filters.</p>
+
+      <footer class="site-footer">
+        <p>Fan-made dashboard. Not affiliated with Twitch.</p>
+      </footer>
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

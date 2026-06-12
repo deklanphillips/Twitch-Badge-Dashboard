@@ -74,4 +74,8 @@ channelForm.addEventListener("submit", (e) => {
   if (login) loadBadges(`/api/badges/channel?login=${encodeURIComponent(login)}`, login);
 });
 
-loadBadges("/api/badges/global");
+if (location.hash === "#channel") {
+  document.querySelector('[data-source="channel"]').click();
+} else {
+  loadBadges("/api/badges/global");
+}

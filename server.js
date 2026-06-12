@@ -87,6 +87,12 @@ async function handleApi(req, res, url) {
       res.end(JSON.stringify({ user: { id: user.id, login: user.login, display_name: user.display_name }, ...badges }));
       return;
     }
+    if (url.pathname === "/api/emotes/global") {
+      const data = await helix("chat/emotes/global");
+      res.writeHead(200, { "Content-Type": "application/json", "Cache-Control": "public, max-age=300" });
+      res.end(JSON.stringify(data));
+      return;
+    }
     res.writeHead(404, { "Content-Type": "application/json" });
     res.end(JSON.stringify({ error: "Unknown API route" }));
   } catch (err) {

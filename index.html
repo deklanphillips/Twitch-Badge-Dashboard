@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Events — Twitch Badge Dashboard</title>
+  <title>Home — Twitch Badge Dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -18,56 +18,50 @@
       <span>Badge<strong>Drops</strong></span>
     </a>
     <nav class="side-nav">
-      <a href="index.html" class="side-link active">📅 Events</a>
+      <a href="index.html" class="side-link active">🏠 Home</a>
+      <a href="events.html" class="side-link">📅 Events</a>
       <p class="side-section">Twitch</p>
       <a href="badges.html" class="side-link">⚡ Global Badges</a>
       <a href="badges.html#channel" class="side-link">🎯 Channel Badges</a>
+      <a href="emotes.html" class="side-link">😀 Global Emotes</a>
     </nav>
   </aside>
 
   <main class="main-col">
     <div class="container-fluid">
       <section class="page-head">
-        <p class="breadcrumb">HOME / EVENTS</p>
-        <h1>Events</h1>
-        <p class="subtitle">Current and upcoming Twitch badge events.</p>
+        <h1>Home</h1>
+        <p class="subtitle">The latest Twitch badges and emotes, straight from the Twitch API.</p>
       </section>
 
-      <section class="controls">
-        <div class="tabs" id="statusTabs">
-          <button class="tab active" data-status="all">All <span class="count" data-count="all"></span></button>
-          <button class="tab" data-status="live">Live <span class="count" data-count="live"></span></button>
-          <button class="tab" data-status="upcoming">Upcoming <span class="count" data-count="upcoming"></span></button>
-          <button class="tab" data-status="ended">Ended <span class="count" data-count="ended"></span></button>
+      <a class="preview-panel" href="badges.html">
+        <div class="preview-text">
+          <h2>Twitch Global Badges</h2>
+          <p>Badges that look the same in every channel</p>
         </div>
-        <div class="search-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon" aria-hidden="true">
-            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
-          </svg>
-          <input type="search" id="searchInput" placeholder="Search events, badges, channels..." />
-        </div>
-      </section>
+        <div class="preview-row" id="globalBadgesRow"><span class="preview-loading">Loading…</span></div>
+        <span class="preview-arrow">→</span>
+      </a>
 
-      <section class="schedule-panel">
-        <div class="schedule-head">
-          <h2>Schedule</h2>
-          <div class="legend">
-            <span class="legend-item"><span class="legend-line"></span> Current Time</span>
-            <span class="legend-item"><span class="legend-dot live-dot"></span> Live</span>
-            <span class="legend-item"><span class="legend-dot upcoming-dot"></span> Upcoming</span>
-            <span class="legend-item"><span class="legend-dot ended-dot"></span> Ended</span>
-          </div>
+      <a class="preview-panel" href="badges.html#channel">
+        <div class="preview-text">
+          <h2>Twitch Channel Badges</h2>
+          <p>Badges that can only be used in one channel</p>
         </div>
-        <div class="timeline-scroll" id="timelineScroll">
-          <div class="timeline" id="timeline">
-            <div class="timeline-days" id="timelineDays"></div>
-            <div class="timeline-rows" id="timelineRows"></div>
-            <div class="now-line" id="nowLine"></div>
-          </div>
-        </div>
-      </section>
+        <div class="preview-row" id="channelBadgesRow"><span class="preview-loading">Loading…</span></div>
+        <span class="preview-arrow">→</span>
+      </a>
 
-      <p class="empty-state" id="emptyState" hidden>No events match your filters.</p>
+      <a class="preview-panel" href="emotes.html">
+        <div class="preview-text">
+          <h2>Twitch Global Emotes</h2>
+          <p>Emotes that everyone can use everywhere</p>
+        </div>
+        <div class="preview-row" id="globalEmotesRow"><span class="preview-loading">Loading…</span></div>
+        <span class="preview-arrow">→</span>
+      </a>
+
+      <p class="empty-state" id="homeStatus" hidden></p>
 
       <footer class="site-footer">
         <p>Fan-made dashboard. Not affiliated with Twitch.</p>
@@ -75,7 +69,6 @@
     </div>
   </main>
 
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <script src="home.js"></script>
 </body>
 </html>

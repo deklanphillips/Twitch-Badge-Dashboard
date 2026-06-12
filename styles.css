@@ -293,6 +293,54 @@ body.with-sidebar { flex-direction: row; }
   pointer-events: none;
 }
 
+/* Home preview panels */
+.preview-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 3.5rem 1.2rem 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.preview-panel:hover { border-color: var(--purple); background: var(--surface-2); }
+
+.preview-text h2 {
+  margin: 0 0 0.2rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.preview-text p {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+}
+
+.preview-row { display: flex; gap: 0.7rem; align-items: center; min-height: 56px; }
+.preview-row img { width: 56px; height: 56px; border-radius: 8px; object-fit: contain; }
+.preview-loading { color: var(--text-muted); font-size: 0.85rem; }
+
+.preview-arrow {
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  translate: 0 -50%;
+  font-size: 1.6rem;
+  color: var(--text);
+}
+
 /* Live badge tiles (badges page) */
 .badge-grid {
   display: grid;
