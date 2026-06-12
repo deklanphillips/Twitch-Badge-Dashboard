@@ -197,7 +197,8 @@ async function load() {
         // "in the X category" / "in the X game" / "to a(n) X streamer"
         const catMatch =
           desc.match(/\bin the ([^,.!?]+?) (?:category|game)\b/i) ||
-          desc.match(/\bto an? ([^,.!?]+?) streamer/i);
+          desc.match(/\bto an? ([^,.!?]+?) streamer/i) ||
+          desc.match(/\bplaying ([^,.!?]+?)(?: during| at| on| in\b|[,.!?]|$)/i);
         const whereWrap = document.createElement("div");
         whereWrap.className = "where-earn";
         const whereLabel = document.createElement("p");
