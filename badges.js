@@ -32,10 +32,7 @@ function renderBadgeSets(sets, heading) {
       const name = document.createElement("p");
       name.className = "badge-title";
       name.textContent = version.title || set.set_id;
-      const setLabel = document.createElement("p");
-      setLabel.className = "badge-set";
-      setLabel.textContent = set.set_id;
-      link.append(img, name, setLabel);
+      link.append(img, name);
       badgeGrid.append(link);
     }
   }
