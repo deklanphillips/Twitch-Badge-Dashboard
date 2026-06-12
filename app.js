@@ -1,18 +1,20 @@
-const grid = document.getElementById("eventGrid");
+const timelineScroll = document.getElementById("timelineScroll");
+const timeline = document.getElementById("timeline");
+const timelineDays = document.getElementById("timelineDays");
+const timelineRows = document.getElementById("timelineRows");
+const nowLine = document.getElementById("nowLine");
 const emptyState = document.getElementById("emptyState");
 const searchInput = document.getElementById("searchInput");
 const tabs = document.querySelectorAll("#statusTabs .tab");
-const cardTemplate = document.getElementById("cardTemplate");
 
-const calendarView = document.getElementById("calendarView");
-const calendarGrid = document.getElementById("calendarGrid");
-const calTitle = document.getElementById("calTitle");
-const viewTabs = document.querySelectorAll("#viewTabs .tab");
+const DAY_MS = 86400000;
+const DAY_WIDTH = 110; // px per day column
+const HEADER_HEIGHT = 44;
+const ROW_HEIGHT = 64;
 
 let activeStatus = "all";
 let query = "";
-let activeView = "calendar";
-let calMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
+let didInitialScroll = false;
 
 function getStatus(event, now = Date.now()) {
   const start = Date.parse(event.start);
@@ -22,6 +24,7 @@ function getStatus(event, now = Date.now()) {
   return "live";
 }
 
+const dayFmt = new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric" });
 const dateFmt = new Intl.DateTimeFormat(undefined, {
   month: "short",
   day: "numeric",
@@ -29,77 +32,15 @@ const dateFmt = new Intl.DateTimeFormat(undefined, {
   minute: "2-digit",
 });
 
-function formatDuration(ms) {
-  const totalMinutes = Math.max(0, Math.floor(ms / 60000));
-  const days = Math.floor(totalMinutes / 1440);
-  const hours = Math.floor((totalMinutes % 1440) / 60);
-  const minutes = totalMinutes % 60;
-  if (days > 0) return `${days}d ${hours}h`;
-  if (hours > 0) return `${hours}h ${minutes}m`;
-  return `${minutes}m`;
-}
-
-function countdownText(event, status, now = Date.now()) {
-  if (status === "upcoming") return `Starts in ${formatDuration(Date.parse(event.start) - now)}`;
-  if (status === "live") return `Live now — ends in ${formatDuration(Date.parse(event.end) - now)}`;
-  return "Event ended";
-}
-
 function matchesQuery(event) {
   if (!query) return true;
-  const haystack = `${event.name} ${event.channel} ${event.description}`.toLowerCase();
-  return haystack.includes(query);
+  return `${event.name} ${event.channel} ${event.description}`.toLowerCase().includes(query);
 }
 
-function statusRank(status) {
-  return { live: 0, upcoming: 1, ended: 2 }[status];
-}
-
-const monthFmt = new Intl.DateTimeFormat(undefined, { month: "long", year: "numeric" });
-
-function sameDay(a, b) {
-  return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
-}
-
-function renderCalendar(events) {
-  calTitle.textContent = monthFmt.format(calMonth);
-  calendarGrid.replaceChildren();
-
-  const today = new Date();
-  const firstWeekday = calMonth.getDay();
-  const gridStart = new Date(calMonth.getFullYear(), calMonth.getMonth(), 1 - firstWeekday);
-
-  // 6 weeks covers every month layout
-  for (let i = 0; i < 42; i++) {
-    const day = new Date(gridStart.getFullYear(), gridStart.getMonth(), gridStart.getDate() + i);
-    const dayStart = day.getTime();
-    const dayEnd = dayStart + 86400000;
-
-    const cell = document.createElement("div");
-    cell.className = "cal-cell";
-    if (day.getMonth() !== calMonth.getMonth()) cell.classList.add("other-month");
-    if (sameDay(day, today)) cell.classList.add("today");
-
-    const num = document.createElement("span");
-    num.className = "cal-daynum";
-    num.textContent = day.getDate();
-    cell.append(num);
-
-    for (const event of events) {
-      const start = Date.parse(event.start);
-      const end = Date.parse(event.end);
-      if (start >= dayEnd || end < dayStart) continue;
-      const chip = document.createElement("div");
-      chip.className = `cal-chip ${event.status}`;
-      if (start >= dayStart) chip.classList.add("chip-start");
-      if (end < dayEnd) chip.classList.add("chip-end");
-      chip.textContent = `${event.emoji} ${event.name}`;
-      chip.title = `${event.name} — @${event.channel}\n${event.requirement}\n${dateFmt.format(new Date(event.start))} → ${dateFmt.format(new Date(event.end))}`;
-      cell.append(chip);
-    }
-
-    calendarGrid.append(cell);
-  }
+function startOfDay(ts) {
+  const d = new Date(ts);
+  d.setHours(0, 0, 0, 0);
+  return d.getTime();
 }
 
 function render() {
@@ -119,37 +60,68 @@ function render() {
 
   const visible = events
     .filter((e) => matchesQuery(e) && (activeStatus === "all" || e.status === activeStatus))
-    .sort(
-      (a, b) =>
-        statusRank(a.status) - statusRank(b.status) ||
-        Date.parse(a.start) - Date.parse(b.start)
-    );
+    .sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
 
-  grid.replaceChildren(
-    ...visible.map((event) => {
-      const card = cardTemplate.content.cloneNode(true);
-      card.querySelector(".badge-art").textContent = event.emoji;
-      const pill = card.querySelector(".status-pill");
-      pill.textContent = event.status;
-      pill.classList.add(event.status);
-      card.querySelector(".event-name").textContent = event.name;
-      card.querySelector(".channel").textContent = `@${event.channel}`;
-      card.querySelector(".description").textContent = event.description;
-      card.querySelector(".start-time").textContent = dateFmt.format(new Date(event.start));
-      card.querySelector(".end-time").textContent = dateFmt.format(new Date(event.end));
-      card.querySelector(".requirement").textContent = event.requirement;
-      const countdown = card.querySelector(".countdown");
-      countdown.textContent = countdownText(event, event.status, now);
-      countdown.classList.add(event.status);
-      return card;
-    })
-  );
+  emptyState.hidden = visible.length > 0;
+  timelineScroll.parentElement.style.display = visible.length ? "" : "none";
+  if (!visible.length) return;
 
-  emptyState.hidden = visible.length > 0 || activeView === "calendar";
+  // Window: 3 days before earliest start (and before today) to 3 days after latest end.
+  const minStart = Math.min(now, ...visible.map((e) => Date.parse(e.start)));
+  const maxEnd = Math.max(now, ...visible.map((e) => Date.parse(e.end)));
+  const windowStart = startOfDay(minStart) - 3 * DAY_MS;
+  const totalDays = Math.ceil((maxEnd - windowStart) / DAY_MS) + 3;
 
-  calendarView.hidden = activeView !== "calendar";
-  grid.hidden = activeView !== "cards";
-  if (activeView === "calendar") renderCalendar(visible);
+  timeline.style.width = `${totalDays * DAY_WIDTH}px`;
+  timeline.style.height = `${HEADER_HEIGHT + visible.length * ROW_HEIGHT}px`;
+
+  // Day header + grid columns
+  timelineDays.replaceChildren();
+  const todayStart = startOfDay(now);
+  for (let i = 0; i < totalDays; i++) {
+    const dayTs = windowStart + i * DAY_MS;
+    const col = document.createElement("div");
+    col.className = "day-col";
+    if (dayTs === todayStart) col.classList.add("today");
+    col.style.left = `${i * DAY_WIDTH}px`;
+    col.style.width = `${DAY_WIDTH}px`;
+    const label = document.createElement("span");
+    label.className = "day-label";
+    label.textContent = dayFmt.format(new Date(dayTs));
+    col.append(label);
+    timelineDays.append(col);
+  }
+
+  // Event bars, one row each
+  timelineRows.replaceChildren();
+  visible.forEach((event, i) => {
+    const start = Date.parse(event.start);
+    const end = Date.parse(event.end);
+    const bar = document.createElement("div");
+    bar.className = `event-bar ${event.status}`;
+    bar.style.left = `${((start - windowStart) / DAY_MS) * DAY_WIDTH}px`;
+    bar.style.width = `${Math.max(((end - start) / DAY_MS) * DAY_WIDTH, 60)}px`;
+    bar.style.top = `${HEADER_HEIGHT + i * ROW_HEIGHT + 8}px`;
+    bar.title = `${event.name} — @${event.channel}\n${event.requirement}\n${dateFmt.format(new Date(start))} → ${dateFmt.format(new Date(end))}`;
+
+    const title = document.createElement("span");
+    title.className = "bar-title";
+    title.textContent = event.name;
+    const sub = document.createElement("span");
+    sub.className = "bar-sub";
+    sub.textContent = `${event.emoji} @${event.channel} · ${event.requirement}`;
+    bar.append(title, sub);
+    timelineRows.append(bar);
+  });
+
+  // Current-time line
+  const nowX = ((now - windowStart) / DAY_MS) * DAY_WIDTH;
+  nowLine.style.left = `${nowX}px`;
+
+  if (!didInitialScroll) {
+    timelineScroll.scrollLeft = Math.max(0, nowX - timelineScroll.clientWidth / 3);
+    didInitialScroll = true;
+  }
 }
 
 tabs.forEach((tab) =>
@@ -162,29 +134,6 @@ tabs.forEach((tab) =>
 
 searchInput.addEventListener("input", () => {
   query = searchInput.value.trim().toLowerCase();
-  render();
-});
-
-viewTabs.forEach((tab) =>
-  tab.addEventListener("click", () => {
-    viewTabs.forEach((t) => t.classList.toggle("active", t === tab));
-    activeView = tab.dataset.view;
-    render();
-  })
-);
-
-document.getElementById("prevMonth").addEventListener("click", () => {
-  calMonth = new Date(calMonth.getFullYear(), calMonth.getMonth() - 1, 1);
-  render();
-});
-
-document.getElementById("nextMonth").addEventListener("click", () => {
-  calMonth = new Date(calMonth.getFullYear(), calMonth.getMonth() + 1, 1);
-  render();
-});
-
-document.getElementById("todayBtn").addEventListener("click", () => {
-  calMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
   render();
 });
 

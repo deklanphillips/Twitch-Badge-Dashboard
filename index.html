@@ -3,104 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Twitch Badge Dashboard</title>
+  <title>Events — Twitch Badge Dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">
-        <svg class="brand-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M4.265 3 3 6.236v13.223h4.502V21l2.531.001L12.279 19.5h3.799L21 14.785V3H4.265Zm15.047 10.978-2.886 2.885h-4.612l-2.245 2.245v-2.245H5.812V4.687h13.5v9.291ZM16.687 7.5h-1.689v5.063h1.689V7.5Zm-4.5 0H10.5v5.063h1.687V7.5Z"/>
-        </svg>
-        <span>Badge<strong>Drops</strong></span>
-      </a>
-      <nav class="header-nav">
-        <a href="index.html" class="nav-link active">Events</a>
-        <a href="badges.html" class="nav-link">Badges</a>
-      </nav>
-    </div>
-  </header>
+<body class="with-sidebar">
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <svg class="brand-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M4.265 3 3 6.236v13.223h4.502V21l2.531.001L12.279 19.5h3.799L21 14.785V3H4.265Zm15.047 10.978-2.886 2.885h-4.612l-2.245 2.245v-2.245H5.812V4.687h13.5v9.291ZM16.687 7.5h-1.689v5.063h1.689V7.5Zm-4.5 0H10.5v5.063h1.687V7.5Z"/>
+      </svg>
+      <span>Badge<strong>Drops</strong></span>
+    </a>
+    <nav class="side-nav">
+      <a href="index.html" class="side-link active">📅 Events</a>
+      <p class="side-section">Twitch</p>
+      <a href="badges.html" class="side-link">⚡ Global Badges</a>
+      <a href="badges.html#channel" class="side-link">🎯 Channel Badges</a>
+    </nav>
+  </aside>
 
-  <main class="container">
-    <section class="page-head">
-      <h1>Twitch Badge Events</h1>
-      <p class="subtitle">Track upcoming, live, and past Twitch badge drops so you never miss one.</p>
-    </section>
+  <main class="main-col">
+    <div class="container-fluid">
+      <section class="page-head">
+        <p class="breadcrumb">HOME / EVENTS</p>
+        <h1>Events</h1>
+        <p class="subtitle">Current and upcoming Twitch badge events.</p>
+      </section>
 
-    <section class="controls">
-      <div class="tabs" id="statusTabs">
-        <button class="tab active" data-status="all">All <span class="count" data-count="all"></span></button>
-        <button class="tab" data-status="live">Live <span class="count" data-count="live"></span></button>
-        <button class="tab" data-status="upcoming">Upcoming <span class="count" data-count="upcoming"></span></button>
-        <button class="tab" data-status="ended">Ended <span class="count" data-count="ended"></span></button>
-      </div>
-      <div class="tabs view-toggle" id="viewTabs">
-        <button class="tab active" data-view="calendar" title="Calendar view">📅 Calendar</button>
-        <button class="tab" data-view="cards" title="Card view">🗂 Cards</button>
-      </div>
-      <div class="search-wrap">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon" aria-hidden="true">
-          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
-        </svg>
-        <input type="search" id="searchInput" placeholder="Search events, badges, channels..." />
-      </div>
-    </section>
+      <section class="controls">
+        <div class="tabs" id="statusTabs">
+          <button class="tab active" data-status="all">All <span class="count" data-count="all"></span></button>
+          <button class="tab" data-status="live">Live <span class="count" data-count="live"></span></button>
+          <button class="tab" data-status="upcoming">Upcoming <span class="count" data-count="upcoming"></span></button>
+          <button class="tab" data-status="ended">Ended <span class="count" data-count="ended"></span></button>
+        </div>
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+          </svg>
+          <input type="search" id="searchInput" placeholder="Search events, badges, channels..." />
+        </div>
+      </section>
 
-    <section class="calendar" id="calendarView">
-      <div class="calendar-head">
-        <button class="cal-nav" id="prevMonth" aria-label="Previous month">‹</button>
-        <h2 class="cal-title" id="calTitle"></h2>
-        <button class="cal-nav" id="nextMonth" aria-label="Next month">›</button>
-        <button class="cal-today" id="todayBtn">Today</button>
-      </div>
-      <div class="calendar-weekdays">
-        <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
-      </div>
-      <div class="calendar-grid" id="calendarGrid"></div>
-    </section>
-
-    <section class="grid" id="eventGrid" hidden></section>
-    <p class="empty-state" id="emptyState" hidden>No events match your filters.</p>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>Fan-made dashboard. Not affiliated with Twitch.</p>
-    </div>
-  </footer>
-
-  <template id="cardTemplate">
-    <article class="card">
-      <div class="card-top">
-        <div class="badge-art"></div>
-        <span class="status-pill"></span>
-      </div>
-      <div class="card-body">
-        <h2 class="event-name"></h2>
-        <p class="channel"></p>
-        <p class="description"></p>
-        <div class="meta">
-          <div class="meta-row">
-            <span class="meta-label">Starts</span>
-            <span class="meta-value start-time"></span>
-          </div>
-          <div class="meta-row">
-            <span class="meta-label">Ends</span>
-            <span class="meta-value end-time"></span>
-          </div>
-          <div class="meta-row">
-            <span class="meta-label">Requirement</span>
-            <span class="meta-value requirement"></span>
+      <section class="schedule-panel">
+        <div class="schedule-head">
+          <h2>Schedule</h2>
+          <div class="legend">
+            <span class="legend-item"><span class="legend-line"></span> Current Time</span>
+            <span class="legend-item"><span class="legend-dot live-dot"></span> Live</span>
+            <span class="legend-item"><span class="legend-dot upcoming-dot"></span> Upcoming</span>
+            <span class="legend-item"><span class="legend-dot ended-dot"></span> Ended</span>
           </div>
         </div>
-        <div class="countdown"></div>
-      </div>
-    </article>
-  </template>
+        <div class="timeline-scroll" id="timelineScroll">
+          <div class="timeline" id="timeline">
+            <div class="timeline-days" id="timelineDays"></div>
+            <div class="timeline-rows" id="timelineRows"></div>
+            <div class="now-line" id="nowLine"></div>
+          </div>
+        </div>
+      </section>
+
+      <p class="empty-state" id="emptyState" hidden>No events match your filters.</p>
+
+      <footer class="site-footer">
+        <p>Fan-made dashboard. Not affiliated with Twitch.</p>
+      </footer>
+    </div>
+  </main>
 
   <script src="data.js"></script>
   <script src="app.js"></script>
