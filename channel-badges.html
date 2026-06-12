@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Badge Detail — Twitch Badge Dashboard</title>
+  <title>Channel Badges — Twitch Badge Dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -21,33 +21,35 @@
       <a href="index.html" class="side-link">🏠 Home</a>
       <a href="events.html" class="side-link">📅 Events</a>
       <p class="side-section">Twitch</p>
-      <a href="badges.html" class="side-link active">⚡ Global Badges</a>
-      <a href="channel-badges.html" class="side-link">🎯 Channel Badges</a>
+      <a href="badges.html" class="side-link">⚡ Global Badges</a>
+      <a href="channel-badges.html" class="side-link active">🎯 Channel Badges</a>
       <a href="emotes.html" class="side-link">😀 Global Emotes</a>
     </nav>
   </aside>
 
   <main class="main-col">
     <div class="container-fluid">
+      <section class="page-head">
+        <p class="breadcrumb">HOME / CHANNEL-BADGES</p>
+        <h1>Channel Badges</h1>
+        <p class="subtitle">Badges that can only be used in one channel — subscriber tiers, bits badges, and custom drops. Search any streamer.</p>
+      </section>
 
-      <p class="breadcrumb" id="breadcrumb">HOME / TWITCH / GLOBAL-BADGES</p>
-
-      <div id="badgeDetail" hidden>
-        <h1 class="detail-heading">Twitch Global Badge</h1>
-
-        <div class="detail-layout">
-          <!-- Left column -->
-          <div class="detail-left">
-            <div class="size-previews" id="sizePreviews"></div>
-            <div class="detail-fields" id="detailFields"></div>
-          </div>
-
-          <!-- Right column: matching event from data.js -->
-          <div class="detail-right" id="eventInfo"></div>
+      <section class="controls">
+        <form class="search-wrap" id="channelForm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+          </svg>
+          <input type="search" id="channelInput" placeholder="Channel name, e.g. ishowspeed" />
+        </form>
+        <div class="quick-channels" id="quickChannels">
+          <span class="quick-label">Try:</span>
         </div>
-      </div>
+      </section>
 
-      <p class="empty-state" id="statusMessage">Loading badge…</p>
+      <h2 class="channel-heading" id="channelHeading" hidden></h2>
+      <p class="empty-state" id="statusMessage">Search a channel above to see its badges.</p>
+      <section class="badge-grid" id="badgeGrid"></section>
 
       <footer class="site-footer">
         <p>Fan-made dashboard. Not affiliated with Twitch.</p>
@@ -55,7 +57,6 @@
     </div>
   </main>
 
-  <script src="data.js"></script>
-  <script src="badge.js"></script>
+  <script src="channel-badges.js"></script>
 </body>
 </html>

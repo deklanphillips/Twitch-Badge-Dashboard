@@ -22,7 +22,7 @@
       <a href="events.html" class="side-link">📅 Events</a>
       <p class="side-section">Twitch</p>
       <a href="badges.html" class="side-link active">⚡ Global Badges</a>
-      <a href="badges.html#channel" class="side-link">🎯 Channel Badges</a>
+      <a href="channel-badges.html" class="side-link">🎯 Channel Badges</a>
       <a href="emotes.html" class="side-link">😀 Global Emotes</a>
     </nav>
   </aside>
@@ -30,28 +30,18 @@
   <main class="main-col">
     <div class="container-fluid">
       <section class="page-head">
-        <p class="breadcrumb">HOME / BADGES</p>
-        <h1>Twitch Badges</h1>
-        <p class="subtitle">Real badge data straight from the Twitch API — global badges or any channel's badges.</p>
+        <p class="breadcrumb">HOME / GLOBAL-BADGES</p>
+        <h1>Global Badges</h1>
+        <p class="subtitle">Badges that look the same in every channel, live from the Twitch API.</p>
       </section>
 
       <section class="controls">
-        <div class="tabs" id="sourceTabs">
-          <button class="tab active" data-source="global">Global badges</button>
-          <button class="tab" data-source="channel">Channel badges</button>
-        </div>
         <div class="search-wrap" id="badgeSearchWrap">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon" aria-hidden="true">
             <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
           </svg>
           <input type="search" id="badgeSearchInput" placeholder="Search badges..." />
         </div>
-        <form class="search-wrap" id="channelForm" hidden>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon" aria-hidden="true">
-            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
-          </svg>
-          <input type="search" id="channelInput" placeholder="Channel name, e.g. gamesdonequick" />
-        </form>
       </section>
 
       <p class="empty-state" id="statusMessage">Loading badges…</p>

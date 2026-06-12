@@ -191,6 +191,32 @@ body.with-sidebar { flex-direction: row; }
   box-shadow: 0 0 0 3px var(--purple-soft);
 }
 
+/* Channel badges page */
+.quick-channels {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.quick-label { color: var(--text-muted); font-size: 0.8rem; font-weight: 600; }
+
+.quick-chip {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.quick-chip:hover { border-color: var(--purple); color: var(--purple); }
+
+.channel-heading { margin: 0 0 1rem; font-size: 1.2rem; font-weight: 800; color: var(--purple); }
+
 /* Schedule timeline */
 .schedule-panel {
   background: var(--surface);
