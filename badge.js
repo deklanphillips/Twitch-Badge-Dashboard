@@ -181,21 +181,43 @@ async function load() {
         : "No availability details found for this badge. Add an entry to data.js to enrich this page.";
       availSection.append(note);
 
-      // Fallback: search Twitch for the badge's title so people can find the
-      // category/channels it relates to.
-      const whereWrap = document.createElement("div");
-      whereWrap.className = "where-earn";
-      const whereLabel = document.createElement("p");
-      whereLabel.className = "detail-label";
-      whereLabel.textContent = "Find on Twitch";
-      const whereLink = document.createElement("a");
-      whereLink.className = "where-link";
-      whereLink.href = `https://www.twitch.tv/search?term=${encodeURIComponent(version.title || set.set_id)}`;
-      whereLink.target = "_blank";
-      whereLink.rel = "noopener";
-      whereLink.textContent = `Search "${version.title || set.set_id}" on Twitch ↗`;
-      whereWrap.append(whereLabel, whereLink);
-      availSection.append(whereWrap);
+      // Fallback: parse the category name from the Twitch description, or skip
+      // entirely for built-in badges that don't relate to a game/category.
+      const BUILTIN_SETS = new Set([
+        "broadcaster", "moderator", "subscriber", "sub-gifter", "sub-gift-leader",
+        "bits", "bits-leader", "bits-charity", "clip-cheer", "turbo", "partner",
+        "premium", "staff", "admin", "global_mod", "hype-train", "predictions",
+        "moments", "no_audio", "no_video", "vip", "ambassador", "twitchcon",
+        "overwatch-league-2019", "game-developer-conference", "twitch-recap-2023",
+      ]);
+
+      if (!BUILTIN_SETS.has(set.set_id)) {
+        const desc = version.description || "";
+        // Try to extract "in the X category" or "in the X game" from description.
+        const catMatch = desc.match(/\bin the ([^,.!?]+?) (?:category|game)\b/i);
+        const whereWrap = document.createElement("div");
+        whereWrap.className = "where-earn";
+        const whereLabel = document.createElement("p");
+        whereLabel.className = "detail-label";
+        const whereLink = document.createElement("a");
+        whereLink.className = "where-link";
+        whereLink.target = "_blank";
+        whereLink.rel = "noopener";
+
+        if (catMatch) {
+          const catName = catMatch[1].trim();
+          const slug = catName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+          whereLabel.textContent = "Earned in category";
+          whereLink.href = `https://www.twitch.tv/directory/category/${slug}`;
+          whereLink.textContent = `${catName} category ↗`;
+        } else {
+          whereLabel.textContent = "Find on Twitch";
+          whereLink.href = `https://www.twitch.tv/search?term=${encodeURIComponent(version.title || set.set_id)}`;
+          whereLink.textContent = `Search "${version.title || set.set_id}" on Twitch ↗`;
+        }
+        whereWrap.append(whereLabel, whereLink);
+        availSection.append(whereWrap);
+      }
     }
 
     eventInfo.append(availSection);
