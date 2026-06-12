@@ -146,8 +146,16 @@ function render() {
     bar.style.top = `${HEADER_HEIGHT + i * ROW_HEIGHT + 8}px`;
     bar.title = `${event.name} — @${event.channel}\n${event.requirement}\n${dateFmt.format(new Date(start))} → ${dateFmt.format(new Date(end))}`;
 
-    // Resolve badge link + image
-    const linked = event.badge || matchBadge(event.name);
+    // Resolve badge link + image. An explicit `badge` field only has
+    // {set, version}, so look up its image from the live global badge list.
+    let linked = null;
+    if (event.badge) {
+      linked =
+        globalBadges.find((b) => b.set === event.badge.set && b.version === event.badge.version) ||
+        event.badge;
+    } else {
+      linked = matchBadge(event.name);
+    }
     bar.href = linked
       ? `badge.html?set=${encodeURIComponent(linked.set)}&version=${encodeURIComponent(linked.version)}`
       : `badges.html?q=${encodeURIComponent(event.name)}`;
