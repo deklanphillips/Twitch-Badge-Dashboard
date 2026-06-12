@@ -15,6 +15,43 @@ const ROW_HEIGHT = 64;
 let activeStatus = "all";
 let query = "";
 let didInitialScroll = false;
+let globalBadges = []; // { set, version, title } from the Twitch API
+
+function tokens(s) {
+  return s.toLowerCase().replace(/[^a-z0-9 ]/g, "").split(/\s+/).filter(Boolean);
+}
+
+// Find the global badge whose title best matches the event name.
+function matchBadge(eventName) {
+  const evTokens = new Set(tokens(eventName));
+  let best = null;
+  let bestScore = 0;
+  for (const b of globalBadges) {
+    const bTokens = tokens(b.title);
+    if (!bTokens.length) continue;
+    const overlap = bTokens.filter((t) => evTokens.has(t)).length;
+    const score = overlap / bTokens.length;
+    if (score > bestScore) {
+      bestScore = score;
+      best = b;
+    }
+  }
+  return bestScore >= 0.6 ? best : null;
+}
+
+async function loadGlobalBadges() {
+  try {
+    const res = await fetch("/api/badges/global");
+    if (!res.ok) return;
+    const data = await res.json();
+    globalBadges = data.data.flatMap((set) =>
+      set.versions.map((v) => ({ set: set.set_id, version: v.id, title: v.title || set.set_id }))
+    );
+    render();
+  } catch {
+    // Offline or not connected to Twitch — bars fall back to search links.
+  }
+}
 
 function getStatus(event, now = Date.now()) {
   const start = Date.parse(event.start);
@@ -99,10 +136,11 @@ function render() {
     const end = Date.parse(event.end);
     const bar = document.createElement("a");
     bar.className = `event-bar ${event.status}`;
-    // Events with a `badge: {set, version}` field link straight to that badge;
-    // otherwise fall back to a badge search for the event name.
-    bar.href = event.badge
-      ? `badge.html?set=${encodeURIComponent(event.badge.set)}&version=${encodeURIComponent(event.badge.version)}`
+    // Link priority: explicit `badge` field, then a title match against the
+    // live global badge list, then a badge search for the event name.
+    const linked = event.badge || matchBadge(event.name);
+    bar.href = linked
+      ? `badge.html?set=${encodeURIComponent(linked.set)}&version=${encodeURIComponent(linked.version)}`
       : `badges.html?q=${encodeURIComponent(event.name)}`;
     bar.style.left = `${((start - windowStart) / DAY_MS) * DAY_WIDTH}px`;
     bar.style.width = `${Math.max(((end - start) / DAY_MS) * DAY_WIDTH, 60)}px`;
@@ -143,4 +181,5 @@ searchInput.addEventListener("input", () => {
 });
 
 render();
+loadGlobalBadges();
 setInterval(render, 30000);
