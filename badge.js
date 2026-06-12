@@ -191,7 +191,7 @@ async function load() {
         "overwatch-league-2019", "game-developer-conference", "twitch-recap-2023",
       ]);
 
-      if (!BUILTIN_SETS.has(set.set_id) && !/staff|leader|clips?-/i.test(set.set_id)) {
+      if (!BUILTIN_SETS.has(set.set_id) && !/staff|leader|clips?-|twitchiversary/i.test(set.set_id)) {
         const desc = version.description || "";
         // Try to extract the category name from common description phrasings:
         // "in the X category" / "in the X game" / "to a(n) X streamer"
