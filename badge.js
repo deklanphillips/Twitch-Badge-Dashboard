@@ -198,7 +198,7 @@ async function load() {
         const catMatch =
           desc.match(/\bin the ([^,.!?]+?) (?:category|game)\b/i) ||
           desc.match(/\bto an? ([^,.!?]+?) streamer/i) ||
-          desc.match(/\b(?:playing|watching) ([^,.!?]+?)(?: during| at| on| in\b| streams?\b|[,.!?]|$)/i);
+          desc.match(/\b(?:playing|watching) (?:\d+ (?:minutes?|hours?) of )?([^,.!?]+?)(?: during| at| on| in\b| streams?\b|[,.!?]|$)/i);
         const whereWrap = document.createElement("div");
         whereWrap.className = "where-earn";
         const whereLabel = document.createElement("p");
