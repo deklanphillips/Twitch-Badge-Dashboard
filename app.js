@@ -147,13 +147,16 @@ function render() {
     bar.style.top = `${HEADER_HEIGHT + i * ROW_HEIGHT + 8}px`;
     bar.title = `${event.name} — @${event.channel}\n${event.requirement}\n${dateFmt.format(new Date(start))} → ${dateFmt.format(new Date(end))}`;
 
+    const label = document.createElement("span");
+    label.className = "bar-label";
     const title = document.createElement("span");
     title.className = "bar-title";
     title.textContent = event.name;
     const sub = document.createElement("span");
     sub.className = "bar-sub";
     sub.textContent = `${event.emoji} @${event.channel} · ${event.requirement}`;
-    bar.append(title, sub);
+    label.append(title, sub);
+    bar.append(label);
     timelineRows.append(bar);
   });
 
@@ -165,7 +168,24 @@ function render() {
     timelineScroll.scrollLeft = Math.max(0, nowX - timelineScroll.clientWidth / 3);
     didInitialScroll = true;
   }
+  updateBarLabels();
 }
+
+// Keep bar labels visible when a bar starts left of the scrolled viewport.
+function updateBarLabels() {
+  const scrollX = timelineScroll.scrollLeft;
+  for (const bar of timelineRows.children) {
+    const label = bar.firstChild;
+    if (!label) continue;
+    const barLeft = parseFloat(bar.style.left);
+    const barWidth = parseFloat(bar.style.width);
+    const maxShift = Math.max(0, barWidth - label.offsetWidth - 24);
+    const shift = Math.min(Math.max(0, scrollX - barLeft), maxShift);
+    label.style.transform = `translateX(${shift}px)`;
+  }
+}
+
+timelineScroll.addEventListener("scroll", updateBarLabels, { passive: true });
 
 tabs.forEach((tab) =>
   tab.addEventListener("click", () => {

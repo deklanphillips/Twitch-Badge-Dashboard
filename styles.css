@@ -269,6 +269,14 @@ body.with-sidebar { flex-direction: row; }
 .event-bar.ended { background: #3a3a44; color: var(--text-muted); }
 .event-bar:hover { filter: brightness(1.15); cursor: pointer; }
 
+.bar-label {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: max-content;
+  max-width: 100%;
+}
+
 .bar-title {
   font-size: 0.82rem;
   font-weight: 800;

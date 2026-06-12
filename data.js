@@ -1,79 +1,62 @@
-// Badge drop events. Edit this list to add real events.
-// Dates are ISO 8601 (UTC). emoji is used as placeholder badge art —
-// swap for an `image` URL if you have official badge images.
-// Optionally add `badge: { set: "set-id", version: "1" }` to link an event
-// directly to its Twitch badge detail page from the schedule.
+// Real Twitch badge drop events, curated from official announcements and
+// community trackers (Twitch's API does not expose event dates/requirements,
+// so this list is maintained by hand — edit it to add new events).
+// Dates are ISO 8601 (UTC). `badge: { set, version }` links an event directly
+// to its Twitch badge detail page from the schedule.
 const BADGE_EVENTS = [
   {
-    name: "Subtember Celebration Badge",
-    channel: "Twitch",
-    description: "Watch any participating stream for 2 hours during Subtember to earn this badge.",
-    emoji: "🎉",
-    requirement: "Watch 2 hours",
-    start: "2026-09-01T17:00:00Z",
-    end: "2026-09-30T17:00:00Z",
+    name: "QSMP Season 2",
+    channel: "QSMP",
+    description:
+      "Watch 60 minutes of any eligible QSMP channel to earn the QSMP2 badge.",
+    emoji: "🟩",
+    requirement: "Watch 60 minutes",
+    start: "2026-03-14T17:00:00Z",
+    end: "2026-07-01T14:59:00Z",
+    badge: { set: "qsmp2", version: "1" },
   },
   {
-    name: "Summer Games Watch Badge",
-    channel: "TwitchRivals",
-    description: "Tune into Twitch Rivals Summer Games coverage to unlock an exclusive viewer badge.",
-    emoji: "🏆",
-    requirement: "Watch 1 hour",
-    start: "2026-06-10T16:00:00Z",
-    end: "2026-06-20T23:00:00Z",
-  },
-  {
-    name: "Anime Marathon Badge",
-    channel: "Crunchyroll",
-    description: "Earn this badge by watching the official anime marathon stream.",
-    emoji: "⛩️",
-    requirement: "Watch 90 minutes",
-    start: "2026-06-14T15:00:00Z",
-    end: "2026-06-16T03:00:00Z",
-  },
-  {
-    name: "Charity Stream Supporter",
-    channel: "GamesDoneQuick",
-    description: "Support the summer charity marathon and pick up a limited supporter badge.",
-    emoji: "💜",
-    requirement: "Cheer 100 bits",
-    start: "2026-07-05T18:00:00Z",
-    end: "2026-07-12T06:00:00Z",
-  },
-  {
-    name: "Launch Day Hype Badge",
-    channel: "PlayStation",
-    description: "Watch the game launch showcase live to grab the hype badge.",
-    emoji: "🚀",
-    requirement: "Watch 30 minutes",
-    start: "2026-06-25T19:00:00Z",
-    end: "2026-06-25T23:00:00Z",
-  },
-  {
-    name: "Spring Fest Flower Badge",
-    channel: "Twitch",
-    description: "This badge was available during the Spring Fest event for all sub gifters.",
-    emoji: "🌸",
-    requirement: "Gift 1 sub",
-    start: "2026-04-01T17:00:00Z",
-    end: "2026-04-15T17:00:00Z",
-  },
-  {
-    name: "Esports Finals Badge",
-    channel: "RiotGames",
-    description: "Watch the grand finals broadcast with a linked account to earn this drop badge.",
+    name: "Brawlhalla Fest 2026",
+    channel: "Brawlhalla",
+    description:
+      "Subscribe or gift a sub to any eligible channel streaming in the Brawlhalla category to earn the BrawlhallAwoo badge.",
     emoji: "⚔️",
-    requirement: "Watch 1 hour",
-    start: "2026-05-15T14:00:00Z",
-    end: "2026-05-17T22:00:00Z",
+    requirement: "Sub or gift sub",
+    start: "2026-05-20T16:00:00Z",
+    end: "2026-06-16T15:58:00Z",
+    badge: { set: "brawlhallawoo", version: "1" },
   },
   {
-    name: "Creator Camp Graduate",
-    channel: "Twitch",
-    description: "Complete the Creator Camp watch-along series to receive the graduate badge.",
-    emoji: "🎓",
-    requirement: "Watch 3 hours",
-    start: "2026-08-03T16:00:00Z",
-    end: "2026-08-28T16:00:00Z",
+    name: "007 First Light Launch",
+    channel: "007 First Light",
+    description:
+      "Subscribe or gift a sub to any eligible channel streaming in the 007 First Light category to earn the 007 Gun Barrel badge. Watching 1–2 hours also earns free in-game outfit drops.",
+    emoji: "🔫",
+    requirement: "Sub or gift sub",
+    start: "2026-05-26T14:00:00Z",
+    end: "2026-06-23T13:59:00Z",
+    badge: { set: "007-gun-barrel", version: "1" },
+  },
+  {
+    name: "Rematch US",
+    channel: "REMATCH",
+    description:
+      "Earned in eligible channels streaming in the REMATCH category during the promotion window (regional Rematch badges were also available, e.g. France).",
+    emoji: "⚽",
+    requirement: "See badge page",
+    start: "2026-06-11T08:00:00Z",
+    end: "2026-07-09T07:59:00Z",
+    badge: { set: "rematch-us", version: "1" },
+  },
+  {
+    name: "Crimson Butterfly",
+    channel: "FATAL FRAME II REMAKE",
+    description:
+      "Awarded to people who subscribed (Prime doesn't count) or gifted a subscription to any eligible channel streaming in the FATAL FRAME II: Crimson Butterfly REMAKE category.",
+    emoji: "🦋",
+    requirement: "Sub or gift sub",
+    start: "2026-03-12T07:00:00Z",
+    end: "2026-03-23T04:59:00Z",
+    badge: { set: "crimson-butterfly", version: "1" },
   },
 ];
