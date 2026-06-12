@@ -291,8 +291,8 @@ body.with-sidebar { flex-direction: row; }
   cursor: default;
 }
 
-.event-bar.live { background: var(--purple); color: #fff; box-shadow: 0 0 0 1px rgba(0, 245, 147, 0.7); }
-.event-bar.upcoming { background: var(--purple); color: #fff; opacity: 0.9; }
+.event-bar.live { background: #0c9960; color: #fff; box-shadow: 0 0 0 1px rgba(0, 245, 147, 0.55); }
+.event-bar.upcoming { background: var(--purple); color: #fff; }
 .event-bar.ended { background: #3a3a44; color: var(--text-muted); }
 .event-bar:hover { filter: brightness(1.15); cursor: pointer; }
 
