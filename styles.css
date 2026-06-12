@@ -249,6 +249,125 @@ body {
 .countdown.upcoming { color: #c39bff; border-color: rgba(145, 71, 255, 0.4); }
 .countdown.ended { color: var(--text-muted); }
 
+/* Calendar */
+.calendar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.calendar-head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.9rem;
+}
+
+.cal-title { margin: 0; font-size: 1.1rem; font-weight: 700; flex: 1; text-align: center; order: 1; }
+.cal-nav {
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 1.1rem;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cal-nav:hover { border-color: var(--purple); }
+#prevMonth { order: 0; }
+#nextMonth { order: 2; }
+
+.cal-today {
+  order: 3;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cal-today:hover { border-color: var(--purple); }
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  padding-bottom: 0.5rem;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+.cal-cell {
+  min-height: 96px;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  overflow: hidden;
+}
+
+.cal-cell.other-month { background: var(--bg); }
+.cal-cell.other-month .cal-daynum { opacity: 0.35; }
+
+.cal-daynum {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  align-self: flex-end;
+}
+
+.cal-cell.today .cal-daynum {
+  background: var(--purple);
+  color: #fff;
+  border-radius: 999px;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+}
+
+.cal-chip {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+  border-radius: 0;
+  margin-inline: -0.35rem;
+}
+
+.cal-chip.chip-start { border-top-left-radius: 6px; border-bottom-left-radius: 6px; margin-left: 0; }
+.cal-chip.chip-end { border-top-right-radius: 6px; border-bottom-right-radius: 6px; margin-right: 0; }
+
+.cal-chip.live { background: rgba(0, 245, 147, 0.16); color: var(--green); }
+.cal-chip.upcoming { background: var(--purple-soft); color: #c39bff; }
+.cal-chip.ended { background: rgba(173, 173, 184, 0.13); color: var(--text-muted); }
+
+@media (max-width: 700px) {
+  .cal-cell { min-height: 64px; }
+  .cal-chip { font-size: 0; padding: 0; height: 6px; }
+}
+
 /* Live badge tiles */
 .badge-grid {
   display: grid;

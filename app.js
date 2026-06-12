@@ -4,8 +4,15 @@ const searchInput = document.getElementById("searchInput");
 const tabs = document.querySelectorAll("#statusTabs .tab");
 const cardTemplate = document.getElementById("cardTemplate");
 
+const calendarView = document.getElementById("calendarView");
+const calendarGrid = document.getElementById("calendarGrid");
+const calTitle = document.getElementById("calTitle");
+const viewTabs = document.querySelectorAll("#viewTabs .tab");
+
 let activeStatus = "all";
 let query = "";
+let activeView = "calendar";
+let calMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
 
 function getStatus(event, now = Date.now()) {
   const start = Date.parse(event.start);
@@ -46,6 +53,53 @@ function matchesQuery(event) {
 
 function statusRank(status) {
   return { live: 0, upcoming: 1, ended: 2 }[status];
+}
+
+const monthFmt = new Intl.DateTimeFormat(undefined, { month: "long", year: "numeric" });
+
+function sameDay(a, b) {
+  return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+}
+
+function renderCalendar(events) {
+  calTitle.textContent = monthFmt.format(calMonth);
+  calendarGrid.replaceChildren();
+
+  const today = new Date();
+  const firstWeekday = calMonth.getDay();
+  const gridStart = new Date(calMonth.getFullYear(), calMonth.getMonth(), 1 - firstWeekday);
+
+  // 6 weeks covers every month layout
+  for (let i = 0; i < 42; i++) {
+    const day = new Date(gridStart.getFullYear(), gridStart.getMonth(), gridStart.getDate() + i);
+    const dayStart = day.getTime();
+    const dayEnd = dayStart + 86400000;
+
+    const cell = document.createElement("div");
+    cell.className = "cal-cell";
+    if (day.getMonth() !== calMonth.getMonth()) cell.classList.add("other-month");
+    if (sameDay(day, today)) cell.classList.add("today");
+
+    const num = document.createElement("span");
+    num.className = "cal-daynum";
+    num.textContent = day.getDate();
+    cell.append(num);
+
+    for (const event of events) {
+      const start = Date.parse(event.start);
+      const end = Date.parse(event.end);
+      if (start >= dayEnd || end < dayStart) continue;
+      const chip = document.createElement("div");
+      chip.className = `cal-chip ${event.status}`;
+      if (start >= dayStart) chip.classList.add("chip-start");
+      if (end < dayEnd) chip.classList.add("chip-end");
+      chip.textContent = `${event.emoji} ${event.name}`;
+      chip.title = `${event.name} — @${event.channel}\n${event.requirement}\n${dateFmt.format(new Date(event.start))} → ${dateFmt.format(new Date(event.end))}`;
+      cell.append(chip);
+    }
+
+    calendarGrid.append(cell);
+  }
 }
 
 function render() {
@@ -91,7 +145,11 @@ function render() {
     })
   );
 
-  emptyState.hidden = visible.length > 0;
+  emptyState.hidden = visible.length > 0 || activeView === "calendar";
+
+  calendarView.hidden = activeView !== "calendar";
+  grid.hidden = activeView !== "cards";
+  if (activeView === "calendar") renderCalendar(visible);
 }
 
 tabs.forEach((tab) =>
@@ -104,6 +162,29 @@ tabs.forEach((tab) =>
 
 searchInput.addEventListener("input", () => {
   query = searchInput.value.trim().toLowerCase();
+  render();
+});
+
+viewTabs.forEach((tab) =>
+  tab.addEventListener("click", () => {
+    viewTabs.forEach((t) => t.classList.toggle("active", t === tab));
+    activeView = tab.dataset.view;
+    render();
+  })
+);
+
+document.getElementById("prevMonth").addEventListener("click", () => {
+  calMonth = new Date(calMonth.getFullYear(), calMonth.getMonth() - 1, 1);
+  render();
+});
+
+document.getElementById("nextMonth").addEventListener("click", () => {
+  calMonth = new Date(calMonth.getFullYear(), calMonth.getMonth() + 1, 1);
+  render();
+});
+
+document.getElementById("todayBtn").addEventListener("click", () => {
+  calMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
   render();
 });
 

@@ -38,6 +38,10 @@
         <button class="tab" data-status="upcoming">Upcoming <span class="count" data-count="upcoming"></span></button>
         <button class="tab" data-status="ended">Ended <span class="count" data-count="ended"></span></button>
       </div>
+      <div class="tabs view-toggle" id="viewTabs">
+        <button class="tab active" data-view="calendar" title="Calendar view">📅 Calendar</button>
+        <button class="tab" data-view="cards" title="Card view">🗂 Cards</button>
+      </div>
       <div class="search-wrap">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon" aria-hidden="true">
           <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
@@ -46,7 +50,20 @@
       </div>
     </section>
 
-    <section class="grid" id="eventGrid"></section>
+    <section class="calendar" id="calendarView">
+      <div class="calendar-head">
+        <button class="cal-nav" id="prevMonth" aria-label="Previous month">‹</button>
+        <h2 class="cal-title" id="calTitle"></h2>
+        <button class="cal-nav" id="nextMonth" aria-label="Next month">›</button>
+        <button class="cal-today" id="todayBtn">Today</button>
+      </div>
+      <div class="calendar-weekdays">
+        <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+      </div>
+      <div class="calendar-grid" id="calendarGrid"></div>
+    </section>
+
+    <section class="grid" id="eventGrid" hidden></section>
     <p class="empty-state" id="emptyState" hidden>No events match your filters.</p>
   </main>
 
