@@ -51,9 +51,7 @@ async function load() {
   }
 
   try {
-    const res = await fetch("/api/badges/global");
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || `Request failed (${res.status})`);
+    const data = await twitchData("/api/badges/global", "api/global-badges.json");
 
     const set = data.data.find((s) => s.set_id === setId);
     if (!set) throw new Error(`Badge set "${setId}" not found.`);

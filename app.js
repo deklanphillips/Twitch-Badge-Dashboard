@@ -41,9 +41,7 @@ function matchBadge(eventName) {
 
 async function loadGlobalBadges() {
   try {
-    const res = await fetch("/api/badges/global");
-    if (!res.ok) return;
-    const data = await res.json();
+    const data = await twitchData("/api/badges/global", "api/global-badges.json");
     globalBadges = data.data.flatMap((set) =>
       set.versions.map((v) => ({
         set: set.set_id,

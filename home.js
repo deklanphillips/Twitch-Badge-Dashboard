@@ -45,19 +45,12 @@ function badgeVersions(sets) {
   return items;
 }
 
-async function fetchJson(url) {
-  const res = await fetch(url);
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error || `Request failed (${res.status})`);
-  return data;
-}
-
 async function load() {
   try {
     const [global, channel, emotes] = await Promise.allSettled([
-      fetchJson("/api/badges/global"),
-      fetchJson(`/api/badges/channel?login=${FEATURED_CHANNEL}`),
-      fetchJson("/api/emotes/global"),
+      twitchData("/api/badges/global", "api/global-badges.json"),
+      twitchData(`/api/badges/channel?login=${FEATURED_CHANNEL}`, `api/channel-badges/${FEATURED_CHANNEL}.json`),
+      twitchData("/api/emotes/global", "api/global-emotes.json"),
     ]);
 
     if (global.status === "fulfilled") fillRow("globalBadgesRow", badgeVersions(global.value.data));

@@ -46,9 +46,10 @@ async function loadChannel(login) {
   channelHeading.hidden = true;
   badgeGrid.replaceChildren();
   try {
-    const res = await fetch(`/api/badges/channel?login=${encodeURIComponent(login)}`);
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || `Request failed (${res.status})`);
+    const data = await twitchData(
+      `/api/badges/channel?login=${encodeURIComponent(login)}`,
+      `api/channel-badges/${encodeURIComponent(login)}.json`
+    );
     renderBadgeSets(data.data, data.user ? data.user.display_name : login);
   } catch (err) {
     showStatus(

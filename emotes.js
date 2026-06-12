@@ -3,9 +3,7 @@ const statusMessage = document.getElementById("statusMessage");
 
 async function loadEmotes() {
   try {
-    const res = await fetch("/api/emotes/global");
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || `Request failed (${res.status})`);
+    const data = await twitchData("/api/emotes/global", "api/global-emotes.json");
 
     statusMessage.hidden = true;
     for (const emote of data.data) {

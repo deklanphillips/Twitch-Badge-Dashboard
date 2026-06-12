@@ -38,9 +38,7 @@ function renderBadgeSets() {
 async function loadBadges() {
   showStatus("Loading badges…");
   try {
-    const res = await fetch("/api/badges/global");
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || `Request failed (${res.status})`);
+    const data = await twitchData("/api/badges/global", "api/global-badges.json");
     loadedSets = data.data;
     renderBadgeSets();
   } catch (err) {
