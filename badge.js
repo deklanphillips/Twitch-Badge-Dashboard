@@ -180,6 +180,22 @@ async function load() {
         ? version.description
         : "No availability details found for this badge. Add an entry to data.js to enrich this page.";
       availSection.append(note);
+
+      // Fallback: search Twitch for the badge's title so people can find the
+      // category/channels it relates to.
+      const whereWrap = document.createElement("div");
+      whereWrap.className = "where-earn";
+      const whereLabel = document.createElement("p");
+      whereLabel.className = "detail-label";
+      whereLabel.textContent = "Find on Twitch";
+      const whereLink = document.createElement("a");
+      whereLink.className = "where-link";
+      whereLink.href = `https://www.twitch.tv/search?term=${encodeURIComponent(version.title || set.set_id)}`;
+      whereLink.target = "_blank";
+      whereLink.rel = "noopener";
+      whereLink.textContent = `Search "${version.title || set.set_id}" on Twitch ↗`;
+      whereWrap.append(whereLabel, whereLink);
+      availSection.append(whereWrap);
     }
 
     eventInfo.append(availSection);
