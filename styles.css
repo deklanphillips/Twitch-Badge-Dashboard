@@ -279,6 +279,9 @@ body.with-sidebar { flex-direction: row; }
 .event-bar {
   position: absolute;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   height: 48px;
   border-radius: 8px;
   padding: 0.35rem 0.7rem;
@@ -294,6 +297,24 @@ body.with-sidebar { flex-direction: row; }
 .event-bar.upcoming { background: var(--purple); color: #fff; opacity: 0.9; }
 .event-bar.ended { background: #3a3a44; color: var(--text-muted); }
 .event-bar:hover { filter: brightness(1.15); cursor: pointer; }
+
+.bar-badge {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.12);
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+}
+
+.bar-badge img {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  object-fit: contain;
+}
 
 .bar-label {
   display: flex;

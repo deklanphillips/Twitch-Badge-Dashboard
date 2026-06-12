@@ -10,12 +10,12 @@ const tabs = document.querySelectorAll("#statusTabs .tab");
 const DAY_MS = 86400000;
 const DAY_WIDTH = 110; // px per day column
 const HEADER_HEIGHT = 44;
-const ROW_HEIGHT = 64;
+const ROW_HEIGHT = 68;
 
 let activeStatus = "all";
 let query = "";
 let didInitialScroll = false;
-let globalBadges = []; // { set, version, title } from the Twitch API
+let globalBadges = []; // { set, version, title, image } from the Twitch API
 
 function tokens(s) {
   return s.toLowerCase().replace(/[^a-z0-9 ]/g, "").split(/\s+/).filter(Boolean);
@@ -45,7 +45,12 @@ async function loadGlobalBadges() {
     if (!res.ok) return;
     const data = await res.json();
     globalBadges = data.data.flatMap((set) =>
-      set.versions.map((v) => ({ set: set.set_id, version: v.id, title: v.title || set.set_id }))
+      set.versions.map((v) => ({
+        set: set.set_id,
+        version: v.id,
+        title: v.title || set.set_id,
+        image: v.image_url_2x || v.image_url_1x,
+      }))
     );
     render();
   } catch {
@@ -136,16 +141,22 @@ function render() {
     const end = Date.parse(event.end);
     const bar = document.createElement("a");
     bar.className = `event-bar ${event.status}`;
-    // Link priority: explicit `badge` field, then a title match against the
-    // live global badge list, then a badge search for the event name.
-    const linked = event.badge || matchBadge(event.name);
-    bar.href = linked
-      ? `badge.html?set=${encodeURIComponent(linked.set)}&version=${encodeURIComponent(linked.version)}`
-      : `badges.html?q=${encodeURIComponent(event.name)}`;
     bar.style.left = `${((start - windowStart) / DAY_MS) * DAY_WIDTH}px`;
     bar.style.width = `${Math.max(((end - start) / DAY_MS) * DAY_WIDTH, 60)}px`;
     bar.style.top = `${HEADER_HEIGHT + i * ROW_HEIGHT + 8}px`;
     bar.title = `${event.name} — @${event.channel}\n${event.requirement}\n${dateFmt.format(new Date(start))} → ${dateFmt.format(new Date(end))}`;
+
+    // Resolve badge link + image
+    const linked = event.badge || matchBadge(event.name);
+    bar.href = linked
+      ? `badge.html?set=${encodeURIComponent(linked.set)}&version=${encodeURIComponent(linked.version)}`
+      : `badges.html?q=${encodeURIComponent(event.name)}`;
+    const imgEl = document.createElement("div");
+    imgEl.className = "bar-badge";
+    const badgeImg = linked && linked.image
+      ? (() => { const i = document.createElement("img"); i.src = linked.image; i.alt = ""; return i; })()
+      : (() => { const s = document.createElement("span"); s.textContent = event.emoji; return s; })();
+    imgEl.append(badgeImg);
 
     const label = document.createElement("span");
     label.className = "bar-label";
@@ -154,9 +165,9 @@ function render() {
     title.textContent = event.name;
     const sub = document.createElement("span");
     sub.className = "bar-sub";
-    sub.textContent = `${event.emoji} @${event.channel} · ${event.requirement}`;
+    sub.textContent = `@${event.channel} · ${event.requirement}`;
     label.append(title, sub);
-    bar.append(label);
+    bar.append(imgEl, label);
     timelineRows.append(bar);
   });
 
@@ -179,7 +190,9 @@ function updateBarLabels() {
     if (!label) continue;
     const barLeft = parseFloat(bar.style.left);
     const barWidth = parseFloat(bar.style.width);
-    const maxShift = Math.max(0, barWidth - label.offsetWidth - 24);
+    const badgeEl = bar.querySelector(".bar-badge");
+    const badgeW = badgeEl ? badgeEl.offsetWidth + 8 : 0;
+    const maxShift = Math.max(0, barWidth - label.offsetWidth - badgeW - 24);
     const shift = Math.min(Math.max(0, scrollX - barLeft), maxShift);
     label.style.transform = `translateX(${shift}px)`;
   }
