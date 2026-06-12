@@ -167,7 +167,10 @@ function render() {
     sub.className = "bar-sub";
     sub.textContent = `@${event.channel} · ${event.requirement}`;
     label.append(title, sub);
-    bar.append(imgEl, label);
+    const content = document.createElement("span");
+    content.className = "bar-content";
+    content.append(imgEl, label);
+    bar.append(content);
     timelineRows.append(bar);
   });
 
@@ -182,19 +185,18 @@ function render() {
   updateBarLabels();
 }
 
-// Keep bar labels visible when a bar starts left of the scrolled viewport.
+// Keep bar content (badge image + text) visible when a bar starts left of
+// the scrolled viewport.
 function updateBarLabels() {
   const scrollX = timelineScroll.scrollLeft;
   for (const bar of timelineRows.children) {
-    const label = bar.firstChild;
-    if (!label) continue;
+    const content = bar.querySelector(".bar-content");
+    if (!content) continue;
     const barLeft = parseFloat(bar.style.left);
     const barWidth = parseFloat(bar.style.width);
-    const badgeEl = bar.querySelector(".bar-badge");
-    const badgeW = badgeEl ? badgeEl.offsetWidth + 8 : 0;
-    const maxShift = Math.max(0, barWidth - label.offsetWidth - badgeW - 24);
+    const maxShift = Math.max(0, barWidth - content.offsetWidth - 24);
     const shift = Math.min(Math.max(0, scrollX - barLeft), maxShift);
-    label.style.transform = `translateX(${shift}px)`;
+    content.style.transform = `translateX(${shift}px)`;
   }
 }
 

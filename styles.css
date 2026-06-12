@@ -279,9 +279,7 @@ body.with-sidebar { flex-direction: row; }
 .event-bar {
   position: absolute;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  align-items: flex-start;
   height: 48px;
   border-radius: 8px;
   padding: 0.35rem 0.7rem;
@@ -297,6 +295,15 @@ body.with-sidebar { flex-direction: row; }
 .event-bar.upcoming { background: var(--purple); color: #fff; opacity: 0.9; }
 .event-bar.ended { background: #3a3a44; color: var(--text-muted); }
 .event-bar:hover { filter: brightness(1.15); cursor: pointer; }
+
+.bar-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: max-content;
+  max-width: 100%;
+  overflow: hidden;
+}
 
 .bar-badge {
   flex-shrink: 0;
