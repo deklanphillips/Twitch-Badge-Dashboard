@@ -197,7 +197,7 @@ async function load() {
       const desc = version.description || "";
       // Donation/charity badges aren't tied to a game category either.
       const isDonation = /\bdonat|charity|for good\b/i.test(desc);
-      if (!BUILTIN_SETS.has(set.set_id) && !/staff|leader|clips?-|twitchiversary|intern/i.test(set.set_id) && !isOldTwitchCon && !isDonation) {
+      if (!BUILTIN_SETS.has(set.set_id) && !/staff|leader|clips?-|twitchiversary|intern|social-media/i.test(set.set_id) && !isOldTwitchCon && !isDonation) {
         // Try to extract the category name from common description phrasings:
         // "in the X category" / "in the X game" / "to a(n) X streamer"
         const catMatch =
