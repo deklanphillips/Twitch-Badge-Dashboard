@@ -121,6 +121,23 @@ async function load() {
         chips.append(chip(`From: ${dateFmt.format(start)}`), chip(`To: ${dateFmt.format(end)}`));
         availSection.append(chips);
 
+        // Where to earn: link to the Twitch category or specific streamer
+        if (ev.where) {
+          const whereWrap = document.createElement("div");
+          whereWrap.className = "where-earn";
+          const whereLabel = document.createElement("p");
+          whereLabel.className = "detail-label";
+          whereLabel.textContent = ev.where.type === "channel" ? "Earned on channel" : "Earned in";
+          const whereLink = document.createElement("a");
+          whereLink.className = "where-link";
+          whereLink.href = ev.where.url;
+          whereLink.target = "_blank";
+          whereLink.rel = "noopener";
+          whereLink.textContent = `${ev.where.label} ↗`;
+          whereWrap.append(whereLabel, whereLink);
+          availSection.append(whereWrap);
+        }
+
         const grid = document.createElement("div");
         grid.className = "avail-grid";
 

@@ -618,3 +618,17 @@ a.badge-tile:hover { transform: translateY(-3px); border-color: var(--purple); }
 .social-text { display: flex; flex-direction: column; line-height: 1.25; }
 .social-text strong { font-size: 17px; font-weight: 800; }
 .social-text span { font-size: 13px; opacity: 0.85; }
+
+/* Where-to-earn link on badge detail page */
+.where-earn { margin: 10px 0 14px; }
+.where-link {
+  display: inline-block;
+  margin-top: 4px;
+  color: var(--purple);
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid var(--purple);
+  border-radius: 8px;
+  padding: 7px 14px;
+}
+.where-link:hover { background: var(--purple); color: #fff; }
