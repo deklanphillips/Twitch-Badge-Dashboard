@@ -248,8 +248,8 @@ body.with-sidebar { flex-direction: row; }
 .legend-item { display: inline-flex; align-items: center; gap: 0.4rem; }
 .legend-line { width: 3px; height: 14px; background: var(--red); border-radius: 2px; }
 .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
-.live-dot { background: var(--green); }
-.upcoming-dot { background: var(--purple); }
+.live-dot { background: var(--purple); }
+.upcoming-dot { background: rgba(145, 71, 255, 0.35); border: 1px dashed rgba(145,71,255,0.6); }
 .ended-dot { background: #5c5c66; }
 
 .timeline-scroll { overflow-x: auto; }
@@ -291,8 +291,8 @@ body.with-sidebar { flex-direction: row; }
   cursor: default;
 }
 
-.event-bar.live { background: #0c9960; color: #fff; box-shadow: 0 0 0 1px rgba(0, 245, 147, 0.55); }
-.event-bar.upcoming { background: var(--purple); color: #fff; }
+.event-bar.live { background: var(--purple); color: #fff; box-shadow: 0 0 0 1px rgba(145, 71, 255, 0.7); }
+.event-bar.upcoming { background: rgba(145, 71, 255, 0.22); color: rgba(255,255,255,0.65); border: 1px dashed rgba(145,71,255,0.5); }
 .event-bar.ended { background: #3a3a44; color: var(--text-muted); }
 .event-bar:hover { filter: brightness(1.15); cursor: pointer; }
 
