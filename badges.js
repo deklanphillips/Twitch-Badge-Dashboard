@@ -4,6 +4,8 @@ const sourceTabs = document.querySelectorAll("#sourceTabs .tab");
 const channelForm = document.getElementById("channelForm");
 const channelInput = document.getElementById("channelInput");
 
+let currentSource = "global";
+
 function showStatus(text) {
   statusMessage.textContent = text;
   statusMessage.hidden = !text;
@@ -18,8 +20,11 @@ function renderBadgeSets(sets, heading) {
   showStatus("");
   for (const set of sets) {
     for (const version of set.versions) {
-      const card = document.createElement("article");
-      card.className = "badge-tile";
+      const link = document.createElement("a");
+      link.className = "badge-tile";
+      if (currentSource === "global") {
+        link.href = `badge.html?set=${encodeURIComponent(set.set_id)}&version=${encodeURIComponent(version.id)}`;
+      }
       const img = document.createElement("img");
       img.src = version.image_url_4x || version.image_url_2x || version.image_url_1x;
       img.alt = version.title || set.set_id;
@@ -30,8 +35,8 @@ function renderBadgeSets(sets, heading) {
       const setLabel = document.createElement("p");
       setLabel.className = "badge-set";
       setLabel.textContent = set.set_id;
-      card.append(img, name, setLabel);
-      badgeGrid.append(card);
+      link.append(img, name, setLabel);
+      badgeGrid.append(link);
     }
   }
 }
@@ -56,7 +61,8 @@ async function loadBadges(url, heading) {
 sourceTabs.forEach((tab) =>
   tab.addEventListener("click", () => {
     sourceTabs.forEach((t) => t.classList.toggle("active", t === tab));
-    const isChannel = tab.dataset.source === "channel";
+    currentSource = tab.dataset.source;
+    const isChannel = currentSource === "channel";
     channelForm.hidden = !isChannel;
     if (isChannel) {
       showStatus("Enter a channel name above to load its badges.");

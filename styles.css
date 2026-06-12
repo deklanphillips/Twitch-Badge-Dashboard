@@ -293,6 +293,137 @@ body.with-sidebar { flex-direction: row; }
   pointer-events: none;
 }
 
+/* Badge detail page */
+.detail-heading {
+  margin: 0 0 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 800px) {
+  .detail-layout { grid-template-columns: 1fr; }
+}
+
+.size-previews {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.size-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.size-wrap span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.badge-preview-1 { width: 18px; height: 18px; }
+.badge-preview-2 { width: 36px; height: 36px; }
+.badge-preview-4 { width: 72px; height: 72px; }
+
+.detail-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail-field {
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+}
+
+.detail-label {
+  margin: 0 0 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.detail-value {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.section-heading {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.avail-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.avail-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.avail-chip {
+  display: inline-block;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.avail-chip.muted { color: var(--text-muted); }
+
+.avail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1.5rem;
+}
+
+.avail-row { border-top: 1px solid var(--border); padding-top: 0.6rem; }
+
+.ctx-section { margin-top: 1rem; }
+.ctx-body { margin: 0; font-size: 0.9rem; line-height: 1.55; color: var(--text-muted); }
+
+/* Make badge-tile work as <a> */
+a.badge-tile {
+  display: block;
+  cursor: pointer;
+  color: var(--text);
+  text-decoration: none;
+}
+
+a.badge-tile:hover { transform: translateY(-3px); border-color: var(--purple); }
+
 /* Home preview panels */
 .preview-panel {
   display: flex;
