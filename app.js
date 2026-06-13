@@ -5,14 +5,12 @@ const timelineRows = document.getElementById("timelineRows");
 const nowLine = document.getElementById("nowLine");
 const emptyState = document.getElementById("emptyState");
 const searchInput = document.getElementById("searchInput");
-const tabs = document.querySelectorAll("#statusTabs .tab");
 
 const DAY_MS = 86400000;
 const DAY_WIDTH = 110; // px per day column
 const HEADER_HEIGHT = 44;
 const ROW_HEIGHT = 68;
 
-let activeStatus = "all";
 let query = "";
 let didInitialScroll = false;
 let globalBadges = []; // { set, version, title, image } from the Twitch API
@@ -87,21 +85,10 @@ function render() {
   const now = Date.now();
   const events = BADGE_EVENTS.map((e) => ({ ...e, status: getStatus(e, now) }));
 
-  const counts = { all: 0, live: 0, upcoming: 0, ended: 0 };
-  for (const e of events) {
-    if (!matchesQuery(e)) continue;
-    counts.all++;
-    counts[e.status]++;
-  }
-  for (const [status, n] of Object.entries(counts)) {
-    const el = document.querySelector(`[data-count="${status}"]`);
-    if (el) el.textContent = `(${n})`;
-  }
-
   // Live first, then upcoming, then ended — so live events claim the top rows.
   const STATUS_ORDER = { live: 0, upcoming: 1, ended: 2 };
   const visible = events
-    .filter((e) => matchesQuery(e) && (activeStatus === "all" || e.status === activeStatus))
+    .filter((e) => matchesQuery(e))
     .sort((a, b) => {
       const sd = STATUS_ORDER[a.status] - STATUS_ORDER[b.status];
       return sd !== 0 ? sd : Date.parse(a.start) - Date.parse(b.start);
@@ -240,14 +227,6 @@ document.getElementById("jumpNowBtn").addEventListener("click", () => {
     timelineScroll.scrollTo({ left: Math.max(0, nowX - timelineScroll.clientWidth / 3), behavior: "smooth" });
   }
 });
-
-tabs.forEach((tab) =>
-  tab.addEventListener("click", () => {
-    tabs.forEach((t) => t.classList.toggle("active", t === tab));
-    activeStatus = tab.dataset.status;
-    render();
-  })
-);
 
 searchInput.addEventListener("input", () => {
   query = searchInput.value.trim().toLowerCase();
