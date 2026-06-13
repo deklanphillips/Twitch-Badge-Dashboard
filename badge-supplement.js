@@ -1095,7 +1095,7 @@ window.BADGE_SUPPLEMENT = {
    "description": "This user earned a Icon badge for reaching 100 views on their social posts.",
    "click_action": null,
    "click_url": null,
-   "added": "2025-09-22T18:17:50.263Z",
+   "added": "2025-09-22T18:00:12.735Z",
    "user_count": 0
  },
  "video-games-day": {
@@ -1311,7 +1311,7 @@ window.BADGE_SUPPLEMENT = {
    "description": "AutoMod",
    "click_action": "visit_url",
    "click_url": "http://link.twitch.tv/automod_blog",
-   "added": "2025-04-10T22:14:12.733Z",
+   "added": null,
    "user_count": 0
  },
  "marathon-reveal-runner": {
