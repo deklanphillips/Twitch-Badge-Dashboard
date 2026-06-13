@@ -159,12 +159,14 @@ function layoutEnd(event, now) {
 
 function render() {
   const now = Date.now();
+  const windowStart = startOfDay(now) - 2 * DAY_MS;
   const events = allEvents().map((e) => ({ ...e, status: getStatus(e, now) }));
 
   // Live first, then upcoming, then ended — so live events claim the top rows.
+  // Drop events that ended before the scroll window (unreachable in the past).
   const STATUS_ORDER = { live: 0, upcoming: 1, ended: 2 };
   const visible = events
-    .filter((e) => matchesQuery(e))
+    .filter((e) => matchesQuery(e) && layoutEnd(e, now) >= windowStart)
     .sort((a, b) => {
       const sd = STATUS_ORDER[a.status] - STATUS_ORDER[b.status];
       return sd !== 0 ? sd : Date.parse(a.start) - Date.parse(b.start);
@@ -190,10 +192,10 @@ function render() {
   }
   const totalRows = rowIntervals.length;
 
-  // Window: at least 14 days before today, extending to cover all events.
-  const minStart = Math.min(now, ...visible.map((e) => Date.parse(e.start)));
+  // Window: scroll back only 2 days from today, extending forward to cover all
+  // events. Long-running events that started earlier still show their current
+  // portion (their bar extends in from the left edge).
   const maxEnd = Math.max(now, ...visible.map((e) => layoutEnd(e, now)));
-  const windowStart = Math.min(startOfDay(minStart) - 3 * DAY_MS, startOfDay(now) - 14 * DAY_MS);
   const totalDays = Math.ceil((maxEnd - windowStart) / DAY_MS) + 3;
 
   timeline.style.width = `${totalDays * DAY_WIDTH}px`;
