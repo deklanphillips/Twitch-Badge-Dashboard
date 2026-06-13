@@ -255,22 +255,21 @@ body.with-sidebar { flex-direction: row; }
 .timeline-scroll {
   overflow-x: auto;
   scrollbar-width: thin;
-  scrollbar-color: var(--purple) var(--surface-2);
+  scrollbar-color: #2a2a30 var(--bg);
 }
 .timeline-scroll::-webkit-scrollbar {
   height: 10px;
 }
 .timeline-scroll::-webkit-scrollbar-track {
-  background: var(--surface-2);
-  border-radius: 10px;
+  background: var(--bg);
 }
 .timeline-scroll::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #a970ff, #7d2bff);
+  background: #2a2a30;
   border-radius: 10px;
-  border: 2px solid var(--surface-2);
+  border: 2px solid var(--bg);
 }
 .timeline-scroll::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #b98bff, #9147ff);
+  background: #3a3a42;
 }
 
 .timeline { position: relative; min-height: 160px; }
