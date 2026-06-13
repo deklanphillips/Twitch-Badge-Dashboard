@@ -432,6 +432,13 @@ body.with-sidebar { flex-direction: row; }
   line-height: 1.4;
 }
 
+.detail-link {
+  color: var(--purple);
+  text-decoration: none;
+  word-break: break-all;
+}
+.detail-link:hover { text-decoration: underline; }
+
 .section-heading {
   margin: 0 0 1rem;
   font-size: 0.85rem;
