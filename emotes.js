@@ -18,12 +18,35 @@ function filterEmotes(query) {
 
 searchInput.addEventListener("input", () => filterEmotes(searchInput.value));
 
+function mergeEmotes(live) {
+  const byId = new Map();
+  const byName = new Map();
+  for (const e of live) {
+    byId.set(e.id, e);
+    byName.set(e.name.toLowerCase(), e);
+  }
+  for (const e of window.EMOTE_SUPPLEMENT || []) {
+    if (byId.has(e.id) || byName.has(e.name.toLowerCase())) continue;
+    byId.set(e.id, e);
+    byName.set(e.name.toLowerCase(), e);
+  }
+  return [...byId.values()].sort((a, b) => a.name.localeCompare(b.name));
+}
+
 async function loadEmotes() {
   try {
-    const data = await twitchData("/api/emotes/global", "api/global-emotes.json");
+    let live = [];
+    try {
+      const data = await twitchData("/api/emotes/global", "api/global-emotes.json");
+      live = data.data || [];
+    } catch (e) {
+      // Fall back to the StreamDatabase supplement if the live feed is unavailable.
+    }
+    const emotes = mergeEmotes(live);
+    if (!emotes.length) throw new Error("No emotes available.");
 
     statusMessage.hidden = true;
-    for (const emote of data.data) {
+    for (const emote of emotes) {
       const card = document.createElement("a");
       card.className = "badge-tile";
       card.href = `emote.html?id=${encodeURIComponent(emote.id)}`;

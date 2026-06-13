@@ -24,8 +24,16 @@ async function load() {
     return;
   }
   try {
-    const data = await twitchData("/api/emotes/global", "api/global-emotes.json");
-    const emote = data.data.find((e) => e.id === emoteId);
+    let live = [];
+    try {
+      const data = await twitchData("/api/emotes/global", "api/global-emotes.json");
+      live = data.data || [];
+    } catch (e) {
+      // Fall back to the StreamDatabase supplement below.
+    }
+    const emote =
+      live.find((e) => e.id === emoteId) ||
+      (window.EMOTE_SUPPLEMENT || []).find((e) => e.id === emoteId);
     if (!emote) throw new Error(`Emote "${emoteId}" not found.`);
 
     breadcrumb.textContent = `HOME / TWITCH / GLOBAL-EMOTES / ${emote.name.toUpperCase()}`;
