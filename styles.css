@@ -252,7 +252,26 @@ body.with-sidebar { flex-direction: row; }
 .upcoming-dot { background: rgba(145, 71, 255, 0.35); border: 1px dashed rgba(145,71,255,0.6); }
 .ended-dot { background: #5c5c66; }
 
-.timeline-scroll { overflow-x: auto; }
+.timeline-scroll {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--purple) var(--surface-2);
+}
+.timeline-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+.timeline-scroll::-webkit-scrollbar-track {
+  background: var(--surface-2);
+  border-radius: 10px;
+}
+.timeline-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #a970ff, #7d2bff);
+  border-radius: 10px;
+  border: 2px solid var(--surface-2);
+}
+.timeline-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #b98bff, #9147ff);
+}
 
 .timeline { position: relative; min-height: 160px; }
 
