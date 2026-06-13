@@ -94,11 +94,25 @@ function detectNewEvents(previousBadges, currentBadges) {
     added.push(event);
   }
 
-  if (added.length) {
+  // Close out events whose badge has left the catalog: set their end date to
+  // now. (Twitch usually keeps badges in the catalog after an event ends, so
+  // this is a safety net more than a reliable end-dater.)
+  const currentSets = new Set((currentBadges.data || []).map((s) => s.set_id));
+  const ended = [];
+  if (currentSets.size) {
+    for (const ev of autoEvents) {
+      if (ev.end === null && ev.badge && !currentSets.has(ev.badge.set)) {
+        ev.end = nowIso;
+        ended.push(ev);
+      }
+    }
+  }
+
+  if (added.length || ended.length) {
     fs.mkdirSync(OUT_DIR, { recursive: true });
     fs.writeFileSync(autoPath, JSON.stringify(autoEvents, null, 1));
   }
-  return { added, events: autoEvents };
+  return { added, ended, events: autoEvents };
 }
 
 module.exports = { detectNewEvents, parseCategory, parseRequirement, isSkippable };

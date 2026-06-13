@@ -63,11 +63,14 @@ async function main() {
   write("global-emotes.json", await helix("chat/emotes/global"));
 
   if (previousBadges) {
-    const { added } = detectNewEvents(previousBadges, currentBadges);
+    const { added, ended } = detectNewEvents(previousBadges, currentBadges);
     if (added.length) {
       console.log(`auto-detected ${added.length} new badge event(s): ${added.map((e) => e.name).join(", ")}`);
     } else {
       console.log("no new badge events detected");
+    }
+    if (ended.length) {
+      console.log(`closed ${ended.length} ended badge event(s): ${ended.map((e) => e.name).join(", ")}`);
     }
   } else {
     // First run with detection: seed auto-events.json as empty so future runs
