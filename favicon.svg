@@ -5,5 +5,5 @@
   <path d="M4.265 3 3 6.236v13.223h4.502V21l2.531.001L12.279 19.5h3.799L21 14.785V3H4.265Z" fill="#9147ff"/>
   <!-- DB monogram in the middle -->
   <text x="11.9" y="12.4" text-anchor="middle" dominant-baseline="central"
-        font-family="Inter, Arial, sans-serif" font-size="7.2" font-weight="800" fill="#fff">DB</text>
+        font-family="Inter, Arial, sans-serif" font-size="7.2" font-weight="800" fill="#fff">BD</text>
 </svg>
