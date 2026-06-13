@@ -68,11 +68,56 @@ async function loadAutoEvents() {
   }
 }
 
-// Curated events take priority; auto events fill in badges not already listed.
+// Build events from the imported availability data (real dates/requirements),
+// using the live badge catalog for titles, versions, and images.
+function availabilityEvents() {
+  if (typeof BADGE_AVAILABILITY === "undefined") return [];
+  const out = [];
+  for (const [set, info] of Object.entries(BADGE_AVAILABILITY)) {
+    if (!info.avail) continue;
+    const a = info.avail.find((x) => x.start);
+    if (!a) continue;
+    const badge = globalBadges.find((b) => b.set === set);
+    const requirement =
+      a.watch && a.watchMinutes ? `Watch ${a.watchMinutes} minutes`
+      : a.subscription || a.subscriptionGift ? "Sub or gift sub"
+      : a.bits ? "Cheer bits"
+      : a.watch ? "Watch to earn"
+      : "See badge page";
+    const place = (a.categories && a.categories[0]) || null;
+    const chan = (a.channels && a.channels[0]) || null;
+    out.push({
+      name: badge ? badge.title : set,
+      channel: place ? place.name : chan ? chan.name : "Twitch",
+      description: "",
+      emoji: "✨",
+      requirement,
+      start: a.start,
+      end: a.end || null,
+      badge: { set, version: badge ? badge.version : "1" },
+      where: place
+        ? { type: "category", label: `${place.name} category`, url: place.href }
+        : chan
+        ? { type: "channel", label: chan.name, url: chan.href }
+        : undefined,
+    });
+  }
+  return out;
+}
+
+// Merge sources by badge set, in priority order: curated > availability > auto.
 function allEvents() {
-  const curatedSets = new Set(BADGE_EVENTS.map((e) => e.badge && e.badge.set).filter(Boolean));
-  const extra = autoEvents.filter((e) => !(e.badge && curatedSets.has(e.badge.set)));
-  return [...BADGE_EVENTS, ...extra];
+  const seen = new Set();
+  const merged = [];
+  for (const list of [BADGE_EVENTS, availabilityEvents(), autoEvents]) {
+    for (const e of list) {
+      const key = e.badge && e.badge.set;
+      if (key && seen.has(key)) continue;
+      if (key) seen.add(key);
+      merged.push(e);
+    }
+  }
+  return merged;
 }
 
 // End is the badge's end date, or null for open-ended (no known end) events.
