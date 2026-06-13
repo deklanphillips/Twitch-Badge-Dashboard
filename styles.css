@@ -659,3 +659,7 @@ a.badge-tile:hover { transform: translateY(-3px); border-color: var(--purple); }
   transition: color 0.15s;
 }
 .legend-now-link:hover { color: var(--red); }
+
+/* Footer credit link */
+.footer-link { color: var(--purple); font-weight: 700; text-decoration: none; }
+.footer-link:hover { text-decoration: underline; }

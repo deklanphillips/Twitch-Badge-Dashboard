@@ -7,8 +7,9 @@ async function loadEmotes() {
 
     statusMessage.hidden = true;
     for (const emote of data.data) {
-      const card = document.createElement("article");
+      const card = document.createElement("a");
       card.className = "badge-tile";
+      card.href = `emote.html?id=${encodeURIComponent(emote.id)}`;
       const img = document.createElement("img");
       img.src = emote.images.url_2x || emote.images.url_1x;
       img.alt = emote.name;

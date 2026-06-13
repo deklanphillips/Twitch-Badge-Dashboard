@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Badges — Twitch Badge Dashboard</title>
+  <title>Emote Detail — Twitch Badge Dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -21,31 +21,29 @@
       <a href="index.html" class="side-link">🏠 Home</a>
       <a href="events.html" class="side-link">📅 Events</a>
       <p class="side-section">Twitch</p>
-      <a href="badges.html" class="side-link active">⚡ Global Badges</a>
+      <a href="badges.html" class="side-link">⚡ Global Badges</a>
       <a href="channel-badges.html" class="side-link">🎯 Channel Badges</a>
-      <a href="emotes.html" class="side-link">😀 Global Emotes</a>
+      <a href="emotes.html" class="side-link active">😀 Global Emotes</a>
     </nav>
   </aside>
 
   <main class="main-col">
     <div class="container-fluid">
-      <section class="page-head">
-        <p class="breadcrumb">HOME / GLOBAL-BADGES</p>
-        <h1>Global Badges</h1>
-        <p class="subtitle">Badges that look the same in every channel, live from the Twitch API.</p>
-      </section>
 
-      <section class="controls">
-        <div class="search-wrap" id="badgeSearchWrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon" aria-hidden="true">
-            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
-          </svg>
-          <input type="search" id="badgeSearchInput" placeholder="Search badges..." />
+      <p class="breadcrumb" id="breadcrumb">HOME / TWITCH / GLOBAL-EMOTES</p>
+
+      <div id="emoteDetail" hidden>
+        <h1 class="detail-heading">Twitch Global Emote</h1>
+
+        <div class="detail-layout">
+          <div class="detail-left">
+            <div class="size-previews" id="sizePreviews"></div>
+            <div class="detail-fields" id="detailFields"></div>
+          </div>
         </div>
-      </section>
+      </div>
 
-      <p class="empty-state" id="statusMessage">Loading badges…</p>
-      <section class="badge-grid" id="badgeGrid"></section>
+      <p class="empty-state" id="statusMessage">Loading emote…</p>
 
       <footer class="site-footer">
         <p>Made by <a href="https://www.twitch.tv/dmoyt_" target="_blank" rel="noopener" class="footer-link">DMO</a></p>
@@ -54,6 +52,6 @@
   </main>
 
   <script src="api-client.js"></script>
-  <script src="badges.js"></script>
+  <script src="emote.js"></script>
 </body>
 </html>
