@@ -650,3 +650,12 @@ a.badge-tile:hover { transform: translateY(-3px); border-color: var(--purple); }
 
 /* Now-line clickable */
 .now-line { cursor: pointer; }
+
+/* Current Time legend item — clickable to jump to now */
+.legend-now-link {
+  cursor: pointer;
+  text-decoration: underline dotted;
+  color: var(--text-muted);
+  transition: color 0.15s;
+}
+.legend-now-link:hover { color: var(--red); }
