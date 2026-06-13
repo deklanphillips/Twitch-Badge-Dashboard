@@ -19,6 +19,29 @@ function field(label, value) {
   return wrap;
 }
 
+function linkField(label, url) {
+  const wrap = document.createElement("div");
+  wrap.className = "detail-field";
+  const l = document.createElement("p");
+  l.className = "detail-label";
+  l.textContent = label;
+  const v = document.createElement("p");
+  v.className = "detail-value";
+  if (url) {
+    const a = document.createElement("a");
+    a.href = url;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.className = "where-link";
+    a.textContent = url + " ↗";
+    v.append(a);
+  } else {
+    v.textContent = "N/A";
+  }
+  wrap.append(l, v);
+  return wrap;
+}
+
 function chip(text, muted = false) {
   const el = document.createElement("span");
   el.className = muted ? "avail-chip muted" : "avail-chip";
@@ -60,7 +83,7 @@ async function load() {
     if (!version) throw new Error(`Version "${versionId}" not found in set "${setId}".`);
 
     breadcrumb.textContent = `HOME / TWITCH / GLOBAL-BADGES / ${setId.toUpperCase()} / ${versionId}`;
-    document.title = `${version.title || setId} — Twitch Badge Dashboard`;
+    document.title = `${title} — Twitch Badge Dashboard`;
 
     // Size previews
     const sizePreviews = document.getElementById("sizePreviews");
@@ -82,15 +105,22 @@ async function load() {
       sizePreviews.append(wrap);
     }
 
+    // Supplement fills in richer metadata the Helix API omits (description, click_url, etc.)
+    const supp = (typeof BADGE_SUPPLEMENT !== "undefined" && BADGE_SUPPLEMENT[setId]) || {};
+    const title = version.title || supp.title || setId;
+    const description = version.description || supp.description || "";
+    const click_action = version.click_action || supp.click_action || null;
+    const click_url = version.click_url || supp.click_url || null;
+
     // Metadata fields
     const detailFields = document.getElementById("detailFields");
     detailFields.append(
-      field("Title", version.title),
-      field("Description", version.description),
+      field("Title", title),
+      field("Description", description),
       field("Set ID", set.set_id),
       field("Version ID", version.id),
-      field("Click Action", version.click_action),
-      field("Click URL", version.click_url),
+      field("Click Action", click_action),
+      linkField("Click URL", click_url),
     );
 
     // Match against local event data
@@ -155,7 +185,7 @@ async function load() {
         );
         availSection.append(grid);
       }
-      if (version.description) {
+      if (description) {
         const ctxSection = document.createElement("div");
         ctxSection.className = "avail-section ctx-section";
         const ctxTitle = document.createElement("h2");
@@ -163,7 +193,7 @@ async function load() {
         ctxTitle.textContent = "Context";
         const ctxBody = document.createElement("p");
         ctxBody.className = "ctx-body";
-        ctxBody.textContent = version.description;
+        ctxBody.textContent = description;
         ctxSection.append(ctxTitle, ctxBody);
         availSection.append(ctxSection);
       }
@@ -231,8 +261,8 @@ async function load() {
       // No local event match — show a generic availability note from description
       const note = document.createElement("p");
       note.className = "ctx-body";
-      note.textContent = version.description
-        ? version.description
+      note.textContent = description
+        ? description
         : "No availability details found for this badge. Add an entry to data.js to enrich this page.";
       availSection.append(note);
 
@@ -249,7 +279,7 @@ async function load() {
       // TwitchCon badges are skipped except 2026, which is still earnable by
       // buying a TwitchCon ticket.
       const isOldTwitchCon = /twitchcon/i.test(set.set_id) && !set.set_id.includes("2026");
-      const desc = version.description || "";
+      const desc = description;
       // Donation/charity badges aren't tied to a game category either.
       const isDonation = /\bdonat|charity|for good\b/i.test(desc);
       if (!BUILTIN_SETS.has(set.set_id) && !/staff|leader|clips?-|twitchiversary|intern|social-media/i.test(set.set_id) && !isOldTwitchCon && !isDonation) {
@@ -278,7 +308,7 @@ async function load() {
         } else {
           whereLabel.textContent = "Find on Twitch";
           whereLink.href = `https://www.twitch.tv/search?term=${encodeURIComponent(version.title || set.set_id)}`;
-          whereLink.textContent = `Search "${version.title || set.set_id}" on Twitch ↗`;
+          whereLink.textContent = `Search "${title}" on Twitch ↗`;
         }
         whereWrap.append(whereLabel, whereLink);
         availSection.append(whereWrap);
