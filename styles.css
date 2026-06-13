@@ -174,7 +174,7 @@ body.with-sidebar { flex-direction: row; }
   pointer-events: none;
 }
 
-#searchInput, #channelInput, #badgeSearchInput {
+#searchInput, #channelInput, #badgeSearchInput, #emoteSearchInput {
   width: 100%;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -185,7 +185,7 @@ body.with-sidebar { flex-direction: row; }
   font-size: 0.9rem;
 }
 
-#searchInput:focus, #channelInput:focus, #badgeSearchInput:focus {
+#searchInput:focus, #channelInput:focus, #badgeSearchInput:focus, #emoteSearchInput:focus {
   outline: none;
   border-color: var(--purple);
   box-shadow: 0 0 0 3px var(--purple-soft);
