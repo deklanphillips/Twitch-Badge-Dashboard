@@ -66,4 +66,66 @@ const BADGE_EVENTS = [
     badge: { set: "crimson-butterfly", version: "1" },
     where: { type: "category", label: "FATAL FRAME II REMAKE category", url: "https://www.twitch.tv/search?term=FATAL%20FRAME%20II%20Crimson%20Butterfly%20REMAKE" },
   },
+
+  // ── Historical events below: dates/set IDs from memory, NOT yet verified.
+  // Double-check against Twitch announcements before trusting exact times.
+  {
+    name: "Minecraft 15th Anniversary",
+    channel: "Minecraft",
+    description:
+      "Watch 15 minutes of any channel streaming in the Minecraft category during the 15th anniversary celebration to earn the badge.",
+    emoji: "⛏️",
+    requirement: "Watch 15 minutes",
+    start: "2024-05-28T17:00:00Z",
+    end: "2024-06-13T16:59:00Z",
+    badge: { set: "minecraft-15th-anniversary-celebration", version: "1" },
+    where: { type: "category", label: "Minecraft category", url: "https://www.twitch.tv/directory/category/minecraft" },
+  },
+  {
+    name: "La Velada del Año IV",
+    channel: "ibai",
+    description:
+      "Awarded for watching Ibai's La Velada del Año IV boxing event live on Twitch.",
+    emoji: "🥊",
+    requirement: "Watch the event",
+    start: "2024-07-13T16:00:00Z",
+    end: "2024-07-14T04:00:00Z",
+    badge: { set: "la-velada-del-ano-iv", version: "1" },
+    where: { type: "channel", label: "twitch.tv/ibai", url: "https://www.twitch.tv/ibai" },
+  },
+  {
+    name: "Destiny 2: The Final Shape Raid Race",
+    channel: "Destiny 2",
+    description:
+      "Earned by watching coverage of the Salvation's Edge world-first raid race in the Destiny 2 category.",
+    emoji: "🛡️",
+    requirement: "Watch the raid race",
+    start: "2024-06-07T17:00:00Z",
+    end: "2024-06-09T17:00:00Z",
+    badge: { set: "destiny-2-final-shape-raid-race", version: "1" },
+    where: { type: "category", label: "Destiny 2 category", url: "https://www.twitch.tv/directory/category/destiny-2" },
+  },
+  {
+    name: "The First Descendant Launch",
+    channel: "The First Descendant",
+    description:
+      "Earned by subscribing to a streamer playing The First Descendant during launch week.",
+    emoji: "🚀",
+    requirement: "Sub or gift sub",
+    start: "2024-07-02T00:00:00Z",
+    end: "2024-07-09T00:00:00Z",
+    badge: { set: "the-first-descendant", version: "1" },
+    where: { type: "category", label: "The First Descendant category", url: "https://www.twitch.tv/directory/category/the-first-descendant" },
+  },
+  {
+    name: "Share the Love",
+    channel: "Twitch",
+    description:
+      "Earned by gifting subscriptions during Twitch's Share the Love Valentine's promotion.",
+    emoji: "💜",
+    requirement: "Gift a sub",
+    start: "2024-02-12T00:00:00Z",
+    end: "2024-02-19T00:00:00Z",
+    badge: { set: "share-the-love", version: "1" },
+  },
 ];
