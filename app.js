@@ -98,17 +98,27 @@ function render() {
     if (el) el.textContent = `(${n})`;
   }
 
-  const STATUS_ORDER = { live: 0, upcoming: 1, ended: 2 };
   const visible = events
     .filter((e) => matchesQuery(e) && (activeStatus === "all" || e.status === activeStatus))
-    .sort((a, b) => {
-      const sd = STATUS_ORDER[a.status] - STATUS_ORDER[b.status];
-      return sd !== 0 ? sd : Date.parse(a.start) - Date.parse(b.start);
-    });
+    .sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
 
   emptyState.hidden = visible.length > 0;
   timelineScroll.parentElement.style.display = visible.length ? "" : "none";
   if (!visible.length) return;
+
+  // Greedy interval packing: assign each event to the first row it fits in
+  // (no time overlap). This keeps ended events on the same rows as live ones
+  // so there are no empty rows in the current viewport.
+  const rowEnds = []; // end timestamp of the last event placed in each row
+  for (const ev of visible) {
+    const s = Date.parse(ev.start), e = Date.parse(ev.end);
+    let placed = false;
+    for (let r = 0; r < rowEnds.length; r++) {
+      if (rowEnds[r] <= s) { ev._row = r; rowEnds[r] = e; placed = true; break; }
+    }
+    if (!placed) { ev._row = rowEnds.length; rowEnds.push(Date.parse(ev.end)); }
+  }
+  const totalRows = rowEnds.length;
 
   // Window: at least 14 days before today, extending to cover all events.
   const minStart = Math.min(now, ...visible.map((e) => Date.parse(e.start)));
@@ -117,7 +127,7 @@ function render() {
   const totalDays = Math.ceil((maxEnd - windowStart) / DAY_MS) + 3;
 
   timeline.style.width = `${totalDays * DAY_WIDTH}px`;
-  timeline.style.height = `${HEADER_HEIGHT + visible.length * ROW_HEIGHT}px`;
+  timeline.style.height = `${HEADER_HEIGHT + totalRows * ROW_HEIGHT}px`;
 
   // Day header + grid columns
   timelineDays.replaceChildren();
@@ -145,7 +155,7 @@ function render() {
     bar.className = `event-bar ${event.status}`;
     bar.style.left = `${((start - windowStart) / DAY_MS) * DAY_WIDTH}px`;
     bar.style.width = `${Math.max(((end - start) / DAY_MS) * DAY_WIDTH, 60)}px`;
-    bar.style.top = `${HEADER_HEIGHT + i * ROW_HEIGHT + 8}px`;
+    bar.style.top = `${HEADER_HEIGHT + event._row * ROW_HEIGHT + 8}px`;
     bar.title = `${event.name} — @${event.channel}\n${event.requirement}\n${dateFmt.format(new Date(start))} → ${dateFmt.format(new Date(end))}`;
 
     // Resolve badge link + image. An explicit `badge` field only has
