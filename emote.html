@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emote Detail — Twitch Badge Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="with-sidebar">
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <svg class="brand-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M4.265 3 3 6.236v13.223h4.502V21l2.531.001L12.279 19.5h3.799L21 14.785V3H4.265Zm15.047 10.978-2.886 2.885h-4.612l-2.245 2.245v-2.245H5.812V4.687h13.5v9.291ZM16.687 7.5h-1.689v5.063h1.689V7.5Zm-4.5 0H10.5v5.063h1.687V7.5Z"/>
+      </svg>
+      <span>Badge<strong>Drops</strong></span>
+    </a>
+    <nav class="side-nav">
+      <a href="index.html" class="side-link">🏠 Home</a>
+      <a href="events.html" class="side-link">📅 Events</a>
+      <p class="side-section">Twitch</p>
+      <a href="badges.html" class="side-link">⚡ Global Badges</a>
+      <a href="channel-badges.html" class="side-link">🎯 Channel Badges</a>
+      <a href="emotes.html" class="side-link active">😀 Global Emotes</a>
+    </nav>
+  </aside>
+
+  <main class="main-col">
+    <div class="container-fluid">
+
+      <p class="breadcrumb" id="breadcrumb">HOME / TWITCH / GLOBAL-EMOTES</p>
+
+      <div id="emoteDetail" hidden>
+        <h1 class="detail-heading">Twitch Global Emote</h1>
+
+        <div class="detail-layout">
+          <div class="detail-left">
+            <div class="size-previews" id="sizePreviews"></div>
+            <div class="detail-fields" id="detailFields"></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="empty-state" id="statusMessage">Loading emote…</p>
+
+      <footer class="site-footer">
+        <p>Made by <a href="https://www.twitch.tv/dmoyt_" target="_blank" rel="noopener" class="footer-link">DMO</a></p>
+      </footer>
+    </div>
+  </main>
+
+  <script src="api-client.js"></script>
+  <script src="emote.js"></script>
+</body>
+</html>
