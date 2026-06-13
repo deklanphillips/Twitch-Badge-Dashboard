@@ -25,7 +25,8 @@ jobs:
         env:
           TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
-      - name: Commit updated data
+      - name: Ping Render to keep service warm
+        run: curl -s -o /dev/null "https://twitch-badge-dashboard.onrender.com" || true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
