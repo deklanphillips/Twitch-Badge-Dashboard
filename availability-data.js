@@ -2435,7 +2435,7 @@ const BADGE_AVAILABILITY = {
  },
  "wholesome-direct-2026": {
   "added": "2026-05-27T00:04:11.194Z",
-  "earned": 35758,
+  "earned": 33482,
   "avail": [
    {
     "start": "2026-06-06T16:00:00Z",
@@ -2460,7 +2460,7 @@ const BADGE_AVAILABILITY = {
  },
  "bubsy-4d": {
   "added": "2026-05-22T22:04:44.646Z",
-  "earned": 21768,
+  "earned": 20922,
   "avail": [
    {
     "start": "2026-05-22T22:02:07Z",
@@ -2546,7 +2546,7 @@ const BADGE_AVAILABILITY = {
  },
  "lego-batman-legacy-of-the-dark-knight": {
   "added": "2026-05-15T17:55:59.434Z",
-  "earned": 29567,
+  "earned": 28709,
   "avail": [
    {
     "start": "2026-05-19T07:00:00Z",
@@ -2595,7 +2595,7 @@ const BADGE_AVAILABILITY = {
  },
  "007-gun-barrel": {
   "added": "2026-05-15T11:35:44.246Z",
-  "earned": 17819,
+  "earned": 17111,
   "avail": [
    {
     "start": "2026-05-26T14:00:00Z",
@@ -2668,7 +2668,7 @@ const BADGE_AVAILABILITY = {
  },
  "waterslug": {
   "added": "2026-05-13T22:52:05.978Z",
-  "earned": 21457,
+  "earned": 20838,
   "avail": [
    {
     "start": "2026-05-14T15:00:00Z",
@@ -2737,7 +2737,7 @@ const BADGE_AVAILABILITY = {
  },
  "went-outside": {
   "added": "2026-05-06T10:41:19.284Z",
-  "earned": 286323,
+  "earned": 278181,
   "avail": [
    {
     "start": "2026-05-11T17:00:00Z",
@@ -2762,7 +2762,7 @@ const BADGE_AVAILABILITY = {
  },
  "speedons-6": {
   "added": "2026-05-05T21:05:07.548Z",
-  "earned": 38264,
+  "earned": 37385,
   "avail": [
    {
     "start": "2026-05-07T15:00:00Z",
@@ -2804,7 +2804,7 @@ const BADGE_AVAILABILITY = {
  },
  "unicorn-tachanka": {
   "added": "2026-05-01T20:50:14.779Z",
-  "earned": 18539,
+  "earned": 18217,
   "avail": [
    {
     "start": "2026-05-06T14:00:00Z",
@@ -2829,7 +2829,7 @@ const BADGE_AVAILABILITY = {
  },
  "final-fantasy-xiv-fan-festival-2026-na---main-scenario-quest-": {
   "added": "2026-04-24T18:02:36.433Z",
-  "earned": 26980,
+  "earned": 26693,
   "avail": [
    {
     "start": "2026-04-25T23:00:00Z",
@@ -2859,7 +2859,7 @@ const BADGE_AVAILABILITY = {
  },
  "final-fantasy-xiv-fan-festival-2026-na---fat-cat": {
   "added": "2026-04-24T15:01:16.643Z",
-  "earned": 123132,
+  "earned": 121414,
   "avail": [
    {
     "start": "2026-04-25T23:00:00Z",
@@ -2917,7 +2917,7 @@ const BADGE_AVAILABILITY = {
  },
  "final-fantasy-xiv-fan-festival-2026-na---fat-cat-chat": {
   "added": "2026-04-21T13:43:19.229Z",
-  "earned": 27451,
+  "earned": 27140,
   "avail": [
    {
     "start": "2026-04-23T23:01:00Z",
@@ -2948,7 +2948,7 @@ const BADGE_AVAILABILITY = {
  },
  "cryana": {
   "added": "2026-04-16T21:01:59.059Z",
-  "earned": 47644,
+  "earned": 47024,
   "avail": [
    {
     "start": "2026-04-17T04:00:00Z",
@@ -3021,7 +3021,7 @@ const BADGE_AVAILABILITY = {
  },
  "winston-overwatch": {
   "added": "2026-04-13T15:01:11.793Z",
-  "earned": 85644,
+  "earned": 84999,
   "avail": [
    {
     "start": "2026-04-14T18:00:00Z",
@@ -3070,7 +3070,7 @@ const BADGE_AVAILABILITY = {
  },
  "2026-bafta-games-awards": {
   "added": "2026-04-08T17:27:01.083Z",
-  "earned": 21343,
+  "earned": 20773,
   "avail": [
    {
     "start": "2026-04-17T18:00:00Z",
@@ -3098,7 +3098,7 @@ const BADGE_AVAILABILITY = {
  },
  "cdawg-cyclethon-5-badge": {
   "added": "2026-04-03T21:17:21.460Z",
-  "earned": 57620,
+  "earned": 57457,
   "avail": [
    {
     "start": "2026-04-05T01:00:00Z",
@@ -3128,7 +3128,7 @@ const BADGE_AVAILABILITY = {
  },
  "baby-chick-chat-badge": {
   "added": "2026-04-03T16:56:55.811Z",
-  "earned": 47184,
+  "earned": 46896,
   "avail": [
    {
     "start": "2026-04-06T16:00:00Z",
@@ -3156,7 +3156,7 @@ const BADGE_AVAILABILITY = {
  },
  "nasa-artemis-ii": {
   "added": "2026-03-30T16:17:27.388Z",
-  "earned": 453086,
+  "earned": 446523,
   "avail": [
    {
     "start": "2026-04-01T16:00:00Z",
@@ -3282,7 +3282,7 @@ const BADGE_AVAILABILITY = {
  },
  "qsmp2": {
   "added": "2026-03-12T23:43:56.666Z",
-  "earned": 218660,
+  "earned": 213831,
   "avail": [
    {
     "start": "2026-03-14T18:00:00Z",
@@ -3320,7 +3320,7 @@ const BADGE_AVAILABILITY = {
  },
  "first-stand-2026-viewer": {
   "added": "2026-03-12T23:43:56.666Z",
-  "earned": 125878,
+  "earned": 124124,
   "avail": [
    {
     "start": "2026-03-13T23:00:00Z",
@@ -4073,7 +4073,7 @@ const BADGE_AVAILABILITY = {
  },
  "crimson-butterfly": {
   "added": "2026-03-11T20:57:04.279Z",
-  "earned": 24139,
+  "earned": 23767,
   "avail": [
    {
     "start": "2026-03-12T07:00:00Z",
@@ -4098,7 +4098,7 @@ const BADGE_AVAILABILITY = {
  },
  "ditto": {
   "added": "2026-03-04T23:19:07.460Z",
-  "earned": 110514,
+  "earned": 109685,
   "avail": [
    {
     "start": "2026-03-05T14:00:00Z",
@@ -4185,7 +4185,7 @@ const BADGE_AVAILABILITY = {
  },
  "pokemon-30th-anniversary": {
   "added": "2026-02-26T22:51:26.378Z",
-  "earned": 51916,
+  "earned": 51259,
   "avail": [
    {
     "start": "2026-02-27T08:00:00Z",
@@ -4238,7 +4238,7 @@ const BADGE_AVAILABILITY = {
  },
  "mr-raccoon": {
   "added": "2026-02-26T21:56:29.149Z",
-  "earned": 39145,
+  "earned": 38881,
   "avail": [
    {
     "start": "2026-02-27T08:00:00Z",
@@ -4311,7 +4311,7 @@ const BADGE_AVAILABILITY = {
  },
  "marathon-silkworm": {
   "added": "2026-02-26T02:19:36.038Z",
-  "earned": 139214,
+  "earned": 137849,
   "avail": [
    {
     "start": "2026-02-26T08:00:00Z",
@@ -4360,7 +4360,7 @@ const BADGE_AVAILABILITY = {
  },
  "hypershot-celestial": {
   "added": "2026-02-19T18:55:00.198Z",
-  "earned": 24634,
+  "earned": 24538,
   "avail": [
    {
     "start": "2026-02-19T20:01:00Z",
@@ -4385,7 +4385,7 @@ const BADGE_AVAILABILITY = {
  },
  "seeks-eye": {
   "added": "2026-02-17T22:14:52.338Z",
-  "earned": 28221,
+  "earned": 28089,
   "avail": [
    {
     "start": "2026-02-17T23:59:00Z",
@@ -4410,7 +4410,7 @@ const BADGE_AVAILABILITY = {
  },
  "the-deer": {
   "added": "2026-02-15T22:17:10.848Z",
-  "earned": 19204,
+  "earned": 19085,
   "avail": [
    {
     "start": "2026-02-15T23:59:00Z",
@@ -4435,7 +4435,7 @@ const BADGE_AVAILABILITY = {
  },
  "fischer": {
   "added": "2026-02-13T20:45:16.169Z",
-  "earned": 31462,
+  "earned": 31302,
   "avail": [
    {
     "start": "2026-02-13T23:50:00Z",
@@ -4460,7 +4460,7 @@ const BADGE_AVAILABILITY = {
  },
  "jasontheween-7-day-survival": {
   "added": "2026-02-10T23:46:58.896Z",
-  "earned": 51377,
+  "earned": 51323,
   "avail": [
    {
     "start": "2026-02-15T18:00:00Z",
@@ -4514,7 +4514,7 @@ const BADGE_AVAILABILITY = {
  },
  "bingbonglove": {
   "added": "2026-02-04T12:50:05.022Z",
-  "earned": 181963,
+  "earned": 180343,
   "avail": [
    {
     "start": "2026-02-13T18:00:00Z",
@@ -4539,7 +4539,7 @@ const BADGE_AVAILABILITY = {
  },
  "lost-ark-anniversary": {
   "added": "2026-02-04T05:59:11.949Z",
-  "earned": 30024,
+  "earned": 29322,
   "avail": [
    {
     "start": "2026-02-04T16:00:00Z",
@@ -4694,7 +4694,7 @@ const BADGE_AVAILABILITY = {
  },
  "lamby": {
   "added": "2026-01-19T16:32:02.102Z",
-  "earned": 17953,
+  "earned": 17826,
   "avail": [
    {
     "start": "2026-01-21T17:00:00Z",
@@ -4719,7 +4719,7 @@ const BADGE_AVAILABILITY = {
  },
  "umbrella-corporation": {
   "added": "2026-01-13T21:13:28.751Z",
-  "earned": 122074,
+  "earned": 120772,
   "avail": [
    {
     "start": "2026-01-15T16:00:00Z",
@@ -4763,7 +4763,7 @@ const BADGE_AVAILABILITY = {
  },
  "purple-noob": {
   "added": "2025-12-15T19:55:25.105Z",
-  "earned": 78382,
+  "earned": 78200,
   "avail": [
    {
     "start": "2025-12-17T20:45:00Z",
@@ -4917,7 +4917,7 @@ const BADGE_AVAILABILITY = {
  },
  "hunt-crosses": {
   "added": "2025-12-10T19:35:36.236Z",
-  "earned": 23346,
+  "earned": 23009,
   "avail": [
    {
     "start": "2025-12-10T17:00:00Z",
@@ -4942,7 +4942,7 @@ const BADGE_AVAILABILITY = {
  },
  "raider-icon-badge": {
   "added": "2025-12-10T18:05:21.763Z",
-  "earned": 30588,
+  "earned": 30425,
   "avail": [
    {
     "start": "2025-12-16T09:00:00Z",
@@ -4973,7 +4973,7 @@ const BADGE_AVAILABILITY = {
  },
  "jeff-the-land-shark": {
   "added": "2025-12-07T12:20:20.468Z",
-  "earned": 26148,
+  "earned": 25859,
   "avail": [
    {
     "start": "2025-12-06T09:00:00Z",
@@ -5004,7 +5004,7 @@ const BADGE_AVAILABILITY = {
  },
  "revedtv-stream-awards-2025": {
   "added": "2025-12-03T22:31:00.842Z",
-  "earned": 44492
+  "earned": 43895
  },
  "total-war-anniversary": {
   "added": "2025-12-03T18:24:40.193Z",
@@ -5035,11 +5035,11 @@ const BADGE_AVAILABILITY = {
  },
  "twitch-recap-2025": {
   "added": "2025-12-01T23:27:03.115Z",
-  "earned": 1177949
+  "earned": 1169267
  },
  "streamer-awards-tux": {
   "added": "2025-12-01T22:57:03.793Z",
-  "earned": 28573,
+  "earned": 28315,
   "avail": [
    {
     "start": "2025-12-06T23:00:00Z",
@@ -5069,7 +5069,7 @@ const BADGE_AVAILABILITY = {
  },
  "ugly-sweater": {
   "added": "2025-12-01T18:42:11.063Z",
-  "earned": 177949
+  "earned": 176385
  },
  "rainbow-six-siege-x-10th-anniversary": {
   "added": "2025-11-26T18:06:02.932Z",
@@ -5097,7 +5097,7 @@ const BADGE_AVAILABILITY = {
  },
  "dragonscimmy": {
   "added": "2025-11-24T21:26:04.251Z",
-  "earned": 39390,
+  "earned": 38761,
   "avail": [
    {
     "start": "2025-12-02T08:00:00Z",
@@ -5134,11 +5134,11 @@ const BADGE_AVAILABILITY = {
  },
  "together-for-good-25---good-badge": {
   "added": "2025-11-14T18:00:53.624Z",
-  "earned": 18499
+  "earned": 18186
  },
  "stream-for-humanity-2-2025": {
   "added": "2025-11-12T19:20:11.248Z",
-  "earned": 118425,
+  "earned": 117115,
   "avail": [
    {
     "start": "2025-11-14T15:00:00Z",
@@ -5275,7 +5275,7 @@ const BADGE_AVAILABILITY = {
  },
  "arc-raiders-launch-2025": {
   "added": "2025-10-29T20:12:06.185Z",
-  "earned": 49802,
+  "earned": 49430,
   "avail": [
    {
     "start": "2025-10-30T16:00:00Z",
@@ -5300,7 +5300,7 @@ const BADGE_AVAILABILITY = {
  },
  "fright-fest-2025": {
   "added": "2025-10-29T17:16:49.557Z",
-  "earned": 268769
+  "earned": 266638
  },
  "sajam-slam-badge": {
   "added": "2025-10-14T19:36:20.798Z",
@@ -5328,7 +5328,7 @@ const BADGE_AVAILABILITY = {
  },
  "pokemon-legends-z-a-totodile": {
   "added": "2025-10-14T18:16:19.237Z",
-  "earned": 38635,
+  "earned": 38389,
   "avail": [
    {
     "start": "2025-10-20T04:01:00Z",
@@ -5377,7 +5377,7 @@ const BADGE_AVAILABILITY = {
  },
  "pokemon-legends-z-a-chikorita": {
   "added": "2025-10-14T18:16:19.237Z",
-  "earned": 31171,
+  "earned": 30983,
   "avail": [
    {
     "start": "2025-10-16T04:00:00Z",
@@ -5402,7 +5402,7 @@ const BADGE_AVAILABILITY = {
  },
  "lol-worlds-2025": {
   "added": "2025-10-10T18:50:12.527Z",
-  "earned": 20175,
+  "earned": 20041,
   "avail": [
    {
     "start": "2025-10-10T16:00:00Z",
@@ -5796,7 +5796,7 @@ const BADGE_AVAILABILITY = {
  },
  "the-man-without-fear": {
   "added": "2025-10-09T21:46:11.419Z",
-  "earned": 19373,
+  "earned": 19191,
   "avail": [
    {
     "start": "2025-10-10T12:00:00Z",
@@ -5821,7 +5821,7 @@ const BADGE_AVAILABILITY = {
  },
  "battlefield-6": {
   "added": "2025-10-09T20:15:24.838Z",
-  "earned": 26015,
+  "earned": 25856,
   "avail": [
    {
     "start": "2025-10-10T15:00:00Z",
@@ -5846,7 +5846,7 @@ const BADGE_AVAILABILITY = {
  },
  "low": {
   "added": "2025-10-07T18:42:25.533Z",
-  "earned": 247079,
+  "earned": 246134,
   "avail": [
    {
     "start": "2025-10-09T13:00:00Z",
@@ -5901,64 +5901,64 @@ const BADGE_AVAILABILITY = {
  },
  "gingko-leaf": {
   "added": "2025-09-30T18:53:09.379Z",
-  "earned": 112959
+  "earned": 112145
  },
  "gamerduo": {
   "added": "2025-09-26T22:06:28.984Z",
-  "earned": 186151
+  "earned": 185206
  },
  "sonic-racing-crossworlds": {
   "added": "2025-09-24T22:02:37.641Z",
-  "earned": 23704
+  "earned": 23437
  },
  "mel": {
   "added": "2025-09-23T22:07:37.842Z",
-  "earned": 19485
+  "earned": 19080
  },
  "gp-explorer-3": {
   "added": "2025-09-23T21:37:48.860Z",
-  "earned": 175506
+  "earned": 174297
  },
  "social-sharing": {
   "added": "2025-09-22T18:00:12.735Z"
  },
  "video-games-day": {
   "added": "2025-09-16T17:03:45.397Z",
-  "earned": 100483
+  "earned": 99867
  },
  "vct-paris-2025": {
   "added": "2025-09-11T16:43:49.922Z",
-  "earned": 71034
+  "earned": 70506
  },
  "twitch-intern-2022": {
   "added": "2025-09-10T17:15:47.935Z"
  },
  "zevent25": {
   "added": "2025-09-04T17:18:32.761Z",
-  "earned": 310485
+  "earned": 309106
  },
  "hornet": {
   "added": "2025-09-03T19:38:41.174Z",
-  "earned": 247091
+  "earned": 245904
  },
  "subtember-2025": {
   "added": "2025-09-03T18:05:00.676Z",
-  "earned": 364039
+  "earned": 362548
  },
  "gears-of-war-superfan-badge": {
   "added": "2025-08-29T21:42:02.812Z",
-  "earned": 19901
+  "earned": 19741
  },
  "path-of-exile-2-badge": {
   "added": "2025-08-27T22:41:47.536Z",
-  "earned": 76718
+  "earned": 75442
  },
  "path-of-exile-ii": {
   "added": "2025-08-26T22:47:39.743Z"
  },
  "touch-grass": {
   "added": "2025-08-21T15:41:30.587Z",
-  "earned": 30589
+  "earned": 30120
  },
  "the-first-descendant-badge": {
   "added": "2025-08-07T15:27:05.089Z"
@@ -5968,22 +5968,22 @@ const BADGE_AVAILABILITY = {
  },
  "la-velada-v-badge": {
   "added": "2025-07-23T19:35:38.725Z",
-  "earned": 307822
+  "earned": 307736
  },
  "legendus": {
   "added": "2025-06-28T06:15:55.776Z",
-  "earned": 51734
+  "earned": 51592
  },
  "league-of-legends-mid-season-invitational-2025---grey": {
   "added": "2025-06-24T01:11:19.640Z",
-  "earned": 22409
+  "earned": 22262
  },
  "league-of-legends-mid-season-invitational-2025---purple": {
   "added": "2025-06-24T01:09:24.851Z"
  },
  "borderlands-4-badge---vault-symbol": {
   "added": "2025-06-20T22:01:18.225Z",
-  "earned": 53908
+  "earned": 53565
  },
  "borderlands-4-badge---ripper": {
   "added": "2025-06-20T22:01:18.225Z"
@@ -5993,11 +5993,11 @@ const BADGE_AVAILABILITY = {
  },
  "elden-ring-wylder": {
   "added": "2025-05-30T22:26:02.951Z",
-  "earned": 49647
+  "earned": 49329
  },
  "elden-ring-recluse": {
   "added": "2025-05-30T22:26:02.951Z",
-  "earned": 189180
+  "earned": 187508
  },
  "twitchcon-referral-program-2025-chrome-star": {
   "added": "2025-05-29T16:41:13.259Z"
@@ -6019,53 +6019,53 @@ const BADGE_AVAILABILITY = {
  },
  "marathon-reveal-runner": {
   "added": "2025-04-10T21:04:04.585Z",
-  "earned": 58483
+  "earned": 58034
  },
  "gone-bananas": {
   "added": "2025-04-01T17:07:13.529Z",
-  "earned": 378370
+  "earned": 376312
  },
  "speedons-5-badge": {
   "added": "2025-02-24T22:34:48.673Z",
-  "earned": 69670
+  "earned": 69314
  },
  "share-the-love": {
   "added": "2025-02-14T18:09:35.910Z",
-  "earned": 808380
+  "earned": 804166
  },
  "twitchcon-2025---rotterdam": {
   "added": "2025-02-10T20:02:25.285Z",
-  "earned": 17769
+  "earned": 17780
  },
  "twitch-recap-2024": {
   "added": "2024-12-09T22:30:37.858Z",
-  "earned": 1623876
+  "earned": 1620747
  },
  "clip-the-halls": {
   "added": "2024-12-03T18:59:14.164Z",
-  "earned": 20288
+  "earned": 20156
  },
  "ruby-pixel-heart---together-for-good-24": {
   "added": "2024-12-02T21:05:08.481Z"
  },
  "purple-pixel-heart---together-for-good-24": {
   "added": "2024-12-02T21:05:05.309Z",
-  "earned": 28230
+  "earned": 27857
  },
  "gold-pixel-heart---together-for-good-24": {
   "added": "2024-12-02T21:05:01.561Z"
  },
  "arcane-season-2-premiere": {
   "added": "2024-11-07T21:36:20.704Z",
-  "earned": 343684
+  "earned": 342875
  },
  "subtember-2024": {
   "added": "2024-09-26T01:05:12.972Z",
-  "earned": 444301
+  "earned": 443068
  },
  "zevent-2024": {
   "added": "2024-09-07T00:35:49.658Z",
-  "earned": 189947
+  "earned": 189117
  },
  "dreamcon-2024": {
   "added": "2024-08-28T21:00:06.004Z"
@@ -6075,29 +6075,29 @@ const BADGE_AVAILABILITY = {
  },
  "la-velada-iv": {
   "added": "2024-07-13T16:19:09.441Z",
-  "earned": 350030
+  "earned": 350156
  },
  "raging-wolf-helm": {
   "added": "2024-06-20T18:10:36.483Z",
-  "earned": 1925588
+  "earned": 1919127
  },
  "twitch-dj": {
   "added": "2024-06-13T18:05:55.002Z",
-  "earned": 25138
+  "earned": 25022
  },
  "destiny-2-the-final-shape-streamer": {
   "added": "2024-06-06T22:09:48.208Z"
  },
  "destiny-2-final-shape-raid-race": {
   "added": "2024-06-06T22:09:47.189Z",
-  "earned": 342038
+  "earned": 340905
  },
  "twitchcon-2024---san-diego": {
   "added": "2024-05-28T21:27:24.791Z"
  },
  "minecraft-15th-anniversary-celebration": {
   "added": "2024-05-28T17:21:51.188Z",
-  "earned": 106886
+  "earned": 106523
  },
  "warcraft": {
   "added": null
@@ -6149,14 +6149,14 @@ const BADGE_AVAILABILITY = {
  },
  "twitch-recap-2023": {
   "added": null,
-  "earned": 2119189
+  "earned": 2114589
  },
  "twitch-intern-2023": {
   "added": null
  },
  "turbo": {
   "added": null,
-  "earned": 1155443
+  "earned": 1151230
  },
  "treasure-adventure-world_1": {
   "added": null
@@ -6184,7 +6184,7 @@ const BADGE_AVAILABILITY = {
  },
  "superultracombo-2023": {
   "added": null,
-  "earned": 336922
+  "earned": 336076
  },
  "superhot_1": {
   "added": null
@@ -6215,7 +6215,7 @@ const BADGE_AVAILABILITY = {
  },
  "rplace-2023": {
   "added": null,
-  "earned": 605910
+  "earned": 603197
  },
  "rift_1": {
   "added": null
@@ -6228,7 +6228,7 @@ const BADGE_AVAILABILITY = {
  },
  "premium": {
   "added": null,
-  "earned": 21435644
+  "earned": 21419481
  },
  "predictions": {
   "added": null
@@ -6244,25 +6244,25 @@ const BADGE_AVAILABILITY = {
  },
  "overwatch-league-insider_2019A": {
   "added": null,
-  "earned": 32235
+  "earned": 32116
  },
  "overwatch-league-insider_2018B": {
   "added": null
  },
  "overwatch-league-insider_1": {
   "added": null,
-  "earned": 20095
+  "earned": 20061
  },
  "okhlos_1": {
   "added": null
  },
  "no_video": {
   "added": null,
-  "earned": 1797397
+  "earned": 1793871
  },
  "no_audio": {
   "added": null,
-  "earned": 1931604
+  "earned": 1927605
  },
  "moments": {
   "added": null
@@ -6299,11 +6299,11 @@ const BADGE_AVAILABILITY = {
  },
  "glitchcon2020": {
   "added": null,
-  "earned": 570175
+  "earned": 567545
  },
  "glhf-pledge": {
   "added": null,
-  "earned": 907373
+  "earned": 904975
  },
  "getting-over-it_2": {
   "added": null
@@ -6388,7 +6388,7 @@ const BADGE_AVAILABILITY = {
  },
  "chatter-cs-go-2022": {
   "added": null,
-  "earned": 255531
+  "earned": 254875
  },
  "bubsy-the-woolies_1": {
   "added": null
@@ -6407,7 +6407,7 @@ const BADGE_AVAILABILITY = {
  },
  "bits-charity": {
   "added": null,
-  "earned": 161296
+  "earned": 160664
  },
  "bits": {
   "added": null
