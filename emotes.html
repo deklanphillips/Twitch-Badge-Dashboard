@@ -35,7 +35,17 @@
         <p class="subtitle">Emotes that everyone can use everywhere, live from the Twitch API.</p>
       </section>
 
+      <section class="controls">
+        <div class="search-wrap" id="emoteSearchWrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+          </svg>
+          <input type="search" id="emoteSearchInput" placeholder="Search emotes..." />
+        </div>
+      </section>
+
       <p class="empty-state" id="statusMessage">Loading emotes…</p>
+      <p class="empty-state" id="noResults" hidden>No emotes match your search.</p>
       <section class="badge-grid" id="emoteGrid"></section>
 
       <footer class="site-footer">
@@ -45,6 +55,7 @@
   </main>
 
   <script src="api-client.js"></script>
+  <script src="emote-supplement.js"></script>
   <script src="emotes.js"></script>
 </body>
 </html>
