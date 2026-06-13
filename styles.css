@@ -487,6 +487,7 @@ a.badge-tile {
 }
 
 a.badge-tile:hover { transform: translateY(-3px); border-color: var(--purple); }
+a.badge-tile[hidden] { display: none; }
 
 /* Home preview panels */
 .preview-panel {
