@@ -110,7 +110,64 @@ async function load() {
     availTitle.textContent = "Availability";
     availSection.append(availTitle);
 
-    if (matchedEvents.length) {
+    // Exact availability data (dates, earn methods, categories) when we have it.
+    const sdb = typeof BADGE_AVAILABILITY !== "undefined" ? BADGE_AVAILABILITY[setId] : null;
+    if (sdb && sdb.earned) detailFields.append(field("Times Earned", sdb.earned.toLocaleString()));
+
+    if (sdb && sdb.avail) {
+      for (const a of sdb.avail) {
+        if (a.start) {
+          const chips = document.createElement("div");
+          chips.className = "avail-chips";
+          chips.append(
+            chip(`From: ${dateFmt.format(new Date(a.start))}`),
+            chip(`To: ${dateFmt.format(new Date(a.end))}`)
+          );
+          availSection.append(chips);
+        }
+
+        for (const place of [...(a.categories || []), ...(a.channels || [])]) {
+          const whereWrap = document.createElement("div");
+          whereWrap.className = "where-earn";
+          const whereLabel = document.createElement("p");
+          whereLabel.className = "detail-label";
+          whereLabel.textContent = a.channels && a.channels.includes(place) ? "Earned on channel" : "Earned in category";
+          const whereLink = document.createElement("a");
+          whereLink.className = "where-link";
+          whereLink.href = place.href;
+          whereLink.target = "_blank";
+          whereLink.rel = "noopener";
+          whereLink.textContent = `${place.name} ↗`;
+          whereWrap.append(whereLabel, whereLink);
+          availSection.append(whereWrap);
+        }
+
+        const grid = document.createElement("div");
+        grid.className = "avail-grid";
+        grid.append(
+          availRow("Subscription", a.subscription ? "Yes" : "No"),
+          availRow("Subscription (Gift)", a.subscriptionGift ? "Yes" : "No"),
+          availRow("Bits", a.bits ? "Yes" : "No"),
+          availRow("Watch", a.watch ? (a.watchMinutes ? `Yes — ${a.watchMinutes} minutes` : "Yes") : "No"),
+          availRow("Clip", a.clip ? "Yes" : "No"),
+          availRow("Turbo", a.turbo ? "Yes" : "No"),
+          availRow("TwitchCon", a.twitchcon ? "Yes" : "No"),
+        );
+        availSection.append(grid);
+      }
+      if (version.description) {
+        const ctxSection = document.createElement("div");
+        ctxSection.className = "avail-section ctx-section";
+        const ctxTitle = document.createElement("h2");
+        ctxTitle.className = "section-heading";
+        ctxTitle.textContent = "Context";
+        const ctxBody = document.createElement("p");
+        ctxBody.className = "ctx-body";
+        ctxBody.textContent = version.description;
+        ctxSection.append(ctxTitle, ctxBody);
+        availSection.append(ctxSection);
+      }
+    } else if (matchedEvents.length) {
       for (const ev of matchedEvents) {
         const start = new Date(ev.start);
         const end = new Date(ev.end);

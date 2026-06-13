@@ -90,7 +90,7 @@ const BADGE_EVENTS = [
     requirement: "Watch the event",
     start: "2024-07-13T16:00:00Z",
     end: "2024-07-14T04:00:00Z",
-    badge: { set: "la-velada-del-ano-iv", version: "1" },
+    badge: { set: "la-velada-iv", version: "1" },
     where: { type: "channel", label: "twitch.tv/ibai", url: "https://www.twitch.tv/ibai" },
   },
   {
@@ -112,9 +112,9 @@ const BADGE_EVENTS = [
       "Earned by subscribing to a streamer playing The First Descendant during launch week.",
     emoji: "🚀",
     requirement: "Sub or gift sub",
-    start: "2024-07-02T00:00:00Z",
-    end: "2024-07-09T00:00:00Z",
-    badge: { set: "the-first-descendant", version: "1" },
+    start: "2025-08-07T00:00:00Z",
+    end: "2025-08-21T00:00:00Z",
+    badge: { set: "the-first-descendant-badge", version: "1" },
     where: { type: "category", label: "The First Descendant category", url: "https://www.twitch.tv/directory/category/the-first-descendant" },
   },
   {
@@ -124,8 +124,8 @@ const BADGE_EVENTS = [
       "Earned by gifting subscriptions during Twitch's Share the Love Valentine's promotion.",
     emoji: "💜",
     requirement: "Gift a sub",
-    start: "2024-02-12T00:00:00Z",
-    end: "2024-02-19T00:00:00Z",
+    start: "2025-02-14T00:00:00Z",
+    end: "2025-02-21T00:00:00Z",
     badge: { set: "share-the-love", version: "1" },
   },
 ];
