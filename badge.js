@@ -97,14 +97,16 @@ async function load() {
       const lbl = document.createElement("p");
       lbl.className = "detail-label";
       lbl.textContent = "Click URL";
+      const v = document.createElement("p");
+      v.className = "detail-value";
       const a = document.createElement("a");
       a.href = version.click_url;
       a.target = "_blank";
       a.rel = "noopener";
-      a.className = "where-link";
-      a.style.marginTop = "4px";
-      a.textContent = version.click_url + " ↗";
-      wrap.append(lbl, a);
+      a.className = "detail-link";
+      a.textContent = version.click_url;
+      v.append(a);
+      wrap.append(lbl, v);
       detailFields.append(wrap);
     } else {
       detailFields.append(field("Click URL", null));
