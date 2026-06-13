@@ -2,7 +2,7 @@ name: Update Twitch data
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # every 6 hours
+    - cron: "*/30 * * * *" # every 30 minutes (best-effort; GitHub may delay)
   workflow_dispatch: {} # run manually from the Actions tab
   push:
     branches: [main]

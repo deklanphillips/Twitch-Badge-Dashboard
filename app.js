@@ -54,11 +54,37 @@ async function loadGlobalBadges() {
   }
 }
 
+// Auto-detected events (api/auto-events.json) merged with the curated ones.
+let autoEvents = [];
+async function loadAutoEvents() {
+  try {
+    const res = await fetch("api/auto-events.json", { cache: "no-store" });
+    if (res.ok) {
+      autoEvents = await res.json();
+      render();
+    }
+  } catch {
+    // No auto-events file yet — fine, just the curated list shows.
+  }
+}
+
+// Curated events take priority; auto events fill in badges not already listed.
+function allEvents() {
+  const curatedSets = new Set(BADGE_EVENTS.map((e) => e.badge && e.badge.set).filter(Boolean));
+  const extra = autoEvents.filter((e) => !(e.badge && curatedSets.has(e.badge.set)));
+  return [...BADGE_EVENTS, ...extra];
+}
+
+// End is the badge's end date, or null for open-ended (no known end) events.
+function endOf(event) {
+  return event.end ? Date.parse(event.end) : null;
+}
+
 function getStatus(event, now = Date.now()) {
   const start = Date.parse(event.start);
-  const end = Date.parse(event.end);
+  const end = endOf(event);
   if (now < start) return "upcoming";
-  if (now > end) return "ended";
+  if (end !== null && now > end) return "ended";
   return "live";
 }
 
@@ -81,9 +107,14 @@ function startOfDay(ts) {
   return d.getTime();
 }
 
+// For layout, open-ended events extend 14 days past now so they read as ongoing.
+function layoutEnd(event, now) {
+  return endOf(event) ?? now + 14 * DAY_MS;
+}
+
 function render() {
   const now = Date.now();
-  const events = BADGE_EVENTS.map((e) => ({ ...e, status: getStatus(e, now) }));
+  const events = allEvents().map((e) => ({ ...e, status: getStatus(e, now) }));
 
   // Live first, then upcoming, then ended — so live events claim the top rows.
   const STATUS_ORDER = { live: 0, upcoming: 1, ended: 2 };
@@ -103,7 +134,7 @@ function render() {
   // same rows wherever their dates don't collide, so no row sits empty.
   const rowIntervals = []; // per row: list of [start, end]
   for (const ev of visible) {
-    const s = Date.parse(ev.start), e = Date.parse(ev.end);
+    const s = Date.parse(ev.start), e = layoutEnd(ev, now);
     let row = rowIntervals.findIndex((ivs) => ivs.every(([is, ie]) => ie <= s || is >= e));
     if (row === -1) {
       row = rowIntervals.length;
@@ -116,7 +147,7 @@ function render() {
 
   // Window: at least 14 days before today, extending to cover all events.
   const minStart = Math.min(now, ...visible.map((e) => Date.parse(e.start)));
-  const maxEnd = Math.max(now, ...visible.map((e) => Date.parse(e.end)));
+  const maxEnd = Math.max(now, ...visible.map((e) => layoutEnd(e, now)));
   const windowStart = Math.min(startOfDay(minStart) - 3 * DAY_MS, startOfDay(now) - 14 * DAY_MS);
   const totalDays = Math.ceil((maxEnd - windowStart) / DAY_MS) + 3;
 
@@ -144,13 +175,14 @@ function render() {
   timelineRows.replaceChildren();
   visible.forEach((event, i) => {
     const start = Date.parse(event.start);
-    const end = Date.parse(event.end);
+    const end = layoutEnd(event, now);
+    const endLabel = endOf(event) === null ? "ongoing" : dateFmt.format(new Date(end));
     const bar = document.createElement("a");
     bar.className = `event-bar ${event.status}`;
     bar.style.left = `${((start - windowStart) / DAY_MS) * DAY_WIDTH}px`;
     bar.style.width = `${Math.max(((end - start) / DAY_MS) * DAY_WIDTH, 60)}px`;
     bar.style.top = `${HEADER_HEIGHT + event._row * ROW_HEIGHT + 8}px`;
-    bar.title = `${event.name} — @${event.channel}\n${event.requirement}\n${dateFmt.format(new Date(start))} → ${dateFmt.format(new Date(end))}`;
+    bar.title = `${event.name} — @${event.channel}\n${event.requirement}\n${dateFmt.format(new Date(start))} → ${endLabel}`;
 
     // Resolve badge link + image. An explicit `badge` field only has
     // {set, version}, so look up its image from the live global badge list.
@@ -235,4 +267,5 @@ searchInput.addEventListener("input", () => {
 
 render();
 loadGlobalBadges();
+loadAutoEvents();
 setInterval(render, 30000);

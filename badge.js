@@ -256,7 +256,8 @@ async function load() {
         // Try to extract the category name from common description phrasings:
         // "in the X category" / "in the X game" / "to a(n) X streamer"
         const catMatch =
-          desc.match(/\bin the ([^,.!?]+?) (?:category|game)\b/i) ||
+          desc.match(/\bin the (.+?) category\b/i) ||
+          desc.match(/\bin the ([^,.!?]+?) game\b/i) ||
           desc.match(/\bto an? ([^,.!?]+?) streamer/i) ||
           desc.match(/\b(?:playing|watching) (?:\d+ (?:minutes?|hours?) of )?([^,.!?]+?)(?: during| at| on| in\b| streams?\b|[,.!?]|$)/i);
         const whereWrap = document.createElement("div");
