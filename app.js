@@ -98,27 +98,34 @@ function render() {
     if (el) el.textContent = `(${n})`;
   }
 
+  // Live first, then upcoming, then ended — so live events claim the top rows.
+  const STATUS_ORDER = { live: 0, upcoming: 1, ended: 2 };
   const visible = events
     .filter((e) => matchesQuery(e) && (activeStatus === "all" || e.status === activeStatus))
-    .sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
+    .sort((a, b) => {
+      const sd = STATUS_ORDER[a.status] - STATUS_ORDER[b.status];
+      return sd !== 0 ? sd : Date.parse(a.start) - Date.parse(b.start);
+    });
 
   emptyState.hidden = visible.length > 0;
   timelineScroll.parentElement.style.display = visible.length ? "" : "none";
   if (!visible.length) return;
 
-  // Greedy interval packing: assign each event to the first row it fits in
-  // (no time overlap). This keeps ended events on the same rows as live ones
-  // so there are no empty rows in the current viewport.
-  const rowEnds = []; // end timestamp of the last event placed in each row
+  // Pack each event into the first row where it doesn't overlap anything.
+  // Live events get placed first (top rows); ended events then fill into the
+  // same rows wherever their dates don't collide, so no row sits empty.
+  const rowIntervals = []; // per row: list of [start, end]
   for (const ev of visible) {
     const s = Date.parse(ev.start), e = Date.parse(ev.end);
-    let placed = false;
-    for (let r = 0; r < rowEnds.length; r++) {
-      if (rowEnds[r] <= s) { ev._row = r; rowEnds[r] = e; placed = true; break; }
+    let row = rowIntervals.findIndex((ivs) => ivs.every(([is, ie]) => ie <= s || is >= e));
+    if (row === -1) {
+      row = rowIntervals.length;
+      rowIntervals.push([]);
     }
-    if (!placed) { ev._row = rowEnds.length; rowEnds.push(Date.parse(ev.end)); }
+    rowIntervals[row].push([s, e]);
+    ev._row = row;
   }
-  const totalRows = rowEnds.length;
+  const totalRows = rowIntervals.length;
 
   // Window: at least 14 days before today, extending to cover all events.
   const minStart = Math.min(now, ...visible.map((e) => Date.parse(e.start)));
