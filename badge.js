@@ -90,8 +90,25 @@ async function load() {
       field("Set ID", set.set_id),
       field("Version ID", version.id),
       field("Click Action", version.click_action),
-      field("Click URL", version.click_url),
     );
+    if (version.click_url) {
+      const wrap = document.createElement("div");
+      wrap.className = "detail-field";
+      const lbl = document.createElement("p");
+      lbl.className = "detail-label";
+      lbl.textContent = "Click URL";
+      const a = document.createElement("a");
+      a.href = version.click_url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.className = "where-link";
+      a.style.marginTop = "4px";
+      a.textContent = version.click_url + " ↗";
+      wrap.append(lbl, a);
+      detailFields.append(wrap);
+    } else {
+      detailFields.append(field("Click URL", null));
+    }
 
     // Match against local event data
     const eventInfo = document.getElementById("eventInfo");
