@@ -632,3 +632,21 @@ a.badge-tile:hover { transform: translateY(-3px); border-color: var(--purple); }
   padding: 7px 14px;
 }
 .where-link:hover { background: var(--purple); color: #fff; }
+
+/* Jump-to-now button */
+.jump-now-btn {
+  background: transparent;
+  border: 1px solid var(--red);
+  color: var(--red);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.jump-now-btn:hover { background: var(--red); color: #fff; }
+
+/* Now-line clickable */
+.now-line { cursor: pointer; }
