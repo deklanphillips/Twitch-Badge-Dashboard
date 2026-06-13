@@ -20,14 +20,38 @@ if (!OAUTH) {
   process.exit(1);
 }
 
+let integrityToken = null;
+const DEVICE_ID = "drops" + Math.random().toString(36).slice(2, 18);
+
+async function fetchIntegrity() {
+  try {
+    const res = await fetch("https://gql.twitch.tv/integrity", {
+      method: "POST",
+      headers: {
+        "Client-Id": CLIENT_ID,
+        "Authorization": `OAuth ${OAUTH}`,
+        "X-Device-Id": DEVICE_ID,
+      },
+    });
+    const body = await res.json();
+    console.log(`integrity HTTP ${res.status}; token? ${!!body.token}`);
+    if (body.token) integrityToken = body.token;
+  } catch (e) {
+    console.log("integrity fetch failed:", e.message);
+  }
+}
+
 async function gql(body) {
+  const headers = {
+    "Client-Id": CLIENT_ID,
+    "Authorization": `OAuth ${OAUTH}`,
+    "Content-Type": "application/json",
+    "X-Device-Id": DEVICE_ID,
+  };
+  if (integrityToken) headers["Client-Integrity"] = integrityToken;
   const res = await fetch("https://gql.twitch.tv/gql", {
     method: "POST",
-    headers: {
-      "Client-Id": CLIENT_ID,
-      "Authorization": `OAuth ${OAUTH}`,
-      "Content-Type": "application/json",
-    },
+    headers,
     body: JSON.stringify(body),
   });
   if (!res.ok) throw new Error(`GraphQL HTTP ${res.status}: ${await res.text()}`);
@@ -73,7 +97,14 @@ query DropCampaignDetails($id: ID!) {
 }`;
 
 async function main() {
+  await fetchIntegrity();
   const dash = await gql({ operationName: "ViewerDropsDashboard", query: DASHBOARD_QUERY, variables: {} });
+
+  // Raw dump so we can see null-vs-empty and any error/extension hints.
+  console.log("=== RAW DASHBOARD RESPONSE ===");
+  console.log(JSON.stringify(dash, null, 1).slice(0, 1500));
+  console.log("=== END RAW ===\n");
+
   const user = dash.data && dash.data.currentUser;
   if (!user) {
     console.error("No currentUser returned — token may be invalid or expired.");
