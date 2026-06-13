@@ -8,6 +8,11 @@
 //        TWITCH_CLIENT_ID=xxx TWITCH_CLIENT_SECRET=yyy node server.js
 //   3. Open http://localhost:3000
 
+// Optionally load a local .env file for development. In production
+// (GitHub Actions / Render) the env vars are injected directly and dotenv
+// isn't installed, so we ignore it if it's missing.
+try { require("dotenv").config(); } catch (_) {}
+
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
