@@ -5,6 +5,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { detectNewEvents } = require("./detect-events.js");
 
 const CLIENT_ID = process.env.TWITCH_CLIENT_ID;
 const CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET;
@@ -50,8 +51,31 @@ async function main() {
     console.log(`wrote api/${file}`);
   }
 
-  write("global-badges.json", await helix("chat/badges/global"));
+  // Read the previously saved catalog before overwriting, so we can detect
+  // which badges are newly added and auto-create timeline events for them.
+  let previousBadges = null;
+  try {
+    previousBadges = JSON.parse(fs.readFileSync(path.join(OUT_DIR, "global-badges.json"), "utf8"));
+  } catch {}
+
+  const currentBadges = await helix("chat/badges/global");
+  write("global-badges.json", currentBadges);
   write("global-emotes.json", await helix("chat/emotes/global"));
+
+  if (previousBadges) {
+    const { added } = detectNewEvents(previousBadges, currentBadges);
+    if (added.length) {
+      console.log(`auto-detected ${added.length} new badge event(s): ${added.map((e) => e.name).join(", ")}`);
+    } else {
+      console.log("no new badge events detected");
+    }
+  } else {
+    // First run with detection: seed auto-events.json as empty so future runs
+    // only pick up genuinely new badges (not the entire existing catalog).
+    const autoPath = path.join(OUT_DIR, "auto-events.json");
+    if (!fs.existsSync(autoPath)) fs.writeFileSync(autoPath, "[]");
+    console.log("no previous catalog — seeded empty auto-events baseline");
+  }
 
   for (const login of CHANNELS) {
     try {
