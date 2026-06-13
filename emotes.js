@@ -1,5 +1,22 @@
 const emoteGrid = document.getElementById("emoteGrid");
 const statusMessage = document.getElementById("statusMessage");
+const noResults = document.getElementById("noResults");
+const searchInput = document.getElementById("emoteSearchInput");
+
+function filterEmotes(query) {
+  const q = query.trim().toLowerCase();
+  const cards = emoteGrid.querySelectorAll(".badge-tile");
+  let visible = 0;
+  for (const card of cards) {
+    const name = card.querySelector(".badge-title").textContent.toLowerCase();
+    const show = !q || name.includes(q);
+    card.hidden = !show;
+    if (show) visible++;
+  }
+  noResults.hidden = visible > 0;
+}
+
+searchInput.addEventListener("input", () => filterEmotes(searchInput.value));
 
 async function loadEmotes() {
   try {
@@ -20,6 +37,7 @@ async function loadEmotes() {
       card.append(img, name);
       emoteGrid.append(card);
     }
+    filterEmotes(searchInput.value);
   } catch (err) {
     statusMessage.textContent = err.message.includes("TWITCH_CLIENT_ID")
       ? "Server isn't connected to Twitch yet — set TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET and restart (see README)."
