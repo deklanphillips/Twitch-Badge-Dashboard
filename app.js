@@ -98,18 +98,22 @@ function render() {
     if (el) el.textContent = `(${n})`;
   }
 
+  const STATUS_ORDER = { live: 0, upcoming: 1, ended: 2 };
   const visible = events
     .filter((e) => matchesQuery(e) && (activeStatus === "all" || e.status === activeStatus))
-    .sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
+    .sort((a, b) => {
+      const sd = STATUS_ORDER[a.status] - STATUS_ORDER[b.status];
+      return sd !== 0 ? sd : Date.parse(a.start) - Date.parse(b.start);
+    });
 
   emptyState.hidden = visible.length > 0;
   timelineScroll.parentElement.style.display = visible.length ? "" : "none";
   if (!visible.length) return;
 
-  // Window: 3 days before earliest start (and before today) to 3 days after latest end.
+  // Window: at least 14 days before today, extending to cover all events.
   const minStart = Math.min(now, ...visible.map((e) => Date.parse(e.start)));
   const maxEnd = Math.max(now, ...visible.map((e) => Date.parse(e.end)));
-  const windowStart = startOfDay(minStart) - 3 * DAY_MS;
+  const windowStart = Math.min(startOfDay(minStart) - 3 * DAY_MS, startOfDay(now) - 14 * DAY_MS);
   const totalDays = Math.ceil((maxEnd - windowStart) / DAY_MS) + 3;
 
   timeline.style.width = `${totalDays * DAY_WIDTH}px`;
@@ -180,12 +184,13 @@ function render() {
     timelineRows.append(bar);
   });
 
-  // Current-time line
+  // Current-time line — clicking it scrolls to it
   const nowX = ((now - windowStart) / DAY_MS) * DAY_WIDTH;
   nowLine.style.left = `${nowX}px`;
+  nowLine.onclick = () => scrollToNow(nowX);
 
   if (!didInitialScroll) {
-    timelineScroll.scrollLeft = Math.max(0, nowX - timelineScroll.clientWidth / 3);
+    scrollToNow(nowX);
     didInitialScroll = true;
   }
   updateBarLabels();
@@ -206,7 +211,18 @@ function updateBarLabels() {
   }
 }
 
+function scrollToNow(nowX) {
+  timelineScroll.scrollLeft = Math.max(0, nowX - timelineScroll.clientWidth / 3);
+}
+
 timelineScroll.addEventListener("scroll", updateBarLabels, { passive: true });
+
+document.getElementById("jumpNowBtn").addEventListener("click", () => {
+  const nowX = parseFloat(nowLine.style.left);
+  if (!isNaN(nowX)) {
+    timelineScroll.scrollTo({ left: Math.max(0, nowX - timelineScroll.clientWidth / 3), behavior: "smooth" });
+  }
+});
 
 tabs.forEach((tab) =>
   tab.addEventListener("click", () => {
