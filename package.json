@@ -1,0 +1,12 @@
+{
+  "name": "twitch-badge-dashboard",
+  "version": "1.0.0",
+  "description": "A dashboard for tracking Twitch badge drop events, badges, and emotes.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
