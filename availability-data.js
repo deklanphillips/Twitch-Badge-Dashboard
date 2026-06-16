@@ -6,10 +6,38 @@ const BADGE_AVAILABILITY = {
   "added": "2026-06-10T19:14:05.964Z"
  },
  "dead-by-daylight-x-jason-universe": {
-  "added": "2026-06-10T18:23:38.412Z"
+  "added": "2026-06-10T18:23:38.412Z",
+  "avail": [
+   {
+    "start": "2026-06-16T17:00:00Z",
+    "end": "2026-07-13T06:58:00Z",
+    "subscription": false,
+    "subscriptionGift": false,
+    "bits": false,
+    "watch": true,
+    "watchMinutes": 0,
+    "clip": false,
+    "turbo": false,
+    "twitchcon": false
+   }
+  ]
  },
  "dead-by-daylight-icon": {
-  "added": "2026-06-10T18:23:38.412Z"
+  "added": "2026-06-10T18:23:38.412Z",
+  "avail": [
+   {
+    "start": "2026-06-16T17:00:00Z",
+    "end": "2026-07-13T06:58:00Z",
+    "subscription": false,
+    "subscriptionGift": false,
+    "bits": false,
+    "watch": true,
+    "watchMinutes": 0,
+    "clip": false,
+    "turbo": false,
+    "twitchcon": false
+   }
+  ]
  },
  "you-got-this": {
   "added": "2026-06-10T15:53:41.117Z",
