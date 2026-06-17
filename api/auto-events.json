@@ -3,7 +3,7 @@
   "name": "Two Point Museum",
   "channel": "Twitch",
   "description": "This badge was earned by gifting one sub to a creator streaming Two Point Museum during Two Point Studio's 10th Anniversary!",
-  "emoji": "✨",
+  "emoji": "\u2728",
   "requirement": "Sub or gift sub",
   "start": "2026-06-17T14:01:57Z",
   "end": null,
@@ -11,13 +11,14 @@
    "set": "two-point-museum",
    "version": "1"
   },
-  "auto": true
+  "auto": true,
+  "confirmed": false
  },
  {
   "name": "Two Point Pickle",
   "channel": "Two Point Museum for 30min",
   "description": "This badge was earned by watching Two Point Museum for 30min during Two Point Studio's 10th Anniversary!",
-  "emoji": "✨",
+  "emoji": "\u2728",
   "requirement": "Watch to earn",
   "start": "2026-06-17T14:01:57Z",
   "end": null,
@@ -30,6 +31,7 @@
    "type": "category",
    "label": "Two Point Museum for 30min category",
    "url": "https://www.twitch.tv/directory/category/two-point-museum-for-30min"
-  }
+  },
+  "confirmed": false
  }
 ]
