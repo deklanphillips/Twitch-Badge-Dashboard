@@ -86,6 +86,7 @@ function detectNewEvents(previousBadges, currentBadges) {
       end: null, // unknown — Twitch doesn't expose end dates; stays open-ended
       badge: { set: set.set_id, version: version.id },
       auto: true,
+      confirmed: false, // dates unconfirmed — excluded from events calendar until manually set
     };
     if (category) {
       event.where = { type: "category", label: `${category.name} category`, url: category.url };

@@ -60,7 +60,8 @@ async function loadAutoEvents() {
   try {
     const res = await fetch("api/auto-events.json", { cache: "no-store" });
     if (res.ok) {
-      autoEvents = await res.json();
+      const all = await res.json();
+      autoEvents = all.filter(e => e.confirmed !== false);
       render();
     }
   } catch {
