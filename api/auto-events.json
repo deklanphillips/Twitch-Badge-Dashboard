@@ -38,5 +38,25 @@
    "label": "Two Point Museum",
    "url": "https://www.twitch.tv/directory/category/two-point-museum"
   }
+ },
+ {
+  "name": "Blossom Badge Level 1",
+  "channel": "a clip",
+  "description": "Earn this badge for watching a clip, VOD or live stream 3 days a week. The badge upgrades weekly.",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-06-19T00:09:37Z",
+  "end": null,
+  "badge": {
+   "set": "blossom-badge",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "a clip category",
+   "url": "https://www.twitch.tv/directory/category/a-clip"
+  }
  }
 ]
