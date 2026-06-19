@@ -58,5 +58,45 @@
    "label": "a clip category",
    "url": "https://www.twitch.tv/directory/category/a-clip"
   }
+ },
+ {
+  "name": "Detroit Android Triangle",
+  "channel": "Detroit: Become Human",
+  "description": "This badge was earned by watching a streamer in the Detroit: Become Human category for 1 hour",
+  "emoji": "✨",
+  "requirement": "Watch 1 hour",
+  "start": "2026-06-19T13:53:27Z",
+  "end": null,
+  "badge": {
+   "set": "detroit-android-triangle",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Detroit: Become Human category",
+   "url": "https://www.twitch.tv/directory/category/detroit-become-human"
+  }
+ },
+ {
+  "name": "Detroit Blue LED",
+  "channel": "Detroit: Become Human",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Detroit: Become Human category",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-06-19T13:53:27Z",
+  "end": null,
+  "badge": {
+   "set": "detroit-blue-led",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Detroit: Become Human category",
+   "url": "https://www.twitch.tv/directory/category/detroit-become-human"
+  }
  }
 ]
