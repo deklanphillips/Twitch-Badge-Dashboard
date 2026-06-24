@@ -98,5 +98,25 @@
    "label": "Detroit: Become Human category",
    "url": "https://www.twitch.tv/directory/category/detroit-become-human"
   }
+ },
+ {
+  "name": "DOA6LR Kasumi",
+  "channel": "Dead or Alive 6 Last Round",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Dead or Alive 6 Last Round category during the game launch!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-06-24T09:56:49Z",
+  "end": null,
+  "badge": {
+   "set": "doa6lr-kasumi",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Dead or Alive 6 Last Round category",
+   "url": "https://www.twitch.tv/directory/category/dead-or-alive-6-last-round"
+  }
  }
 ]
