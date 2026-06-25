@@ -133,5 +133,25 @@
   },
   "auto": true,
   "confirmed": false
+ },
+ {
+  "name": "Gray Zone Warfare",
+  "channel": "Grey Zone Warfare",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Grey Zone Warfare category during the campaign period",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-06-25T22:02:39Z",
+  "end": null,
+  "badge": {
+   "set": "grey-zone-warfare",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Grey Zone Warfare category",
+   "url": "https://www.twitch.tv/directory/category/grey-zone-warfare"
+  }
  }
 ]
