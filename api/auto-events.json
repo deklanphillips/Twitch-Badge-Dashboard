@@ -118,5 +118,20 @@
    "label": "Dead or Alive 6 Last Round category",
    "url": "https://www.twitch.tv/directory/category/dead-or-alive-6-last-round"
   }
+ },
+ {
+  "name": "Evo Las Vegas 2026",
+  "channel": "Twitch",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in a participating category during Evo Las Vegas 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-06-25T18:03:06Z",
+  "end": null,
+  "badge": {
+   "set": "evo-las-vegas-2026",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false
  }
 ]
