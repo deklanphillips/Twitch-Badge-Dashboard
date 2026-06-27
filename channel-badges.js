@@ -48,7 +48,7 @@ async function loadChannel(login) {
   try {
     const data = await twitchData(
       `/api/badges/channel?login=${encodeURIComponent(login)}`,
-      `api/channel-badges/${encodeURIComponent(login)}.json`
+      `/api/channel-badges/${encodeURIComponent(login)}.json`
     );
     renderBadgeSets(data.data, data.user ? data.user.display_name : login);
   } catch (err) {
