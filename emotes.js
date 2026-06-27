@@ -33,7 +33,7 @@ function renderEmotes() {
     shown++;
     const card = document.createElement("a");
     card.className = "badge-tile";
-    card.href = `emote.html?id=${encodeURIComponent(emote.id)}`;
+    card.href = `/emote?id=${encodeURIComponent(emote.id)}`;
     const img = document.createElement("img");
     img.src = emote.images.url_2x || emote.images.url_1x;
     img.alt = emote.name;
@@ -52,7 +52,7 @@ async function loadEmotes() {
   try {
     let live = [];
     try {
-      const data = await twitchData("/api/emotes/global", "api/global-emotes.json");
+      const data = await twitchData("/api/emotes/global", "/api/global-emotes.json");
       live = data.data || [];
     } catch (e) {
       // Fall back to the StreamDatabase supplement if the live feed is unavailable.

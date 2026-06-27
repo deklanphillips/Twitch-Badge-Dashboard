@@ -109,6 +109,11 @@ async function handleApi(req, res, url) {
 
 function serveStatic(req, res, url) {
   let filePath = url.pathname === "/" ? "/index.html" : url.pathname;
+  // Clean URLs: a path with no file extension maps to its folder's index.html
+  // (e.g. /events -> /events/index.html), matching GitHub Pages behavior.
+  if (!path.extname(filePath)) {
+    filePath = filePath.replace(/\/$/, "") + "/index.html";
+  }
   filePath = path.normalize(filePath).replace(/^(\.\.[/\\])+/, "");
   const fullPath = path.join(__dirname, filePath);
   if (!fullPath.startsWith(__dirname)) {

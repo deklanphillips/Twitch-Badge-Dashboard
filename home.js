@@ -48,9 +48,9 @@ function badgeVersions(sets) {
 async function load() {
   try {
     const [global, channel, emotes] = await Promise.allSettled([
-      twitchData("/api/badges/global", "api/global-badges.json"),
+      twitchData("/api/badges/global", "/api/global-badges.json"),
       twitchData(`/api/badges/channel?login=${FEATURED_CHANNEL}`, `api/channel-badges/${FEATURED_CHANNEL}.json`),
-      twitchData("/api/emotes/global", "api/global-emotes.json"),
+      twitchData("/api/emotes/global", "/api/global-emotes.json"),
     ]);
 
     if (global.status === "fulfilled") fillRow("globalBadgesRow", badgeVersions(global.value.data));

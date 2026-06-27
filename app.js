@@ -39,7 +39,7 @@ function matchBadge(eventName) {
 
 async function loadGlobalBadges() {
   try {
-    const data = await twitchData("/api/badges/global", "api/global-badges.json");
+    const data = await twitchData("/api/badges/global", "/api/global-badges.json");
     globalBadges = data.data.flatMap((set) =>
       set.versions.map((v) => ({
         set: set.set_id,
@@ -58,7 +58,7 @@ async function loadGlobalBadges() {
 let autoEvents = [];
 async function loadAutoEvents() {
   try {
-    const res = await fetch("api/auto-events.json", { cache: "no-store" });
+    const res = await fetch("/api/auto-events.json", { cache: "no-store" });
     if (res.ok) {
       const all = await res.json();
       autoEvents = all.filter(e => e.confirmed !== false);
@@ -243,8 +243,8 @@ function render() {
       linked = matchBadge(event.name);
     }
     bar.href = linked
-      ? `badge.html?set=${encodeURIComponent(linked.set)}&version=${encodeURIComponent(linked.version)}`
-      : `badges.html?q=${encodeURIComponent(event.name)}`;
+      ? `/badge?set=${encodeURIComponent(linked.set)}&version=${encodeURIComponent(linked.version)}`
+      : `/badges?q=${encodeURIComponent(event.name)}`;
     const imgEl = document.createElement("div");
     imgEl.className = "bar-badge";
     const badgeImg = linked && linked.image

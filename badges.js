@@ -20,7 +20,7 @@ function renderBadgeSets() {
       shown++;
       const link = document.createElement("a");
       link.className = "badge-tile";
-      link.href = `badge.html?set=${encodeURIComponent(set.set_id)}&version=${encodeURIComponent(version.id)}`;
+      link.href = `/badge?set=${encodeURIComponent(set.set_id)}&version=${encodeURIComponent(version.id)}`;
       const img = document.createElement("img");
       img.src = version.image_url_4x || version.image_url_2x || version.image_url_1x;
       img.alt = title;
@@ -38,7 +38,7 @@ function renderBadgeSets() {
 async function loadBadges() {
   showStatus("Loading badges…");
   try {
-    const data = await twitchData("/api/badges/global", "api/global-badges.json");
+    const data = await twitchData("/api/badges/global", "/api/global-badges.json");
     loadedSets = data.data;
     renderBadgeSets();
   } catch (err) {

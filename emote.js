@@ -26,7 +26,7 @@ async function load() {
   try {
     let live = [];
     try {
-      const data = await twitchData("/api/emotes/global", "api/global-emotes.json");
+      const data = await twitchData("/api/emotes/global", "/api/global-emotes.json");
       live = data.data || [];
     } catch (e) {
       // Fall back to the StreamDatabase supplement below.
