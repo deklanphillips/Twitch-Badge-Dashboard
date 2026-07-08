@@ -253,5 +253,45 @@
    "label": "two hours of the 2026 Esports World Cup category",
    "url": "https://www.twitch.tv/directory/category/two-hours-of-the-2026-esports-world-cup"
   }
+ },
+ {
+  "name": "Cool Cattiva",
+  "channel": "Palworld",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Palworld category during Summer Drops Fest 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-08T04:59:21Z",
+  "end": null,
+  "badge": {
+   "set": "cool-cattiva",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Palworld category",
+   "url": "https://www.twitch.tv/directory/category/palworld"
+  }
+ },
+ {
+  "name": "Mint",
+  "channel": "NTE: Neverness to Everness",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the NTE: Neverness to Everness category during the Version 1.2 \"999 Nights\" release!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-08T04:59:21Z",
+  "end": null,
+  "badge": {
+   "set": "mint",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "NTE: Neverness to Everness category",
+   "url": "https://www.twitch.tv/directory/category/nte-neverness-to-everness"
+  }
  }
 ]
