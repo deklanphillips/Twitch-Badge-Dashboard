@@ -313,5 +313,65 @@
    "label": "Granblue Fantasy: Relink category",
    "url": "https://www.twitch.tv/directory/category/granblue-fantasy-relink"
   }
+ },
+ {
+  "name": "Ayane",
+  "channel": "Dead or Alive 6: Last Round",
+  "description": "This badge was earned by purchasing a subscription to a Dead or Alive 6: Last Round streamer during Summer Drops Fest 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-08T17:18:58Z",
+  "end": null,
+  "badge": {
+   "set": "ayane",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Dead or Alive 6: Last Round category",
+   "url": "https://www.twitch.tv/directory/category/dead-or-alive-6-last-round"
+  }
+ },
+ {
+  "name": "Killer Inn",
+  "channel": "Killer Inn",
+  "description": "This badge was earned by purchasing a subscription to a Killer Inn streamer during Summer Drops Fest 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-08T17:18:58Z",
+  "end": null,
+  "badge": {
+   "set": "killer-inn",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Killer Inn category",
+   "url": "https://www.twitch.tv/directory/category/killer-inn"
+  }
+ },
+ {
+  "name": "Perlica",
+  "channel": "Arknights: Endfield",
+  "description": "This badge was earned by purchasing a subscription to an Arknights: Endfield streamer during the Half-Year Anniversary!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-08T17:18:58Z",
+  "end": null,
+  "badge": {
+   "set": "perlica",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Arknights: Endfield category",
+   "url": "https://www.twitch.tv/directory/category/arknights-endfield"
+  }
  }
 ]
