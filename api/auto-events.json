@@ -293,5 +293,25 @@
    "label": "NTE: Neverness to Everness category",
    "url": "https://www.twitch.tv/directory/category/nte-neverness-to-everness"
   }
+ },
+ {
+  "name": "Relink Fabicon",
+  "channel": "Granblue Fantasy: Relink",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Granblue Fantasy: Relink category during Summer Drops Fest 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-08T09:55:31Z",
+  "end": null,
+  "badge": {
+   "set": "relink-fabicon",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Granblue Fantasy: Relink category",
+   "url": "https://www.twitch.tv/directory/category/granblue-fantasy-relink"
+  }
  }
 ]
