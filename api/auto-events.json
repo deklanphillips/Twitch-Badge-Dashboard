@@ -393,5 +393,25 @@
    "label": "Pokémon GO category",
    "url": "https://www.twitch.tv/directory/category/pok-mon-go"
   }
+ },
+ {
+  "name": "Jubilee",
+  "channel": "Marvel Rivals",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel Rivals category during Summer Drops Fest 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-09T07:58:49Z",
+  "end": null,
+  "badge": {
+   "set": "jubilee",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Marvel Rivals category",
+   "url": "https://www.twitch.tv/directory/category/marvel-rivals"
+  }
  }
 ]
