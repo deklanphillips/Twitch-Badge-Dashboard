@@ -413,5 +413,25 @@
    "label": "Marvel Rivals category",
    "url": "https://www.twitch.tv/directory/category/marvel-rivals"
   }
+ },
+ {
+  "name": "Dream Beyond",
+  "channel": "Dream Con",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Dream Con category during Dream Con 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-09T20:14:28Z",
+  "end": null,
+  "badge": {
+   "set": "dream-beyond",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Dream Con category",
+   "url": "https://www.twitch.tv/directory/category/dream-con"
+  }
  }
 ]
