@@ -45,14 +45,14 @@
   "description": "Earn this badge for watching a clip, VOD or live stream 3 days a week. The badge upgrades weekly.",
   "emoji": "✨",
   "requirement": "Watch to earn",
-  "start": "2026-06-19T00:09:37Z",
-  "end": null,
+  "start": "2026-06-21T23:00:00Z",
+  "end": "2026-07-27T23:58:00Z",
   "badge": {
    "set": "blossom-badge",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "a clip category",
@@ -65,14 +65,14 @@
   "description": "This badge was earned by watching a streamer in the Detroit: Become Human category for 1 hour",
   "emoji": "✨",
   "requirement": "Watch 1 hour",
-  "start": "2026-06-19T13:53:27Z",
-  "end": null,
+  "start": "2026-07-03T00:00:00Z",
+  "end": "2026-07-17T23:58:00Z",
   "badge": {
    "set": "detroit-android-triangle",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "Detroit: Become Human category",
@@ -85,14 +85,14 @@
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Detroit: Become Human category",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-06-19T13:53:27Z",
-  "end": null,
+  "start": "2026-07-03T00:00:00Z",
+  "end": "2026-07-17T23:58:00Z",
   "badge": {
    "set": "detroit-blue-led",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "Detroit: Become Human category",
@@ -105,14 +105,14 @@
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Dead or Alive 6 Last Round category during the game launch!",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-06-24T09:56:49Z",
-  "end": null,
+  "start": "2026-06-25T07:00:00Z",
+  "end": "2026-07-09T23:58:00Z",
   "badge": {
    "set": "doa6lr-kasumi",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "Dead or Alive 6 Last Round category",
@@ -140,14 +140,14 @@
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Grey Zone Warfare category during the campaign period",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-06-25T22:02:39Z",
-  "end": null,
+  "start": "2026-06-25T21:46:00Z",
+  "end": "2026-07-15T23:58:00Z",
   "badge": {
    "set": "grey-zone-warfare",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "Grey Zone Warfare category",
