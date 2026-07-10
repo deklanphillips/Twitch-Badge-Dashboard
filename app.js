@@ -121,6 +121,27 @@ function allEvents() {
   return merged;
 }
 
+// Collapse events sharing a `group` id into one bar that carries every
+// member badge (shown as a row of icons). The combined bar spans the
+// earliest start to the latest end across its members.
+function groupEvents(events) {
+  const map = new Map();
+  const out = [];
+  for (const e of events) {
+    if (!e.group) { out.push(e); continue; }
+    let g = map.get(e.group);
+    if (!g) {
+      g = { ...e, name: e.groupLabel || e.name, _badges: [], grouped: true };
+      map.set(e.group, g);
+      out.push(g);
+    }
+    if (e.badge) g._badges.push({ set: e.badge.set, version: e.badge.version });
+    if (Date.parse(e.start) < Date.parse(g.start)) g.start = e.start;
+    if (e.end && (!g.end || Date.parse(e.end) > Date.parse(g.end))) g.end = e.end;
+  }
+  return out;
+}
+
 // End is the badge's end date, or null for open-ended (no known end) events.
 function endOf(event) {
   return event.end ? Date.parse(event.end) : null;
@@ -161,7 +182,7 @@ function layoutEnd(event, now) {
 function render() {
   const now = Date.now();
   const windowStart = startOfDay(now) - 2 * DAY_MS;
-  const events = allEvents().map((e) => ({ ...e, status: getStatus(e, now) }));
+  const events = groupEvents(allEvents()).map((e) => ({ ...e, status: getStatus(e, now) }));
 
   // Live first, then upcoming, then ended — so live events claim the top rows.
   // Drop events that ended before the scroll window (unreachable in the past).
@@ -230,27 +251,45 @@ function render() {
     bar.style.left = `${((start - windowStart) / DAY_MS) * DAY_WIDTH}px`;
     bar.style.width = `${Math.max(((end - start) / DAY_MS) * DAY_WIDTH, 60)}px`;
     bar.style.top = `${HEADER_HEIGHT + event._row * ROW_HEIGHT + 8}px`;
-    bar.title = `${event.name} — @${event.channel}\n${event.requirement}\n${dateFmt.format(new Date(start))} → ${endLabel}`;
+    const whoText = event.grouped ? `${event._badges.length} badges` : `@${event.channel}`;
+    bar.title = `${event.name} — ${whoText}\n${event.requirement}\n${dateFmt.format(new Date(start))} → ${endLabel}`;
 
-    // Resolve badge link + image. An explicit `badge` field only has
-    // {set, version}, so look up its image from the live global badge list.
-    let linked = null;
-    if (event.badge) {
-      linked =
-        globalBadges.find((b) => b.set === event.badge.set && b.version === event.badge.version) ||
-        event.badge;
-    } else {
-      linked = matchBadge(event.name);
-    }
-    bar.href = linked
-      ? `/badge?set=${encodeURIComponent(linked.set)}&version=${encodeURIComponent(linked.version)}`
-      : `/badges?q=${encodeURIComponent(event.name)}`;
+    // Resolve badge link + image(s). Grouped events show every member badge's
+    // icon in one bar; single events show their one badge (image looked up
+    // from the live global catalog).
+    const imgFor = (ref) =>
+      globalBadges.find((b) => b.set === ref.set && b.version === ref.version);
     const imgEl = document.createElement("div");
     imgEl.className = "bar-badge";
-    const badgeImg = linked && linked.image
-      ? (() => { const i = document.createElement("img"); i.src = linked.image; i.alt = ""; return i; })()
-      : (() => { const s = document.createElement("span"); s.textContent = event.emoji; return s; })();
-    imgEl.append(badgeImg);
+    if (event.grouped && event._badges.length) {
+      imgEl.classList.add("bar-badge-group");
+      let added = 0;
+      for (const ref of event._badges) {
+        const gb = imgFor(ref);
+        if (gb && gb.image) {
+          const im = document.createElement("img");
+          im.src = gb.image;
+          im.alt = "";
+          imgEl.append(im);
+          added++;
+        }
+      }
+      if (!added) {
+        const s = document.createElement("span");
+        s.textContent = event.emoji;
+        imgEl.append(s);
+      }
+      bar.href = `/badges?q=${encodeURIComponent((event.groupLabel || event.name).replace(/\s*\(.*$/, ""))}`;
+    } else {
+      const linked = event.badge ? (imgFor(event.badge) || event.badge) : matchBadge(event.name);
+      bar.href = linked
+        ? `/badge?set=${encodeURIComponent(linked.set)}&version=${encodeURIComponent(linked.version)}`
+        : `/badges?q=${encodeURIComponent(event.name)}`;
+      const badgeImg = linked && linked.image
+        ? (() => { const i = document.createElement("img"); i.src = linked.image; i.alt = ""; return i; })()
+        : (() => { const s = document.createElement("span"); s.textContent = event.emoji; return s; })();
+      imgEl.append(badgeImg);
+    }
 
     const label = document.createElement("span");
     label.className = "bar-label";
@@ -259,7 +298,9 @@ function render() {
     title.textContent = event.name;
     const sub = document.createElement("span");
     sub.className = "bar-sub";
-    sub.textContent = `@${event.channel} · ${event.requirement}`;
+    sub.textContent = event.grouped
+      ? `${event._badges.length} badges · ${event.requirement}`
+      : `@${event.channel} · ${event.requirement}`;
     label.append(title, sub);
     const content = document.createElement("span");
     content.className = "bar-content";
