@@ -279,7 +279,7 @@ function render() {
         s.textContent = event.emoji;
         imgEl.append(s);
       }
-      bar.href = `/badges?q=${encodeURIComponent((event.groupLabel || event.name).replace(/\s*\(.*$/, ""))}`;
+      bar.href = `/group?id=${encodeURIComponent(event.group)}`;
     } else {
       const linked = event.badge ? (imgFor(event.badge) || event.badge) : matchBadge(event.name);
       bar.href = linked

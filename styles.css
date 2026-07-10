@@ -702,3 +702,46 @@ a.badge-tile[hidden] { display: none; }
 /* Footer credit link */
 .footer-link { color: var(--purple); font-weight: 700; text-decoration: none; }
 .footer-link:hover { text-decoration: underline; }
+
+/* Campaign (grouped event) page — list of tier badges */
+.group-window {
+  margin: 0 0 1.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.tier-list { display: flex; flex-direction: column; }
+.group-tier {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.15rem 0.25rem;
+  border-top: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  transition: background 0.12s ease;
+}
+.group-tier:last-child { border-bottom: 1px solid var(--border); }
+.group-tier:hover { background: var(--surface); }
+.group-tier:hover .group-tier-title { color: var(--purple); }
+.group-tier-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  font-size: 1.8rem;
+}
+.group-tier-icon img { width: 48px; height: 48px; object-fit: contain; }
+.group-tier-text { min-width: 0; }
+.group-tier-title {
+  margin: 0 0 0.2rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+.group-tier-desc {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
