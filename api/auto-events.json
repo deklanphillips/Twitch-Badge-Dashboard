@@ -160,14 +160,14 @@
   "description": "This badge was earned by watching one hour of the 2026 Esports World Cup!",
   "emoji": "✨",
   "requirement": "Watch to earn",
-  "start": "2026-07-07T19:40:31Z",
-  "end": null,
+  "start": "2026-07-08T13:00:00Z",
+  "end": "2026-08-24T13:00:00Z",
   "badge": {
    "set": "ewc-2026-bronze",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "one hour of the 2026 Esports World Cup category",
@@ -180,14 +180,14 @@
   "description": "This badge was earned by watching twelve hours of the 2026 Esports World Cup!",
   "emoji": "✨",
   "requirement": "Watch to earn",
-  "start": "2026-07-07T19:40:31Z",
-  "end": null,
+  "start": "2026-07-08T13:00:00Z",
+  "end": "2026-08-24T13:00:00Z",
   "badge": {
    "set": "ewc-2026-diamond",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "twelve hours of the 2026 Esports World Cup category",
@@ -200,14 +200,14 @@
   "description": "This badge was earned by watching three hours of the 2026 Esports World Cup!",
   "emoji": "✨",
   "requirement": "Watch to earn",
-  "start": "2026-07-07T19:40:31Z",
-  "end": null,
+  "start": "2026-07-08T13:00:00Z",
+  "end": "2026-08-24T13:00:00Z",
   "badge": {
    "set": "ewc-2026-gold",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "three hours of the 2026 Esports World Cup category",
@@ -220,14 +220,14 @@
   "description": "This badge was earned by watching six hours of the 2026 Esports World Cup!",
   "emoji": "✨",
   "requirement": "Watch to earn",
-  "start": "2026-07-07T19:40:31Z",
-  "end": null,
+  "start": "2026-07-08T13:00:00Z",
+  "end": "2026-08-24T13:00:00Z",
   "badge": {
    "set": "ewc-2026-platinum",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "six hours of the 2026 Esports World Cup category",
@@ -240,14 +240,14 @@
   "description": "This badge was earned by watching two hours of the 2026 Esports World Cup!",
   "emoji": "✨",
   "requirement": "Watch to earn",
-  "start": "2026-07-07T19:40:31Z",
-  "end": null,
+  "start": "2026-07-08T13:00:00Z",
+  "end": "2026-08-24T13:00:00Z",
   "badge": {
    "set": "ewc-2026-silver",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "two hours of the 2026 Esports World Cup category",
@@ -260,14 +260,14 @@
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Palworld category during Summer Drops Fest 2026!",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-07-08T04:59:21Z",
-  "end": null,
+  "start": "2026-07-10T07:00:00Z",
+  "end": "2026-07-24T23:58:00Z",
   "badge": {
    "set": "cool-cattiva",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "Palworld category",
@@ -280,14 +280,14 @@
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the NTE: Neverness to Everness category during the Version 1.2 \"999 Nights\" release!",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-07-08T04:59:21Z",
-  "end": null,
+  "start": "2026-07-08T07:00:00Z",
+  "end": "2026-07-22T06:59:00Z",
   "badge": {
    "set": "mint",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "NTE: Neverness to Everness category",
@@ -300,14 +300,14 @@
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Granblue Fantasy: Relink category during Summer Drops Fest 2026!",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-07-08T09:55:31Z",
-  "end": null,
+  "start": "2026-07-10T07:00:00Z",
+  "end": "2026-07-24T23:58:00Z",
   "badge": {
    "set": "relink-fabicon",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "Granblue Fantasy: Relink category",
@@ -320,14 +320,14 @@
   "description": "This badge was earned by purchasing a subscription to a Dead or Alive 6: Last Round streamer during Summer Drops Fest 2026!",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-07-08T17:18:58Z",
-  "end": null,
+  "start": "2026-07-10T07:00:00Z",
+  "end": "2026-07-24T23:58:00Z",
   "badge": {
    "set": "ayane",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "Dead or Alive 6: Last Round category",
@@ -340,14 +340,14 @@
   "description": "This badge was earned by purchasing a subscription to a Killer Inn streamer during Summer Drops Fest 2026!",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-07-08T17:18:58Z",
-  "end": null,
+  "start": "2026-07-10T07:00:00Z",
+  "end": "2026-07-24T23:58:00Z",
   "badge": {
    "set": "killer-inn",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "Killer Inn category",
@@ -380,14 +380,14 @@
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Pokémon GO category in celebration of the 10th Anniversary of Pokémon GO!",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-07-09T00:00:18Z",
-  "end": null,
+  "start": "2026-07-09T07:00:00Z",
+  "end": "2026-07-21T06:55:00Z",
   "badge": {
    "set": "meltan",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "Pokémon GO category",
@@ -400,14 +400,14 @@
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel Rivals category during Summer Drops Fest 2026!",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-07-09T07:58:49Z",
-  "end": null,
+  "start": "2026-07-10T07:00:00Z",
+  "end": "2026-07-24T23:58:00Z",
   "badge": {
    "set": "jubilee",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "Marvel Rivals category",
@@ -420,14 +420,14 @@
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Dream Con category during Dream Con 2026!",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-07-09T20:14:28Z",
-  "end": null,
+  "start": "2026-07-10T07:00:00Z",
+  "end": "2026-07-13T07:00:00Z",
   "badge": {
    "set": "dream-beyond",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "Dream Con category",
