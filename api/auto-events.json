@@ -463,5 +463,25 @@
    "label": "Pokémon GO category",
    "url": "https://www.twitch.tv/directory/category/pok-mon-go"
   }
+ },
+ {
+  "name": "Team Mystic",
+  "channel": "Pokémon GO",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Pokémon GO category in celebration of the 10th Anniversary of Pokémon GO!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-11T16:24:31Z",
+  "end": null,
+  "badge": {
+   "set": "team-mystic",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Pokémon GO category",
+   "url": "https://www.twitch.tv/directory/category/pok-mon-go"
+  }
  }
 ]
