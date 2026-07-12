@@ -1,31 +1,31 @@
-// Discord announcements + scheduled events for badge drops.
+// Discord announcements + scheduled events for badge & emote drops.
 //
-// Webhook messages (needs DISCORD_WEBHOOK_URL):
+// Badges channel  (DISCORD_WEBHOOK_BADGES, or DISCORD_WEBHOOK_URL):
 //   1. "New badge added" — a badge first appears in api/auto-events.json
-//   2. "Now live"        — a confirmed badge's start time has passed
+//   2. "Now live"        — a confirmed badge's start passes; message links to
+//                          the Discord event (if created) and the Twitch page.
+// Emotes channel  (DISCORD_WEBHOOK_EMOTES, or DISCORD_WEBHOOK_URL):
+//   3. "New emote added" — an emote first appears in api/global-emotes.json
+// Scheduled events (DISCORD_BOT_TOKEN + DISCORD_GUILD_ID; bot needs Manage
+//   Events): a native Discord event for each confirmed, UPCOMING badge.
+//   Grouped campaigns (EWC) collapse into a single event.
 //
-// Scheduled events in the server's Events tab (needs DISCORD_BOT_TOKEN +
-// DISCORD_GUILD_ID; bot must be in the guild with "Manage Events"):
-//   3. Creates a native Discord scheduled event for each confirmed, UPCOMING
-//      badge (grouped campaigns like EWC become a single event). Discord only
-//      allows a future start time, so already-live badges are skipped here
-//      (the "Now live" webhook covers those).
-//
-// State lives in api/announced.json so nothing is duplicated. Each capability
-// no-ops if its env vars are unset, so the pipeline works without Discord.
-//
-// Run after fetch-data.js.
+// State lives in api/announced.json; each item fires once. Every capability
+// no-ops if its env vars are unset. Run after fetch-data.js.
 
 const fs = require("fs");
 const path = require("path");
 
 const OUT_DIR = path.join(__dirname, "..", "api");
-const WEBHOOK = process.env.DISCORD_WEBHOOK_URL;
+const FALLBACK = process.env.DISCORD_WEBHOOK_URL;
+const WH_BADGES = process.env.DISCORD_WEBHOOK_BADGES || FALLBACK;
+const WH_EMOTES = process.env.DISCORD_WEBHOOK_EMOTES || FALLBACK;
 const BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
 const GUILD_ID = process.env.DISCORD_GUILD_ID;
 const SITE = process.env.SITE_URL || "https://badgedrops.com";
-const COLOR_NEW = 0x9147ff;  // purple
-const COLOR_LIVE = 0x00c853; // green
+const COLOR_NEW = 0x9147ff;   // purple
+const COLOR_LIVE = 0x00c853;  // green
+const COLOR_EMOTE = 0xff9800; // orange
 
 function readJson(file, fallback) {
   try { return JSON.parse(fs.readFileSync(path.join(OUT_DIR, file), "utf8")); }
@@ -39,7 +39,6 @@ function badgeImage(badges, set, version) {
   return v ? (v.image_url_4x || v.image_url_2x || v.image_url_1x) : null;
 }
 
-// Discord renders <t:unix:F> in each viewer's own timezone.
 const stamp = (iso) => (iso ? `<t:${Math.floor(Date.parse(iso) / 1000)}:F>` : null);
 
 function linkFor(ev) {
@@ -48,8 +47,12 @@ function linkFor(ev) {
     : `${SITE}/badge?set=${encodeURIComponent(ev.badge.set)}&version=${encodeURIComponent(ev.badge.version)}`;
 }
 
-async function postWebhook(embed) {
-  const res = await fetch(WEBHOOK, {
+function eventKey(ev) {
+  return ev.group ? `group:${ev.group}` : `set:${ev.badge.set}`;
+}
+
+async function post(url, embed) {
+  const res = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username: "BadgeDrops", embeds: [embed] }),
@@ -58,9 +61,9 @@ async function postWebhook(embed) {
   await new Promise((r) => setTimeout(r, 500)); // stay under rate limits
 }
 
-// ---- 1 & 2: webhook announcements ----
-async function runWebhook(events, badges, announced) {
-  if (!WEBHOOK) { console.log("DISCORD_WEBHOOK_URL not set — skipping webhook messages"); return false; }
+// ---- Badges channel: new + live ----
+async function runBadges(events, badges, announced) {
+  if (!WH_BADGES) { console.log("No badges webhook set — skipping badge messages"); return false; }
   const detected = new Set(announced.detected || []);
   const live = new Set(announced.live || []);
   const now = Date.now();
@@ -76,7 +79,7 @@ async function runWebhook(events, badges, announced) {
     if (ev.confirmed && ev.start) fields.push({ name: "Starts", value: stamp(ev.start), inline: true });
     if (ev.confirmed && ev.end) fields.push({ name: "Ends", value: stamp(ev.end), inline: true });
     if (!ev.confirmed) fields.push({ name: "Dates", value: "TBA", inline: true });
-    await postWebhook({
+    await post(WH_BADGES, {
       title: `🆕 New badge added: ${ev.name}`,
       url: linkFor(ev),
       description: ev.description || `Earn it by: ${ev.requirement || "see badge page"}`,
@@ -85,7 +88,7 @@ async function runWebhook(events, badges, announced) {
       fields,
       footer: { text: "badgedrops.com" },
     });
-    console.log(`announced NEW: ${ev.name}`);
+    console.log(`announced NEW badge: ${ev.name}`);
   }
 
   for (const ev of events) {
@@ -98,17 +101,29 @@ async function runWebhook(events, badges, announced) {
     if (live.has(key)) continue;
     live.add(key);
     changed = true;
+
     const img = badgeImage(badges, ev.badge.set, ev.badge.version);
-    await postWebhook({
+    // Build "where to go" links: the Discord scheduled event + the Twitch page.
+    const links = [];
+    const evId = (announced.events || {})[eventKey(ev)];
+    if (evId && GUILD_ID) links.push(`[📅 Discord Event](https://discord.com/events/${GUILD_ID}/${evId})`);
+    if (ev.where && ev.where.url) links.push(`[🎬 Watch on Twitch](${ev.where.url})`);
+    links.push(`[🔗 Details](${linkFor(ev)})`);
+
+    const fields = [];
+    if (ev.end) fields.push({ name: "Available until", value: stamp(ev.end) });
+    fields.push({ name: "Links", value: links.join("  •  ") });
+
+    await post(WH_BADGES, {
       title: `🔴 Now live: ${ev.name}`,
       url: linkFor(ev),
       description: `**How to earn:** ${ev.requirement || "See badge page"}`,
       color: COLOR_LIVE,
       thumbnail: img ? { url: img } : undefined,
-      fields: ev.end ? [{ name: "Available until", value: stamp(ev.end) }] : [],
+      fields,
       footer: { text: "badgedrops.com" },
     });
-    console.log(`announced LIVE: ${ev.name}`);
+    console.log(`announced LIVE badge: ${ev.name}`);
   }
 
   announced.detected = [...detected];
@@ -116,7 +131,31 @@ async function runWebhook(events, badges, announced) {
   return changed;
 }
 
-// ---- 3: native Discord scheduled events (upcoming badges) ----
+// ---- Emotes channel: newly added global emotes ----
+async function runEmotes(emotes, announced) {
+  if (!WH_EMOTES) { console.log("No emotes webhook set — skipping emote messages"); return false; }
+  const seen = new Set(announced.emotes || []);
+  let changed = false;
+  for (const em of emotes.data || []) {
+    if (seen.has(em.id)) continue;
+    seen.add(em.id);
+    changed = true;
+    const img = em.images && (em.images.url_4x || em.images.url_2x || em.images.url_1x);
+    await post(WH_EMOTES, {
+      title: `😀 New emote added: ${em.name}`,
+      url: `${SITE}/emote?id=${encodeURIComponent(em.id)}`,
+      description: "A new global Twitch emote is now available to everyone.",
+      color: COLOR_EMOTE,
+      thumbnail: img ? { url: img } : undefined,
+      footer: { text: "badgedrops.com" },
+    });
+    console.log(`announced NEW emote: ${em.name}`);
+  }
+  announced.emotes = [...seen];
+  return changed;
+}
+
+// ---- Native Discord scheduled events (upcoming badges) ----
 async function runScheduledEvents(events, badges, announced) {
   if (!BOT_TOKEN || !GUILD_ID) {
     console.log("DISCORD_BOT_TOKEN / DISCORD_GUILD_ID not set — skipping scheduled events");
@@ -126,13 +165,12 @@ async function runScheduledEvents(events, badges, announced) {
   announced.events = announced.events || {};
   let changed = false;
 
-  // Collapse grouped campaigns (EWC etc.) into a single event unit.
   const units = new Map();
   for (const ev of events) {
     if (ev.confirmed === false || !ev.start || !ev.end) continue;
     const start = Date.parse(ev.start), end = Date.parse(ev.end);
     if (isNaN(start) || isNaN(end)) continue;
-    const key = ev.group ? `group:${ev.group}` : `set:${ev.badge.set}`;
+    const key = eventKey(ev);
     let u = units.get(key);
     if (!u) {
       units.set(key, {
@@ -150,7 +188,7 @@ async function runScheduledEvents(events, badges, announced) {
   }
 
   for (const u of units.values()) {
-    if (announced.events[u.key]) continue; // already created
+    if (announced.events[u.key]) continue;
     if (u.start <= now || u.end <= now) continue; // Discord requires a future start
 
     let image;
@@ -164,11 +202,11 @@ async function runScheduledEvents(events, badges, announced) {
           image = `data:${ct};base64,${buf.toString("base64")}`;
         }
       }
-    } catch { /* cover image is optional */ }
+    } catch { /* cover image optional */ }
 
     const body = {
       name: u.name.slice(0, 100),
-      privacy_level: 2, // GUILD_ONLY
+      privacy_level: 2,
       scheduled_start_time: new Date(u.start).toISOString(),
       scheduled_end_time: new Date(u.end).toISOString(),
       entity_type: 3, // EXTERNAL
@@ -198,18 +236,23 @@ async function runScheduledEvents(events, badges, announced) {
 async function main() {
   const events = readJson("auto-events.json", []);
   const badges = readJson("global-badges.json", { data: [] });
-  const announced = readJson("announced.json", { detected: [], live: [], events: {} });
+  const emotes = readJson("global-emotes.json", { data: [] });
+  const announced = readJson("announced.json", { detected: [], live: [], emotes: [], events: {} });
 
-  const a = await runWebhook(events, badges, announced);
-  const b = await runScheduledEvents(events, badges, announced);
+  // Scheduled events first, so the "Now live" message can link to the event.
+  const c = await runScheduledEvents(events, badges, announced);
+  const a = await runBadges(events, badges, announced);
+  const b = await runEmotes(emotes, announced);
 
-  if (a || b) {
+  if (a || b || c) {
     fs.writeFileSync(
       path.join(OUT_DIR, "announced.json"),
-      JSON.stringify(
-        { detected: announced.detected || [], live: announced.live || [], events: announced.events || {} },
-        null, 1
-      ) + "\n"
+      JSON.stringify({
+        detected: announced.detected || [],
+        live: announced.live || [],
+        emotes: announced.emotes || [],
+        events: announced.events || {},
+      }, null, 1) + "\n"
     );
     console.log("updated announced.json");
   } else {

@@ -28,6 +28,8 @@ jobs:
       - name: Announce on Discord
         run: node scripts/notify-discord.js
         env:
+          DISCORD_WEBHOOK_BADGES: ${{ secrets.DISCORD_WEBHOOK_BADGES }}
+          DISCORD_WEBHOOK_EMOTES: ${{ secrets.DISCORD_WEBHOOK_EMOTES }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_GUILD_ID: ${{ secrets.DISCORD_GUILD_ID }}
