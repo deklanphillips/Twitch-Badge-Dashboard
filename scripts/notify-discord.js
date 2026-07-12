@@ -23,6 +23,7 @@ const WH_EMOTES = process.env.DISCORD_WEBHOOK_EMOTES || FALLBACK;
 const BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
 const GUILD_ID = process.env.DISCORD_GUILD_ID;
 const SITE = process.env.SITE_URL || "https://badgedrops.com";
+const WATCH_URL = process.env.TWITCH_WATCH_URL || "https://www.twitch.tv/transforms";
 const COLOR_NEW = 0x9147ff;   // purple
 const COLOR_LIVE = 0x00c853;  // green
 const COLOR_EMOTE = 0xff9800; // orange
@@ -107,7 +108,7 @@ async function runBadges(events, badges, announced) {
     const links = [];
     const evId = (announced.events || {})[eventKey(ev)];
     if (evId && GUILD_ID) links.push(`[📅 Discord Event](https://discord.com/events/${GUILD_ID}/${evId})`);
-    if (ev.where && ev.where.url) links.push(`[🎬 Watch on Twitch](${ev.where.url})`);
+    links.push(`[🎬 Watch on Twitch](${WATCH_URL})`);
     links.push(`[🔗 Details](${linkFor(ev)})`);
 
     const fields = [];
