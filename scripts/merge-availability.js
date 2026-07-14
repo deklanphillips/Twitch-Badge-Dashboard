@@ -47,7 +47,10 @@ function parseSnapshot(htmlPath) {
         const chans = (a.channels || []).map((c) => ({ name: c.user?.display_name || c.user?.login || "", href: "https://www.twitch.tv/" + (c.user?.login || "") })).filter((c) => c.name);
         if (chans.length) o.channels = chans;
         return o;
-      });
+      // Drop empty windows (no dates, no categories, no channels) — sparse
+      // exports emit these and they carry no information worth merging.
+      }).filter((o) => o.start || o.categories || o.channels);
+      if (!entry.avail.length) delete entry.avail;
     }
     out[set_id] = entry;
   }
@@ -66,6 +69,32 @@ function main() {
 
   const snapshot = parseSnapshot(htmlPath);
 
+  // Field-preserving merge: take fresh dates/flags from the snapshot, but keep
+  // existing categories/channels when the snapshot doesn't carry them (some
+  // exports, e.g. the Global Badges page, omit that detail — we must not wipe
+  // it). Matches avail entries by index (badges almost always have one).
+  function mergeEntry(existing, incoming) {
+    if (!incoming.avail) {
+      // Snapshot has no window; never downgrade a richer existing entry.
+      return existing && existing.avail ? existing : incoming;
+    }
+    const out = { ...incoming };
+    out.avail = incoming.avail.map((a, i) => {
+      const old = existing && existing.avail && existing.avail[i];
+      const m = { ...a };
+      if (!old) return m;
+      // Prefer the snapshot's value, but never overwrite a real existing value
+      // with an empty one (sparse exports omit dates/minutes/channels).
+      if (!m.start && old.start) m.start = old.start;
+      if (!m.end && old.end) m.end = old.end;
+      if (!m.watchMinutes && old.watchMinutes) m.watchMinutes = old.watchMinutes;
+      if ((!m.categories || !m.categories.length) && old.categories && old.categories.length) m.categories = old.categories;
+      if ((!m.channels || !m.channels.length) && old.channels && old.channels.length) m.channels = old.channels;
+      return m;
+    });
+    return out;
+  }
+
   const added = [], updated = [];
   const merged = { ...current };
   const sortedKeys = Object.keys(snapshot).sort();
@@ -75,9 +104,12 @@ function main() {
     if (!existing) {
       merged[set_id] = incoming;
       added.push(set_id);
-    } else if (JSON.stringify(existing) !== JSON.stringify(incoming)) {
-      merged[set_id] = incoming;
-      updated.push(set_id);
+    } else {
+      const result = mergeEntry(existing, incoming);
+      if (JSON.stringify(existing) !== JSON.stringify(result)) {
+        merged[set_id] = result;
+        updated.push(set_id);
+      }
     }
     // identical -> leave untouched
   }
