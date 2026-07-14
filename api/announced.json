@@ -47,7 +47,8 @@
   "killer-inn",
   "meltan",
   "jubilee",
-  "dream-beyond"
+  "dream-beyond",
+  "hotline"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -354,5 +355,13 @@
   "1",
   "emotesv2_91417441b2f24a5299ed7b2a1ce8e7b9"
  ],
- "events": {}
+ "events": {
+  "set:perlica": {
+   "id": "1526700221256433724",
+   "start": 1784160000000,
+   "end": 1784937540000,
+   "name": "Perlica",
+   "requirement": "Sub or gift sub"
+  }
+ }
 }
