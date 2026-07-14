@@ -47,7 +47,8 @@
   "killer-inn",
   "meltan",
   "jubilee",
-  "dream-beyond"
+  "dream-beyond",
+  "hotline"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -360,6 +361,48 @@
    "start": 1784160000000,
    "end": 1784937540000,
    "name": "Perlica",
+   "requirement": "Sub or gift sub"
+  },
+  "set:two-point-museum": {
+   "id": "1526701854145384491",
+   "start": 1781794800000,
+   "end": 1784213940000,
+   "name": "Two Point Museum",
+   "requirement": "Sub or gift sub"
+  },
+  "set:two-point-pickle": {
+   "id": "1526701858163527712",
+   "start": 1781794800000,
+   "end": 1784213940000,
+   "name": "Two Point Pickle",
+   "requirement": "Watch 30 minutes"
+  },
+  "set:blossom-badge": {
+   "id": "1526701862789713941",
+   "start": 1782082800000,
+   "end": 1785196680000,
+   "name": "Blossom Badge Level 1",
+   "requirement": "Watch to earn"
+  },
+  "set:detroit-android-triangle": {
+   "id": "1526701867399119170",
+   "start": 1783036800000,
+   "end": 1784332680000,
+   "name": "Detroit Android Triangle",
+   "requirement": "Watch 1 hour"
+  },
+  "set:detroit-blue-led": {
+   "id": "1526701871991885894",
+   "start": 1783036800000,
+   "end": 1784332680000,
+   "name": "Detroit Blue LED",
+   "requirement": "Sub or gift sub"
+  },
+  "set:killer-inn": {
+   "id": "1526701904791601216",
+   "start": 1783666800000,
+   "end": 1784937480000,
+   "name": "Killer Inn",
    "requirement": "Sub or gift sub"
   }
  }
