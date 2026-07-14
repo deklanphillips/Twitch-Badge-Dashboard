@@ -24,6 +24,8 @@ const BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
 const GUILD_ID = process.env.DISCORD_GUILD_ID;
 const SITE = process.env.SITE_URL || "https://badgedrops.com";
 const WATCH_URL = process.env.TWITCH_WATCH_URL || "https://www.twitch.tv/transforms";
+const ROLE_BADGES = process.env.DISCORD_ROLE_BADGES || "1403074914562478241";
+const ROLE_EMOTES = process.env.DISCORD_ROLE_EMOTES || "1445526534096945337";
 const COLOR_NEW = 0x9147ff;   // purple
 const COLOR_LIVE = 0x00c853;  // green
 const COLOR_EMOTE = 0xff9800; // orange
@@ -52,11 +54,17 @@ function eventKey(ev) {
   return ev.group ? `group:${ev.group}` : `set:${ev.badge.set}`;
 }
 
-async function post(url, embed) {
+async function post(url, embed, roleId) {
+  const payload = { username: "BadgeDrops", embeds: [embed] };
+  if (roleId) {
+    payload.content = `<@&${roleId}>`;
+    // Whitelist only this role so the ping actually fires (and nothing else can).
+    payload.allowed_mentions = { parse: [], roles: [roleId] };
+  }
   const res = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ username: "BadgeDrops", embeds: [embed] }),
+    body: JSON.stringify(payload),
   });
   if (!res.ok) throw new Error(`Discord webhook ${res.status}: ${await res.text()}`);
   await new Promise((r) => setTimeout(r, 500)); // stay under rate limits
@@ -88,7 +96,7 @@ async function runBadges(events, badges, announced) {
       thumbnail: img ? { url: img } : undefined,
       fields,
       footer: { text: "badgedrops.com" },
-    });
+    }, ROLE_BADGES);
     console.log(`announced NEW badge: ${ev.name}`);
   }
 
@@ -123,7 +131,7 @@ async function runBadges(events, badges, announced) {
       thumbnail: img ? { url: img } : undefined,
       fields,
       footer: { text: "badgedrops.com" },
-    });
+    }, ROLE_BADGES);
     console.log(`announced LIVE badge: ${ev.name}`);
   }
 
@@ -149,7 +157,7 @@ async function runEmotes(emotes, announced) {
       color: COLOR_EMOTE,
       thumbnail: img ? { url: img } : undefined,
       footer: { text: "badgedrops.com" },
-    });
+    }, ROLE_EMOTES);
     console.log(`announced NEW emote: ${em.name}`);
   }
   announced.emotes = [...seen];
