@@ -21,7 +21,10 @@
   "perlica",
   "meltan",
   "jubilee",
-  "dream-beyond"
+  "dream-beyond",
+  "team-valor",
+  "team-mystic",
+  "team-instinct"
  ],
  "live": [
   "two-point-museum",
@@ -347,7 +350,8 @@
   "4",
   "3",
   "2",
-  "1"
+  "1",
+  "emotesv2_91417441b2f24a5299ed7b2a1ce8e7b9"
  ],
  "events": {}
 }
