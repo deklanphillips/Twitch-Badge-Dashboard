@@ -7303,5 +7303,28 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "hotline": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-14T07:00Z",
+       "end": "2026-07-18T06:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "CONTROL Resonant",
+           "href": "https://www.twitch.tv/directory/category/control-2?filter=drops"
+         }
+       ]
+     }
+   ]
  }
 };

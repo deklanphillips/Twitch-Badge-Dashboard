@@ -370,14 +370,14 @@
   "description": "This badge was earned by purchasing a subscription to an Arknights: Endfield streamer during the Half-Year Anniversary!",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-07-08T17:18:58Z",
-  "end": null,
+  "start": "2026-07-16T00:00:00Z",
+  "end": "2026-07-24T23:59:00Z",
   "badge": {
    "set": "perlica",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "Arknights: Endfield category",
@@ -510,14 +510,14 @@
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the CONTROL Resonant category.",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-07-14T18:35:30Z",
-  "end": null,
+  "start": "2026-07-14T07:00:00Z",
+  "end": "2026-07-18T06:59:00Z",
   "badge": {
    "set": "hotline",
    "version": "1"
   },
   "auto": true,
-  "confirmed": false,
+  "confirmed": true,
   "where": {
    "type": "category",
    "label": "CONTROL Resonant category",
