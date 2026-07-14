@@ -199,6 +199,23 @@ async function load() {
           availSection.append(whereWrap);
         }
 
+        // Campaigns with a huge eligible-channel list link to our own stream.
+        if (a.broadChannels) {
+          const whereWrap = document.createElement("div");
+          whereWrap.className = "where-earn";
+          const whereLabel = document.createElement("p");
+          whereLabel.className = "detail-label";
+          whereLabel.textContent = "Watch on Twitch";
+          const whereLink = document.createElement("a");
+          whereLink.className = "where-link";
+          whereLink.href = "https://www.twitch.tv/transforms";
+          whereLink.target = "_blank";
+          whereLink.rel = "noopener";
+          whereLink.textContent = "twitch.tv/transforms ↗";
+          whereWrap.append(whereLabel, whereLink);
+          availSection.append(whereWrap);
+        }
+
         const grid = document.createElement("div");
         grid.className = "avail-grid";
         grid.append(

@@ -12,6 +12,7 @@ const fs = require("fs");
 const path = require("path");
 
 const SKIP = /staff|leader|clips?-|twitchiversary|intern|social-media|moderator|subscriber|bits|broadcaster|predictions|hype-train|no_audio|no_video|prime|turbo|partner/i;
+const MAX_CHANNELS = 25; // cap stored channels per window (big campaigns list thousands)
 
 function parseSnapshot(htmlPath) {
   const html = fs.readFileSync(htmlPath, "utf8");
@@ -24,8 +25,33 @@ function parseSnapshot(htmlPath) {
     for (const k in o) { const r = findKey(o[k], key); if (r) return r; }
     return null;
   };
-  const arr = findKey(data.props, "twitchGlobalBadges");
-  if (!arr) throw new Error("twitchGlobalBadges not found in snapshot.");
+  // Two export shapes are supported:
+  //   Global Badges page: props...twitchGlobalBadges = [{current, availability}]
+  //   Events page:        props...initialData = [{ ..., twitch_global_badges }]
+  // For the Events shape, flatten to badges and merge windows for badges that
+  // appear across multiple events (e.g. multi-phase drops).
+  let arr = findKey(data.props, "twitchGlobalBadges");
+  if (!arr) {
+    const events = findKey(data.props, "initialData");
+    if (!events) throw new Error("Neither twitchGlobalBadges nor initialData found in snapshot.");
+    const byId = new Map();
+    for (const ev of events) {
+      for (const b of ev.twitch_global_badges || []) {
+        const id = b.current && b.current.set_id;
+        if (!id) continue;
+        if (!byId.has(id)) {
+          byId.set(id, { current: b.current, availability: [...(b.availability || [])], history: b.history || [] });
+        } else {
+          const seen = byId.get(id);
+          for (const a of b.availability || []) {
+            const dup = seen.availability.some((x) => x.start_at_date === a.start_at_date && x.end_at_date === a.end_at_date);
+            if (!dup) seen.availability.push(a);
+          }
+        }
+      }
+    }
+    arr = [...byId.values()];
+  }
 
   const out = {};
   for (const b of arr) {
@@ -45,7 +71,13 @@ function parseSnapshot(htmlPath) {
         const cats = (a.categories || []).map((c) => ({ name: c.game?.name || c.category?.name || "", href: c.href || "" })).filter((c) => c.name);
         if (cats.length) o.categories = cats;
         const chans = (a.channels || []).map((c) => ({ name: c.user?.display_name || c.user?.login || "", href: "https://www.twitch.tv/" + (c.user?.login || "") })).filter((c) => c.name);
-        if (chans.length) o.channels = chans;
+        // Big campaigns (EWC etc.) list thousands of eligible channels — don't
+        // store them all; flag it so the detail page links to our own stream.
+        if (chans.length > MAX_CHANNELS) {
+          o.broadChannels = true;
+        } else if (chans.length) {
+          o.channels = chans;
+        }
         return o;
       // Drop empty windows (no dates, no categories, no channels) — sparse
       // exports emit these and they carry no information worth merging.
@@ -89,7 +121,9 @@ function main() {
       if (!m.end && old.end) m.end = old.end;
       if (!m.watchMinutes && old.watchMinutes) m.watchMinutes = old.watchMinutes;
       if ((!m.categories || !m.categories.length) && old.categories && old.categories.length) m.categories = old.categories;
-      if ((!m.channels || !m.channels.length) && old.channels && old.channels.length) m.channels = old.channels;
+      // Don't retain an old channel list when the new window is broad-channel
+      // (thousands of eligible channels) — that campaign links to our stream.
+      if (!m.broadChannels && (!m.channels || !m.channels.length) && old.channels && old.channels.length) m.channels = old.channels;
       return m;
     });
     return out;

@@ -3291,10 +3291,10 @@ const BADGE_AVAILABILITY = {
    ]
  },
  "final-fantasy-xiv-fan-festival-2026-eu---content-unlock-quest-chat": {
-   "added": "2026-04-21T13:43:19.229Z"
+   "added": null
  },
  "final-fantasy-xiv-fan-festival-2026-eu---moogle-chat": {
-   "added": "2026-04-21T13:43:19.229Z"
+   "added": null
  },
  "final-fantasy-xiv-fan-festival-2026-na---fat-cat-chat": {
    "added": "2026-04-21T13:43:19.229Z",
@@ -3323,10 +3323,10 @@ const BADGE_AVAILABILITY = {
    "added": "2026-04-21T13:43:19.229Z"
  },
  "final-fantasy-xiv-fan-festival-2026-jp---alpha-chat": {
-   "added": "2026-04-21T13:54:32.644Z"
+   "added": null
  },
  "final-fantasy-xiv-fan-festival-2026-jp---quest-complete-chat": {
-   "added": "2026-04-21T13:54:32.644Z"
+   "added": null
  },
  "invincible-vs": {
    "added": "2026-04-23T20:27:23.026Z",
@@ -3778,7 +3778,7 @@ const BADGE_AVAILABILITY = {
    "added": "2026-05-29T17:09:40.143Z"
  },
  "rematch-brazil": {
-   "added": "2026-06-04T15:23:46.864Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-06-11T08:00Z",
@@ -3797,313 +3797,12 @@ const BADGE_AVAILABILITY = {
            "href": "https://www.twitch.tv/directory/category/rematch?filter=drops"
          }
        ],
-       "channels": [
-         {
-           "name": "purez4",
-           "href": "https://www.twitch.tv/purez4"
-         },
-         {
-           "name": "Riyuuka",
-           "href": "https://www.twitch.tv/riyuuka"
-         },
-         {
-           "name": "zSectiion",
-           "href": "https://www.twitch.tv/zsectiion"
-         },
-         {
-           "name": "alanzoka",
-           "href": "https://www.twitch.tv/alanzoka"
-         },
-         {
-           "name": "joaozoid",
-           "href": "https://www.twitch.tv/joaozoid"
-         },
-         {
-           "name": "boss_off_games",
-           "href": "https://www.twitch.tv/boss_off_games"
-         },
-         {
-           "name": "ca_Millia",
-           "href": "https://www.twitch.tv/ca_millia"
-         },
-         {
-           "name": "JullyTMT02",
-           "href": "https://www.twitch.tv/jullytmt02"
-         },
-         {
-           "name": "Luuuzka",
-           "href": "https://www.twitch.tv/luuuzka"
-         },
-         {
-           "name": "Takioto",
-           "href": "https://www.twitch.tv/takioto"
-         },
-         {
-           "name": "danisor",
-           "href": "https://www.twitch.tv/danisor"
-         },
-         {
-           "name": "freudiana_gamer",
-           "href": "https://www.twitch.tv/freudiana_gamer"
-         },
-         {
-           "name": "Moustachinho",
-           "href": "https://www.twitch.tv/moustachinho"
-         },
-         {
-           "name": "oultimosheikah",
-           "href": "https://www.twitch.tv/oultimosheikah"
-         },
-         {
-           "name": "Tiozao_TV",
-           "href": "https://www.twitch.tv/tiozao_tv"
-         },
-         {
-           "name": "bubsklaut",
-           "href": "https://www.twitch.tv/bubsklaut"
-         },
-         {
-           "name": "Cinder1705",
-           "href": "https://www.twitch.tv/cinder1705"
-         },
-         {
-           "name": "spotplaygaming",
-           "href": "https://www.twitch.tv/spotplaygaming"
-         },
-         {
-           "name": "tavernadowill",
-           "href": "https://www.twitch.tv/tavernadowill"
-         },
-         {
-           "name": "Vinysec",
-           "href": "https://www.twitch.tv/vinysec"
-         },
-         {
-           "name": "gabepeixe",
-           "href": "https://www.twitch.tv/gabepeixe"
-         },
-         {
-           "name": "mount",
-           "href": "https://www.twitch.tv/mount"
-         },
-         {
-           "name": "Dehnzy",
-           "href": "https://www.twitch.tv/dehnzy"
-         },
-         {
-           "name": "euLINK",
-           "href": "https://www.twitch.tv/eulink"
-         },
-         {
-           "name": "Febatista",
-           "href": "https://www.twitch.tv/febatista"
-         },
-         {
-           "name": "Gauhchu",
-           "href": "https://www.twitch.tv/gauhchu"
-         },
-         {
-           "name": "IguSemUmbigo",
-           "href": "https://www.twitch.tv/igusemumbigo"
-         },
-         {
-           "name": "TrisviK",
-           "href": "https://www.twitch.tv/trisvik"
-         },
-         {
-           "name": "Giwhiteblack",
-           "href": "https://www.twitch.tv/giwhiteblack"
-         },
-         {
-           "name": "Coringa",
-           "href": "https://www.twitch.tv/coringa"
-         },
-         {
-           "name": "gokugamerrj",
-           "href": "https://www.twitch.tv/gokugamerrj"
-         },
-         {
-           "name": "Japeta",
-           "href": "https://www.twitch.tv/japeta"
-         },
-         {
-           "name": "GalaxyyK",
-           "href": "https://www.twitch.tv/galaxyyk"
-         },
-         {
-           "name": "JrPam",
-           "href": "https://www.twitch.tv/jrpam"
-         },
-         {
-           "name": "kauemsilva",
-           "href": "https://www.twitch.tv/kauemsilva"
-         },
-         {
-           "name": "luciano_recruta",
-           "href": "https://www.twitch.tv/luciano_recruta"
-         },
-         {
-           "name": "MAGNUSnoos",
-           "href": "https://www.twitch.tv/magnusnoos"
-         },
-         {
-           "name": "oabeljoga",
-           "href": "https://www.twitch.tv/oabeljoga"
-         },
-         {
-           "name": "ViktorKav",
-           "href": "https://www.twitch.tv/viktorkav"
-         },
-         {
-           "name": "rkrutzmann",
-           "href": "https://www.twitch.tv/rkrutzmann"
-         },
-         {
-           "name": "ExpressoNerd",
-           "href": "https://www.twitch.tv/expressonerd"
-         },
-         {
-           "name": "GamesMr100",
-           "href": "https://www.twitch.tv/gamesmr100"
-         },
-         {
-           "name": "Hashiraplay_",
-           "href": "https://www.twitch.tv/hashiraplay_"
-         },
-         {
-           "name": "skorpion_survival",
-           "href": "https://www.twitch.tv/skorpion_survival"
-         },
-         {
-           "name": "Ti0regis",
-           "href": "https://www.twitch.tv/ti0regis"
-         },
-         {
-           "name": "dona",
-           "href": "https://www.twitch.tv/dona"
-         },
-         {
-           "name": "canonicoxp",
-           "href": "https://www.twitch.tv/canonicoxp"
-         },
-         {
-           "name": "iagomenta",
-           "href": "https://www.twitch.tv/iagomenta"
-         },
-         {
-           "name": "LIyahLIweth",
-           "href": "https://www.twitch.tv/liyahliweth"
-         },
-         {
-           "name": "tonton_br",
-           "href": "https://www.twitch.tv/tonton_br"
-         },
-         {
-           "name": "Bahiaqz",
-           "href": "https://www.twitch.tv/bahiaqz"
-         },
-         {
-           "name": "canal_overgame",
-           "href": "https://www.twitch.tv/canal_overgame"
-         },
-         {
-           "name": "LarDosGames",
-           "href": "https://www.twitch.tv/lardosgames"
-         },
-         {
-           "name": "TheVanguardBR",
-           "href": "https://www.twitch.tv/thevanguardbr"
-         },
-         {
-           "name": "TRGVash",
-           "href": "https://www.twitch.tv/trgvash"
-         },
-         {
-           "name": "ZazaBruxo",
-           "href": "https://www.twitch.tv/zazabruxo"
-         },
-         {
-           "name": "Casado_Tambem_Joga",
-           "href": "https://www.twitch.tv/casado_tambem_joga"
-         },
-         {
-           "name": "ColucciUP",
-           "href": "https://www.twitch.tv/colucciup"
-         },
-         {
-           "name": "Foythtv",
-           "href": "https://www.twitch.tv/foythtv"
-         },
-         {
-           "name": "JojOnny",
-           "href": "https://www.twitch.tv/jojonny"
-         },
-         {
-           "name": "Olivotec",
-           "href": "https://www.twitch.tv/olivotec"
-         },
-         {
-           "name": "Shalalaka",
-           "href": "https://www.twitch.tv/shalalaka"
-         },
-         {
-           "name": "alex_soquer",
-           "href": "https://www.twitch.tv/alex_soquer"
-         },
-         {
-           "name": "Diijas",
-           "href": "https://www.twitch.tv/diijas"
-         },
-         {
-           "name": "Maveco",
-           "href": "https://www.twitch.tv/maveco"
-         },
-         {
-           "name": "Ricardo_hue",
-           "href": "https://www.twitch.tv/ricardo_hue"
-         },
-         {
-           "name": "Uclaoboat",
-           "href": "https://www.twitch.tv/uclaoboat"
-         },
-         {
-           "name": "Douguras",
-           "href": "https://www.twitch.tv/douguras"
-         },
-         {
-           "name": "Kahodo",
-           "href": "https://www.twitch.tv/kahodo"
-         },
-         {
-           "name": "MedusaGeek",
-           "href": "https://www.twitch.tv/medusageek"
-         },
-         {
-           "name": "Nylkam",
-           "href": "https://www.twitch.tv/nylkam"
-         },
-         {
-           "name": "Zyndal_",
-           "href": "https://www.twitch.tv/zyndal_"
-         },
-         {
-           "name": "Smzinho",
-           "href": "https://www.twitch.tv/smzinho"
-         },
-         {
-           "name": "FloristaDuo",
-           "href": "https://www.twitch.tv/floristaduo"
-         },
-         {
-           "name": "LestatPlays",
-           "href": "https://www.twitch.tv/lestatplays"
-         }
-       ]
+       "broadChannels": true
      }
    ]
  },
  "rematch-england": {
-   "added": "2026-06-04T15:23:46.864Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-06-11T08:00Z",
@@ -4126,7 +3825,7 @@ const BADGE_AVAILABILITY = {
    ]
  },
  "rematch-france": {
-   "added": "2026-06-04T15:23:46.864Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-06-11T08:00Z",
@@ -4145,337 +3844,12 @@ const BADGE_AVAILABILITY = {
            "href": "https://www.twitch.tv/directory/category/rematch?filter=drops"
          }
        ],
-       "channels": [
-         {
-           "name": "Newaxx",
-           "href": "https://www.twitch.tv/newaxx"
-         },
-         {
-           "name": "Protsky",
-           "href": "https://www.twitch.tv/protsky"
-         },
-         {
-           "name": "Morrigh4n",
-           "href": "https://www.twitch.tv/morrigh4n"
-         },
-         {
-           "name": "Recalbox",
-           "href": "https://www.twitch.tv/recalbox"
-         },
-         {
-           "name": "BrunoUniversSimu",
-           "href": "https://www.twitch.tv/brunouniverssimu"
-         },
-         {
-           "name": "alextro23",
-           "href": "https://www.twitch.tv/alextro23"
-         },
-         {
-           "name": "deadzach44",
-           "href": "https://www.twitch.tv/deadzach44"
-         },
-         {
-           "name": "Majinoux",
-           "href": "https://www.twitch.tv/majinoux"
-         },
-         {
-           "name": "RavenCross",
-           "href": "https://www.twitch.tv/ravencross"
-         },
-         {
-           "name": "thedreadwaffle",
-           "href": "https://www.twitch.tv/thedreadwaffle"
-         },
-         {
-           "name": "Wenyn",
-           "href": "https://www.twitch.tv/wenyn"
-         },
-         {
-           "name": "HammerKick",
-           "href": "https://www.twitch.tv/hammerkick"
-         },
-         {
-           "name": "Krokaccino",
-           "href": "https://www.twitch.tv/krokaccino"
-         },
-         {
-           "name": "Joueur_du_Grenier",
-           "href": "https://www.twitch.tv/joueur_du_grenier"
-         },
-         {
-           "name": "Eryciaa",
-           "href": "https://www.twitch.tv/eryciaa"
-         },
-         {
-           "name": "Aeliaa_",
-           "href": "https://www.twitch.tv/aeliaa_"
-         },
-         {
-           "name": "Aelthan",
-           "href": "https://www.twitch.tv/aelthan"
-         },
-         {
-           "name": "Akwartz",
-           "href": "https://www.twitch.tv/akwartz"
-         },
-         {
-           "name": "Did0us",
-           "href": "https://www.twitch.tv/did0us"
-         },
-         {
-           "name": "Karssi",
-           "href": "https://www.twitch.tv/karssi"
-         },
-         {
-           "name": "Shelyanna",
-           "href": "https://www.twitch.tv/shelyanna"
-         },
-         {
-           "name": "Thefoxeur",
-           "href": "https://www.twitch.tv/thefoxeur"
-         },
-         {
-           "name": "Bourrinator",
-           "href": "https://www.twitch.tv/bourrinator"
-         },
-         {
-           "name": "ImmersivTV",
-           "href": "https://www.twitch.tv/immersivtv"
-         },
-         {
-           "name": "MamieZazou",
-           "href": "https://www.twitch.tv/mamiezazou"
-         },
-         {
-           "name": "Vazek_Tomi",
-           "href": "https://www.twitch.tv/vazek_tomi"
-         },
-         {
-           "name": "KamiTheKid",
-           "href": "https://www.twitch.tv/kamithekid"
-         },
-         {
-           "name": "LeTetryl",
-           "href": "https://www.twitch.tv/letetryl"
-         },
-         {
-           "name": "merj1",
-           "href": "https://www.twitch.tv/merj1"
-         },
-         {
-           "name": "chwannini",
-           "href": "https://www.twitch.tv/chwannini"
-         },
-         {
-           "name": "JPouille_et_Jess",
-           "href": "https://www.twitch.tv/jpouille_et_jess"
-         },
-         {
-           "name": "Kahleeya",
-           "href": "https://www.twitch.tv/kahleeya"
-         },
-         {
-           "name": "Kamet0",
-           "href": "https://www.twitch.tv/kamet0"
-         },
-         {
-           "name": "Elbe_Poly",
-           "href": "https://www.twitch.tv/elbe_poly"
-         },
-         {
-           "name": "Heknooz",
-           "href": "https://www.twitch.tv/heknooz"
-         },
-         {
-           "name": "Dark_Hifus",
-           "href": "https://www.twitch.tv/dark_hifus"
-         },
-         {
-           "name": "LeMondeDeShaki",
-           "href": "https://www.twitch.tv/lemondedeshaki"
-         },
-         {
-           "name": "mllejoulie",
-           "href": "https://www.twitch.tv/mllejoulie"
-         },
-         {
-           "name": "UncleSkarzi",
-           "href": "https://www.twitch.tv/uncleskarzi"
-         },
-         {
-           "name": "Yuu_VT",
-           "href": "https://www.twitch.tv/yuu_vt"
-         },
-         {
-           "name": "Domingo",
-           "href": "https://www.twitch.tv/domingo"
-         },
-         {
-           "name": "ArtheonTV",
-           "href": "https://www.twitch.tv/artheontv"
-         },
-         {
-           "name": "Clara_l_Exploratrice",
-           "href": "https://www.twitch.tv/clara_l_exploratrice"
-         },
-         {
-           "name": "Farore",
-           "href": "https://www.twitch.tv/farore"
-         },
-         {
-           "name": "PenseeLeo",
-           "href": "https://www.twitch.tv/penseeleo"
-         },
-         {
-           "name": "Sol_Hms",
-           "href": "https://www.twitch.tv/sol_hms"
-         },
-         {
-           "name": "mistermv",
-           "href": "https://www.twitch.tv/mistermv"
-         },
-         {
-           "name": "Magnettes",
-           "href": "https://www.twitch.tv/magnettes"
-         },
-         {
-           "name": "Jolavanille",
-           "href": "https://www.twitch.tv/jolavanille"
-         },
-         {
-           "name": "KagetokiTV",
-           "href": "https://www.twitch.tv/kagetokitv"
-         },
-         {
-           "name": "Pipissenlit",
-           "href": "https://www.twitch.tv/pipissenlit"
-         },
-         {
-           "name": "Siana_TV",
-           "href": "https://www.twitch.tv/siana_tv"
-         },
-         {
-           "name": "WhiteMonsterMusic",
-           "href": "https://www.twitch.tv/whitemonstermusic"
-         },
-         {
-           "name": "Miss_Delight",
-           "href": "https://www.twitch.tv/miss_delight"
-         },
-         {
-           "name": "Myolune",
-           "href": "https://www.twitch.tv/myolune"
-         },
-         {
-           "name": "Bibi300",
-           "href": "https://www.twitch.tv/bibi300"
-         },
-         {
-           "name": "Le_Zort",
-           "href": "https://www.twitch.tv/le_zort"
-         },
-         {
-           "name": "Skerax",
-           "href": "https://www.twitch.tv/skerax"
-         },
-         {
-           "name": "AntoineDaniel",
-           "href": "https://www.twitch.tv/antoinedaniel"
-         },
-         {
-           "name": "ZeratoR",
-           "href": "https://www.twitch.tv/zerator"
-         },
-         {
-           "name": "Globtopus",
-           "href": "https://www.twitch.tv/globtopus"
-         },
-         {
-           "name": "Milkameluna",
-           "href": "https://www.twitch.tv/milkameluna"
-         },
-         {
-           "name": "Yann",
-           "href": "https://www.twitch.tv/yann"
-         },
-         {
-           "name": "BinOoL",
-           "href": "https://www.twitch.tv/binool"
-         },
-         {
-           "name": "David_Kyden",
-           "href": "https://www.twitch.tv/david_kyden"
-         },
-         {
-           "name": "PochoSkywalker",
-           "href": "https://www.twitch.tv/pochoskywalker"
-         },
-         {
-           "name": "Symphoniya_",
-           "href": "https://www.twitch.tv/symphoniya_"
-         },
-         {
-           "name": "Etoiles",
-           "href": "https://www.twitch.tv/etoiles"
-         },
-         {
-           "name": "Squeezie",
-           "href": "https://www.twitch.tv/squeezie"
-         },
-         {
-           "name": "Badocs",
-           "href": "https://www.twitch.tv/badocs"
-         },
-         {
-           "name": "Catboat",
-           "href": "https://www.twitch.tv/catboat"
-         },
-         {
-           "name": "Icewit",
-           "href": "https://www.twitch.tv/icewit"
-         },
-         {
-           "name": "JiloOziris",
-           "href": "https://www.twitch.tv/jilooziris"
-         },
-         {
-           "name": "LePirateRoux",
-           "href": "https://www.twitch.tv/lepirateroux"
-         },
-         {
-           "name": "Mar0ma",
-           "href": "https://www.twitch.tv/mar0ma"
-         },
-         {
-           "name": "MrDeriv",
-           "href": "https://www.twitch.tv/mrderiv"
-         },
-         {
-           "name": "Ogeru",
-           "href": "https://www.twitch.tv/ogeru"
-         },
-         {
-           "name": "Gardoum",
-           "href": "https://www.twitch.tv/gardoum"
-         },
-         {
-           "name": "AikaMorii",
-           "href": "https://www.twitch.tv/aikamorii"
-         },
-         {
-           "name": "BAARSARK",
-           "href": "https://www.twitch.tv/baarsark"
-         },
-         {
-           "name": "Iti63",
-           "href": "https://www.twitch.tv/iti63"
-         }
-       ]
+       "broadChannels": true
      }
    ]
  },
  "rematch-nations-cup": {
-   "added": "2026-06-04T15:23:46.864Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-06-11T08:00Z",
@@ -4498,7 +3872,7 @@ const BADGE_AVAILABILITY = {
    ]
  },
  "rematch-us": {
-   "added": "2026-06-04T15:23:46.864Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-06-11T08:00Z",
@@ -4517,1136 +3891,7 @@ const BADGE_AVAILABILITY = {
            "href": "https://www.twitch.tv/directory/category/rematch?filter=drops"
          }
        ],
-       "channels": [
-         {
-           "name": "5up",
-           "href": "https://www.twitch.tv/5up"
-         },
-         {
-           "name": "apokuna",
-           "href": "https://www.twitch.tv/apokuna"
-         },
-         {
-           "name": "VincentFaust",
-           "href": "https://www.twitch.tv/vincentfaust"
-         },
-         {
-           "name": "Cide",
-           "href": "https://www.twitch.tv/cide"
-         },
-         {
-           "name": "CloudMark27",
-           "href": "https://www.twitch.tv/cloudmark27"
-         },
-         {
-           "name": "DeathzWraith",
-           "href": "https://www.twitch.tv/deathzwraith"
-         },
-         {
-           "name": "ChaoticFlamee",
-           "href": "https://www.twitch.tv/chaoticflamee"
-         },
-         {
-           "name": "Acarria_Rawr_X3",
-           "href": "https://www.twitch.tv/acarria_rawr_x3"
-         },
-         {
-           "name": "adrianrage",
-           "href": "https://www.twitch.tv/adrianrage"
-         },
-         {
-           "name": "AmberTheRambler",
-           "href": "https://www.twitch.tv/ambertherambler"
-         },
-         {
-           "name": "amisometimes",
-           "href": "https://www.twitch.tv/amisometimes"
-         },
-         {
-           "name": "BlurrFlavorz",
-           "href": "https://www.twitch.tv/blurrflavorz"
-         },
-         {
-           "name": "BossKernel",
-           "href": "https://www.twitch.tv/bosskernel"
-         },
-         {
-           "name": "DeejayKnight",
-           "href": "https://www.twitch.tv/deejayknight"
-         },
-         {
-           "name": "AmarisSkye",
-           "href": "https://www.twitch.tv/amarisskye"
-         },
-         {
-           "name": "Avataryaya",
-           "href": "https://www.twitch.tv/avataryaya"
-         },
-         {
-           "name": "BluSatire",
-           "href": "https://www.twitch.tv/blusatire"
-         },
-         {
-           "name": "CamronJK",
-           "href": "https://www.twitch.tv/camronjk"
-         },
-         {
-           "name": "cedinthemix",
-           "href": "https://www.twitch.tv/cedinthemix"
-         },
-         {
-           "name": "DaveKap",
-           "href": "https://www.twitch.tv/davekap"
-         },
-         {
-           "name": "euRascal",
-           "href": "https://www.twitch.tv/eurascal"
-         },
-         {
-           "name": "fargassier",
-           "href": "https://www.twitch.tv/fargassier"
-         },
-         {
-           "name": "Angelusdemonus",
-           "href": "https://www.twitch.tv/angelusdemonus"
-         },
-         {
-           "name": "ArmorOfFaith",
-           "href": "https://www.twitch.tv/armoroffaith"
-         },
-         {
-           "name": "BltzZ",
-           "href": "https://www.twitch.tv/bltzz"
-         },
-         {
-           "name": "BradleyEllis",
-           "href": "https://www.twitch.tv/bradleyellis"
-         },
-         {
-           "name": "DanZucaTV",
-           "href": "https://www.twitch.tv/danzucatv"
-         },
-         {
-           "name": "dearRoderick",
-           "href": "https://www.twitch.tv/dearroderick"
-         },
-         {
-           "name": "FauxRetro",
-           "href": "https://www.twitch.tv/fauxretro"
-         },
-         {
-           "name": "AndyCampbellGG",
-           "href": "https://www.twitch.tv/andycampbellgg"
-         },
-         {
-           "name": "Duncstar",
-           "href": "https://www.twitch.tv/duncstar"
-         },
-         {
-           "name": "almave7",
-           "href": "https://www.twitch.tv/almave7"
-         },
-         {
-           "name": "eyesonbee",
-           "href": "https://www.twitch.tv/eyesonbee"
-         },
-         {
-           "name": "Fera_Lune",
-           "href": "https://www.twitch.tv/fera_lune"
-         },
-         {
-           "name": "Firespark81",
-           "href": "https://www.twitch.tv/firespark81"
-         },
-         {
-           "name": "BelleSprout",
-           "href": "https://www.twitch.tv/bellesprout"
-         },
-         {
-           "name": "AGirlAndAGame",
-           "href": "https://www.twitch.tv/agirlandagame"
-         },
-         {
-           "name": "AverageGirlGames",
-           "href": "https://www.twitch.tv/averagegirlgames"
-         },
-         {
-           "name": "axelscythe",
-           "href": "https://www.twitch.tv/axelscythe"
-         },
-         {
-           "name": "CamizoleCorzette",
-           "href": "https://www.twitch.tv/camizolecorzette"
-         },
-         {
-           "name": "Chactories",
-           "href": "https://www.twitch.tv/chactories"
-         },
-         {
-           "name": "Cheesecake_EXE",
-           "href": "https://www.twitch.tv/cheesecake_exe"
-         },
-         {
-           "name": "Ebontis",
-           "href": "https://www.twitch.tv/ebontis"
-         },
-         {
-           "name": "AdamHartGaming",
-           "href": "https://www.twitch.tv/adamhartgaming"
-         },
-         {
-           "name": "BlinkBlinkGames",
-           "href": "https://www.twitch.tv/blinkblinkgames"
-         },
-         {
-           "name": "CaptainLoren_",
-           "href": "https://www.twitch.tv/captainloren_"
-         },
-         {
-           "name": "cyunidottv",
-           "href": "https://www.twitch.tv/cyunidottv"
-         },
-         {
-           "name": "emyblossom93",
-           "href": "https://www.twitch.tv/emyblossom93"
-         },
-         {
-           "name": "FrostedFricks",
-           "href": "https://www.twitch.tv/frostedfricks"
-         },
-         {
-           "name": "Gemntonic",
-           "href": "https://www.twitch.tv/gemntonic"
-         },
-         {
-           "name": "GrandCloudd",
-           "href": "https://www.twitch.tv/grandcloudd"
-         },
-         {
-           "name": "Dankin",
-           "href": "https://www.twitch.tv/dankin"
-         },
-         {
-           "name": "deuceyMANE",
-           "href": "https://www.twitch.tv/deuceymane"
-         },
-         {
-           "name": "DieHardDiva",
-           "href": "https://www.twitch.tv/dieharddiva"
-         },
-         {
-           "name": "Elliannia",
-           "href": "https://www.twitch.tv/elliannia"
-         },
-         {
-           "name": "GolkhanJunior",
-           "href": "https://www.twitch.tv/golkhanjunior"
-         },
-         {
-           "name": "brialeigh",
-           "href": "https://www.twitch.tv/brialeigh"
-         },
-         {
-           "name": "Brofessor_Panda",
-           "href": "https://www.twitch.tv/brofessor_panda"
-         },
-         {
-           "name": "cooldudeVlad",
-           "href": "https://www.twitch.tv/cooldudevlad"
-         },
-         {
-           "name": "e_vac",
-           "href": "https://www.twitch.tv/e_vac"
-         },
-         {
-           "name": "GhostElectricity",
-           "href": "https://www.twitch.tv/ghostelectricity"
-         },
-         {
-           "name": "HeBeBuffay",
-           "href": "https://www.twitch.tv/hebebuffay"
-         },
-         {
-           "name": "AuroralVisage",
-           "href": "https://www.twitch.tv/auroralvisage"
-         },
-         {
-           "name": "BossuVersus",
-           "href": "https://www.twitch.tv/bossuversus"
-         },
-         {
-           "name": "Brildain",
-           "href": "https://www.twitch.tv/brildain"
-         },
-         {
-           "name": "dammit2hell",
-           "href": "https://www.twitch.tv/dammit2hell"
-         },
-         {
-           "name": "HailsVhenan",
-           "href": "https://www.twitch.tv/hailsvhenan"
-         },
-         {
-           "name": "BaldZebra",
-           "href": "https://www.twitch.tv/baldzebra"
-         },
-         {
-           "name": "BigRickEnergyTV",
-           "href": "https://www.twitch.tv/bigrickenergytv"
-         },
-         {
-           "name": "Bittywood",
-           "href": "https://www.twitch.tv/bittywood"
-         },
-         {
-           "name": "CircleToonsHD",
-           "href": "https://www.twitch.tv/circletoonshd"
-         },
-         {
-           "name": "dopest_m3rk",
-           "href": "https://www.twitch.tv/dopest_m3rk"
-         },
-         {
-           "name": "FENGRUSH",
-           "href": "https://www.twitch.tv/fengrush"
-         },
-         {
-           "name": "GlaxonXIII",
-           "href": "https://www.twitch.tv/glaxonxiii"
-         },
-         {
-           "name": "basicwitgirl",
-           "href": "https://www.twitch.tv/basicwitgirl"
-         },
-         {
-           "name": "BennyFits",
-           "href": "https://www.twitch.tv/bennyfits"
-         },
-         {
-           "name": "bunnienova",
-           "href": "https://www.twitch.tv/bunnienova"
-         },
-         {
-           "name": "camillapanda",
-           "href": "https://www.twitch.tv/camillapanda"
-         },
-         {
-           "name": "Church_of_Poe",
-           "href": "https://www.twitch.tv/church_of_poe"
-         },
-         {
-           "name": "Eliseteria",
-           "href": "https://www.twitch.tv/eliseteria"
-         },
-         {
-           "name": "GamePassDad",
-           "href": "https://www.twitch.tv/gamepassdad"
-         },
-         {
-           "name": "BeetleBomb",
-           "href": "https://www.twitch.tv/beetlebomb"
-         },
-         {
-           "name": "BGlitch3d",
-           "href": "https://www.twitch.tv/bglitch3d"
-         },
-         {
-           "name": "CatChild",
-           "href": "https://www.twitch.tv/catchild"
-         },
-         {
-           "name": "chillcrewgaming",
-           "href": "https://www.twitch.tv/chillcrewgaming"
-         },
-         {
-           "name": "coco_krebbles",
-           "href": "https://www.twitch.tv/coco_krebbles"
-         },
-         {
-           "name": "Cutesi",
-           "href": "https://www.twitch.tv/cutesi"
-         },
-         {
-           "name": "EliLikesRice",
-           "href": "https://www.twitch.tv/elilikesrice"
-         },
-         {
-           "name": "elliejoypanic",
-           "href": "https://www.twitch.tv/elliejoypanic"
-         },
-         {
-           "name": "bafty",
-           "href": "https://www.twitch.tv/bafty"
-         },
-         {
-           "name": "allykataru",
-           "href": "https://www.twitch.tv/allykataru"
-         },
-         {
-           "name": "Assaultnom",
-           "href": "https://www.twitch.tv/assaultnom"
-         },
-         {
-           "name": "catsen",
-           "href": "https://www.twitch.tv/catsen"
-         },
-         {
-           "name": "FightinCowboy",
-           "href": "https://www.twitch.tv/fightincowboy"
-         },
-         {
-           "name": "GamerTifa",
-           "href": "https://www.twitch.tv/gamertifa"
-         },
-         {
-           "name": "AoiHusky",
-           "href": "https://www.twitch.tv/aoihusky"
-         },
-         {
-           "name": "Aolynn",
-           "href": "https://www.twitch.tv/aolynn"
-         },
-         {
-           "name": "DayleeDave",
-           "href": "https://www.twitch.tv/dayleedave"
-         },
-         {
-           "name": "HashbrownCloudyKai",
-           "href": "https://www.twitch.tv/hashbrowncloudykai"
-         },
-         {
-           "name": "ArktixOfficial",
-           "href": "https://www.twitch.tv/arktixofficial"
-         },
-         {
-           "name": "BloodThunder",
-           "href": "https://www.twitch.tv/bloodthunder"
-         },
-         {
-           "name": "Boog2TheMan",
-           "href": "https://www.twitch.tv/boog2theman"
-         },
-         {
-           "name": "BriiCosplays",
-           "href": "https://www.twitch.tv/briicosplays"
-         },
-         {
-           "name": "Omid_Lennon",
-           "href": "https://www.twitch.tv/omid_lennon"
-         },
-         {
-           "name": "Renfail",
-           "href": "https://www.twitch.tv/renfail"
-         },
-         {
-           "name": "Infernasu",
-           "href": "https://www.twitch.tv/infernasu"
-         },
-         {
-           "name": "jayyy",
-           "href": "https://www.twitch.tv/jayyy"
-         },
-         {
-           "name": "Just_Jaynie",
-           "href": "https://www.twitch.tv/just_jaynie"
-         },
-         {
-           "name": "MaccaGamees",
-           "href": "https://www.twitch.tv/maccagamees"
-         },
-         {
-           "name": "Oneuptilsunup",
-           "href": "https://www.twitch.tv/oneuptilsunup"
-         },
-         {
-           "name": "respawnedgentleman",
-           "href": "https://www.twitch.tv/respawnedgentleman"
-         },
-         {
-           "name": "IAMCha0tik",
-           "href": "https://www.twitch.tv/iamcha0tik"
-         },
-         {
-           "name": "Kelwynshade",
-           "href": "https://www.twitch.tv/kelwynshade"
-         },
-         {
-           "name": "Punkinpai",
-           "href": "https://www.twitch.tv/punkinpai"
-         },
-         {
-           "name": "REDinFamy",
-           "href": "https://www.twitch.tv/redinfamy"
-         },
-         {
-           "name": "MadSheep_",
-           "href": "https://www.twitch.tv/madsheep_"
-         },
-         {
-           "name": "JuiceticeTV",
-           "href": "https://www.twitch.tv/juiceticetv"
-         },
-         {
-           "name": "kelpTV",
-           "href": "https://www.twitch.tv/kelptv"
-         },
-         {
-           "name": "KenjaD2R",
-           "href": "https://www.twitch.tv/kenjad2r"
-         },
-         {
-           "name": "littleoneyouare",
-           "href": "https://www.twitch.tv/littleoneyouare"
-         },
-         {
-           "name": "Nichslvl",
-           "href": "https://www.twitch.tv/nichslvl"
-         },
-         {
-           "name": "planoplaysgames",
-           "href": "https://www.twitch.tv/planoplaysgames"
-         },
-         {
-           "name": "Real_Kadukun",
-           "href": "https://www.twitch.tv/real_kadukun"
-         },
-         {
-           "name": "Jav0rs",
-           "href": "https://www.twitch.tv/jav0rs"
-         },
-         {
-           "name": "Jinxberry",
-           "href": "https://www.twitch.tv/jinxberry"
-         },
-         {
-           "name": "JoAfterWork",
-           "href": "https://www.twitch.tv/joafterwork"
-         },
-         {
-           "name": "KourtHouse",
-           "href": "https://www.twitch.tv/kourthouse"
-         },
-         {
-           "name": "nearlysam",
-           "href": "https://www.twitch.tv/nearlysam"
-         },
-         {
-           "name": "okStranger",
-           "href": "https://www.twitch.tv/okstranger"
-         },
-         {
-           "name": "JeffBrutlag",
-           "href": "https://www.twitch.tv/jeffbrutlag"
-         },
-         {
-           "name": "KPIGnetwork",
-           "href": "https://www.twitch.tv/kpignetwork"
-         },
-         {
-           "name": "Liuss",
-           "href": "https://www.twitch.tv/liuss"
-         },
-         {
-           "name": "okaydrian",
-           "href": "https://www.twitch.tv/okaydrian"
-         },
-         {
-           "name": "Rawesomes",
-           "href": "https://www.twitch.tv/rawesomes"
-         },
-         {
-           "name": "ReesieKups",
-           "href": "https://www.twitch.tv/reesiekups"
-         },
-         {
-           "name": "rexiify",
-           "href": "https://www.twitch.tv/rexiify"
-         },
-         {
-           "name": "JDilla",
-           "href": "https://www.twitch.tv/jdilla"
-         },
-         {
-           "name": "JessCapricorn",
-           "href": "https://www.twitch.tv/jesscapricorn"
-         },
-         {
-           "name": "KujoPrime",
-           "href": "https://www.twitch.tv/kujoprime"
-         },
-         {
-           "name": "mechanicalqueen",
-           "href": "https://www.twitch.tv/mechanicalqueen"
-         },
-         {
-           "name": "OnBumpers",
-           "href": "https://www.twitch.tv/onbumpers"
-         },
-         {
-           "name": "patccine",
-           "href": "https://www.twitch.tv/patccine"
-         },
-         {
-           "name": "Psyculturists",
-           "href": "https://www.twitch.tv/psyculturists"
-         },
-         {
-           "name": "JamesMISC",
-           "href": "https://www.twitch.tv/jamesmisc"
-         },
-         {
-           "name": "Johnny_Boombotz",
-           "href": "https://www.twitch.tv/johnny_boombotz"
-         },
-         {
-           "name": "Kuro_Ken",
-           "href": "https://www.twitch.tv/kuro_ken"
-         },
-         {
-           "name": "miia",
-           "href": "https://www.twitch.tv/miia"
-         },
-         {
-           "name": "PeaceDubz",
-           "href": "https://www.twitch.tv/peacedubz"
-         },
-         {
-           "name": "KillerDraco",
-           "href": "https://www.twitch.tv/killerdraco"
-         },
-         {
-           "name": "Kyoslilmonster",
-           "href": "https://www.twitch.tv/kyoslilmonster"
-         },
-         {
-           "name": "Musicbox716",
-           "href": "https://www.twitch.tv/musicbox716"
-         },
-         {
-           "name": "oolivia_",
-           "href": "https://www.twitch.tv/oolivia_"
-         },
-         {
-           "name": "Over_Titus",
-           "href": "https://www.twitch.tv/over_titus"
-         },
-         {
-           "name": "PHN4X",
-           "href": "https://www.twitch.tv/phn4x"
-         },
-         {
-           "name": "impactedpiko",
-           "href": "https://www.twitch.tv/impactedpiko"
-         },
-         {
-           "name": "Junkyard129",
-           "href": "https://www.twitch.tv/junkyard129"
-         },
-         {
-           "name": "kj2294",
-           "href": "https://www.twitch.tv/kj2294"
-         },
-         {
-           "name": "Ligerzero_Gaming",
-           "href": "https://www.twitch.tv/ligerzero_gaming"
-         },
-         {
-           "name": "loudflavor",
-           "href": "https://www.twitch.tv/loudflavor"
-         },
-         {
-           "name": "N3BST4R",
-           "href": "https://www.twitch.tv/n3bst4r"
-         },
-         {
-           "name": "PanFro_Games",
-           "href": "https://www.twitch.tv/panfro_games"
-         },
-         {
-           "name": "Peeve",
-           "href": "https://www.twitch.tv/peeve"
-         },
-         {
-           "name": "Hirostormwolf",
-           "href": "https://www.twitch.tv/hirostormwolf"
-         },
-         {
-           "name": "MarcGriffin27",
-           "href": "https://www.twitch.tv/marcgriffin27"
-         },
-         {
-           "name": "martydudevr",
-           "href": "https://www.twitch.tv/martydudevr"
-         },
-         {
-           "name": "mentallyskinny",
-           "href": "https://www.twitch.tv/mentallyskinny"
-         },
-         {
-           "name": "parrymanilow",
-           "href": "https://www.twitch.tv/parrymanilow"
-         },
-         {
-           "name": "pozer",
-           "href": "https://www.twitch.tv/pozer"
-         },
-         {
-           "name": "ragejazzy",
-           "href": "https://www.twitch.tv/ragejazzy"
-         },
-         {
-           "name": "RedbeardFlynn",
-           "href": "https://www.twitch.tv/redbeardflynn"
-         },
-         {
-           "name": "JadeMistGaming",
-           "href": "https://www.twitch.tv/jademistgaming"
-         },
-         {
-           "name": "KageBoi",
-           "href": "https://www.twitch.tv/kageboi"
-         },
-         {
-           "name": "khal333siii",
-           "href": "https://www.twitch.tv/khal333siii"
-         },
-         {
-           "name": "Lore_Aspect",
-           "href": "https://www.twitch.tv/lore_aspect"
-         },
-         {
-           "name": "MonikaCinnyRoll",
-           "href": "https://www.twitch.tv/monikacinnyroll"
-         },
-         {
-           "name": "NefasQS",
-           "href": "https://www.twitch.tv/nefasqs"
-         },
-         {
-           "name": "NinjaQuay3000",
-           "href": "https://www.twitch.tv/ninjaquay3000"
-         },
-         {
-           "name": "RefereeClark",
-           "href": "https://www.twitch.tv/refereeclark"
-         },
-         {
-           "name": "McQueeb",
-           "href": "https://www.twitch.tv/mcqueeb"
-         },
-         {
-           "name": "innoshades",
-           "href": "https://www.twitch.tv/innoshades"
-         },
-         {
-           "name": "KhloeCosmos",
-           "href": "https://www.twitch.tv/khloecosmos"
-         },
-         {
-           "name": "kwehzy",
-           "href": "https://www.twitch.tv/kwehzy"
-         },
-         {
-           "name": "Leaderkilla",
-           "href": "https://www.twitch.tv/leaderkilla"
-         },
-         {
-           "name": "Nightalize",
-           "href": "https://www.twitch.tv/nightalize"
-         },
-         {
-           "name": "Rhyelle",
-           "href": "https://www.twitch.tv/rhyelle"
-         },
-         {
-           "name": "isOracle",
-           "href": "https://www.twitch.tv/isoracle"
-         },
-         {
-           "name": "johnANDmichelle",
-           "href": "https://www.twitch.tv/johnandmichelle"
-         },
-         {
-           "name": "MarxD1",
-           "href": "https://www.twitch.tv/marxd1"
-         },
-         {
-           "name": "Natspresso",
-           "href": "https://www.twitch.tv/natspresso"
-         },
-         {
-           "name": "revealingtoomuch",
-           "href": "https://www.twitch.tv/revealingtoomuch"
-         },
-         {
-           "name": "herokerrey",
-           "href": "https://www.twitch.tv/herokerrey"
-         },
-         {
-           "name": "Jprodigy99",
-           "href": "https://www.twitch.tv/jprodigy99"
-         },
-         {
-           "name": "lydlbutton",
-           "href": "https://www.twitch.tv/lydlbutton"
-         },
-         {
-           "name": "megamijinxx",
-           "href": "https://www.twitch.tv/megamijinxx"
-         },
-         {
-           "name": "pinxel",
-           "href": "https://www.twitch.tv/pinxel"
-         },
-         {
-           "name": "JakeTwitchin",
-           "href": "https://www.twitch.tv/jaketwitchin"
-         },
-         {
-           "name": "KinetikGhost",
-           "href": "https://www.twitch.tv/kinetikghost"
-         },
-         {
-           "name": "kissysenseii",
-           "href": "https://www.twitch.tv/kissysenseii"
-         },
-         {
-           "name": "MsBee69",
-           "href": "https://www.twitch.tv/msbee69"
-         },
-         {
-           "name": "Jayeternall",
-           "href": "https://www.twitch.tv/jayeternall"
-         },
-         {
-           "name": "Jaythebard",
-           "href": "https://www.twitch.tv/jaythebard"
-         },
-         {
-           "name": "JenIsOnline",
-           "href": "https://www.twitch.tv/jenisonline"
-         },
-         {
-           "name": "mwestby",
-           "href": "https://www.twitch.tv/mwestby"
-         },
-         {
-           "name": "TrishaHershberger",
-           "href": "https://www.twitch.tv/trishahershberger"
-         },
-         {
-           "name": "suhtired",
-           "href": "https://www.twitch.tv/suhtired"
-         },
-         {
-           "name": "SHIZU",
-           "href": "https://www.twitch.tv/shizu"
-         },
-         {
-           "name": "Snamwiches",
-           "href": "https://www.twitch.tv/snamwiches"
-         },
-         {
-           "name": "Tessachka",
-           "href": "https://www.twitch.tv/tessachka"
-         },
-         {
-           "name": "TexasMiler",
-           "href": "https://www.twitch.tv/texasmiler"
-         },
-         {
-           "name": "steamybiscuit",
-           "href": "https://www.twitch.tv/steamybiscuit"
-         },
-         {
-           "name": "Voxximillion",
-           "href": "https://www.twitch.tv/voxximillion"
-         },
-         {
-           "name": "MOONMOON",
-           "href": "https://www.twitch.tv/moonmoon"
-         },
-         {
-           "name": "Smii_",
-           "href": "https://www.twitch.tv/smii_"
-         },
-         {
-           "name": "Spinachee",
-           "href": "https://www.twitch.tv/spinachee"
-         },
-         {
-           "name": "xomaarz",
-           "href": "https://www.twitch.tv/xomaarz"
-         },
-         {
-           "name": "SnootyDeath",
-           "href": "https://www.twitch.tv/snootydeath"
-         },
-         {
-           "name": "TheJaxEff3ct",
-           "href": "https://www.twitch.tv/thejaxeff3ct"
-         },
-         {
-           "name": "soulessiren",
-           "href": "https://www.twitch.tv/soulessiren"
-         },
-         {
-           "name": "sugarmellie",
-           "href": "https://www.twitch.tv/sugarmellie"
-         },
-         {
-           "name": "TheGreyScott",
-           "href": "https://www.twitch.tv/thegreyscott"
-         },
-         {
-           "name": "theXVNDER",
-           "href": "https://www.twitch.tv/thexvnder"
-         },
-         {
-           "name": "tixsonE",
-           "href": "https://www.twitch.tv/tixsone"
-         },
-         {
-           "name": "TKayO",
-           "href": "https://www.twitch.tv/tkayo"
-         },
-         {
-           "name": "Yosoykush",
-           "href": "https://www.twitch.tv/yosoykush"
-         },
-         {
-           "name": "zonegeek_",
-           "href": "https://www.twitch.tv/zonegeek_"
-         },
-         {
-           "name": "Simply_Mysti",
-           "href": "https://www.twitch.tv/simply_mysti"
-         },
-         {
-           "name": "Roxy051",
-           "href": "https://www.twitch.tv/roxy051"
-         },
-         {
-           "name": "Sarthe",
-           "href": "https://www.twitch.tv/sarthe"
-         },
-         {
-           "name": "SushiChic13",
-           "href": "https://www.twitch.tv/sushichic13"
-         },
-         {
-           "name": "TerribleGaming123",
-           "href": "https://www.twitch.tv/terriblegaming123"
-         },
-         {
-           "name": "theLightBrite",
-           "href": "https://www.twitch.tv/thelightbrite"
-         },
-         {
-           "name": "TLAS_King",
-           "href": "https://www.twitch.tv/tlas_king"
-         },
-         {
-           "name": "WhatsHerFace",
-           "href": "https://www.twitch.tv/whatsherface"
-         },
-         {
-           "name": "Rizarjay",
-           "href": "https://www.twitch.tv/rizarjay"
-         },
-         {
-           "name": "Winky",
-           "href": "https://www.twitch.tv/winky"
-         },
-         {
-           "name": "WolfAtYourGate",
-           "href": "https://www.twitch.tv/wolfatyourgate"
-         },
-         {
-           "name": "LIRIK",
-           "href": "https://www.twitch.tv/lirik"
-         },
-         {
-           "name": "TizFizzy",
-           "href": "https://www.twitch.tv/tizfizzy"
-         },
-         {
-           "name": "Viridy",
-           "href": "https://www.twitch.tv/viridy"
-         },
-         {
-           "name": "SpaceyTora",
-           "href": "https://www.twitch.tv/spaceytora"
-         },
-         {
-           "name": "Silver_Streak",
-           "href": "https://www.twitch.tv/silver_streak"
-         },
-         {
-           "name": "RoboDessert",
-           "href": "https://www.twitch.tv/robodessert"
-         },
-         {
-           "name": "Shea_Noelle",
-           "href": "https://www.twitch.tv/shea_noelle"
-         },
-         {
-           "name": "suki",
-           "href": "https://www.twitch.tv/suki"
-         },
-         {
-           "name": "TheRagingterror",
-           "href": "https://www.twitch.tv/theragingterror"
-         },
-         {
-           "name": "SemySin",
-           "href": "https://www.twitch.tv/semysin"
-         },
-         {
-           "name": "Shyyro",
-           "href": "https://www.twitch.tv/shyyro"
-         },
-         {
-           "name": "TheeBumbles",
-           "href": "https://www.twitch.tv/theebumbles"
-         },
-         {
-           "name": "UncleWooly",
-           "href": "https://www.twitch.tv/unclewooly"
-         },
-         {
-           "name": "VampirateOdessa",
-           "href": "https://www.twitch.tv/vampirateodessa"
-         },
-         {
-           "name": "Xeromessiah",
-           "href": "https://www.twitch.tv/xeromessiah"
-         },
-         {
-           "name": "xgremlynnx",
-           "href": "https://www.twitch.tv/xgremlynnx"
-         },
-         {
-           "name": "yoyoMeg",
-           "href": "https://www.twitch.tv/yoyomeg"
-         },
-         {
-           "name": "southern_drake",
-           "href": "https://www.twitch.tv/southern_drake"
-         },
-         {
-           "name": "Tokshen",
-           "href": "https://www.twitch.tv/tokshen"
-         },
-         {
-           "name": "Weyland_Here",
-           "href": "https://www.twitch.tv/weyland_here"
-         },
-         {
-           "name": "whitwhit",
-           "href": "https://www.twitch.tv/whitwhit"
-         },
-         {
-           "name": "itmeJP",
-           "href": "https://www.twitch.tv/itmejp"
-         },
-         {
-           "name": "Masayoshi",
-           "href": "https://www.twitch.tv/masayoshi"
-         },
-         {
-           "name": "TheGamingCaffe",
-           "href": "https://www.twitch.tv/thegamingcaffe"
-         },
-         {
-           "name": "WaddlesToddles",
-           "href": "https://www.twitch.tv/waddlestoddles"
-         },
-         {
-           "name": "Weest",
-           "href": "https://www.twitch.tv/weest"
-         },
-         {
-           "name": "YourBigBrotherSteve",
-           "href": "https://www.twitch.tv/yourbigbrothersteve"
-         },
-         {
-           "name": "Zuan",
-           "href": "https://www.twitch.tv/zuan"
-         },
-         {
-           "name": "Sykkuno",
-           "href": "https://www.twitch.tv/sykkuno"
-         },
-         {
-           "name": "RogueOfLightTV",
-           "href": "https://www.twitch.tv/rogueoflighttv"
-         },
-         {
-           "name": "SammyTrainTV",
-           "href": "https://www.twitch.tv/sammytraintv"
-         },
-         {
-           "name": "Sindradottir",
-           "href": "https://www.twitch.tv/sindradottir"
-         },
-         {
-           "name": "vtSweets",
-           "href": "https://www.twitch.tv/vtsweets"
-         },
-         {
-           "name": "TheEmmaLlama",
-           "href": "https://www.twitch.tv/theemmallama"
-         },
-         {
-           "name": "UnwellBeauty19",
-           "href": "https://www.twitch.tv/unwellbeauty19"
-         },
-         {
-           "name": "Squeex",
-           "href": "https://www.twitch.tv/squeex"
-         },
-         {
-           "name": "sarahnelh",
-           "href": "https://www.twitch.tv/sarahnelh"
-         },
-         {
-           "name": "Seiglance",
-           "href": "https://www.twitch.tv/seiglance"
-         },
-         {
-           "name": "DanGheesling",
-           "href": "https://www.twitch.tv/dangheesling"
-         },
-         {
-           "name": "KYR_SP33DY",
-           "href": "https://www.twitch.tv/kyr_sp33dy"
-         },
-         {
-           "name": "Smirky",
-           "href": "https://www.twitch.tv/smirky"
-         },
-         {
-           "name": "Sp00nerism",
-           "href": "https://www.twitch.tv/sp00nerism"
-         },
-         {
-           "name": "spacevalkyries",
-           "href": "https://www.twitch.tv/spacevalkyries"
-         },
-         {
-           "name": "tesstra",
-           "href": "https://www.twitch.tv/tesstra"
-         },
-         {
-           "name": "TGRSKILLZttv",
-           "href": "https://www.twitch.tv/tgrskillzttv"
-         },
-         {
-           "name": "The_Backlog_Gaming",
-           "href": "https://www.twitch.tv/the_backlog_gaming"
-         }
-       ]
+       "broadChannels": true
      }
    ]
  },
@@ -5838,7 +4083,7 @@ const BADGE_AVAILABILITY = {
    ]
  },
  "football-fest-2026": {
-   "added": "2026-06-08T23:54:57.584Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-06-11T06:59Z",
@@ -5851,329 +4096,12 @@ const BADGE_AVAILABILITY = {
        "clip": false,
        "turbo": false,
        "twitchcon": false,
-       "channels": [
-         {
-           "name": "Jynxzi",
-           "href": "https://www.twitch.tv/jynxzi"
-         },
-         {
-           "name": "TisiSchubech",
-           "href": "https://www.twitch.tv/tisischubech"
-         },
-         {
-           "name": "heinzbaines_",
-           "href": "https://www.twitch.tv/heinzbaines_"
-         },
-         {
-           "name": "TBJZL",
-           "href": "https://www.twitch.tv/tbjzl"
-         },
-         {
-           "name": "Marlon",
-           "href": "https://www.twitch.tv/marlon"
-         },
-         {
-           "name": "MiguelAngelRomanTV",
-           "href": "https://www.twitch.tv/miguelangelromantv"
-         },
-         {
-           "name": "LaMediaInglesa",
-           "href": "https://www.twitch.tv/lamediainglesa"
-         },
-         {
-           "name": "GamerBrother",
-           "href": "https://www.twitch.tv/gamerbrother"
-         },
-         {
-           "name": "bateson87",
-           "href": "https://www.twitch.tv/bateson87"
-         },
-         {
-           "name": "azaa4",
-           "href": "https://www.twitch.tv/azaa4"
-         },
-         {
-           "name": "TerryTsang",
-           "href": "https://www.twitch.tv/terrytsang"
-         },
-         {
-           "name": "superstarjani",
-           "href": "https://www.twitch.tv/superstarjani"
-         },
-         {
-           "name": "miniminter",
-           "href": "https://www.twitch.tv/miniminter"
-         },
-         {
-           "name": "xQc",
-           "href": "https://www.twitch.tv/xqc"
-         },
-         {
-           "name": "Juventibus",
-           "href": "https://www.twitch.tv/juventibus"
-         },
-         {
-           "name": "Zerkaa",
-           "href": "https://www.twitch.tv/zerkaa"
-         },
-         {
-           "name": "aircool",
-           "href": "https://www.twitch.tv/aircool"
-         },
-         {
-           "name": "Bartopanzer",
-           "href": "https://www.twitch.tv/bartopanzer"
-         },
-         {
-           "name": "agorafutbol",
-           "href": "https://www.twitch.tv/agorafutbol"
-         },
-         {
-           "name": "ControCalcio__",
-           "href": "https://www.twitch.tv/controcalcio__"
-         },
-         {
-           "name": "DarkMasuoTV",
-           "href": "https://www.twitch.tv/darkmasuotv"
-         },
-         {
-           "name": "alhan",
-           "href": "https://www.twitch.tv/alhan"
-         },
-         {
-           "name": "AnthonyDayTV",
-           "href": "https://www.twitch.tv/anthonydaytv"
-         },
-         {
-           "name": "Fanum",
-           "href": "https://www.twitch.tv/fanum"
-         },
-         {
-           "name": "Arky",
-           "href": "https://www.twitch.tv/arky"
-         },
-         {
-           "name": "gabbybofficial",
-           "href": "https://www.twitch.tv/gabbybofficial"
-         },
-         {
-           "name": "gerardromero",
-           "href": "https://www.twitch.tv/gerardromero"
-         },
-         {
-           "name": "Choke7",
-           "href": "https://www.twitch.tv/choke7"
-         },
-         {
-           "name": "iForenzic",
-           "href": "https://www.twitch.tv/iforenzic"
-         },
-         {
-           "name": "rubenmartinweb",
-           "href": "https://www.twitch.tv/rubenmartinweb"
-         },
-         {
-           "name": "DjMaRiiO",
-           "href": "https://www.twitch.tv/djmariio"
-         },
-         {
-           "name": "Agent00",
-           "href": "https://www.twitch.tv/agent00"
-         },
-         {
-           "name": "Yugi2x",
-           "href": "https://www.twitch.tv/yugi2x"
-         },
-         {
-           "name": "GrandPooBear",
-           "href": "https://www.twitch.tv/grandpoobear"
-         },
-         {
-           "name": "Quackity",
-           "href": "https://www.twitch.tv/quackity"
-         },
-         {
-           "name": "Aa9skillz",
-           "href": "https://www.twitch.tv/aa9skillz"
-         },
-         {
-           "name": "sirolopez56",
-           "href": "https://www.twitch.tv/sirolopez56"
-         },
-         {
-           "name": "Rivenzi",
-           "href": "https://www.twitch.tv/rivenzi"
-         },
-         {
-           "name": "nicknayersina",
-           "href": "https://www.twitch.tv/nicknayersina"
-         },
-         {
-           "name": "elasticoking",
-           "href": "https://www.twitch.tv/elasticoking"
-         },
-         {
-           "name": "PK_Humble17",
-           "href": "https://www.twitch.tv/pk_humble17"
-         },
-         {
-           "name": "juansguarnizo",
-           "href": "https://www.twitch.tv/juansguarnizo"
-         },
-         {
-           "name": "rivers_gg",
-           "href": "https://www.twitch.tv/rivers_gg"
-         },
-         {
-           "name": "SYDsquadron",
-           "href": "https://www.twitch.tv/sydsquadron"
-         },
-         {
-           "name": "JAMODO",
-           "href": "https://www.twitch.tv/jamodo"
-         },
-         {
-           "name": "NYKchazza",
-           "href": "https://www.twitch.tv/nykchazza"
-         },
-         {
-           "name": "abdu9974",
-           "href": "https://www.twitch.tv/abdu9974"
-         },
-         {
-           "name": "angryginge13",
-           "href": "https://www.twitch.tv/angryginge13"
-         },
-         {
-           "name": "IShowSpeed",
-           "href": "https://www.twitch.tv/ishowspeed"
-         },
-         {
-           "name": "valentisanjuan",
-           "href": "https://www.twitch.tv/valentisanjuan"
-         },
-         {
-           "name": "iaguirregabiria",
-           "href": "https://www.twitch.tv/iaguirregabiria"
-         },
-         {
-           "name": "delamorah",
-           "href": "https://www.twitch.tv/delamorah"
-         },
-         {
-           "name": "RobertoCein",
-           "href": "https://www.twitch.tv/robertocein"
-         },
-         {
-           "name": "Alanalarana",
-           "href": "https://www.twitch.tv/alanalarana"
-         },
-         {
-           "name": "BruceGrannec",
-           "href": "https://www.twitch.tv/brucegrannec"
-         },
-         {
-           "name": "Tyrone",
-           "href": "https://www.twitch.tv/tyrone"
-         },
-         {
-           "name": "NymN",
-           "href": "https://www.twitch.tv/nymn"
-         },
-         {
-           "name": "rubenuria_",
-           "href": "https://www.twitch.tv/rubenuria_"
-         },
-         {
-           "name": "Ubietoo",
-           "href": "https://www.twitch.tv/ubietoo"
-         },
-         {
-           "name": "BorasLegend",
-           "href": "https://www.twitch.tv/boraslegend"
-         },
-         {
-           "name": "VirginiaTV",
-           "href": "https://www.twitch.tv/virginiatv"
-         },
-         {
-           "name": "jakeydavies",
-           "href": "https://www.twitch.tv/jakeydavies"
-         },
-         {
-           "name": "Bebahan",
-           "href": "https://www.twitch.tv/bebahan"
-         },
-         {
-           "name": "Tikibeen1",
-           "href": "https://www.twitch.tv/tikibeen1"
-         },
-         {
-           "name": "taysmcrr",
-           "href": "https://www.twitch.tv/taysmcrr"
-         },
-         {
-           "name": "ElChiringuitoTV",
-           "href": "https://www.twitch.tv/elchiringuitotv"
-         },
-         {
-           "name": "Pieface23",
-           "href": "https://www.twitch.tv/pieface23"
-         },
-         {
-           "name": "nataliamx",
-           "href": "https://www.twitch.tv/nataliamx"
-         },
-         {
-           "name": "Flight23white",
-           "href": "https://www.twitch.tv/flight23white"
-         },
-         {
-           "name": "Repullze",
-           "href": "https://www.twitch.tv/repullze"
-         },
-         {
-           "name": "karljacobs",
-           "href": "https://www.twitch.tv/karljacobs"
-         },
-         {
-           "name": "Nick28T",
-           "href": "https://www.twitch.tv/nick28t"
-         },
-         {
-           "name": "yagostooso",
-           "href": "https://www.twitch.tv/yagostooso"
-         },
-         {
-           "name": "somoselboro",
-           "href": "https://www.twitch.tv/somoselboro"
-         },
-         {
-           "name": "ocwsport",
-           "href": "https://www.twitch.tv/ocwsport"
-         },
-         {
-           "name": "dannyaarons",
-           "href": "https://www.twitch.tv/dannyaarons"
-         },
-         {
-           "name": "Castro_1021",
-           "href": "https://www.twitch.tv/castro_1021"
-         },
-         {
-           "name": "DonyellFreak",
-           "href": "https://www.twitch.tv/donyellfreak"
-         },
-         {
-           "name": "Spursito",
-           "href": "https://www.twitch.tv/spursito"
-         }
-       ]
+       "broadChannels": true
      }
    ]
  },
  "you-got-this": {
-   "added": "2026-06-10T15:53:41.117Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-06-12T22:15Z",
@@ -6210,11 +4138,43 @@ const BADGE_AVAILABILITY = {
            "href": "https://www.twitch.tv/lyesbouzidi"
          }
        ]
+     },
+     {
+       "start": "2026-07-11T17:30Z",
+       "end": "2026-07-11T20:29Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 20,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Sports",
+           "href": "https://www.twitch.tv/directory/category/sports-1?filter=drops"
+         }
+       ],
+       "channels": [
+         {
+           "name": "ThisIsFG",
+           "href": "https://www.twitch.tv/thisisfg"
+         },
+         {
+           "name": "bsmith_esports",
+           "href": "https://www.twitch.tv/bsmith_esports"
+         },
+         {
+           "name": "TwitchSports",
+           "href": "https://www.twitch.tv/twitchsports"
+         }
+       ]
      }
    ]
  },
  "dead-by-daylight-icon": {
-   "added": "2026-06-10T18:23:38.412Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-06-16T17:00Z",
@@ -6237,7 +4197,7 @@ const BADGE_AVAILABILITY = {
    ]
  },
  "dead-by-daylight-x-jason-universe": {
-   "added": "2026-06-10T18:23:38.412Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-06-16T17:00Z",
@@ -6260,10 +4220,30 @@ const BADGE_AVAILABILITY = {
    ]
  },
  "assassins-creed-black-flag-resynced": {
-   "added": "2026-06-10T19:14:05.964Z"
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-09T15:00Z",
+       "end": "2026-08-01T06:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Assassin's Creed Black Flag Resynced",
+           "href": "https://www.twitch.tv/directory/category/assassins-creed-black-flag-resynced?filter=drops"
+         }
+       ]
+     }
+   ]
  },
  "two-point-museum": {
-   "added": "2026-06-16T19:50:01.142Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-06-18T17:00Z",
@@ -6286,7 +4266,7 @@ const BADGE_AVAILABILITY = {
    ]
  },
  "two-point-pickle": {
-   "added": "2026-06-16T19:50:01.142Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-06-18T17:00Z",
@@ -6309,13 +4289,53 @@ const BADGE_AVAILABILITY = {
    ]
  },
  "blossom-badge": {
-   "added": "2026-06-19T00:07:37.771Z"
+   "added": null
  },
  "detroit-android-triangle": {
-   "added": "2026-06-19T13:00:46.304Z"
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-03T00:00Z",
+       "end": "2026-07-17T23:58Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Detroit: Become Human",
+           "href": "https://www.twitch.tv/directory/category/detroit-become-human?filter=drops"
+         }
+       ]
+     }
+   ]
  },
  "detroit-blue-led": {
-   "added": "2026-06-19T13:00:46.304Z"
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-03T00:00Z",
+       "end": "2026-07-17T23:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Detroit: Become Human",
+           "href": "https://www.twitch.tv/directory/category/detroit-become-human?filter=drops"
+         }
+       ]
+     }
+   ]
  },
  "doa6lr-kasumi": {
    "added": "2026-06-24T07:26:37.935Z",
@@ -6388,7 +4408,7 @@ const BADGE_AVAILABILITY = {
    ]
  },
  "msi-2026": {
-   "added": "2026-06-25T18:58:19.979Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-06-25T19:00Z",
@@ -6401,373 +4421,12 @@ const BADGE_AVAILABILITY = {
        "clip": false,
        "turbo": false,
        "twitchcon": false,
-       "channels": [
-         {
-           "name": "世誠",
-           "href": "https://www.twitch.tv/bbbb87"
-         },
-         {
-           "name": "FooYa",
-           "href": "https://www.twitch.tv/fooya"
-         },
-         {
-           "name": "Freezecz",
-           "href": "https://www.twitch.tv/freezecz"
-         },
-         {
-           "name": "LEC",
-           "href": "https://www.twitch.tv/lec"
-         },
-         {
-           "name": "esport2tv",
-           "href": "https://www.twitch.tv/esport2tv"
-         },
-         {
-           "name": "Brizz94",
-           "href": "https://www.twitch.tv/brizz94"
-         },
-         {
-           "name": "sneakylol",
-           "href": "https://www.twitch.tv/sneakylol"
-         },
-         {
-           "name": "basiil",
-           "href": "https://www.twitch.tv/basiil"
-         },
-         {
-           "name": "lolesportstw",
-           "href": "https://www.twitch.tv/lolesportstw"
-         },
-         {
-           "name": "Emiru",
-           "href": "https://www.twitch.tv/emiru"
-         },
-         {
-           "name": "ElOjoNinja",
-           "href": "https://www.twitch.tv/elojoninja"
-         },
-         {
-           "name": "TTobias_lol",
-           "href": "https://www.twitch.tv/ttobias_lol"
-         },
-         {
-           "name": "LoLPacificEN",
-           "href": "https://www.twitch.tv/lolpacificen"
-         },
-         {
-           "name": "LES",
-           "href": "https://www.twitch.tv/les"
-         },
-         {
-           "name": "Obsess3",
-           "href": "https://www.twitch.tv/obsess3"
-         },
-         {
-           "name": "Tolkin",
-           "href": "https://www.twitch.tv/tolkin"
-         },
-         {
-           "name": "Viper",
-           "href": "https://www.twitch.tv/viper"
-         },
-         {
-           "name": "imls",
-           "href": "https://www.twitch.tv/imls"
-         },
-         {
-           "name": "しゃるる",
-           "href": "https://www.twitch.tv/syaruru3"
-         },
-         {
-           "name": "らいじん",
-           "href": "https://www.twitch.tv/alfrea"
-         },
-         {
-           "name": "ToadAmarillo",
-           "href": "https://www.twitch.tv/toadamarillo"
-         },
-         {
-           "name": "lolesportsla",
-           "href": "https://www.twitch.tv/lolesportsla"
-         },
-         {
-           "name": "PsychopathicPoro",
-           "href": "https://www.twitch.tv/psychopathicporo"
-         },
-         {
-           "name": "Jynxzi",
-           "href": "https://www.twitch.tv/jynxzi"
-         },
-         {
-           "name": "leagueoflegendsth",
-           "href": "https://www.twitch.tv/leagueoflegendsth"
-         },
-         {
-           "name": "RTPArenaLoL",
-           "href": "https://www.twitch.tv/rtparenalol"
-         },
-         {
-           "name": "PresenceLoL",
-           "href": "https://www.twitch.tv/presencelol"
-         },
-         {
-           "name": "midbeast",
-           "href": "https://www.twitch.tv/midbeast"
-         },
-         {
-           "name": "Skyyart",
-           "href": "https://www.twitch.tv/skyyart"
-         },
-         {
-           "name": "exvestor_ch",
-           "href": "https://www.twitch.tv/exvestor_ch"
-         },
-         {
-           "name": "mfreak00",
-           "href": "https://www.twitch.tv/mfreak00"
-         },
-         {
-           "name": "Cabramaravilla",
-           "href": "https://www.twitch.tv/cabramaravilla"
-         },
-         {
-           "name": "Nymaera",
-           "href": "https://www.twitch.tv/nymaera"
-         },
-         {
-           "name": "NeVeR_LosEs",
-           "href": "https://www.twitch.tv/never_loses"
-         },
-         {
-           "name": "咖撒",
-           "href": "https://www.twitch.tv/karsalol"
-         },
-         {
-           "name": "LightFuryLF",
-           "href": "https://www.twitch.tv/lightfurylf"
-         },
-         {
-           "name": "Zaboutine",
-           "href": "https://www.twitch.tv/zaboutine"
-         },
-         {
-           "name": "Sola",
-           "href": "https://www.twitch.tv/sola"
-         },
-         {
-           "name": "Teshrak",
-           "href": "https://www.twitch.tv/teshrak"
-         },
-         {
-           "name": "Caedrel",
-           "href": "https://www.twitch.tv/caedrel"
-         },
-         {
-           "name": "kiittwy",
-           "href": "https://www.twitch.tv/kiittwy"
-         },
-         {
-           "name": "Lourlo",
-           "href": "https://www.twitch.tv/lourlo"
-         },
-         {
-           "name": "Jankos",
-           "href": "https://www.twitch.tv/jankos"
-         },
-         {
-           "name": "Terenas",
-           "href": "https://www.twitch.tv/terenas"
-         },
-         {
-           "name": "たかやスペシャル",
-           "href": "https://www.twitch.tv/takayaspecial"
-         },
-         {
-           "name": "yeTz",
-           "href": "https://www.twitch.tv/yetz"
-         },
-         {
-           "name": "LCS",
-           "href": "https://www.twitch.tv/lcs"
-         },
-         {
-           "name": "KenRhen",
-           "href": "https://www.twitch.tv/kenrhen"
-         },
-         {
-           "name": "Halpern",
-           "href": "https://www.twitch.tv/halpern"
-         },
-         {
-           "name": "Dynquedo1",
-           "href": "https://www.twitch.tv/dynquedo1"
-         },
-         {
-           "name": "LeagueofLegendsJP",
-           "href": "https://www.twitch.tv/leagueoflegendsjp"
-         },
-         {
-           "name": "feviknight",
-           "href": "https://www.twitch.tv/feviknight"
-         },
-         {
-           "name": "Karni",
-           "href": "https://www.twitch.tv/karni"
-         },
-         {
-           "name": "Send0o",
-           "href": "https://www.twitch.tv/send0o"
-         },
-         {
-           "name": "jukes",
-           "href": "https://www.twitch.tv/jukes"
-         },
-         {
-           "name": "HITPOINTCZ",
-           "href": "https://www.twitch.tv/hitpointcz"
-         },
-         {
-           "name": "GoE_stream",
-           "href": "https://www.twitch.tv/goe_stream"
-         },
-         {
-           "name": "Kamet0",
-           "href": "https://www.twitch.tv/kamet0"
-         },
-         {
-           "name": "Baiano",
-           "href": "https://www.twitch.tv/baiano"
-         },
-         {
-           "name": "粒鷗滴",
-           "href": "https://www.twitch.tv/zod0416"
-         },
-         {
-           "name": "TraYtoNlol",
-           "href": "https://www.twitch.tv/traytonlol"
-         },
-         {
-           "name": "TL_Nero",
-           "href": "https://www.twitch.tv/tl_nero"
-         },
-         {
-           "name": "JSkillz_lol",
-           "href": "https://www.twitch.tv/jskillz_lol"
-         },
-         {
-           "name": "Jonnijuro",
-           "href": "https://www.twitch.tv/jonnijuro"
-         },
-         {
-           "name": "MrsChimChim",
-           "href": "https://www.twitch.tv/mrschimchim"
-         },
-         {
-           "name": "JimRsng",
-           "href": "https://www.twitch.tv/jimrsng"
-         },
-         {
-           "name": "Doublelift",
-           "href": "https://www.twitch.tv/doublelift"
-         },
-         {
-           "name": "Nervarien",
-           "href": "https://www.twitch.tv/nervarien"
-         },
-         {
-           "name": "YamatoCannon",
-           "href": "https://www.twitch.tv/yamatocannon"
-         },
-         {
-           "name": "niikoletaa",
-           "href": "https://www.twitch.tv/niikoletaa"
-         },
-         {
-           "name": "muramina",
-           "href": "https://www.twitch.tv/muramina"
-         },
-         {
-           "name": "Akofena_",
-           "href": "https://www.twitch.tv/akofena_"
-         },
-         {
-           "name": "ibai",
-           "href": "https://www.twitch.tv/ibai"
-         },
-         {
-           "name": "Paresz",
-           "href": "https://www.twitch.tv/paresz"
-         },
-         {
-           "name": "otplol_",
-           "href": "https://www.twitch.tv/otplol_"
-         },
-         {
-           "name": "Jackspektra",
-           "href": "https://www.twitch.tv/jackspektra"
-         },
-         {
-           "name": "Caltys",
-           "href": "https://www.twitch.tv/caltys"
-         },
-         {
-           "name": "KamusLoL",
-           "href": "https://www.twitch.tv/kamuslol"
-         },
-         {
-           "name": "frajgo",
-           "href": "https://www.twitch.tv/frajgo"
-         },
-         {
-           "name": "بيدوبا",
-           "href": "https://www.twitch.tv/docbeedopa"
-         },
-         {
-           "name": "Nickdaboom",
-           "href": "https://www.twitch.tv/nickdaboom"
-         },
-         {
-           "name": "MercyPlaysTW",
-           "href": "https://www.twitch.tv/mercyplaystw"
-         },
-         {
-           "name": "Takluz",
-           "href": "https://www.twitch.tv/takluz"
-         },
-         {
-           "name": "GuiangGaming",
-           "href": "https://www.twitch.tv/guianggaming"
-         },
-         {
-           "name": "Riot Games",
-           "href": "https://www.twitch.tv/riotgames"
-         },
-         {
-           "name": "CBLOL",
-           "href": "https://www.twitch.tv/cblol"
-         },
-         {
-           "name": "LCK",
-           "href": "https://www.twitch.tv/lck"
-         },
-         {
-           "name": "Pobelter",
-           "href": "https://www.twitch.tv/pobelter"
-         },
-         {
-           "name": "Lastcrosser",
-           "href": "https://www.twitch.tv/lastcrosser"
-         },
-         {
-           "name": "Blaire",
-           "href": "https://www.twitch.tv/blaire"
-         }
-       ]
+       "broadChannels": true
      }
    ]
  },
  "grey-zone-warfare": {
-   "added": "2026-06-25T21:58:42.312Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-06-25T21:46Z",
@@ -6784,6 +4443,385 @@ const BADGE_AVAILABILITY = {
          {
            "name": "Gray Zone Warfare",
            "href": "https://www.twitch.tv/directory/category/gray-zone-warfare?filter=drops"
+         }
+       ]
+     }
+   ]
+ },
+ "ayane": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-10T07:00Z",
+       "end": "2026-07-24T23:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "DEAD OR ALIVE 6 Last Round",
+           "href": "https://www.twitch.tv/directory/category/dead-or-alive-6-last-round?filter=drops"
+         }
+       ]
+     }
+   ]
+ },
+ "cool-cattiva": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-10T07:00Z",
+       "end": "2026-07-25T06:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Palworld",
+           "href": "https://www.twitch.tv/directory/category/palworld?filter=drops"
+         }
+       ]
+     }
+   ]
+ },
+ "dream-beyond": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-10T07:00Z",
+       "end": "2026-07-13T06:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Dream Con",
+           "href": "https://www.twitch.tv/directory/category/dream-con?filter=drops"
+         }
+       ]
+     }
+   ]
+ },
+ "ewc-2026-bronze": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-08T13:00Z",
+       "end": "2026-08-24T13:00Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "broadChannels": true
+     }
+   ]
+ },
+ "ewc-2026-diamond": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-08T13:00Z",
+       "end": "2026-08-24T13:00Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 720,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "broadChannels": true
+     }
+   ]
+ },
+ "ewc-2026-gold": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-08T13:00Z",
+       "end": "2026-08-24T13:00Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 180,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "broadChannels": true
+     }
+   ]
+ },
+ "ewc-2026-platinum": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-08T13:00Z",
+       "end": "2026-08-24T13:00Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 360,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "broadChannels": true
+     }
+   ]
+ },
+ "ewc-2026-silver": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-08T13:00Z",
+       "end": "2026-08-24T13:00Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 120,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "broadChannels": true
+     }
+   ]
+ },
+ "ewc-2026-ultraviolet": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-08T13:00Z",
+       "end": "2026-08-24T13:00Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "broadChannels": true
+     }
+   ]
+ },
+ "jubilee": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-10T07:00Z",
+       "end": "2026-07-25T06:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Marvel Rivals",
+           "href": "https://www.twitch.tv/directory/category/marvel-rivals?filter=drops"
+         }
+       ]
+     }
+   ]
+ },
+ "killer-inn": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-10T07:00Z",
+       "end": "2026-07-24T23:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "KILLER INN",
+           "href": "https://www.twitch.tv/directory/category/killer-inn?filter=drops"
+         }
+       ]
+     }
+   ]
+ },
+ "meltan": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-09T07:00Z",
+       "end": "2026-07-11T06:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Pokémon GO",
+           "href": "https://www.twitch.tv/directory/category/pokemon-go?filter=drops"
+         }
+       ]
+     },
+     {
+       "start": "2026-07-14T07:30Z",
+       "end": "2026-07-21T06:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Pokémon GO",
+           "href": "https://www.twitch.tv/directory/category/pokemon-go?filter=drops"
+         }
+       ]
+     }
+   ]
+ },
+ "mint": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-08T07:00Z",
+       "end": "2026-07-22T06:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "NTE: Neverness to Everness",
+           "href": "https://www.twitch.tv/directory/category/neverness-to-everness?filter=drops"
+         }
+       ]
+     }
+   ]
+ },
+ "relink-fabicon": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-10T07:00Z",
+       "end": "2026-07-25T06:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Granblue Fantasy: Relink",
+           "href": "https://www.twitch.tv/directory/category/granblue-fantasy-relink?filter=drops"
+         }
+       ]
+     }
+   ]
+ },
+ "team-instinct": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-13T07:30Z",
+       "end": "2026-07-14T06:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Pokémon GO",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "team-mystic": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-12T07:30Z",
+       "end": "2026-07-13T06:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Pokémon GO",
+           "href": "https://www.twitch.tv/directory/category/pokemon-go?filter=drops"
+         }
+       ]
+     }
+   ]
+ },
+ "team-valor": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-11T07:30Z",
+       "end": "2026-07-12T06:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Pokémon GO",
+           "href": "https://www.twitch.tv/directory/category/pokemon-go?filter=drops"
          }
        ]
      }
