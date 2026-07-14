@@ -185,13 +185,20 @@ function render() {
   const events = groupEvents(allEvents()).map((e) => ({ ...e, status: getStatus(e, now) }));
 
   // Live first, then upcoming, then ended — so live events claim the top rows.
+  // Within each group, the soonest-ending badge sits at the top (most urgent);
+  // open-ended (no known end) events sink to the bottom.
   // Drop events that ended before the scroll window (unreachable in the past).
   const STATUS_ORDER = { live: 0, upcoming: 1, ended: 2 };
   const visible = events
     .filter((e) => matchesQuery(e) && layoutEnd(e, now) >= windowStart)
     .sort((a, b) => {
       const sd = STATUS_ORDER[a.status] - STATUS_ORDER[b.status];
-      return sd !== 0 ? sd : Date.parse(a.start) - Date.parse(b.start);
+      if (sd !== 0) return sd;
+      const ea = endOf(a), eb = endOf(b);
+      if (ea === null && eb === null) return Date.parse(a.start) - Date.parse(b.start);
+      if (ea === null) return 1;   // open-ended goes last
+      if (eb === null) return -1;
+      return ea - eb;              // soonest end first
     });
 
   emptyState.hidden = visible.length > 0;
