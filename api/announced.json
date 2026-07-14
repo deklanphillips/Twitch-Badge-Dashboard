@@ -47,7 +47,8 @@
   "killer-inn",
   "meltan",
   "jubilee",
-  "dream-beyond"
+  "dream-beyond",
+  "hotline"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -402,6 +403,69 @@
    "start": 1783666800000,
    "end": 1784937480000,
    "name": "Killer Inn",
+   "requirement": "Sub or gift sub"
+  },
+  "set:grey-zone-warfare": {
+   "id": "1526709931292623009",
+   "start": 1782423960000,
+   "end": 1784159880000,
+   "name": "Gray Zone Warfare",
+   "requirement": "Sub or gift sub"
+  },
+  "group:ewc-2026-watch": {
+   "id": "1526709935298056234",
+   "start": 1783515600000,
+   "end": 1787576400000,
+   "name": "EWC 2026 (Watch)",
+   "requirement": "Watch to earn"
+  },
+  "set:cool-cattiva": {
+   "id": "1526709939899465748",
+   "start": 1783666800000,
+   "end": 1784937480000,
+   "name": "Cool Cattiva",
+   "requirement": "Sub or gift sub"
+  },
+  "set:mint": {
+   "id": "1526709944085119106",
+   "start": 1783494000000,
+   "end": 1784703540000,
+   "name": "Mint",
+   "requirement": "Sub or gift sub"
+  },
+  "set:relink-fabicon": {
+   "id": "1526709948220706906",
+   "start": 1783666800000,
+   "end": 1784937480000,
+   "name": "Relink Fabicon",
+   "requirement": "Sub or gift sub"
+  },
+  "set:ayane": {
+   "id": "1526709983230689420",
+   "start": 1783666800000,
+   "end": 1784937480000,
+   "name": "Ayane",
+   "requirement": "Sub or gift sub"
+  },
+  "set:meltan": {
+   "id": "1526710033549627422",
+   "start": 1783580400000,
+   "end": 1784616900000,
+   "name": "Meltan",
+   "requirement": "Sub or gift sub"
+  },
+  "set:jubilee": {
+   "id": "1526710083927674880",
+   "start": 1783666800000,
+   "end": 1784937480000,
+   "name": "Jubilee",
+   "requirement": "Sub or gift sub"
+  },
+  "set:hotline": {
+   "id": "1526710134590668981",
+   "start": 1784012400000,
+   "end": 1784357940000,
+   "name": "Hotline",
    "requirement": "Sub or gift sub"
   }
  }
