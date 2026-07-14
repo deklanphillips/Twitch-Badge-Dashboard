@@ -62,6 +62,41 @@ async function load() {
     breadcrumb.textContent = `HOME / TWITCH / GLOBAL-BADGES / ${setId.toUpperCase()} / ${versionId}`;
     document.title = `${version.title || setId} — Twitch Badge Dashboard`;
 
+    // Auto-detected events carry confirmed dates for badges that aren't in the
+    // imported availability data (e.g. EWC, campaign badges). Build an
+    // availability object from a matching confirmed auto-event so those detail
+    // pages still show a full Availability section.
+    let autoSdb = null;
+    try {
+      const res = await fetch("/api/auto-events.json", { cache: "no-store" });
+      if (res.ok) {
+        const ev = (await res.json()).find(
+          (e) => e.badge && e.badge.set === setId && e.confirmed !== false && e.start
+        );
+        if (ev) {
+          const r = (ev.requirement || "").toLowerCase();
+          const wm = r.match(/(\d+)\s*(hour|minute)/);
+          const place = ev.where && ev.where.url
+            ? { name: ev.channel || ev.where.label, href: ev.where.url }
+            : null;
+          autoSdb = { avail: [{
+            start: ev.start,
+            end: ev.end || null,
+            subscription: /\bsub|gift/.test(r),
+            subscriptionGift: /gift|\bsub/.test(r),
+            bits: /\bbit|cheer/.test(r),
+            watch: /watch/.test(r),
+            watchMinutes: wm ? (wm[2] === "hour" ? +wm[1] * 60 : +wm[1]) : 0,
+            clip: /clip/.test(r),
+            turbo: false,
+            twitchcon: /twitchcon/.test(r),
+            categories: place && (!ev.where || ev.where.type === "category") ? [place] : undefined,
+            channels: place && ev.where && ev.where.type === "channel" ? [place] : undefined,
+          }] };
+        }
+      }
+    } catch { /* no auto-events file — fine */ }
+
     // Size previews
     const sizePreviews = document.getElementById("sizePreviews");
     for (const [label, url] of [
@@ -130,7 +165,7 @@ async function load() {
     availSection.append(availTitle);
 
     // Exact availability data (dates, earn methods, categories) when we have it.
-    const sdb = typeof BADGE_AVAILABILITY !== "undefined" ? BADGE_AVAILABILITY[setId] : null;
+    const sdb = (typeof BADGE_AVAILABILITY !== "undefined" && BADGE_AVAILABILITY[setId]) || autoSdb;
     if (sdb && sdb.earned) detailFields.append(field("Times Earned", sdb.earned.toLocaleString()));
 
     if (sdb && sdb.avail) {
