@@ -75,6 +75,19 @@ async function post(url, embed, roleId) {
   await new Promise((r) => setTimeout(r, 500));
 }
 
+// Plain-content message (no embed) so a Discord event link unfurls into its card.
+async function postContent(url, content, roleId) {
+  const payload = { username: "BadgeDrops", content: roleId ? `<@&${roleId}> ${content}` : content };
+  if (roleId) payload.allowed_mentions = { parse: [], roles: [roleId] };
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  if (!res.ok) throw new Error(`Discord webhook ${res.status}: ${await res.text()}`);
+  await new Promise((r) => setTimeout(r, 500));
+}
+
 async function discordApi(method, suffix, body) {
   const res = await fetch(`https://discord.com/api/v10/guilds/${GUILD_ID}/scheduled-events${suffix}`, {
     method,
@@ -115,8 +128,8 @@ async function runBadges(events, badges, announced) {
   return changed;
 }
 
-// ---- Events channel: badge goes live ----
-async function runLive(events, badges, announced) {
+// ---- Events channel: badge goes live (StreamDatabase-style content message) ----
+async function runLive(events, announced) {
   if (!WH_EVENTS) { console.log("No events webhook — skipping go-live messages"); return false; }
   const live = new Set(announced.live || []);
   const now = Date.now();
@@ -132,26 +145,32 @@ async function runLive(events, badges, announced) {
     live.add(key);
     changed = true;
 
-    const img = badgeImage(badges, ev.badge.set, ev.badge.version);
-    const links = [];
     const rec = (announced.events || {})[eventKey(ev)];
-    if (rec && rec.id && GUILD_ID) links.push(`[📅 Discord Event](https://discord.com/events/${GUILD_ID}/${rec.id})`);
-    links.push(`[🎬 Watch on Twitch](${WATCH_URL})`);
-    links.push(`[🔗 Details](${linkFor(ev)})`);
+    const category = ev.channel || "—";
+    const channels = ev.where && ev.where.type === "channel" ? ev.channel : "Any";
+    const lines = [
+      `Twitch global badge now available: **${ev.name}**`,
+      "",
+      "**Objective**",
+      `- ${ev.requirement || "See badge page"}`,
+      "",
+      "**Category**",
+      `- ${category}`,
+      "",
+      "**Channels**",
+      `- ${channels}`,
+    ];
+    if (ev.end) {
+      const u = Math.floor(end / 1000);
+      lines.push("", `The event ends <t:${u}:F> (<t:${u}:R>)`);
+    }
+    lines.push("", "Good luck!");
+    // A Discord event link unfurls into the event card; otherwise link the site.
+    lines.push("", rec && rec.id && GUILD_ID
+      ? `https://discord.com/events/${GUILD_ID}/${rec.id}`
+      : linkFor(ev));
 
-    const fields = [];
-    if (ev.end) fields.push({ name: "Available until", value: stamp(ev.end) });
-    fields.push({ name: "Links", value: links.join("  •  ") });
-
-    await post(WH_EVENTS, {
-      title: `🔴 Now live: ${ev.name}`,
-      url: linkFor(ev),
-      description: `**How to earn:** ${ev.requirement || "See badge page"}`,
-      color: COLOR_LIVE,
-      thumbnail: img ? { url: img } : undefined,
-      fields,
-      footer: { text: "badgedrops.com" },
-    }, ROLE_EVENTS);
+    await postContent(WH_EVENTS, lines.join("\n"), ROLE_EVENTS);
     console.log(`announced LIVE badge: ${ev.name}`);
   }
   announced.live = [...live];
@@ -288,7 +307,7 @@ async function main() {
   // Scheduled events first, so "Now live" can link to the created event.
   const c = await runScheduledEvents(events, badges, announced);
   const a = await runBadges(events, badges, announced);
-  const l = await runLive(events, badges, announced);
+  const l = await runLive(events, announced);
   const b = await runEmotes(emotes, announced);
 
   if (a || b || c || l) {
