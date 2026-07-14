@@ -246,12 +246,15 @@ async function runScheduledEvents(events, badges, announced) {
   for (const u of units.values()) {
     const rec = announced.events[u.key];
     if (!rec) {
-      if (u.start <= now || u.end <= now) continue; // Discord requires future start
+      if (u.end <= now) continue; // already ended — no event to create
+      // Discord requires a future start; for badges that are already live,
+      // nudge the event start a couple minutes out so it can still be created.
+      const startMs = u.start > now ? u.start : now + 2 * 60 * 1000;
       const image = await coverImage(badges, u.img);
       const body = {
         name: u.name.slice(0, 100),
         privacy_level: 2,
-        scheduled_start_time: new Date(u.start).toISOString(),
+        scheduled_start_time: new Date(startMs).toISOString(),
         scheduled_end_time: new Date(u.end).toISOString(),
         entity_type: 3,
         entity_metadata: { location: WATCH_URL.slice(0, 100) },
