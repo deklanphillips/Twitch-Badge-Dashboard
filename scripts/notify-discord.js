@@ -88,12 +88,19 @@ async function postContent(url, content, roleId) {
   await new Promise((r) => setTimeout(r, 500));
 }
 
-async function discordApi(method, suffix, body) {
+async function discordApi(method, suffix, body, attempt = 0) {
   const res = await fetch(`https://discord.com/api/v10/guilds/${GUILD_ID}/scheduled-events${suffix}`, {
     method,
     headers: { Authorization: `Bot ${BOT_TOKEN}`, "Content-Type": "application/json" },
     body: body ? JSON.stringify(body) : undefined,
   });
+  // Respect Discord rate limits: on 429, wait retry_after and try again.
+  if (res.status === 429 && attempt < 6) {
+    const info = await res.clone().json().catch(() => ({}));
+    const wait = Math.ceil((info.retry_after || 1) * 1000) + 300;
+    await new Promise((r) => setTimeout(r, wait));
+    return discordApi(method, suffix, body, attempt + 1);
+  }
   await new Promise((r) => setTimeout(r, 600));
   return res;
 }
