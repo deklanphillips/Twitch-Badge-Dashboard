@@ -165,7 +165,10 @@ async function load() {
     availSection.append(availTitle);
 
     // Exact availability data (dates, earn methods, categories) when we have it.
-    const sdb = (typeof BADGE_AVAILABILITY !== "undefined" && BADGE_AVAILABILITY[setId]) || autoSdb;
+    // Prefer the imported availability only when it actually has a window;
+    // otherwise use the auto-events window so a bare {added} entry can't hide it.
+    const imported = typeof BADGE_AVAILABILITY !== "undefined" ? BADGE_AVAILABILITY[setId] : null;
+    const sdb = (imported && imported.avail) ? imported : (autoSdb || imported);
     if (sdb && sdb.earned) detailFields.append(field("Times Earned", sdb.earned.toLocaleString()));
 
     if (sdb && sdb.avail) {

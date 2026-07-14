@@ -102,6 +102,10 @@ function main() {
     const incoming = snapshot[set_id];
     const existing = current[set_id];
     if (!existing) {
+      // Don't add brand-new badges that carry no window (dates/categories/
+      // channels) — an empty {added} entry adds nothing and would shadow the
+      // auto-events availability on the detail page.
+      if (!incoming.avail) continue;
       merged[set_id] = incoming;
       added.push(set_id);
     } else {
