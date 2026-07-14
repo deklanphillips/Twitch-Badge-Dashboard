@@ -213,21 +213,26 @@ function render() {
   timelineScroll.parentElement.style.display = visible.length ? "" : "none";
   if (!visible.length) return;
 
-  // Pack each event into the first row where it doesn't overlap anything.
-  // Live events get placed first (top rows); ended events then fill into the
-  // same rows wherever their dates don't collide, so no row sits empty.
-  const rowIntervals = []; // per row: list of [start, end]
-  for (const ev of visible) {
-    const s = Date.parse(ev.start), e = layoutEnd(ev, now);
-    let row = rowIntervals.findIndex((ivs) => ivs.every(([is, ie]) => ie <= s || is >= e));
-    if (row === -1) {
-      row = rowIntervals.length;
-      rowIntervals.push([]);
+  // Pack within status bands so live events hold the top rows, then upcoming,
+  // then ended at the bottom. An upcoming badge sits at the bottom until it
+  // goes live, at which point it moves into the live band automatically.
+  // Within a band, non-overlapping events still share a row.
+  let totalRows = 0;
+  for (const status of ["live", "upcoming", "ended"]) {
+    const band = []; // per row: list of [start, end]
+    for (const ev of visible) {
+      if (ev.status !== status) continue;
+      const s = Date.parse(ev.start), e = layoutEnd(ev, now);
+      let row = band.findIndex((ivs) => ivs.every(([is, ie]) => ie <= s || is >= e));
+      if (row === -1) {
+        row = band.length;
+        band.push([]);
+      }
+      band[row].push([s, e]);
+      ev._row = totalRows + row;
     }
-    rowIntervals[row].push([s, e]);
-    ev._row = row;
+    totalRows += band.length;
   }
-  const totalRows = rowIntervals.length;
 
   // Window: scroll back only 2 days from today, extending forward to cover all
   // events. Long-running events that started earlier still show their current
