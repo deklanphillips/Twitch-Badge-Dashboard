@@ -110,12 +110,20 @@ function availabilityEvents() {
 function allEvents() {
   const seen = new Set();
   const merged = [];
+  // Grouping tags (e.g. the EWC watch tiers) live in the auto-events source.
+  // Apply them to whichever source actually provides each badge so grouped
+  // bars survive even when availability data supplies the event.
+  const groupBySet = {};
+  for (const e of autoEvents) {
+    if (e.group && e.badge) groupBySet[e.badge.set] = { group: e.group, groupLabel: e.groupLabel };
+  }
   for (const list of [BADGE_EVENTS, availabilityEvents(), autoEvents]) {
     for (const e of list) {
       const key = e.badge && e.badge.set;
       if (key && seen.has(key)) continue;
       if (key) seen.add(key);
-      merged.push(e);
+      const g = key && groupBySet[key];
+      merged.push(g ? { ...e, group: g.group, groupLabel: g.groupLabel } : e);
     }
   }
   return merged;
