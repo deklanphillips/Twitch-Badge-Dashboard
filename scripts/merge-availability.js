@@ -12,7 +12,6 @@ const fs = require("fs");
 const path = require("path");
 
 const SKIP = /staff|leader|clips?-|twitchiversary|intern|social-media|moderator|subscriber|bits|broadcaster|predictions|hype-train|no_audio|no_video|prime|turbo|partner/i;
-const MAX_CHANNELS = 25; // cap stored channels per window (big campaigns list thousands)
 
 function parseSnapshot(htmlPath) {
   const html = fs.readFileSync(htmlPath, "utf8");
@@ -71,12 +70,12 @@ function parseSnapshot(htmlPath) {
         const cats = (a.categories || []).map((c) => ({ name: c.game?.name || c.category?.name || "", href: c.href || "" })).filter((c) => c.name);
         if (cats.length) o.categories = cats;
         const chans = (a.channels || []).map((c) => ({ name: c.user?.display_name || c.user?.login || "", href: "https://www.twitch.tv/" + (c.user?.login || "") })).filter((c) => c.name);
-        // Big campaigns (EWC etc.) list thousands of eligible channels — don't
-        // store them all; flag it so the detail page links to our own stream.
-        if (chans.length > MAX_CHANNELS) {
-          o.broadChannels = true;
-        } else if (chans.length) {
-          o.channels = chans;
+        // EWC lists ~1,387 eligible channels per tier — don't store them all;
+        // flag it so the detail page links to our own stream instead. Every
+        // other badge keeps its normal channel list.
+        if (chans.length) {
+          if (/^ewc-2026-/i.test(set_id)) o.broadChannels = true;
+          else o.channels = chans;
         }
         return o;
       // Drop empty windows (no dates, no categories, no channels) — sparse
