@@ -353,7 +353,8 @@
   "3",
   "2",
   "1",
-  "emotesv2_91417441b2f24a5299ed7b2a1ce8e7b9"
+  "emotesv2_91417441b2f24a5299ed7b2a1ce8e7b9",
+  "emotesv2_b1cf540b59614b7da75cad7b123c5b25"
  ],
  "events": {
   "set:perlica": {
@@ -361,112 +362,128 @@
    "start": 1784160000000,
    "end": 1784937540000,
    "name": "Perlica",
-   "requirement": "Sub or gift sub"
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by purchasing a subscription to an Arknights: Endfield streamer during the Half-Year Anniversary!"
   },
   "set:two-point-museum": {
    "id": "1526701854145384491",
    "start": 1781794800000,
    "end": 1784213940000,
    "name": "Two Point Museum",
-   "requirement": "Sub or gift sub"
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by gifting one sub to a creator streaming Two Point Museum during Two Point Studio's 10th Anniversary!"
   },
   "set:two-point-pickle": {
    "id": "1526701858163527712",
    "start": 1781794800000,
    "end": 1784213940000,
    "name": "Two Point Pickle",
-   "requirement": "Watch 30 minutes"
+   "requirement": "Watch 30 minutes",
+   "description": "This badge was earned by watching Two Point Museum for 30min during Two Point Studio's 10th Anniversary!"
   },
   "set:blossom-badge": {
    "id": "1526701862789713941",
    "start": 1782082800000,
    "end": 1785196680000,
    "name": "Blossom Badge Level 1",
-   "requirement": "Watch to earn"
+   "requirement": "Watch to earn",
+   "description": "Earn this badge for watching a clip, VOD or live stream 3 days a week. The badge upgrades weekly."
   },
   "set:detroit-android-triangle": {
    "id": "1526701867399119170",
    "start": 1783036800000,
    "end": 1784332680000,
    "name": "Detroit Android Triangle",
-   "requirement": "Watch 1 hour"
+   "requirement": "Watch 1 hour",
+   "description": "This badge was earned by watching a streamer in the Detroit: Become Human category for 1 hour"
   },
   "set:detroit-blue-led": {
    "id": "1526701871991885894",
    "start": 1783036800000,
    "end": 1784332680000,
    "name": "Detroit Blue LED",
-   "requirement": "Sub or gift sub"
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Detroit: Become Human category"
   },
   "set:killer-inn": {
    "id": "1526701904791601216",
    "start": 1783666800000,
    "end": 1784937480000,
    "name": "Killer Inn",
-   "requirement": "Sub or gift sub"
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by purchasing a subscription to a Killer Inn streamer during Summer Drops Fest 2026!"
   },
   "set:grey-zone-warfare": {
    "id": "1526709931292623009",
    "start": 1782423960000,
    "end": 1784159880000,
    "name": "Gray Zone Warfare",
-   "requirement": "Sub or gift sub"
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Grey Zone Warfare category during the campaign period"
   },
   "group:ewc-2026-watch": {
    "id": "1526709935298056234",
    "start": 1783515600000,
    "end": 1787576400000,
    "name": "EWC 2026 (Watch)",
-   "requirement": "Watch to earn"
+   "requirement": "Watch to earn",
+   "description": "This badge was earned by watching one hour of the 2026 Esports World Cup!"
   },
   "set:cool-cattiva": {
    "id": "1526709939899465748",
    "start": 1783666800000,
    "end": 1784937480000,
    "name": "Cool Cattiva",
-   "requirement": "Sub or gift sub"
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Palworld category during Summer Drops Fest 2026!"
   },
   "set:mint": {
    "id": "1526709944085119106",
    "start": 1783494000000,
    "end": 1784703540000,
    "name": "Mint",
-   "requirement": "Sub or gift sub"
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the NTE: Neverness to Everness category during the Version 1.2 \"999 Nights\" release!"
   },
   "set:relink-fabicon": {
    "id": "1526709948220706906",
    "start": 1783666800000,
    "end": 1784937480000,
    "name": "Relink Fabicon",
-   "requirement": "Sub or gift sub"
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Granblue Fantasy: Relink category during Summer Drops Fest 2026!"
   },
   "set:ayane": {
    "id": "1526709983230689420",
    "start": 1783666800000,
    "end": 1784937480000,
    "name": "Ayane",
-   "requirement": "Sub or gift sub"
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by purchasing a subscription to a Dead or Alive 6: Last Round streamer during Summer Drops Fest 2026!"
   },
   "set:meltan": {
    "id": "1526710033549627422",
    "start": 1783580400000,
    "end": 1784616900000,
    "name": "Meltan",
-   "requirement": "Sub or gift sub"
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Pokémon GO category in celebration of the 10th Anniversary of Pokémon GO!"
   },
   "set:jubilee": {
    "id": "1526710083927674880",
    "start": 1783666800000,
    "end": 1784937480000,
    "name": "Jubilee",
-   "requirement": "Sub or gift sub"
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel Rivals category during Summer Drops Fest 2026!"
   },
   "set:hotline": {
    "id": "1526710134590668981",
    "start": 1784012400000,
    "end": 1784357940000,
    "name": "Hotline",
-   "requirement": "Sub or gift sub"
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the CONTROL Resonant category."
   }
  }
 }
