@@ -523,5 +523,25 @@
    "label": "CONTROL Resonant category",
    "url": "https://www.twitch.tv/directory/category/control-resonant"
   }
+ },
+ {
+  "name": "Dreamers",
+  "channel": "Dream Con",
+  "description": "This badge was earned by watching a streamer in the Dream Con category during Dream Con 2026!",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-07-15T20:02:03Z",
+  "end": null,
+  "badge": {
+   "set": "dreamers",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Dream Con category",
+   "url": "https://www.twitch.tv/directory/category/dream-con"
+  }
  }
 ]
