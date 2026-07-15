@@ -241,6 +241,9 @@ async function runScheduledEvents(events, badges, announced) {
       units.set(key, {
         key, name: ev.group ? (ev.groupLabel || ev.name) : ev.name,
         start, end, requirement: ev.requirement || "see badgedrops.com",
+        // Use the badge's own description (as shown on the detail page); fall
+        // back to a short "How to earn" line only when there's no description.
+        description: ev.description || `How to earn: ${ev.requirement || "see badgedrops.com"}`,
         img: { set: ev.badge.set, version: ev.badge.version },
       });
     } else {
@@ -265,27 +268,27 @@ async function runScheduledEvents(events, badges, announced) {
         scheduled_end_time: new Date(u.end).toISOString(),
         entity_type: 3,
         entity_metadata: { location: WATCH_URL.slice(0, 100) },
-        description: `How to earn: ${u.requirement}`.slice(0, 1000),
+        description: u.description.slice(0, 1000),
       };
       if (image) body.image = image;
       const res = await discordApi("POST", "", body);
       if (!res.ok) { console.error(`create failed ${u.name}: ${res.status} ${await res.text()}`); continue; }
       const created = await res.json();
-      announced.events[u.key] = { id: created.id, start: u.start, end: u.end, name: u.name, requirement: u.requirement };
+      announced.events[u.key] = { id: created.id, start: u.start, end: u.end, name: u.name, requirement: u.requirement, description: u.description };
       changed = true;
       console.log(`created event: ${u.name} (${created.id})`);
-    } else if (rec.start !== u.start || rec.end !== u.end || rec.name !== u.name || rec.requirement !== u.requirement) {
+    } else if (rec.start !== u.start || rec.end !== u.end || rec.name !== u.name || rec.requirement !== u.requirement || rec.description !== u.description) {
       const body = {
         name: u.name.slice(0, 100),
         entity_metadata: { location: WATCH_URL.slice(0, 100) },
-        description: `How to earn: ${u.requirement}`.slice(0, 1000),
+        description: u.description.slice(0, 1000),
         scheduled_end_time: new Date(u.end).toISOString(),
       };
       // Only move the start if the event hasn't begun yet (Discord rejects otherwise).
       if (u.start > now) body.scheduled_start_time = new Date(u.start).toISOString();
       const res = await discordApi("PATCH", `/${rec.id}`, body);
       if (!res.ok) { console.error(`update failed ${u.name}: ${res.status} ${await res.text()}`); continue; }
-      announced.events[u.key] = { id: rec.id, start: u.start, end: u.end, name: u.name, requirement: u.requirement };
+      announced.events[u.key] = { id: rec.id, start: u.start, end: u.end, name: u.name, requirement: u.requirement, description: u.description };
       changed = true;
       console.log(`updated event: ${u.name} (${rec.id})`);
     }
