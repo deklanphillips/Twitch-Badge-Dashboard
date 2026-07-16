@@ -563,5 +563,25 @@
    "label": "Meccha Chameleon category",
    "url": "https://www.twitch.tv/directory/category/meccha-chameleon"
   }
+ },
+ {
+  "name": "SAND",
+  "channel": "Sand: Raiders Of Sophie",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Sand: Raiders Of Sophie category.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-16T18:55:25Z",
+  "end": null,
+  "badge": {
+   "set": "sand",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Sand: Raiders Of Sophie category",
+   "url": "https://www.twitch.tv/directory/category/sand-raiders-of-sophie"
+  }
  }
 ]
