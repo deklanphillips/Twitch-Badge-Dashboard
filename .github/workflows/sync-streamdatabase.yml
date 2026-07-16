@@ -2,7 +2,7 @@ name: Sync StreamDatabase dates
 
 on:
   schedule:
-    - cron: "5 8,20 * * *" # twice a day (08:05 & 20:05 UTC), best-effort
+    - cron: "5 * * * *" # hourly (at :05), best-effort — GitHub may delay
   workflow_dispatch: {} # run manually from the Actions tab to test
 
 permissions:
