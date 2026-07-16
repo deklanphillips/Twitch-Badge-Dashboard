@@ -219,22 +219,28 @@ async function runBadges(events, badges, announced) {
 
 // ---- Web push (OneSignal): broadcast to everyone when a badge goes live ----
 // No-ops unless ONESIGNAL_APP_ID + ONESIGNAL_API_KEY are set (GitHub secrets).
-async function sendPush(title, body, url) {
+async function sendPush(title, body, url, image) {
   const appId = process.env.ONESIGNAL_APP_ID;
   const apiKey = process.env.ONESIGNAL_API_KEY;
   if (!appId || !apiKey) return;
   try {
+    const payload = {
+      app_id: appId,
+      included_segments: ["Total Subscriptions"],
+      headings: { en: title },
+      contents: { en: body },
+      url,
+      chrome_web_icon: `${SITE}/favicon-192.png`,
+    };
+    // Show the badge's own artwork as the large image (Android/desktop).
+    if (image) {
+      payload.chrome_web_image = image;
+      payload.big_picture = image;
+    }
     const res = await fetch("https://onesignal.com/api/v1/notifications", {
       method: "POST",
       headers: { "Content-Type": "application/json; charset=utf-8", Authorization: `Basic ${apiKey}` },
-      body: JSON.stringify({
-        app_id: appId,
-        included_segments: ["Total Subscriptions"],
-        headings: { en: title },
-        contents: { en: body },
-        url,
-        chrome_web_icon: `${SITE}/favicon-192.png`,
-      }),
+      body: JSON.stringify(payload),
     });
     if (!res.ok) console.error(`OneSignal push failed: ${res.status} ${await res.text()}`);
     else console.log(`sent web push: ${title}`);
@@ -243,8 +249,12 @@ async function sendPush(title, body, url) {
   }
 }
 
+// Short date like "Jul 31" (badge end times are UTC).
+const shortDate = (ms) =>
+  new Date(ms).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
+
 // ---- Events channel: badge goes live (StreamDatabase-style content message) ----
-async function runLive(events, announced) {
+async function runLive(events, badges, announced) {
   if (!WH_EVENTS) { console.log("No events webhook — skipping go-live messages"); return false; }
   const live = new Set(announced.live || []);
   const now = Date.now();
@@ -286,11 +296,14 @@ async function runLive(events, announced) {
       : linkFor(ev));
 
     await postContent(WH_EVENTS, lines.join("\n"), ROLE_EVENTS);
-    // Broadcast the same go-live to PWA/web subscribers.
+    // Broadcast the same go-live to PWA/web subscribers, with the badge art.
+    const earn = ev.requirement ? `Earn it: ${ev.requirement}.` : "New badge available.";
+    const ends = end !== null ? ` Ends ${shortDate(end)}.` : "";
     await sendPush(
-      `🟣 ${ev.name} is live!`,
-      ev.requirement ? `${ev.requirement} — now on Twitch.` : "A new Twitch badge just went live.",
+      `⚡ ${ev.name} — badge live now`,
+      `${earn}${ends} Tap for details.`,
       linkFor(ev),
+      badgeImage(badges, ev.badge.set, ev.badge.version),
     );
     console.log(`announced LIVE badge: ${ev.name}`);
   }
@@ -434,7 +447,7 @@ async function main() {
   // Scheduled events first, so "Now live" can link to the created event.
   const c = await runScheduledEvents(events, badges, announced);
   const a = await runBadges(events, badges, announced);
-  const l = await runLive(events, announced);
+  const l = await runLive(events, badges, announced);
   const b = await runEmotes(emotes, announced);
 
   if (a || b || c || l) {
