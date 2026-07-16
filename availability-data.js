@@ -7424,5 +7424,28 @@ const BADGE_AVAILABILITY = {
        "twitchcon": true
      }
    ]
+ },
+ "sand": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-16T18:35Z",
+       "end": "2026-07-31T06:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Sand: Raiders Of Sophie",
+           "href": "https://www.twitch.tv/directory/category/sand?filter=drops"
+         }
+       ]
+     }
+   ]
  }
 };
