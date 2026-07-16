@@ -4,7 +4,7 @@
 // the site just registers the plain caching service worker (nothing breaks).
 // The App ID is public/safe to commit; the REST API key is NOT — it lives only
 // as a GitHub secret used by the data workflow to send pushes.
-var ONESIGNAL_APP_ID = ""; // <-- e.g. "12345678-90ab-cdef-1234-567890abcdef"
+var ONESIGNAL_APP_ID = "04dcaa9b-4ff8-4075-b015-7999b9f86e03";
 
 (function () {
   var installBtn = document.getElementById("installBtn");
