@@ -105,31 +105,40 @@ async function discordApi(method, suffix, body, attempt = 0) {
   return res;
 }
 
-// ---- Badges channel: newly added ----
+// Built-in / system badges that shouldn't announce (they never really "arrive").
+const BUILTIN_BADGE = /^(subscriber|bits|moderator|broadcaster|vip|staff|admin|global_mod|turbo|premium|partner|no_audio|no_video|sub-gifter|sub-gift-leader|bits-leader|bits-charity|clip-cheer|hype-train|predictions|ambassador|artist-badge|extension|anonymous-cheerer|game-developer)$/i;
+
+// ---- Badges channel: any badge newly added to the catalog (the site) ----
 async function runBadges(events, badges, announced) {
   if (!WH_BADGES) { console.log("No badges webhook — skipping new-badge messages"); return false; }
   const detected = new Set(announced.detected || []);
+  const autoBySet = new Map((events || []).map((e) => [e.badge.set, e]));
   let changed = false;
-  for (const ev of events) {
-    const key = ev.badge.set;
+  for (const set of badges.data || []) {
+    const key = set.set_id;
     if (detected.has(key)) continue;
-    detected.add(key);
+    detected.add(key);            // track everything so it only announces once
+    if (BUILTIN_BADGE.test(key)) { changed = true; continue; } // skip system badges
     changed = true;
-    const img = badgeImage(badges, ev.badge.set, ev.badge.version);
+
+    const v = set.versions[0] || {};
+    const ev = autoBySet.get(key); // richer info if it's a known drop/event
+    const name = (ev && ev.name) || v.title || key;
+    const img = v.image_url_4x || v.image_url_2x || v.image_url_1x;
+    const url = ev ? linkFor(ev) : `${SITE}/badge?set=${encodeURIComponent(key)}&version=${encodeURIComponent(v.id || "1")}`;
     const fields = [];
-    if (ev.confirmed && ev.start) fields.push({ name: "Starts", value: stamp(ev.start), inline: true });
-    if (ev.confirmed && ev.end) fields.push({ name: "Ends", value: stamp(ev.end), inline: true });
-    if (!ev.confirmed) fields.push({ name: "Dates", value: "TBA", inline: true });
+    if (ev && ev.confirmed && ev.start) fields.push({ name: "Starts", value: stamp(ev.start), inline: true });
+    if (ev && ev.confirmed && ev.end) fields.push({ name: "Ends", value: stamp(ev.end), inline: true });
     await post(WH_BADGES, {
-      title: `🆕 New badge added: ${ev.name}`,
-      url: linkFor(ev),
-      description: ev.description || howToEarn(ev),
+      title: `🆕 New badge added: ${name}`,
+      url,
+      description: (ev && ev.description) || v.description || "A new Twitch global badge is now available.",
       color: COLOR_NEW,
       thumbnail: img ? { url: img } : undefined,
       fields,
       footer: { text: "badgedrops.com" },
     }, ROLE_BADGES);
-    console.log(`announced NEW badge: ${ev.name}`);
+    console.log(`announced NEW badge: ${name}`);
   }
   announced.detected = [...detected];
   return changed;
