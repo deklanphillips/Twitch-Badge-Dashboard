@@ -52,7 +52,11 @@ var ONESIGNAL_APP_ID = "04dcaa9b-4ff8-4075-b015-7999b9f86e03";
 
     window.OneSignalDeferred = window.OneSignalDeferred || [];
     window.OneSignalDeferred.push(async function (OneSignal) {
-      await OneSignal.init({ appId: ONESIGNAL_APP_ID, allowLocalhostAsSecureOrigin: true });
+      await OneSignal.init({
+        appId: ONESIGNAL_APP_ID,
+        safari_web_id: "web.onesignal.auto.6a162863-2269-421e-a6d3-46e81aa6d2f4",
+        allowLocalhostAsSecureOrigin: true,
+      });
       if (!notifyBtn) return;
 
       function refresh() {
