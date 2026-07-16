@@ -1,0 +1,34 @@
+name: Sync StreamDatabase dates
+
+on:
+  schedule:
+    - cron: "5 8,20 * * *" # twice a day (08:05 & 20:05 UTC), best-effort
+  workflow_dispatch: {} # run manually from the Actions tab to test
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Pull + merge StreamDatabase Events dates
+        run: node scripts/fetch-streamdatabase.js
+      - name: Rebuild consolidated events.json
+        run: node scripts/generate-events.js
+      - name: Commit if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add availability-data.js api/events.json
+          if git diff --cached --quiet; then
+            echo "No StreamDatabase changes to commit."
+          else
+            git commit -m "Auto-sync StreamDatabase dates"
+            git pull --rebase origin main
+            git push
+          fi
