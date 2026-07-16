@@ -13,6 +13,11 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="theme-color" content="#0e0e10" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="BadgeDrops" />
 </head>
 <body class="with-sidebar">
   <aside class="sidebar">
@@ -62,7 +67,17 @@
               <span>Join the server</span>
             </span>
           </a>
+          <button class="social-card install" id="installBtn" type="button" hidden>
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 3a1 1 0 0 1 1 1v9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L11 13.586V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/>
+            </svg>
+            <span class="social-text">
+              <strong>Install App</strong>
+              <span>Add to your home screen</span>
+            </span>
+          </button>
         </div>
+        <p class="install-hint" id="installHint" hidden>On iPhone: tap the <strong>Share</strong> button, then <strong>Add to Home Screen</strong>.</p>
       </section>
 
       <a class="preview-panel" href="/badges">
@@ -102,5 +117,6 @@
 
   <script src="/api-client.js"></script>
   <script src="/home.js"></script>
+  <script src="/pwa.js"></script>
 </body>
 </html>
