@@ -25,6 +25,8 @@ jobs:
         env:
           TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+      - name: Build consolidated events.json (for the mobile app)
+        run: node scripts/generate-events.js
       - name: Announce on Discord
         run: node scripts/notify-discord.js
         env:

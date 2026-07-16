@@ -1,0 +1,632 @@
+[
+ {
+  "name": "Two Point Museum",
+  "channel": "Two Point Museum",
+  "description": "This badge was earned by gifting one sub to a creator streaming Two Point Museum during Two Point Studio's 10th Anniversary!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-06-18T15:00:00Z",
+  "end": "2026-07-16T14:59:00Z",
+  "badge": {
+   "set": "two-point-museum",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Two Point Museum",
+   "url": "https://www.twitch.tv/directory/category/two-point-museum"
+  }
+ },
+ {
+  "name": "Two Point Pickle",
+  "channel": "Two Point Museum",
+  "description": "This badge was earned by watching Two Point Museum for 30min during Two Point Studio's 10th Anniversary!",
+  "emoji": "✨",
+  "requirement": "Watch 30 minutes",
+  "start": "2026-06-18T15:00:00Z",
+  "end": "2026-07-16T14:59:00Z",
+  "badge": {
+   "set": "two-point-pickle",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Two Point Museum",
+   "url": "https://www.twitch.tv/directory/category/two-point-museum"
+  }
+ },
+ {
+  "name": "Blossom Badge Level 1",
+  "channel": "a clip",
+  "description": "Earn this badge for watching a clip, VOD or live stream 3 days a week. The badge upgrades weekly.",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-06-21T23:00:00Z",
+  "end": "2026-07-27T23:58:00Z",
+  "badge": {
+   "set": "blossom-badge",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "a clip category",
+   "url": "https://www.twitch.tv/directory/category/a-clip"
+  }
+ },
+ {
+  "name": "Detroit Android Triangle",
+  "channel": "Detroit: Become Human",
+  "description": "This badge was earned by watching a streamer in the Detroit: Become Human category for 1 hour",
+  "emoji": "✨",
+  "requirement": "Watch 1 hour",
+  "start": "2026-07-03T00:00:00Z",
+  "end": "2026-07-17T23:58:00Z",
+  "badge": {
+   "set": "detroit-android-triangle",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Detroit: Become Human category",
+   "url": "https://www.twitch.tv/directory/category/detroit-become-human"
+  }
+ },
+ {
+  "name": "Detroit Blue LED",
+  "channel": "Detroit: Become Human",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Detroit: Become Human category",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-03T00:00:00Z",
+  "end": "2026-07-17T23:58:00Z",
+  "badge": {
+   "set": "detroit-blue-led",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Detroit: Become Human category",
+   "url": "https://www.twitch.tv/directory/category/detroit-become-human"
+  }
+ },
+ {
+  "name": "DOA6LR Kasumi",
+  "channel": "Dead or Alive 6 Last Round",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Dead or Alive 6 Last Round category during the game launch!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-06-25T07:00:00Z",
+  "end": "2026-07-09T23:58:00Z",
+  "badge": {
+   "set": "doa6lr-kasumi",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Dead or Alive 6 Last Round category",
+   "url": "https://www.twitch.tv/directory/category/dead-or-alive-6-last-round"
+  }
+ },
+ {
+  "name": "Evo Las Vegas 2026",
+  "channel": "Twitch",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in a participating category during Evo Las Vegas 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-06-26T08:00:00.000Z",
+  "end": "2026-06-29T07:59:00.000Z",
+  "badge": {
+   "set": "evo-las-vegas-2026",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true
+ },
+ {
+  "name": "Gray Zone Warfare",
+  "channel": "Grey Zone Warfare",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Grey Zone Warfare category during the campaign period",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-06-25T21:46:00Z",
+  "end": "2026-07-15T23:58:00Z",
+  "badge": {
+   "set": "grey-zone-warfare",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Grey Zone Warfare category",
+   "url": "https://www.twitch.tv/directory/category/grey-zone-warfare"
+  }
+ },
+ {
+  "name": "EWC 2026 (Bronze)",
+  "channel": "one hour of the 2026 Esports World Cup",
+  "description": "This badge was earned by watching one hour of the 2026 Esports World Cup!",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-07-08T13:00:00Z",
+  "end": "2026-08-24T13:00:00Z",
+  "badge": {
+   "set": "ewc-2026-bronze",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "one hour of the 2026 Esports World Cup category",
+   "url": "https://www.twitch.tv/directory/category/one-hour-of-the-2026-esports-world-cup"
+  },
+  "group": "ewc-2026-watch",
+  "groupLabel": "EWC 2026 (Watch)"
+ },
+ {
+  "name": "EWC 2026 (Silver)",
+  "channel": "two hours of the 2026 Esports World Cup",
+  "description": "This badge was earned by watching two hours of the 2026 Esports World Cup!",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-07-08T13:00:00Z",
+  "end": "2026-08-24T13:00:00Z",
+  "badge": {
+   "set": "ewc-2026-silver",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "two hours of the 2026 Esports World Cup category",
+   "url": "https://www.twitch.tv/directory/category/two-hours-of-the-2026-esports-world-cup"
+  },
+  "group": "ewc-2026-watch",
+  "groupLabel": "EWC 2026 (Watch)"
+ },
+ {
+  "name": "EWC 2026 (Gold)",
+  "channel": "three hours of the 2026 Esports World Cup",
+  "description": "This badge was earned by watching three hours of the 2026 Esports World Cup!",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-07-08T13:00:00Z",
+  "end": "2026-08-24T13:00:00Z",
+  "badge": {
+   "set": "ewc-2026-gold",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "three hours of the 2026 Esports World Cup category",
+   "url": "https://www.twitch.tv/directory/category/three-hours-of-the-2026-esports-world-cup"
+  },
+  "group": "ewc-2026-watch",
+  "groupLabel": "EWC 2026 (Watch)"
+ },
+ {
+  "name": "EWC 2026 (Platinum)",
+  "channel": "six hours of the 2026 Esports World Cup",
+  "description": "This badge was earned by watching six hours of the 2026 Esports World Cup!",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-07-08T13:00:00Z",
+  "end": "2026-08-24T13:00:00Z",
+  "badge": {
+   "set": "ewc-2026-platinum",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "six hours of the 2026 Esports World Cup category",
+   "url": "https://www.twitch.tv/directory/category/six-hours-of-the-2026-esports-world-cup"
+  },
+  "group": "ewc-2026-watch",
+  "groupLabel": "EWC 2026 (Watch)"
+ },
+ {
+  "name": "EWC 2026 (Diamond)",
+  "channel": "twelve hours of the 2026 Esports World Cup",
+  "description": "This badge was earned by watching twelve hours of the 2026 Esports World Cup!",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-07-08T13:00:00Z",
+  "end": "2026-08-24T13:00:00Z",
+  "badge": {
+   "set": "ewc-2026-diamond",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "twelve hours of the 2026 Esports World Cup category",
+   "url": "https://www.twitch.tv/directory/category/twelve-hours-of-the-2026-esports-world-cup"
+  },
+  "group": "ewc-2026-watch",
+  "groupLabel": "EWC 2026 (Watch)"
+ },
+ {
+  "name": "Cool Cattiva",
+  "channel": "Palworld",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Palworld category during Summer Drops Fest 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-10T07:00:00Z",
+  "end": "2026-07-24T23:58:00Z",
+  "badge": {
+   "set": "cool-cattiva",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Palworld category",
+   "url": "https://www.twitch.tv/directory/category/palworld"
+  }
+ },
+ {
+  "name": "Mint",
+  "channel": "NTE: Neverness to Everness",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the NTE: Neverness to Everness category during the Version 1.2 \"999 Nights\" release!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-08T07:00:00Z",
+  "end": "2026-07-22T06:59:00Z",
+  "badge": {
+   "set": "mint",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "NTE: Neverness to Everness category",
+   "url": "https://www.twitch.tv/directory/category/nte-neverness-to-everness"
+  }
+ },
+ {
+  "name": "Relink Fabicon",
+  "channel": "Granblue Fantasy: Relink",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Granblue Fantasy: Relink category during Summer Drops Fest 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-10T07:00:00Z",
+  "end": "2026-07-24T23:58:00Z",
+  "badge": {
+   "set": "relink-fabicon",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Granblue Fantasy: Relink category",
+   "url": "https://www.twitch.tv/directory/category/granblue-fantasy-relink"
+  }
+ },
+ {
+  "name": "Ayane",
+  "channel": "Dead or Alive 6: Last Round",
+  "description": "This badge was earned by purchasing a subscription to a Dead or Alive 6: Last Round streamer during Summer Drops Fest 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-10T07:00:00Z",
+  "end": "2026-07-24T23:58:00Z",
+  "badge": {
+   "set": "ayane",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Dead or Alive 6: Last Round category",
+   "url": "https://www.twitch.tv/directory/category/dead-or-alive-6-last-round"
+  }
+ },
+ {
+  "name": "Killer Inn",
+  "channel": "Killer Inn",
+  "description": "This badge was earned by purchasing a subscription to a Killer Inn streamer during Summer Drops Fest 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-10T07:00:00Z",
+  "end": "2026-07-24T23:58:00Z",
+  "badge": {
+   "set": "killer-inn",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Killer Inn category",
+   "url": "https://www.twitch.tv/directory/category/killer-inn"
+  }
+ },
+ {
+  "name": "Perlica",
+  "channel": "Arknights: Endfield",
+  "description": "This badge was earned by purchasing a subscription to an Arknights: Endfield streamer during the Half-Year Anniversary!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-16T07:00:00Z",
+  "end": "2026-07-26T23:58:00Z",
+  "badge": {
+   "set": "perlica",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Arknights: Endfield category",
+   "url": "https://www.twitch.tv/directory/category/arknights-endfield"
+  }
+ },
+ {
+  "name": "Meltan",
+  "channel": "Pokémon GO",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Pokémon GO category in celebration of the 10th Anniversary of Pokémon GO!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-09T07:00:00Z",
+  "end": "2026-07-21T06:55:00Z",
+  "badge": {
+   "set": "meltan",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Pokémon GO category",
+   "url": "https://www.twitch.tv/directory/category/pok-mon-go"
+  }
+ },
+ {
+  "name": "Jubilee",
+  "channel": "Marvel Rivals",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel Rivals category during Summer Drops Fest 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-10T07:00:00Z",
+  "end": "2026-07-24T23:58:00Z",
+  "badge": {
+   "set": "jubilee",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Marvel Rivals category",
+   "url": "https://www.twitch.tv/directory/category/marvel-rivals"
+  }
+ },
+ {
+  "name": "Dream Beyond",
+  "channel": "Dream Con",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Dream Con category during Dream Con 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-10T07:00:00Z",
+  "end": "2026-07-13T07:00:00Z",
+  "badge": {
+   "set": "dream-beyond",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Dream Con category",
+   "url": "https://www.twitch.tv/directory/category/dream-con"
+  }
+ },
+ {
+  "name": "Team Valor",
+  "channel": "Pokémon GO",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Pokémon GO category in celebration of the 10th Anniversary of Pokémon GO!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-11T07:30:00.000Z",
+  "end": "2026-07-12T06:59:00.000Z",
+  "badge": {
+   "set": "team-valor",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Pokémon GO category",
+   "url": "https://www.twitch.tv/directory/category/pok-mon-go"
+  }
+ },
+ {
+  "name": "Team Mystic",
+  "channel": "Pokémon GO",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Pokémon GO category in celebration of the 10th Anniversary of Pokémon GO!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-12T07:30:00.000Z",
+  "end": "2026-07-13T06:59:00.000Z",
+  "badge": {
+   "set": "team-mystic",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Pokémon GO category",
+   "url": "https://www.twitch.tv/directory/category/pok-mon-go"
+  }
+ },
+ {
+  "name": "Team Instinct",
+  "channel": "Pokémon GO",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Pokémon GO category in celebration of the 10th Anniversary of Pokémon GO!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-13T07:30:00.000Z",
+  "end": "2026-07-14T06:59:00.000Z",
+  "badge": {
+   "set": "team-instinct",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Pokémon GO category",
+   "url": "https://www.twitch.tv/directory/category/pok-mon-go"
+  }
+ },
+ {
+  "name": "Hotline",
+  "channel": "CONTROL Resonant",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the CONTROL Resonant category.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-14T07:00:00Z",
+  "end": "2026-07-18T06:59:00Z",
+  "badge": {
+   "set": "hotline",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "CONTROL Resonant category",
+   "url": "https://www.twitch.tv/directory/category/control-resonant"
+  }
+ },
+ {
+  "name": "Meccha Chameleon",
+  "channel": "Meccha Chameleon",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Meccha Chameleon category during Summer Drops Fest 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-16T07:00:00.000Z",
+  "end": "2026-07-25T06:58:00.000Z",
+  "badge": {
+   "set": "meccha-chameleon",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Meccha Chameleon category",
+   "url": "https://www.twitch.tv/directory/category/meccha-chameleon"
+  }
+ },
+ {
+  "name": "SAND",
+  "channel": "Sand: Raiders Of Sophie",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Sand: Raiders Of Sophie category.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-16T18:35:00.000Z",
+  "end": "2026-07-31T06:59:00.000Z",
+  "badge": {
+   "set": "sand",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Sand: Raiders Of Sophie category",
+   "url": "https://www.twitch.tv/directory/category/sand-raiders-of-sophie"
+  }
+ },
+ {
+  "name": "Assassin's Creed Black Flag Resynced",
+  "channel": "Assassin's Creed Black Flag Resynced",
+  "description": "This badge was earned by purchasing a subscription to an Assassin's Creed Black Flag Resynced streamer during the launch of the game!",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-09T15:00:00.000Z",
+  "end": "2026-08-01T06:58:00.000Z",
+  "badge": {
+   "set": "assassins-creed-black-flag-resynced",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "EWC 2026 (Ultraviolet)",
+  "channel": "Twitch",
+  "description": "This badge was earned by supporting a 2026 Esports World Cup co-streamer!",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-08T13:00:00.000Z",
+  "end": "2026-08-24T13:00:00.000Z",
+  "badge": {
+   "set": "ewc-2026-ultraviolet",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Football Fest 2026",
+  "channel": "Twitch",
+  "description": "This badge was earned by watching 15 minutes of any of the participating Football Fest channels during Football Fest 2026!",
+  "requirement": "Watch 15 minutes",
+  "start": "2026-06-11T06:59:00.000Z",
+  "end": "2026-07-20T06:59:00.000Z",
+  "badge": {
+   "set": "football-fest-2026",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "TwitchCon 2026 - San Diego - BeachBall",
+  "channel": "TwitchCon",
+  "description": "This badge is given to anyone who purchased a 1-day ticket to TwitchCon San Diego 2026.",
+  "requirement": "Attend TwitchCon",
+  "start": "2026-07-22T00:00:00.000Z",
+  "end": "2026-11-15T23:59:59.000Z",
+  "badge": {
+   "set": "twitchcon-2026---san-diego---beachball",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "TwitchCon 2026 - San Diego - Taco",
+  "channel": "TwitchCon",
+  "description": "This badge is given to anyone who purchased a 3-day ticket to TwitchCon San Diego 2026.",
+  "requirement": "Attend TwitchCon",
+  "start": "2026-07-22T00:00:00.000Z",
+  "end": "2026-11-15T23:59:59.000Z",
+  "badge": {
+   "set": "twitchcon-2026---san-diego---taco",
+   "version": "1"
+  },
+  "confirmed": true
+ }
+]
