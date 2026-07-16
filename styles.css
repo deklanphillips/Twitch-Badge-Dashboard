@@ -653,13 +653,15 @@ a.badge-tile[hidden] { display: none; }
 .social-card:hover { filter: brightness(1.12); transform: translateY(-2px); }
 .social-card.twitch { background: #9147ff; }
 .social-card.discord { background: #5865f2; }
-.social-card.install {
+.social-card.install,
+.social-card.notify {
   background: #1f1f23;
   border: 1px solid #2a2a2e;
   font: inherit;
   cursor: pointer;
   text-align: left;
 }
+.social-card.notify { background: #00c853; border-color: transparent; }
 .install-hint { margin-top: 12px; color: var(--text-muted); font-size: 14px; }
 .install-hint strong { color: var(--text); }
 .social-icon { width: 34px; height: 34px; flex-shrink: 0; }

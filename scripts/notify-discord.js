@@ -217,6 +217,32 @@ async function runBadges(events, badges, announced) {
   return changed;
 }
 
+// ---- Web push (OneSignal): broadcast to everyone when a badge goes live ----
+// No-ops unless ONESIGNAL_APP_ID + ONESIGNAL_API_KEY are set (GitHub secrets).
+async function sendPush(title, body, url) {
+  const appId = process.env.ONESIGNAL_APP_ID;
+  const apiKey = process.env.ONESIGNAL_API_KEY;
+  if (!appId || !apiKey) return;
+  try {
+    const res = await fetch("https://onesignal.com/api/v1/notifications", {
+      method: "POST",
+      headers: { "Content-Type": "application/json; charset=utf-8", Authorization: `Basic ${apiKey}` },
+      body: JSON.stringify({
+        app_id: appId,
+        included_segments: ["Total Subscriptions"],
+        headings: { en: title },
+        contents: { en: body },
+        url,
+        chrome_web_icon: `${SITE}/favicon-192.png`,
+      }),
+    });
+    if (!res.ok) console.error(`OneSignal push failed: ${res.status} ${await res.text()}`);
+    else console.log(`sent web push: ${title}`);
+  } catch (e) {
+    console.error("OneSignal push error:", e.message);
+  }
+}
+
 // ---- Events channel: badge goes live (StreamDatabase-style content message) ----
 async function runLive(events, announced) {
   if (!WH_EVENTS) { console.log("No events webhook — skipping go-live messages"); return false; }
@@ -260,6 +286,12 @@ async function runLive(events, announced) {
       : linkFor(ev));
 
     await postContent(WH_EVENTS, lines.join("\n"), ROLE_EVENTS);
+    // Broadcast the same go-live to PWA/web subscribers.
+    await sendPush(
+      `🟣 ${ev.name} is live!`,
+      ev.requirement ? `${ev.requirement} — now on Twitch.` : "A new Twitch badge just went live.",
+      linkFor(ev),
+    );
     console.log(`announced LIVE badge: ${ev.name}`);
   }
   announced.live = [...live];

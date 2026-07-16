@@ -1,49 +1,76 @@
-// Registers the service worker (makes the site installable) and, on the home
-// page only, wires the "Install app" button. The button element exists only in
-// index.html, so this no-ops elsewhere.
+// PWA install + web-push (OneSignal).
+//
+// SETUP: paste your OneSignal App ID below. Until you do, push stays off and
+// the site just registers the plain caching service worker (nothing breaks).
+// The App ID is public/safe to commit; the REST API key is NOT — it lives only
+// as a GitHub secret used by the data workflow to send pushes.
+var ONESIGNAL_APP_ID = ""; // <-- e.g. "12345678-90ab-cdef-1234-567890abcdef"
+
 (function () {
-  if ("serviceWorker" in navigator) {
+  var installBtn = document.getElementById("installBtn");
+  var notifyBtn = document.getElementById("notifyBtn");
+
+  // ---------- Install button (home page only) ----------
+  if (installBtn) {
+    var isStandalone =
+      window.matchMedia("(display-mode: standalone)").matches ||
+      window.navigator.standalone === true;
+    if (!isStandalone) {
+      var isiOS = /iphone|ipad|ipod/i.test(window.navigator.userAgent);
+      var deferred = null;
+      window.addEventListener("beforeinstallprompt", function (e) {
+        e.preventDefault();
+        deferred = e;
+        installBtn.hidden = false;
+      });
+      window.addEventListener("appinstalled", function () {
+        installBtn.hidden = true;
+      });
+      if (isiOS) installBtn.hidden = false;
+      installBtn.addEventListener("click", function () {
+        if (deferred) {
+          deferred.prompt();
+          deferred.userChoice.finally(function () {
+            deferred = null;
+            installBtn.hidden = true;
+          });
+        } else if (isiOS) {
+          var hint = document.getElementById("installHint");
+          if (hint) hint.hidden = !hint.hidden;
+        }
+      });
+    }
+  }
+
+  // ---------- Push (OneSignal) ----------
+  if (ONESIGNAL_APP_ID) {
+    // Load the OneSignal SDK; it registers OneSignalSDKWorker.js for us.
+    var s = document.createElement("script");
+    s.src = "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js";
+    s.defer = true;
+    document.head.appendChild(s);
+
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    window.OneSignalDeferred.push(async function (OneSignal) {
+      await OneSignal.init({ appId: ONESIGNAL_APP_ID, allowLocalhostAsSecureOrigin: true });
+      if (!notifyBtn) return;
+
+      function refresh() {
+        var on = OneSignal.Notifications.permission === true;
+        notifyBtn.hidden = on; // hide once they're subscribed
+      }
+      refresh();
+
+      notifyBtn.addEventListener("click", async function () {
+        await OneSignal.Notifications.requestPermission();
+        try { await OneSignal.User.PushSubscription.optIn(); } catch (e) {}
+        refresh();
+      });
+    });
+  } else if ("serviceWorker" in navigator) {
+    // No push configured yet — just register the caching worker.
     window.addEventListener("load", function () {
       navigator.serviceWorker.register("/sw.js").catch(function () {});
     });
   }
-
-  var btn = document.getElementById("installBtn");
-  if (!btn) return; // not the home page
-
-  var isStandalone =
-    window.matchMedia("(display-mode: standalone)").matches ||
-    window.navigator.standalone === true;
-  if (isStandalone) return; // already installed — no need to show the button
-
-  var isiOS = /iphone|ipad|ipod/i.test(window.navigator.userAgent);
-  var deferred = null;
-
-  // Android / desktop Chrome: capture the install prompt and show the button.
-  window.addEventListener("beforeinstallprompt", function (e) {
-    e.preventDefault();
-    deferred = e;
-    btn.hidden = false;
-  });
-
-  window.addEventListener("appinstalled", function () {
-    btn.hidden = true;
-  });
-
-  // iOS Safari has no install prompt — show the button and explain the
-  // Share -> Add to Home Screen flow when tapped.
-  if (isiOS) btn.hidden = false;
-
-  btn.addEventListener("click", function () {
-    if (deferred) {
-      deferred.prompt();
-      deferred.userChoice.finally(function () {
-        deferred = null;
-        btn.hidden = true;
-      });
-    } else if (isiOS) {
-      var hint = document.getElementById("installHint");
-      if (hint) hint.hidden = !hint.hidden;
-    }
-  });
 })();
