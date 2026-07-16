@@ -322,7 +322,9 @@
   "you-got-this",
   "yuzu",
   "zevent-2024",
-  "zevent25"
+  "zevent25",
+  "twitchcon-2026---san-diego---beachball",
+  "twitchcon-2026---san-diego---taco"
  ],
  "live": [
   "two-point-museum",
@@ -346,7 +348,11 @@
   "jubilee",
   "dream-beyond",
   "hotline",
-  "perlica"
+  "perlica",
+  "meccha-chameleon",
+  "assassins-creed-black-flag-resynced",
+  "ewc-2026-ultraviolet",
+  "football-fest-2026"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -782,6 +788,54 @@
    "name": "Hotline",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the CONTROL Resonant category."
+  },
+  "set:meccha-chameleon": {
+   "id": "1527327371122835456",
+   "start": 1784185200000,
+   "end": 1784962680000,
+   "name": "Meccha Chameleon",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Meccha Chameleon category during Summer Drops Fest 2026!"
+  },
+  "set:assassins-creed-black-flag-resynced": {
+   "id": "1527327376097411103",
+   "start": 1783609200000,
+   "end": 1785567480000,
+   "name": "Assassin's Creed Black Flag Resynced",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by purchasing a subscription to an Assassin's Creed Black Flag Resynced streamer during the launch of the game!"
+  },
+  "set:ewc-2026-ultraviolet": {
+   "id": "1527327380853620768",
+   "start": 1783515600000,
+   "end": 1787576400000,
+   "name": "EWC 2026 (Ultraviolet)",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by supporting a 2026 Esports World Cup co-streamer!"
+  },
+  "set:football-fest-2026": {
+   "id": "1527327385299456060",
+   "start": 1781161140000,
+   "end": 1784530740000,
+   "name": "Football Fest 2026",
+   "requirement": "Watch 15 minutes",
+   "description": "This badge was earned by watching 15 minutes of any of the participating Football Fest channels during Football Fest 2026!"
+  },
+  "set:twitchcon-2026---san-diego---beachball": {
+   "id": "1527327389242101806",
+   "start": 1784678400000,
+   "end": 1794787199000,
+   "name": "TwitchCon 2026 - San Diego - BeachBall",
+   "requirement": "Attend TwitchCon",
+   "description": "This badge is given to anyone who purchased a 1-day ticket to TwitchCon San Diego 2026."
+  },
+  "set:twitchcon-2026---san-diego---taco": {
+   "id": "1527327423274811463",
+   "start": 1784678400000,
+   "end": 1794787199000,
+   "name": "TwitchCon 2026 - San Diego - Taco",
+   "requirement": "Attend TwitchCon",
+   "description": "This badge is given to anyone who purchased a 3-day ticket to TwitchCon San Diego 2026."
   }
  }
 }
