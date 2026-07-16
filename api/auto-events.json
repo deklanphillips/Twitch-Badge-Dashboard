@@ -370,8 +370,8 @@
   "description": "This badge was earned by purchasing a subscription to an Arknights: Endfield streamer during the Half-Year Anniversary!",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-07-16T00:00:00Z",
-  "end": "2026-07-24T23:59:00Z",
+  "start": "2026-07-16T07:00:00Z",
+  "end": "2026-07-26T23:58:00Z",
   "badge": {
    "set": "perlica",
    "version": "1"

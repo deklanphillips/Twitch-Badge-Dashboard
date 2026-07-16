@@ -7324,6 +7324,104 @@ const BADGE_AVAILABILITY = {
            "href": "https://www.twitch.tv/directory/category/control-2?filter=drops"
          }
        ]
+     },
+     {
+       "start": "2026-07-15T23:22Z",
+       "end": "2026-07-23T06:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Control",
+           "href": "https://www.twitch.tv/directory/category/control?filter=drops"
+         }
+       ]
+     }
+   ]
+ },
+ "meccha-chameleon": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-16T07:00Z",
+       "end": "2026-07-25T06:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "MECCHA CHAMELEON",
+           "href": "https://www.twitch.tv/directory/category/meccha-chamereon?filter=drops"
+         }
+       ]
+     }
+   ]
+ },
+ "perlica": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-16T07:00Z",
+       "end": "2026-07-26T23:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "ARKNIGHTS: ENDFIELD",
+           "href": "https://www.twitch.tv/directory/category/arknights-endfield?filter=drops"
+         }
+       ]
+     }
+   ]
+ },
+ "twitchcon-2026---san-diego---beachball": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-22T00:00:00Z",
+       "end": "2026-11-15T23:59:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": true
+     }
+   ]
+ },
+ "twitchcon-2026---san-diego---taco": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-22T00:00:00Z",
+       "end": "2026-11-15T23:59:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": true
      }
    ]
  }
