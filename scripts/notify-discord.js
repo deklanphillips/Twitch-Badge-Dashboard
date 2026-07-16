@@ -105,6 +105,79 @@ async function discordApi(method, suffix, body, attempt = 0) {
   return res;
 }
 
+// ---- Availability data (merged from StreamDatabase HTML) ----
+// auto-events.json only gets confirmed dates when Twitch's API exposes them;
+// most dates arrive via the StreamDatabase merge into availability-data.js.
+// Read that too so those badges still get scheduled events + go-live posts.
+function loadAvailability() {
+  try {
+    const src = fs.readFileSync(path.join(__dirname, "..", "availability-data.js"), "utf8");
+    return new Function(`${src}; return BADGE_AVAILABILITY;`)();
+  } catch { return {}; }
+}
+
+// Overall window across a badge's availability entries: earliest start → latest end.
+function availWindow(entry) {
+  let start = null, end = null, win = null;
+  for (const w of (entry && entry.avail) || []) {
+    const s = w.start ? Date.parse(w.start) : NaN;
+    const e = w.end ? Date.parse(w.end) : NaN;
+    if (isNaN(s) || isNaN(e)) continue;
+    if (start === null || s < start) start = s;
+    if (end === null || e > end) end = e;
+    if (!win) win = w;
+  }
+  return start !== null && end !== null ? { start, end, win } : null;
+}
+
+function availRequirement(w) {
+  if (!w) return null;
+  if (w.subscription || w.subscriptionGift) return "Sub or gift sub";
+  if (w.watch) return w.watchMinutes ? `Watch ${w.watchMinutes} minutes` : "Watch to earn";
+  if (w.bits) return "Cheer with Bits";
+  if (w.twitchcon) return "Attend TwitchCon";
+  return null;
+}
+
+// Confirm unconfirmed auto-events from availability dates, and synthesize
+// events for catalog badges that have dates but were never auto-detected
+// (e.g. badges that existed before detection started). Mutates/extends events.
+function enrichEvents(events, badges, avail) {
+  const now = Date.now();
+  const bySet = new Set(events.map((e) => e.badge.set));
+
+  for (const ev of events) {
+    if (ev.confirmed !== false && ev.start && ev.end) continue;
+    const w = availWindow(avail[ev.badge.set]);
+    if (!w) continue;
+    ev.start = new Date(w.start).toISOString();
+    ev.end = new Date(w.end).toISOString();
+    ev.confirmed = true;
+    if (!ev.requirement || ev.requirement === "TBA") ev.requirement = availRequirement(w.win) || ev.requirement;
+    console.log(`confirmed from availability: ${ev.name}`);
+  }
+
+  for (const set of badges.data || []) {
+    if (bySet.has(set.set_id) || BUILTIN_BADGE.test(set.set_id)) continue;
+    const w = availWindow(avail[set.set_id]);
+    if (!w || w.end <= now) continue; // only current/upcoming windows matter
+    const v = set.versions[0] || {};
+    const cat = w.win.categories && w.win.categories[0] && w.win.categories[0].name;
+    events.push({
+      name: v.title || set.set_id,
+      channel: cat || (w.win.twitchcon ? "TwitchCon" : "Twitch"),
+      description: v.description || "",
+      requirement: availRequirement(w.win) || "See badge page",
+      start: new Date(w.start).toISOString(),
+      end: new Date(w.end).toISOString(),
+      badge: { set: set.set_id, version: v.id || "1" },
+      confirmed: true,
+    });
+    console.log(`event from availability: ${v.title || set.set_id}`);
+  }
+  return events;
+}
+
 // Built-in / system badges that shouldn't announce (they never really "arrive").
 const BUILTIN_BADGE = /^(subscriber|bits|moderator|broadcaster|vip|staff|admin|global_mod|turbo|premium|partner|no_audio|no_video|sub-gifter|sub-gift-leader|bits-leader|bits-charity|clip-cheer|hype-train|predictions|ambassador|artist-badge|extension|anonymous-cheerer|game-developer)$/i;
 
@@ -321,8 +394,8 @@ async function runScheduledEvents(events, badges, announced) {
 }
 
 async function main() {
-  const events = readJson("auto-events.json", []);
   const badges = readJson("global-badges.json", { data: [] });
+  const events = enrichEvents(readJson("auto-events.json", []), badges, loadAvailability());
   const emotes = readJson("global-emotes.json", { data: [] });
   const announced = readJson("announced.json", { detected: [], live: [], emotes: [], events: {} });
 
