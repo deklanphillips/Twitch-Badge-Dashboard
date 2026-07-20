@@ -591,19 +591,6 @@
   "confirmed": true
  },
  {
-  "name": "Football Fest 2026",
-  "channel": "Twitch",
-  "description": "This badge was earned by watching 15 minutes of any of the participating Football Fest channels during Football Fest 2026!",
-  "requirement": "Watch 15 minutes",
-  "start": "2026-06-11T06:59:00.000Z",
-  "end": "2026-07-20T06:59:00.000Z",
-  "badge": {
-   "set": "football-fest-2026",
-   "version": "1"
-  },
-  "confirmed": true
- },
- {
   "name": "TwitchCon 2026 - San Diego - BeachBall",
   "channel": "TwitchCon",
   "description": "This badge is given to anyone who purchased a 1-day ticket to TwitchCon San Diego 2026.",

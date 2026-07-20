@@ -815,14 +815,6 @@
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by supporting a 2026 Esports World Cup co-streamer!"
   },
-  "set:football-fest-2026": {
-   "id": "1527327385299456060",
-   "start": 1781161140000,
-   "end": 1784530740000,
-   "name": "Football Fest 2026",
-   "requirement": "Watch 15 minutes",
-   "description": "This badge was earned by watching 15 minutes of any of the participating Football Fest channels during Football Fest 2026!"
-  },
   "set:twitchcon-2026---san-diego---beachball": {
    "id": "1527327389242101806",
    "start": 1784678400000,
