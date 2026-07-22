@@ -583,5 +583,40 @@
    "label": "Sand: Raiders Of Sophie category",
    "url": "https://www.twitch.tv/directory/category/sand-raiders-of-sophie"
   }
+ },
+ {
+  "name": "Budz",
+  "channel": "Twitch",
+  "description": "This badge was earned by subbing to /studbudz during WNBA All-Star Weekend.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-22T21:34:09Z",
+  "end": null,
+  "badge": {
+   "set": "budz",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false
+ },
+ {
+  "name": "La Velada VI",
+  "channel": "La Velada VI",
+  "description": "This badge was earned by tuning in and watching La Velada VI!",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-07-22T21:34:09Z",
+  "end": null,
+  "badge": {
+   "set": "la-velada-vi",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "La Velada VI category",
+   "url": "https://www.twitch.tv/directory/category/la-velada-vi"
+  }
  }
 ]
