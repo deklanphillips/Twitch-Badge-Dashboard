@@ -31,8 +31,10 @@ function parseSnapshot(htmlPath) {
   // appear across multiple events (e.g. multi-phase drops).
   let arr = findKey(data.props, "twitchGlobalBadges");
   if (!arr) {
-    const events = findKey(data.props, "initialData");
-    if (!events) throw new Error("Neither twitchGlobalBadges nor initialData found in snapshot.");
+    // The Events export has been shipped under a few key names over time:
+    // initialData (older) and initialEvents (current).
+    const events = findKey(data.props, "initialData") || findKey(data.props, "initialEvents");
+    if (!events) throw new Error("Neither twitchGlobalBadges, initialData, nor initialEvents found in snapshot.");
     const byId = new Map();
     for (const ev of events) {
       for (const b of ev.twitch_global_badges || []) {

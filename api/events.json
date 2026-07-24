@@ -565,6 +565,41 @@
   }
  },
  {
+  "name": "Budz",
+  "channel": "Twitch",
+  "description": "This badge was earned by subbing to /studbudz during WNBA All-Star Weekend.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-23T16:00:00.000Z",
+  "end": "2026-07-27T15:59:00.000Z",
+  "badge": {
+   "set": "budz",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true
+ },
+ {
+  "name": "Spider-Man",
+  "channel": "Marvel Tōkon",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel Tōkon category during the Open Beta!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-24T07:00:00.000Z",
+  "end": "2026-07-27T06:59:00.000Z",
+  "badge": {
+   "set": "spiderman",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Marvel Tōkon category",
+   "url": "https://www.twitch.tv/directory/category/marvel-t-kon"
+  }
+ },
+ {
   "name": "Assassin's Creed Black Flag Resynced",
   "channel": "Assassin's Creed Black Flag Resynced",
   "description": "This badge was earned by purchasing a subscription to an Assassin's Creed Black Flag Resynced streamer during the launch of the game!",
@@ -586,6 +621,19 @@
   "end": "2026-08-24T13:00:00.000Z",
   "badge": {
    "set": "ewc-2026-ultraviolet",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Final Fantasy XIV Fan Festival 2026 EU - Moogle Chat",
+  "channel": "FINAL FANTASY XIV ONLINE",
+  "description": "This badge was earned by watching a creator in the Final Fantasy XIV category during the Fan Fest 2026 - EU",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-07-24T22:01:00.000Z",
+  "end": "2026-07-26T21:58:00.000Z",
+  "badge": {
+   "set": "final-fantasy-xiv-fan-festival-2026-eu---moogle-chat",
    "version": "1"
   },
   "confirmed": true
