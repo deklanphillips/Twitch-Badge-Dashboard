@@ -618,5 +618,25 @@
    "label": "La Velada VI category",
    "url": "https://www.twitch.tv/directory/category/la-velada-vi"
   }
+ },
+ {
+  "name": "Spider-Man",
+  "channel": "Marvel Tōkon",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel Tōkon category during the Open Beta!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-24T07:43:37Z",
+  "end": null,
+  "badge": {
+   "set": "spiderman",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Marvel Tōkon category",
+   "url": "https://www.twitch.tv/directory/category/marvel-t-kon"
+  }
  }
 ]
