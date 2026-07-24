@@ -368,7 +368,8 @@
   "twitchcon-2026---san-diego---taco",
   "budz",
   "spiderman",
-  "final-fantasy-xiv-fan-festival-2026-eu---moogle-chat"
+  "final-fantasy-xiv-fan-festival-2026-eu---moogle-chat",
+  "final-fantasy-xiv-fan-festival-2026-eu---content-unlock-quest-chat"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -694,7 +695,8 @@
   "emotesv2_ad0c62eeb1b847d58703bb16f5a3e236",
   "emotesv2_bcdd147b934e4ce587171ac2e8ac28aa",
   "emotesv2_793cba27fbc344ee829f04c9ea0f0c73",
-  "emotesv2_7f6a48b2bb10413181efb3798c888ac3"
+  "emotesv2_7f6a48b2bb10413181efb3798c888ac3",
+  "emotesv2_24af7cfb832b4e8791f1fe7ffffad081"
  ],
  "events": {
   "set:perlica": {
@@ -896,6 +898,14 @@
    "name": "Final Fantasy XIV Fan Festival 2026 EU - Moogle Chat",
    "requirement": "Watch 60 minutes",
    "description": "This badge was earned by watching a creator in the Final Fantasy XIV category during the Fan Fest 2026 - EU"
+  },
+  "set:final-fantasy-xiv-fan-festival-2026-eu---content-unlock-quest-chat": {
+   "id": "1530362808187879454",
+   "start": 1784930460000,
+   "end": 1785103080000,
+   "name": "Final Fantasy XIV Fan Festival 2026 EU - Content Unlock Quest Chat",
+   "requirement": "Watch 60 minutes",
+   "description": "This badge was earned by watching the Fan Fest 2026 for 60 minutes on /finalfantasyxiv"
   }
  }
 }
