@@ -626,6 +626,19 @@
   "confirmed": true
  },
  {
+  "name": "Final Fantasy XIV Fan Festival 2026 EU - Content Unlock Quest Chat",
+  "channel": "FINAL FANTASY XIV ONLINE",
+  "description": "This badge was earned by watching the Fan Fest 2026 for 60 minutes on /finalfantasyxiv",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-07-24T22:01:00.000Z",
+  "end": "2026-07-26T21:58:00.000Z",
+  "badge": {
+   "set": "final-fantasy-xiv-fan-festival-2026-eu---content-unlock-quest-chat",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
   "name": "Final Fantasy XIV Fan Festival 2026 EU - Moogle Chat",
   "channel": "FINAL FANTASY XIV ONLINE",
   "description": "This badge was earned by watching a creator in the Final Fantasy XIV category during the Fan Fest 2026 - EU",

@@ -3291,7 +3291,33 @@ const BADGE_AVAILABILITY = {
    ]
  },
  "final-fantasy-xiv-fan-festival-2026-eu---content-unlock-quest-chat": {
-   "added": null
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-24T22:01Z",
+       "end": "2026-07-26T21:58Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "FINAL FANTASY XIV ONLINE",
+           "href": "https://www.twitch.tv/directory/category/final-fantasy-xiv-online?filter=drops"
+         }
+       ],
+       "channels": [
+         {
+           "name": "finalfantasyxiv",
+           "href": "https://www.twitch.tv/finalfantasyxiv"
+         }
+       ]
+     }
+   ]
  },
  "final-fantasy-xiv-fan-festival-2026-eu---moogle-chat": {
    "added": null,
