@@ -365,7 +365,9 @@
   "football-fest-2026",
   "sand",
   "twitchcon-2026---san-diego---beachball",
-  "twitchcon-2026---san-diego---taco"
+  "twitchcon-2026---san-diego---taco",
+  "budz",
+  "spiderman"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -869,6 +871,30 @@
    "name": "SAND",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Sand: Raiders Of Sophie category."
+  },
+  "set:budz": {
+   "id": "1530266130457952529",
+   "start": 1784822400000,
+   "end": 1785167940000,
+   "name": "Budz",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subbing to /studbudz during WNBA All-Star Weekend."
+  },
+  "set:spiderman": {
+   "id": "1530266136715726971",
+   "start": 1784876400000,
+   "end": 1785135540000,
+   "name": "Spider-Man",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel Tōkon category during the Open Beta!"
+  },
+  "set:final-fantasy-xiv-fan-festival-2026-eu---moogle-chat": {
+   "id": "1530266140738195734",
+   "start": 1784930460000,
+   "end": 1785103080000,
+   "name": "Final Fantasy XIV Fan Festival 2026 EU - Moogle Chat",
+   "requirement": "Watch 60 minutes",
+   "description": "This badge was earned by watching a creator in the Final Fantasy XIV category during the Fan Fest 2026 - EU"
   }
  }
 }
