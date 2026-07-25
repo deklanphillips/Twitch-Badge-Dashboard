@@ -369,7 +369,8 @@
   "budz",
   "spiderman",
   "final-fantasy-xiv-fan-festival-2026-eu---moogle-chat",
-  "final-fantasy-xiv-fan-festival-2026-eu---content-unlock-quest-chat"
+  "final-fantasy-xiv-fan-festival-2026-eu---content-unlock-quest-chat",
+  "la-velada-vi"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -906,6 +907,14 @@
    "name": "Final Fantasy XIV Fan Festival 2026 EU - Content Unlock Quest Chat",
    "requirement": "Watch 60 minutes",
    "description": "This badge was earned by watching the Fan Fest 2026 for 60 minutes on /finalfantasyxiv"
+  },
+  "set:la-velada-vi": {
+   "id": "1530438572933382254",
+   "start": 1784937600000,
+   "end": 1785023940000,
+   "name": "La Velada VI",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned by tuning in and watching La Velada VI!"
   }
  }
 }
