@@ -580,6 +580,26 @@
   "confirmed": true
  },
  {
+  "name": "La Velada VI",
+  "channel": "La Velada VI",
+  "description": "This badge was earned by tuning in and watching La Velada VI!",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-07-25T00:00:00.000Z",
+  "end": "2026-07-25T23:59:00.000Z",
+  "badge": {
+   "set": "la-velada-vi",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "La Velada VI category",
+   "url": "https://www.twitch.tv/directory/category/la-velada-vi"
+  }
+ },
+ {
   "name": "Spider-Man",
   "channel": "Marvel Tōkon",
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel Tōkon category during the Open Beta!",

@@ -9747,5 +9747,34 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "la-velada-vi": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-25T00:00Z",
+       "end": "2026-07-25T23:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 15,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "La Velada",
+           "href": "https://www.twitch.tv/directory/category/la-velada?filter=drops"
+         }
+       ],
+       "channels": [
+         {
+           "name": "ibai",
+           "href": "https://www.twitch.tv/ibai"
+         }
+       ]
+     }
+   ]
  }
 };
