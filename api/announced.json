@@ -892,22 +892,6 @@
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel Tōkon category during the Open Beta!"
   },
-  "set:final-fantasy-xiv-fan-festival-2026-eu---moogle-chat": {
-   "id": "1530266140738195734",
-   "start": 1784930460000,
-   "end": 1785103080000,
-   "name": "Final Fantasy XIV Fan Festival 2026 EU - Moogle Chat",
-   "requirement": "Watch 60 minutes",
-   "description": "This badge was earned by watching a creator in the Final Fantasy XIV category during the Fan Fest 2026 - EU"
-  },
-  "set:final-fantasy-xiv-fan-festival-2026-eu---content-unlock-quest-chat": {
-   "id": "1530362808187879454",
-   "start": 1784930460000,
-   "end": 1785103080000,
-   "name": "Final Fantasy XIV Fan Festival 2026 EU - Content Unlock Quest Chat",
-   "requirement": "Watch 60 minutes",
-   "description": "This badge was earned by watching the Fan Fest 2026 for 60 minutes on /finalfantasyxiv"
-  },
   "set:la-velada-vi": {
    "id": "1530438572933382254",
    "start": 1784937600000,
