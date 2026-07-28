@@ -658,5 +658,25 @@
    "label": "Dead by Daylight category",
    "url": "https://www.twitch.tv/directory/category/dead-by-daylight"
   }
+ },
+ {
+  "name": "Egg",
+  "channel": "Roblox",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Roblox category during the Egg Hunt 2026: The Grand Eggspress!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-28T21:55:14Z",
+  "end": null,
+  "badge": {
+   "set": "egg",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Roblox category",
+   "url": "https://www.twitch.tv/directory/category/roblox"
+  }
  }
 ]
