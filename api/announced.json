@@ -900,6 +900,14 @@
    "name": "La Velada VI",
    "requirement": "Watch to earn",
    "description": "This badge was earned by tuning in and watching La Velada VI!"
+  },
+  "set:dead-by-daylight-pride-icon": {
+   "id": "1531564897413103786",
+   "start": 1785258000000,
+   "end": 1786370340000,
+   "name": "Dead by Daylight Pride Icon",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by purchasing a subscription to a Dead by Daylight streamer during Into the Rainbow 2026!"
   }
  }
 }
