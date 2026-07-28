@@ -910,6 +910,14 @@
    "name": "Dead by Daylight Pride Icon",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by purchasing a subscription to a Dead by Daylight streamer during Into the Rainbow 2026!"
+  },
+  "set:egg": {
+   "id": "1531796157553053836",
+   "start": 1785308400000,
+   "end": 1787727540000,
+   "name": "Egg",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Roblox category during the Egg Hunt 2026: The Grand Eggspress!"
   }
  }
 }
