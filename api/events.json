@@ -620,6 +620,26 @@
   }
  },
  {
+  "name": "Dead by Daylight Pride Icon",
+  "channel": "Dead by Daylight",
+  "description": "This badge was earned by purchasing a subscription to a Dead by Daylight streamer during Into the Rainbow 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-07-28T17:00:00.000Z",
+  "end": "2026-08-10T13:59:00.000Z",
+  "badge": {
+   "set": "dead-by-daylight-pride-icon",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Dead by Daylight category",
+   "url": "https://www.twitch.tv/directory/category/dead-by-daylight"
+  }
+ },
+ {
   "name": "Assassin's Creed Black Flag Resynced",
   "channel": "Assassin's Creed Black Flag Resynced",
   "description": "This badge was earned by purchasing a subscription to an Assassin's Creed Black Flag Resynced streamer during the launch of the game!",

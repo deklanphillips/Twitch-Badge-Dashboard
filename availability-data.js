@@ -9776,5 +9776,28 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "dead-by-daylight-pride-icon": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-28T17:00Z",
+       "end": "2026-08-10T13:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Dead by Daylight",
+           "href": "https://www.twitch.tv/directory/category/dead-by-daylight?filter=drops"
+         }
+       ]
+     }
+   ]
  }
 };
