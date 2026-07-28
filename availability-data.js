@@ -9799,5 +9799,28 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "egg": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-07-29T07:00Z",
+       "end": "2026-08-26T06:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "ROBLOX",
+           "href": ""
+         }
+       ]
+     }
+   ]
  }
 };
