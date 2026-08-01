@@ -660,19 +660,6 @@
   }
  },
  {
-  "name": "Assassin's Creed Black Flag Resynced",
-  "channel": "Assassin's Creed Black Flag Resynced",
-  "description": "This badge was earned by purchasing a subscription to an Assassin's Creed Black Flag Resynced streamer during the launch of the game!",
-  "requirement": "Sub or gift sub",
-  "start": "2026-07-09T15:00:00.000Z",
-  "end": "2026-08-01T06:58:00.000Z",
-  "badge": {
-   "set": "assassins-creed-black-flag-resynced",
-   "version": "1"
-  },
-  "confirmed": true
- },
- {
   "name": "EWC 2026 (Ultraviolet)",
   "channel": "Twitch",
   "description": "This badge was earned by supporting a 2026 Esports World Cup co-streamer!",
