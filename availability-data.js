@@ -9256,13 +9256,13 @@ const BADGE_AVAILABILITY = {
        "clip": false,
        "turbo": false,
        "twitchcon": false,
+       "broadChannels": true,
        "categories": [
          {
            "name": "Special Events",
            "href": "https://www.twitch.tv/directory/category/special-events?filter=drops"
          }
-       ],
-       "broadChannels": true
+       ]
      }
    ]
  },
