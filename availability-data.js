@@ -9256,7 +9256,6 @@ const BADGE_AVAILABILITY = {
        "clip": false,
        "turbo": false,
        "twitchcon": false,
-       "broadChannels": true,
        "categories": [
          {
            "name": "Special Events",
@@ -9279,8 +9278,7 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 720,
        "clip": false,
        "turbo": false,
-       "twitchcon": false,
-       "broadChannels": true
+       "twitchcon": false
      }
    ]
  },
@@ -9297,8 +9295,7 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 180,
        "clip": false,
        "turbo": false,
-       "twitchcon": false,
-       "broadChannels": true
+       "twitchcon": false
      }
    ]
  },
@@ -9315,8 +9312,7 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 360,
        "clip": false,
        "turbo": false,
-       "twitchcon": false,
-       "broadChannels": true
+       "twitchcon": false
      }
    ]
  },
@@ -9333,8 +9329,7 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 120,
        "clip": false,
        "turbo": false,
-       "twitchcon": false,
-       "broadChannels": true
+       "twitchcon": false
      }
    ]
  },
@@ -9351,8 +9346,7 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false,
-       "broadChannels": true
+       "twitchcon": false
      }
    ]
  },
