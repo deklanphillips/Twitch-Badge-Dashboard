@@ -678,5 +678,25 @@
    "label": "Roblox category",
    "url": "https://www.twitch.tv/directory/category/roblox"
   }
+ },
+ {
+  "name": "Hulk",
+  "channel": "Marvel Tōkon",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel Tōkon category during the game's launch!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-08-05T19:39:00Z",
+  "end": null,
+  "badge": {
+   "set": "hulk",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Marvel Tōkon category",
+   "url": "https://www.twitch.tv/directory/category/marvel-t-kon"
+  }
  }
 ]
