@@ -9822,5 +9822,28 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "hulk": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-08-06T15:00Z",
+       "end": "2026-08-13T14:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "MARVEL TŌKON: Fighting Souls",
+           "href": "https://www.twitch.tv/directory/category/marvel-tokon-fighting-souls?filter=drops"
+         }
+       ]
+     }
+   ]
  }
 };
