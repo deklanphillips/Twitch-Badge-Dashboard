@@ -24,6 +24,7 @@ async function getAppToken() {
       client_secret: CLIENT_SECRET,
       grant_type: "client_credentials",
     }),
+    signal: AbortSignal.timeout(15000),
   });
   if (!res.ok) throw new Error(`Token request failed: ${res.status} ${await res.text()}`);
   return (await res.json()).access_token;
@@ -39,6 +40,7 @@ async function main() {
   async function helix(endpoint) {
     const res = await fetch(`https://api.twitch.tv/helix/${endpoint}`, {
       headers: { "Client-Id": CLIENT_ID, Authorization: `Bearer ${token}` },
+      signal: AbortSignal.timeout(15000),
     });
     if (!res.ok) throw new Error(`Helix ${endpoint} failed: ${res.status} ${await res.text()}`);
     return res.json();

@@ -32,6 +32,7 @@ async function fetchPage() {
       const res = await fetch(url, {
         headers: { "User-Agent": UA, Accept: "text/html", "Accept-Language": "en-US,en;q=0.9" },
         redirect: "follow",
+        signal: AbortSignal.timeout(25000),
       });
       const html = await res.text();
       if (!res.ok) {

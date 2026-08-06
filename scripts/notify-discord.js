@@ -31,6 +31,7 @@ const WATCH_URL = process.env.TWITCH_WATCH_URL || "https://www.twitch.tv/transfo
 const ROLE_BADGES = process.env.DISCORD_ROLE_BADGES || "1403074914562478241";
 const ROLE_EMOTES = process.env.DISCORD_ROLE_EMOTES || "1445526534096945337";
 const ROLE_EVENTS = process.env.DISCORD_ROLE_EVENTS || ROLE_BADGES;
+const HTTP_TIMEOUT_MS = 15000; // no network call may hang the job longer than this
 const COLOR_NEW = 0x9147ff;
 const COLOR_LIVE = 0x00c853;
 const COLOR_EMOTE = 0xff9800;
@@ -70,6 +71,7 @@ async function post(url, embed, roleId) {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),
+    signal: AbortSignal.timeout(HTTP_TIMEOUT_MS),
   });
   if (!res.ok) throw new Error(`Discord webhook ${res.status}: ${await res.text()}`);
   await new Promise((r) => setTimeout(r, 500));
@@ -83,6 +85,7 @@ async function postContent(url, content, roleId) {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),
+    signal: AbortSignal.timeout(HTTP_TIMEOUT_MS),
   });
   if (!res.ok) throw new Error(`Discord webhook ${res.status}: ${await res.text()}`);
   await new Promise((r) => setTimeout(r, 500));
@@ -93,6 +96,7 @@ async function discordApi(method, suffix, body, attempt = 0) {
     method,
     headers: { Authorization: `Bot ${BOT_TOKEN}`, "Content-Type": "application/json" },
     body: body ? JSON.stringify(body) : undefined,
+    signal: AbortSignal.timeout(HTTP_TIMEOUT_MS),
   });
   // Respect Discord rate limits: on 429, wait retry_after and try again.
   if (res.status === 429 && attempt < 6) {
@@ -241,6 +245,7 @@ async function sendPush(title, body, url, image) {
       method: "POST",
       headers: { "Content-Type": "application/json; charset=utf-8", Authorization: `Basic ${apiKey}` },
       body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(HTTP_TIMEOUT_MS),
     });
     if (!res.ok) console.error(`OneSignal push failed: ${res.status} ${await res.text()}`);
     else console.log(`sent web push: ${title}`);
@@ -340,7 +345,7 @@ async function coverImage(badges, ref) {
   try {
     const src = badgeImage(badges, ref.set, ref.version);
     if (!src) return undefined;
-    const r = await fetch(src);
+    const r = await fetch(src, { signal: AbortSignal.timeout(HTTP_TIMEOUT_MS) });
     if (!r.ok) return undefined;
     const buf = Buffer.from(await r.arrayBuffer());
     return `data:${r.headers.get("content-type") || "image/png"};base64,${buf.toString("base64")}`;
@@ -444,11 +449,19 @@ async function main() {
   const emotes = readJson("global-emotes.json", { data: [] });
   const announced = readJson("announced.json", { detected: [], live: [], emotes: [], events: {} });
 
+  // Run each channel independently so one failing service (Discord, OneSignal…)
+  // can't block the others — or, more importantly, fail the whole workflow and
+  // stop the site's data commit. Any error is logged and swallowed.
+  const safe = async (label, fn) => {
+    try { return await fn(); }
+    catch (e) { console.error(`${label} failed: ${e.message}`); return false; }
+  };
+
   // Scheduled events first, so "Now live" can link to the created event.
-  const c = await runScheduledEvents(events, badges, announced);
-  const a = await runBadges(events, badges, announced);
-  const l = await runLive(events, badges, announced);
-  const b = await runEmotes(emotes, announced);
+  const c = await safe("scheduled-events", () => runScheduledEvents(events, badges, announced));
+  const a = await safe("badges", () => runBadges(events, badges, announced));
+  const l = await safe("live", () => runLive(events, badges, announced));
+  const b = await safe("emotes", () => runEmotes(emotes, announced));
 
   if (a || b || c || l) {
     fs.writeFileSync(
@@ -467,6 +480,7 @@ async function main() {
 }
 
 main().catch((err) => {
-  console.error(err);
-  process.exit(1);
+  // Never fail the job over an announcement problem — the data commit must
+  // still run so the site keeps updating.
+  console.error("notify-discord error:", err.message);
 });
