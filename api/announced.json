@@ -912,6 +912,14 @@
    "name": "Egg",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Roblox category during the Egg Hunt 2026: The Grand Eggspress!"
+  },
+  "set:hulk": {
+   "id": "1534888338614648962",
+   "start": 1786028400000,
+   "end": 1786633140000,
+   "name": "Hulk",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel Tōkon category during the game's launch!"
   }
  }
 }
