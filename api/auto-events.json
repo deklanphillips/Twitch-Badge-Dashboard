@@ -698,5 +698,50 @@
    "label": "Marvel Tōkon category",
    "url": "https://www.twitch.tv/directory/category/marvel-t-kon"
   }
+ },
+ {
+  "name": "EnchantedBigBoiBoxers",
+  "channel": "Twitch",
+  "description": "Subbed to a streamer and got 2 months of Audible Premium!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-08-06T21:52:09Z",
+  "end": null,
+  "badge": {
+   "set": "enchantedbigboiboxers",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false
+ },
+ {
+  "name": "PrincessDonutBrown",
+  "channel": "Twitch",
+  "description": "Subbed to a streamer and got 2 months of Audible Premium!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-08-06T21:52:09Z",
+  "end": null,
+  "badge": {
+   "set": "princessdonutbrown",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false
+ },
+ {
+  "name": "PrincessDonutPink",
+  "channel": "Twitch",
+  "description": "Subbed to a streamer and got 2 months of Audible Premium!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-08-06T21:52:09Z",
+  "end": null,
+  "badge": {
+   "set": "princessdonutpink",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false
  }
 ]
