@@ -9745,6 +9745,24 @@ const BADGE_AVAILABILITY = {
            "href": "https://www.twitch.tv/directory/category/marvel-tokon-fighting-souls?filter=drops"
          }
        ]
+     },
+     {
+       "start": "2026-08-13T15:05Z",
+       "end": "2026-08-20T18:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "MARVEL TŌKON: Fighting Souls",
+           "href": "https://www.twitch.tv/directory/category/marvel-tokon-fighting-souls?filter=drops"
+         }
+       ]
      }
    ]
  },
