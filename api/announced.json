@@ -343,7 +343,8 @@
   "princessdonutpink",
   "league-of-legends-classic",
   "the-blood-of-dawnwalker-launch",
-  "the-blood-of-dawnwalker-supporter"
+  "the-blood-of-dawnwalker-supporter",
+  "resonance-minotaur"
  ],
  "live": [
   "two-point-museum",
@@ -382,7 +383,8 @@
   "la-velada-vi",
   "dead-by-daylight-pride-icon",
   "egg",
-  "hulk"
+  "hulk",
+  "league-of-legends-classic"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -927,6 +929,14 @@
    "name": "Hulk",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel Tōkon category during the game's launch!"
+  },
+  "set:league-of-legends-classic": {
+   "id": "1537524729869631600",
+   "start": 1786636800000,
+   "end": 1786723140000,
+   "name": "League of Legends Classic",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by supporting a streamer during the LoL Classic Twitch Rivals launch!"
   }
  }
 }
