@@ -384,7 +384,10 @@
   "dead-by-daylight-pride-icon",
   "egg",
   "hulk",
-  "league-of-legends-classic"
+  "league-of-legends-classic",
+  "enchantedbigboiboxers",
+  "princessdonutbrown",
+  "princessdonutpink"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -937,6 +940,30 @@
    "name": "League of Legends Classic",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by supporting a streamer during the LoL Classic Twitch Rivals launch!"
+  },
+  "set:enchantedbigboiboxers": {
+   "id": "1537558974570827848",
+   "start": 1786647600000,
+   "end": 1787857140000,
+   "name": "EnchantedBigBoiBoxers",
+   "requirement": "Sub or gift sub",
+   "description": "Subbed to a streamer and got 2 months of Audible Premium!"
+  },
+  "set:princessdonutbrown": {
+   "id": "1537558980937916568",
+   "start": 1786647600000,
+   "end": 1787857140000,
+   "name": "PrincessDonutBrown",
+   "requirement": "Sub or gift sub",
+   "description": "Subbed to a streamer and got 2 months of Audible Premium!"
+  },
+  "set:princessdonutpink": {
+   "id": "1537558985748779059",
+   "start": 1786647600000,
+   "end": 1787857140000,
+   "name": "PrincessDonutPink",
+   "requirement": "Sub or gift sub",
+   "description": "Subbed to a streamer and got 2 months of Audible Premium!"
   }
  }
 }
