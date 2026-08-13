@@ -9863,5 +9863,28 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "league-of-legends-classic": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-08-13T16:00Z",
+       "end": "2026-08-14T15:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "League of Legends",
+           "href": "https://www.twitch.tv/directory/category/league-of-legends?filter=drops"
+         }
+       ]
+     }
+   ]
  }
 };

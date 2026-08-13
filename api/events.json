@@ -693,6 +693,19 @@
   "confirmed": true
  },
  {
+  "name": "League of Legends Classic",
+  "channel": "League of Legends",
+  "description": "This badge was earned by supporting a streamer during the LoL Classic Twitch Rivals launch!",
+  "requirement": "Sub or gift sub",
+  "start": "2026-08-13T16:00:00.000Z",
+  "end": "2026-08-14T15:59:00.000Z",
+  "badge": {
+   "set": "league-of-legends-classic",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
   "name": "TwitchCon 2026 - San Diego - BeachBall",
   "channel": "TwitchCon",
   "description": "This badge is given to anyone who purchased a 1-day ticket to TwitchCon San Diego 2026.",
