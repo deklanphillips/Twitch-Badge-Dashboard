@@ -933,14 +933,6 @@
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel Tōkon category during the game's launch!"
   },
-  "set:league-of-legends-classic": {
-   "id": "1537524729869631600",
-   "start": 1786636800000,
-   "end": 1786723140000,
-   "name": "League of Legends Classic",
-   "requirement": "Sub or gift sub",
-   "description": "This badge was earned by supporting a streamer during the LoL Classic Twitch Rivals launch!"
-  },
   "set:enchantedbigboiboxers": {
    "id": "1537558974570827848",
    "start": 1786647600000,
