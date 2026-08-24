@@ -818,5 +818,25 @@
   },
   "auto": true,
   "confirmed": false
+ },
+ {
+  "name": "DRON-E",
+  "channel": "Rainbow Six Siege",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Rainbow Six Siege category during Wasteland Circuit.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-08-24T19:51:10Z",
+  "end": null,
+  "badge": {
+   "set": "dron-e",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Rainbow Six Siege category",
+   "url": "https://www.twitch.tv/directory/category/rainbow-six-siege"
+  }
  }
 ]
