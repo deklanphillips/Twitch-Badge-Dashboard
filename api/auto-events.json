@@ -803,5 +803,20 @@
    "label": "Resonance: A Plague Tale Legacy for 60 min category",
    "url": "https://www.twitch.tv/directory/category/resonance-a-plague-tale-legacy-for-60-min"
   }
+ },
+ {
+  "name": "NASA Roman",
+  "channel": "Twitch",
+  "description": "This chat badge was awarded to Twitch users who watched NASA's launch of the Nancy Grace Roman Space Telescope.",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-08-24T19:08:14Z",
+  "end": null,
+  "badge": {
+   "set": "nasa-roman",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false
  }
 ]
