@@ -838,5 +838,25 @@
    "label": "Rainbow Six Siege category",
    "url": "https://www.twitch.tv/directory/category/rainbow-six-siege"
   }
+ },
+ {
+  "name": "Diablo",
+  "channel": "Diablo",
+  "description": "This badge was earned by subscribing or gifting a sub to a Diablo streamer during BlizzCon 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-08-24T21:19:09Z",
+  "end": null,
+  "badge": {
+   "set": "diablo",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Diablo category",
+   "url": "https://www.twitch.tv/directory/category/diablo"
+  }
  }
 ]
