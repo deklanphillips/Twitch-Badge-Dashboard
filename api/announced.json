@@ -857,14 +857,6 @@
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Meccha Chameleon category during Summer Drops Fest 2026!"
   },
-  "set:ewc-2026-ultraviolet": {
-   "id": "1527327380853620768",
-   "start": 1783515600000,
-   "end": 1787576400000,
-   "name": "EWC 2026 (Ultraviolet)",
-   "requirement": "Sub or gift sub",
-   "description": "This badge was earned by supporting a 2026 Esports World Cup co-streamer!"
-  },
   "set:twitchcon-2026---san-diego---beachball": {
    "id": "1527327389242101806",
    "start": 1784678400000,

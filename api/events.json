@@ -725,19 +725,6 @@
   "confirmed": true
  },
  {
-  "name": "EWC 2026 (Ultraviolet)",
-  "channel": "Twitch",
-  "description": "This badge was earned by supporting a 2026 Esports World Cup co-streamer!",
-  "requirement": "Sub or gift sub",
-  "start": "2026-07-08T13:00:00.000Z",
-  "end": "2026-08-24T13:00:00.000Z",
-  "badge": {
-   "set": "ewc-2026-ultraviolet",
-   "version": "1"
-  },
-  "confirmed": true
- },
- {
   "name": "TwitchCon 2026 - San Diego - BeachBall",
   "channel": "TwitchCon",
   "description": "This badge is given to anyone who purchased a 1-day ticket to TwitchCon San Diego 2026.",
