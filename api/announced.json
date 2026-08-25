@@ -394,7 +394,11 @@
   "league-of-legends-classic",
   "enchantedbigboiboxers",
   "princessdonutbrown",
-  "princessdonutpink"
+  "princessdonutpink",
+  "bulbasaur",
+  "charmander",
+  "pichu",
+  "squirtle"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -955,6 +959,38 @@
    "name": "PrincessDonutPink",
    "requirement": "Sub or gift sub",
    "description": "Subbed to a streamer and got 2 months of Audible Premium!"
+  },
+  "set:bulbasaur": {
+   "id": "1541659830815825922",
+   "start": 1787590800000,
+   "end": 1790838000000,
+   "name": "Bulbasaur",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned during the Pokémon First Partners Collection campaign."
+  },
+  "set:charmander": {
+   "id": "1541659835353927720",
+   "start": 1787590800000,
+   "end": 1790838000000,
+   "name": "Charmander",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned during the Pokémon First Partners Collection campaign."
+  },
+  "set:pichu": {
+   "id": "1541659839611277313",
+   "start": 1787590800000,
+   "end": 1790838000000,
+   "name": "Pichu",
+   "requirement": "Watch 20 minutes",
+   "description": "This badge was earned during the Pokémon First Partners Collection campaign."
+  },
+  "set:squirtle": {
+   "id": "1541659845214609498",
+   "start": 1787590800000,
+   "end": 1790838000000,
+   "name": "Squirtle",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned during the Pokémon First Partners Collection campaign."
   }
  }
 }
