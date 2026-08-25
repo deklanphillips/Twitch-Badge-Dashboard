@@ -10333,5 +10333,28 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "resonance-minotaur": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-08-26T16:00Z",
+       "end": "2026-09-23T15:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Resonance: A Plague Tale Legacy",
+           "href": "https://www.twitch.tv/directory/category/resonance-a-plague-tale-legacy?filter=drops"
+         }
+       ]
+     }
+   ]
  }
 };
