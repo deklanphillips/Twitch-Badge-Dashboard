@@ -9937,5 +9937,401 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "bulbasaur": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-08-24T17:00Z",
+       "end": "2026-10-01T07:00Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 20,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Pokémon FireRed/LeafGreen",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Pokopia",
+           "href": ""
+         },
+         {
+           "name": "Pokémon UNITE",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Champions",
+           "href": ""
+         },
+         {
+           "name": "Pokémon GO",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Legends: Z-A",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Scarlet/Violet",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Trading Card Game Pocket",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Trading Card Game",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Trading Card Game Live",
+           "href": ""
+         },
+         {
+           "name": "Just Chatting",
+           "href": ""
+         },
+         {
+           "name": "DJs",
+           "href": ""
+         },
+         {
+           "name": "Art",
+           "href": ""
+         },
+         {
+           "name": "Special Events",
+           "href": ""
+         },
+         {
+           "name": "Sports",
+           "href": ""
+         },
+         {
+           "name": "Music",
+           "href": ""
+         },
+         {
+           "name": "Talk Shows & Podcasts",
+           "href": ""
+         },
+         {
+           "name": "Animals, Aquariums, and Zoos",
+           "href": ""
+         },
+         {
+           "name": "Co-working & Studying",
+           "href": ""
+         },
+         {
+           "name": "Makers & Crafting",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "charmander": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-08-24T17:00Z",
+       "end": "2026-10-01T07:00Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 20,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Pokémon FireRed/LeafGreen",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Pokopia",
+           "href": ""
+         },
+         {
+           "name": "Pokémon UNITE",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Champions",
+           "href": ""
+         },
+         {
+           "name": "Pokémon GO",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Legends: Z-A",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Scarlet/Violet",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Trading Card Game Pocket",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Trading Card Game",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Trading Card Game Live",
+           "href": ""
+         },
+         {
+           "name": "Just Chatting",
+           "href": ""
+         },
+         {
+           "name": "DJs",
+           "href": ""
+         },
+         {
+           "name": "Art",
+           "href": ""
+         },
+         {
+           "name": "Special Events",
+           "href": ""
+         },
+         {
+           "name": "Sports",
+           "href": ""
+         },
+         {
+           "name": "Music",
+           "href": ""
+         },
+         {
+           "name": "Talk Shows & Podcasts",
+           "href": ""
+         },
+         {
+           "name": "Animals, Aquariums, and Zoos",
+           "href": ""
+         },
+         {
+           "name": "Co-working & Studying",
+           "href": ""
+         },
+         {
+           "name": "Makers & Crafting",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "pichu": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-08-24T17:00Z",
+       "end": "2026-10-01T07:00Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 20,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Pokémon FireRed/LeafGreen",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Pokopia",
+           "href": ""
+         },
+         {
+           "name": "Pokémon UNITE",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Champions",
+           "href": ""
+         },
+         {
+           "name": "Pokémon GO",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Legends: Z-A",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Scarlet/Violet",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Trading Card Game Pocket",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Trading Card Game",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Trading Card Game Live",
+           "href": ""
+         },
+         {
+           "name": "Just Chatting",
+           "href": ""
+         },
+         {
+           "name": "DJs",
+           "href": ""
+         },
+         {
+           "name": "Art",
+           "href": ""
+         },
+         {
+           "name": "Special Events",
+           "href": ""
+         },
+         {
+           "name": "Sports",
+           "href": ""
+         },
+         {
+           "name": "Music",
+           "href": ""
+         },
+         {
+           "name": "Talk Shows & Podcasts",
+           "href": ""
+         },
+         {
+           "name": "Animals, Aquariums, and Zoos",
+           "href": ""
+         },
+         {
+           "name": "Co-working & Studying",
+           "href": ""
+         },
+         {
+           "name": "Makers & Crafting",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "squirtle": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-08-24T17:00Z",
+       "end": "2026-10-01T07:00Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 20,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Pokémon FireRed/LeafGreen",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Pokopia",
+           "href": ""
+         },
+         {
+           "name": "Pokémon UNITE",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Champions",
+           "href": ""
+         },
+         {
+           "name": "Pokémon GO",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Legends: Z-A",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Scarlet/Violet",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Trading Card Game Pocket",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Trading Card Game",
+           "href": ""
+         },
+         {
+           "name": "Pokémon Trading Card Game Live",
+           "href": ""
+         },
+         {
+           "name": "Just Chatting",
+           "href": ""
+         },
+         {
+           "name": "DJs",
+           "href": ""
+         },
+         {
+           "name": "Art",
+           "href": ""
+         },
+         {
+           "name": "Special Events",
+           "href": ""
+         },
+         {
+           "name": "Sports",
+           "href": ""
+         },
+         {
+           "name": "Music",
+           "href": ""
+         },
+         {
+           "name": "Talk Shows & Podcasts",
+           "href": ""
+         },
+         {
+           "name": "Animals, Aquariums, and Zoos",
+           "href": ""
+         },
+         {
+           "name": "Co-working & Studying",
+           "href": ""
+         },
+         {
+           "name": "Makers & Crafting",
+           "href": ""
+         }
+       ]
+     }
+   ]
  }
 };

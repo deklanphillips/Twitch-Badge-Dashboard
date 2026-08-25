@@ -725,6 +725,58 @@
   "confirmed": true
  },
  {
+  "name": "Bulbasaur",
+  "channel": "Pokémon FireRed/LeafGreen",
+  "description": "This badge was earned during the Pokémon First Partners Collection campaign.",
+  "requirement": "Sub or gift sub",
+  "start": "2026-08-24T17:00:00.000Z",
+  "end": "2026-10-01T07:00:00.000Z",
+  "badge": {
+   "set": "bulbasaur",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Charmander",
+  "channel": "Pokémon FireRed/LeafGreen",
+  "description": "This badge was earned during the Pokémon First Partners Collection campaign.",
+  "requirement": "Sub or gift sub",
+  "start": "2026-08-24T17:00:00.000Z",
+  "end": "2026-10-01T07:00:00.000Z",
+  "badge": {
+   "set": "charmander",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Pichu",
+  "channel": "Pokémon FireRed/LeafGreen",
+  "description": "This badge was earned during the Pokémon First Partners Collection campaign.",
+  "requirement": "Watch 20 minutes",
+  "start": "2026-08-24T17:00:00.000Z",
+  "end": "2026-10-01T07:00:00.000Z",
+  "badge": {
+   "set": "pichu",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Squirtle",
+  "channel": "Pokémon FireRed/LeafGreen",
+  "description": "This badge was earned during the Pokémon First Partners Collection campaign.",
+  "requirement": "Sub or gift sub",
+  "start": "2026-08-24T17:00:00.000Z",
+  "end": "2026-10-01T07:00:00.000Z",
+  "badge": {
+   "set": "squirtle",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
   "name": "TwitchCon 2026 - San Diego - BeachBall",
   "channel": "TwitchCon",
   "description": "This badge is given to anyone who purchased a 1-day ticket to TwitchCon San Diego 2026.",
