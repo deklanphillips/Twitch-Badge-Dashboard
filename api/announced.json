@@ -991,6 +991,14 @@
    "name": "Squirtle",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned during the Pokémon First Partners Collection campaign."
+  },
+  "set:resonance-minotaur": {
+   "id": "1541943078343020645",
+   "start": 1787760000000,
+   "end": 1790179140000,
+   "name": "Resonance Minotaur",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned by watching Resonance: A Plague Tale Legacy for 60 min"
   }
  }
 }
