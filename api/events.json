@@ -774,7 +774,7 @@
   "name": "Pichu",
   "channel": "Pokémon FireRed/LeafGreen",
   "description": "This badge was earned during the Pokémon First Partners Collection campaign.",
-  "requirement": "Watch 20 minutes",
+  "requirement": "See badge page",
   "start": "2026-08-24T17:00:00.000Z",
   "end": "2026-10-01T07:00:00.000Z",
   "badge": {
@@ -798,9 +798,9 @@
  },
  {
   "name": "TwitchCon 2026 - San Diego - BeachBall",
-  "channel": "TwitchCon",
+  "channel": "Twitch",
   "description": "This badge is given to anyone who purchased a 1-day ticket to TwitchCon San Diego 2026.",
-  "requirement": "Attend TwitchCon",
+  "requirement": "See badge page",
   "start": "2026-07-22T00:00:00.000Z",
   "end": "2026-11-15T23:59:59.000Z",
   "badge": {
@@ -811,9 +811,9 @@
  },
  {
   "name": "TwitchCon 2026 - San Diego - Taco",
-  "channel": "TwitchCon",
+  "channel": "Twitch",
   "description": "This badge is given to anyone who purchased a 3-day ticket to TwitchCon San Diego 2026.",
-  "requirement": "Attend TwitchCon",
+  "requirement": "See badge page",
   "start": "2026-07-22T00:00:00.000Z",
   "end": "2026-11-15T23:59:59.000Z",
   "badge": {
