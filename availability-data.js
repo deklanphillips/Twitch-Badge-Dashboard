@@ -9652,7 +9652,7 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": true
      }
    ]
  },
@@ -9669,7 +9669,7 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": true
      }
    ]
  },
@@ -9824,8 +9824,8 @@ const BADGE_AVAILABILITY = {
      {
        "start": "2026-07-29T07:00Z",
        "end": "2026-08-26T06:59Z",
-       "subscription": false,
-       "subscriptionGift": false,
+       "subscription": true,
+       "subscriptionGift": true,
        "bits": false,
        "watch": false,
        "watchMinutes": 0,
@@ -9893,8 +9893,8 @@ const BADGE_AVAILABILITY = {
      {
        "start": "2026-08-13T19:00Z",
        "end": "2026-08-27T18:59Z",
-       "subscription": false,
-       "subscriptionGift": false,
+       "subscription": true,
+       "subscriptionGift": true,
        "bits": false,
        "watch": false,
        "watchMinutes": 0,
@@ -9910,8 +9910,8 @@ const BADGE_AVAILABILITY = {
      {
        "start": "2026-08-13T19:00Z",
        "end": "2026-08-27T18:59Z",
-       "subscription": false,
-       "subscriptionGift": false,
+       "subscription": true,
+       "subscriptionGift": true,
        "bits": false,
        "watch": false,
        "watchMinutes": 0,
@@ -9927,8 +9927,8 @@ const BADGE_AVAILABILITY = {
      {
        "start": "2026-08-13T19:00Z",
        "end": "2026-08-27T18:59Z",
-       "subscription": false,
-       "subscriptionGift": false,
+       "subscription": true,
+       "subscriptionGift": true,
        "bits": false,
        "watch": false,
        "watchMinutes": 0,
@@ -10145,7 +10145,7 @@ const BADGE_AVAILABILITY = {
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
-       "watch": false,
+       "watch": true,
        "watchMinutes": 20,
        "clip": false,
        "turbo": false,
