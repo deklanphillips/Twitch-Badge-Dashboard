@@ -10379,5 +10379,28 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "mouseathon": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "channels": [
+         {
+           "name": "ironmouse",
+           "href": "https://www.twitch.tv/ironmouse"
+         }
+       ]
+     }
+   ]
  }
 };
