@@ -10356,5 +10356,28 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "pokemonxp-costumed-pikachu": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "channels": [
+         {
+           "name": "PokemonXP",
+           "href": "https://www.twitch.tv/pokemonxp"
+         }
+       ]
+     }
+   ]
  }
 };
