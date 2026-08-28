@@ -10361,8 +10361,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-08-28T07:00Z",
+       "end": "2026-08-31T06:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
@@ -10400,6 +10400,23 @@ const BADGE_AVAILABILITY = {
            "href": "https://www.twitch.tv/ironmouse"
          }
        ]
+     }
+   ]
+ },
+ "2026-worlds-costumed-pikachu": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-08-28T07:00Z",
+       "end": "2026-08-31T06:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
      }
    ]
  }

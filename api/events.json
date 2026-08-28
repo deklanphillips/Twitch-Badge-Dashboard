@@ -745,6 +745,19 @@
   }
  },
  {
+  "name": "2026 Worlds costumed Pikachu",
+  "channel": "Twitch",
+  "description": "This badge was earned during the 2026 Pokémon World Championships.",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-08-28T07:00:00.000Z",
+  "end": "2026-08-31T06:59:00.000Z",
+  "badge": {
+   "set": "2026-worlds-costumed-pikachu",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
   "name": "Bulbasaur",
   "channel": "Pokémon FireRed/LeafGreen",
   "description": "This badge was earned during the Pokémon First Partners Collection campaign.",
@@ -779,6 +792,19 @@
   "end": "2026-10-01T07:00:00.000Z",
   "badge": {
    "set": "pichu",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "PokémonXP costumed Pikachu",
+  "channel": "Twitch",
+  "description": "This badge was earned during the 2026 Pokémon World Championships.",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-08-28T07:00:00.000Z",
+  "end": "2026-08-31T06:59:00.000Z",
+  "badge": {
+   "set": "pokemonxp-costumed-pikachu",
    "version": "1"
   },
   "confirmed": true
