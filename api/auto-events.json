@@ -878,5 +878,45 @@
    "label": "Ironmouse's 2026 Subathon category",
    "url": "https://www.twitch.tv/directory/category/ironmouse-s-2026-subathon"
   }
+ },
+ {
+  "name": "Harley Mayhem",
+  "channel": "LEGO® Batman™: Legacy of the Dark Knight",
+  "description": "This badge was earned by subscribing or gifting a sub to a LEGO® Batman™: Legacy of the Dark Knight streamer!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-08-31T20:28:08Z",
+  "end": null,
+  "badge": {
+   "set": "harley-mayhem",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "LEGO® Batman™: Legacy of the Dark Knight category",
+   "url": "https://www.twitch.tv/directory/category/lego-batman-legacy-of-the-dark-knight"
+  }
+ },
+ {
+  "name": "Sorcerer Rogier ELDEN RING",
+  "channel": "ELDEN RING",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the ELDEN RING category.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-08-31T20:28:08Z",
+  "end": null,
+  "badge": {
+   "set": "sorcerer-rogier-elden-ring",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "ELDEN RING category",
+   "url": "https://www.twitch.tv/directory/category/elden-ring"
+  }
  }
 ]
