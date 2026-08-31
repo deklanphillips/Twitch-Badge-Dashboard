@@ -1007,6 +1007,22 @@
    "name": "Resonance Minotaur",
    "requirement": "Watch to earn",
    "description": "This badge was earned by watching Resonance: A Plague Tale Legacy for 60 min"
+  },
+  "set:harley-mayhem": {
+   "id": "1544134370380488807",
+   "start": 1788246000000,
+   "end": 1789887540000,
+   "name": "Harley Mayhem",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a LEGO® Batman™: Legacy of the Dark Knight streamer!"
+  },
+  "set:sorcerer-rogier-elden-ring": {
+   "id": "1544134375590068295",
+   "start": 1788246000000,
+   "end": 1790665140000,
+   "name": "Sorcerer Rogier ELDEN RING",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the ELDEN RING category."
   }
  }
 }
