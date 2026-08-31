@@ -1005,22 +1005,6 @@
    "name": "Resonance Minotaur",
    "requirement": "Watch to earn",
    "description": "This badge was earned by watching Resonance: A Plague Tale Legacy for 60 min"
-  },
-  "set:2026-worlds-costumed-pikachu": {
-   "id": "1543036719710998670",
-   "start": 1787900400000,
-   "end": 1788159540000,
-   "name": "2026 Worlds costumed Pikachu",
-   "requirement": "Watch 60 minutes",
-   "description": "This badge was earned during the 2026 Pokémon World Championships."
-  },
-  "set:pokemonxp-costumed-pikachu": {
-   "id": "1543036724794626098",
-   "start": 1787900400000,
-   "end": 1788159540000,
-   "name": "PokémonXP costumed Pikachu",
-   "requirement": "Watch 60 minutes",
-   "description": "This badge was earned during the 2026 Pokémon World Championships."
   }
  }
 }
