@@ -745,6 +745,46 @@
   }
  },
  {
+  "name": "Harley Mayhem",
+  "channel": "LEGO® Batman™: Legacy of the Dark Knight",
+  "description": "This badge was earned by subscribing or gifting a sub to a LEGO® Batman™: Legacy of the Dark Knight streamer!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-01T07:00:00.000Z",
+  "end": "2026-09-20T06:59:00.000Z",
+  "badge": {
+   "set": "harley-mayhem",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "LEGO® Batman™: Legacy of the Dark Knight category",
+   "url": "https://www.twitch.tv/directory/category/lego-batman-legacy-of-the-dark-knight"
+  }
+ },
+ {
+  "name": "Sorcerer Rogier ELDEN RING",
+  "channel": "ELDEN RING",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the ELDEN RING category.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-01T07:00:00.000Z",
+  "end": "2026-09-29T06:59:00.000Z",
+  "badge": {
+   "set": "sorcerer-rogier-elden-ring",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "ELDEN RING category",
+   "url": "https://www.twitch.tv/directory/category/elden-ring"
+  }
+ },
+ {
   "name": "Bulbasaur",
   "channel": "Pokémon FireRed/LeafGreen",
   "description": "This badge was earned during the Pokémon First Partners Collection campaign.",

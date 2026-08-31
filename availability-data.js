@@ -10419,5 +10419,39 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "harley-mayhem": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-01T07:00Z",
+       "end": "2026-09-20T06:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "sorcerer-rogier-elden-ring": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-01T07:00Z",
+       "end": "2026-09-29T06:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
  }
 };
