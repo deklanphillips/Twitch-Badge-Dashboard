@@ -918,5 +918,45 @@
    "label": "ELDEN RING category",
    "url": "https://www.twitch.tv/directory/category/elden-ring"
   }
+ },
+ {
+  "name": "WARDOG",
+  "channel": "WARDOGS for 30 minutes",
+  "description": "This badge was earned by watching WARDOGS for 30 minutes",
+  "emoji": "✨",
+  "requirement": "Watch 30 minutes",
+  "start": "2026-09-01T17:38:29Z",
+  "end": null,
+  "badge": {
+   "set": "wardog",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "WARDOGS for 30 minutes category",
+   "url": "https://www.twitch.tv/directory/category/wardogs-for-30-minutes"
+  }
+ },
+ {
+  "name": "WARLORD",
+  "channel": "WARDOGS",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the WARDOGS category during the Beta/Early Access period",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-01T17:38:29Z",
+  "end": null,
+  "badge": {
+   "set": "warlord",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "WARDOGS category",
+   "url": "https://www.twitch.tv/directory/category/wardogs"
+  }
  }
 ]
