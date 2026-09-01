@@ -412,7 +412,8 @@
   "pokemonxp-costumed-pikachu",
   "mouseathon",
   "harley-mayhem",
-  "sorcerer-rogier-elden-ring"
+  "sorcerer-rogier-elden-ring",
+  "wardog"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1037,6 +1038,22 @@
    "name": "Mouseathon",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by watching Ironmouse's 2026 Subathon!"
+  },
+  "set:wardog": {
+   "id": "1544441098208936098",
+   "start": 1788278220000,
+   "end": 1790697360000,
+   "name": "WARDOG",
+   "requirement": "Watch 30 minutes",
+   "description": "This badge was earned by watching WARDOGS for 30 minutes"
+  },
+  "set:mootivation": {
+   "id": "1544441102327742515",
+   "start": 1788354000000,
+   "end": 1788375540000,
+   "name": "MOOtivation",
+   "requirement": "Watch 30 minutes",
+   "description": "Celebrate the MOOtivational Stream with an exclusive Twitch chat badge! Tune in as FC CapitalCowPilot takes control of EVE Online, and add a little piece of EVE history to your chat identity as proof you were there."
   }
  }
 }
