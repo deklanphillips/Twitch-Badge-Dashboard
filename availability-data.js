@@ -10453,5 +10453,39 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "mootivation": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-02T13:00Z",
+       "end": "2026-09-02T18:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 30,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "wardog": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-01T15:57Z",
+       "end": "2026-09-29T15:56Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 30,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
  }
 };

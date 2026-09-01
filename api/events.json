@@ -805,6 +805,26 @@
   }
  },
  {
+  "name": "WARDOG",
+  "channel": "WARDOGS for 30 minutes",
+  "description": "This badge was earned by watching WARDOGS for 30 minutes",
+  "emoji": "✨",
+  "requirement": "Watch 30 minutes",
+  "start": "2026-09-01T15:57:00.000Z",
+  "end": "2026-09-29T15:56:00.000Z",
+  "badge": {
+   "set": "wardog",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "WARDOGS for 30 minutes category",
+   "url": "https://www.twitch.tv/directory/category/wardogs-for-30-minutes"
+  }
+ },
+ {
   "name": "Bulbasaur",
   "channel": "Pokémon FireRed/LeafGreen",
   "description": "This badge was earned during the Pokémon First Partners Collection campaign.",
@@ -826,6 +846,19 @@
   "end": "2026-10-01T07:00:00.000Z",
   "badge": {
    "set": "charmander",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "MOOtivation",
+  "channel": "Twitch",
+  "description": "Celebrate the MOOtivational Stream with an exclusive Twitch chat badge! Tune in as FC CapitalCowPilot takes control of EVE Online, and add a little piece of EVE history to your chat identity as proof you were there.",
+  "requirement": "Watch 30 minutes",
+  "start": "2026-09-02T13:00:00.000Z",
+  "end": "2026-09-02T18:59:00.000Z",
+  "badge": {
+   "set": "mootivation",
    "version": "1"
   },
   "confirmed": true
