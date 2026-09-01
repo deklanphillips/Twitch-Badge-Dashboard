@@ -406,7 +406,10 @@
   "squirtle",
   "resonance-minotaur",
   "2026-worlds-costumed-pikachu",
-  "pokemonxp-costumed-pikachu"
+  "pokemonxp-costumed-pikachu",
+  "mouseathon",
+  "harley-mayhem",
+  "sorcerer-rogier-elden-ring"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1023,6 +1026,14 @@
    "name": "Sorcerer Rogier ELDEN RING",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the ELDEN RING category."
+  },
+  "set:mouseathon": {
+   "id": "1544270497255264306",
+   "start": 1788246000000,
+   "end": 1790838000000,
+   "name": "Mouseathon",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by watching Ironmouse's 2026 Subathon!"
   }
  }
 }
