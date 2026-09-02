@@ -891,19 +891,6 @@
   "confirmed": true
  },
  {
-  "name": "MOOtivation",
-  "channel": "Twitch",
-  "description": "Celebrate the MOOtivational Stream with an exclusive Twitch chat badge! Tune in as FC CapitalCowPilot takes control of EVE Online, and add a little piece of EVE history to your chat identity as proof you were there.",
-  "requirement": "Watch 30 minutes",
-  "start": "2026-09-02T13:00:00.000Z",
-  "end": "2026-09-02T18:59:00.000Z",
-  "badge": {
-   "set": "mootivation",
-   "version": "1"
-  },
-  "confirmed": true
- },
- {
   "name": "Pichu",
   "channel": "Pokémon FireRed/LeafGreen",
   "description": "This badge was earned during the Pokémon First Partners Collection campaign.",

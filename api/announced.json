@@ -1049,13 +1049,21 @@
    "requirement": "Watch 30 minutes",
    "description": "This badge was earned by watching WARDOGS for 30 minutes"
   },
-  "set:mootivation": {
-   "id": "1544441102327742515",
-   "start": 1788354000000,
-   "end": 1788375540000,
-   "name": "MOOtivation",
-   "requirement": "Watch 30 minutes",
-   "description": "Celebrate the MOOtivational Stream with an exclusive Twitch chat badge! Tune in as FC CapitalCowPilot takes control of EVE Online, and add a little piece of EVE history to your chat identity as proof you were there."
+  "set:warlord": {
+   "id": "1544803198324179074",
+   "start": 1788458400000,
+   "end": 1790791140000,
+   "name": "WARLORD",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the WARDOGS category during the Beta/Early Access period"
+  },
+  "set:zevent-2026": {
+   "id": "1544803202740920371",
+   "start": 1788393600000,
+   "end": 1788739199000,
+   "name": "ZEVENT 2026",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned by watching ZEVENT 2026!"
   }
  }
 }
