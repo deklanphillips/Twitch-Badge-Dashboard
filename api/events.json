@@ -850,8 +850,8 @@
   "description": "This badge was earned by watching ZEVENT 2026!",
   "emoji": "✨",
   "requirement": "Watch to earn",
-  "start": "2026-09-03T00:00:00.000Z",
-  "end": "2026-09-06T23:59:59.000Z",
+  "start": "2026-09-03T16:00:00.000Z",
+  "end": "2026-09-07T03:59:00.000Z",
   "badge": {
    "set": "zevent-2026",
    "version": "1"

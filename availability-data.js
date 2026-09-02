@@ -10509,13 +10509,13 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": "2026-09-03T00:00:00Z",
-       "end": "2026-09-06T23:59:59Z",
+       "start": "2026-09-03T16:00Z",
+       "end": "2026-09-07T03:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
        "watch": true,
-       "watchMinutes": 0,
+       "watchMinutes": 60,
        "clip": false,
        "turbo": false,
        "twitchcon": false
