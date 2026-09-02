@@ -978,5 +978,25 @@
    "label": "ZEVENT 2026 category",
    "url": "https://www.twitch.tv/directory/category/zevent-2026"
   }
+ },
+ {
+  "name": "Onimusha Armament",
+  "channel": "Onimusha: Way of the Sword",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Onimusha: Way of the Sword category during the game launch!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-02T22:43:27Z",
+  "end": null,
+  "badge": {
+   "set": "onimusha-armament",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Onimusha: Way of the Sword category",
+   "url": "https://www.twitch.tv/directory/category/onimusha-way-of-the-sword"
+  }
  }
 ]

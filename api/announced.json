@@ -360,7 +360,8 @@
   "mootivation",
   "wardog",
   "warlord",
-  "zevent-2026"
+  "zevent-2026",
+  "onimusha-armament"
  ],
  "live": [
   "two-point-museum",
@@ -1059,8 +1060,8 @@
   },
   "set:zevent-2026": {
    "id": "1544803202740920371",
-   "start": 1788393600000,
-   "end": 1788739199000,
+   "start": 1788451200000,
+   "end": 1788753540000,
    "name": "ZEVENT 2026",
    "requirement": "Watch to earn",
    "description": "This badge was earned by watching ZEVENT 2026!"
