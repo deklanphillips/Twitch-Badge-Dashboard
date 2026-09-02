@@ -10521,5 +10521,39 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "the-blood-of-dawnwalker-launch": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-03T00:00Z",
+       "end": "2026-09-30T23:58Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "the-blood-of-dawnwalker-supporter": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-03T00:00Z",
+       "end": "2026-09-30T23:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
  }
 };

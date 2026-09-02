@@ -725,6 +725,46 @@
   "confirmed": true
  },
  {
+  "name": "The Blood of Dawnwalker Launch",
+  "channel": "Blood of Dawnwalker",
+  "description": "This badge was earned by watching a streamer in The Blood of Dawnwalker category for 1 hour",
+  "emoji": "✨",
+  "requirement": "Watch 1 hour",
+  "start": "2026-09-03T00:00:00.000Z",
+  "end": "2026-09-30T23:58:00.000Z",
+  "badge": {
+   "set": "the-blood-of-dawnwalker-launch",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Blood of Dawnwalker category",
+   "url": "https://www.twitch.tv/directory/category/blood-of-dawnwalker"
+  }
+ },
+ {
+  "name": "The Blood of Dawnwalker Supporter",
+  "channel": "Blood of Dawnwalker",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in The Blood of Dawnwalker category",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-03T00:00:00.000Z",
+  "end": "2026-09-30T23:58:00.000Z",
+  "badge": {
+   "set": "the-blood-of-dawnwalker-supporter",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Blood of Dawnwalker category",
+   "url": "https://www.twitch.tv/directory/category/blood-of-dawnwalker"
+  }
+ },
+ {
   "name": "Resonance Minotaur",
   "channel": "Resonance: A Plague Tale Legacy for 60 min",
   "description": "This badge was earned by watching Resonance: A Plague Tale Legacy for 60 min",
