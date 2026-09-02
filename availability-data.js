@@ -10475,13 +10475,47 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": "2026-09-01T15:57Z",
-       "end": "2026-09-29T15:56Z",
+       "start": "2026-09-03T18:00Z",
+       "end": "2026-09-30T17:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
        "watch": true,
        "watchMinutes": 30,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "warlord": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-03T18:00Z",
+       "end": "2026-09-30T17:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "zevent-2026": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-03T00:00:00Z",
+       "end": "2026-09-06T23:59:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 0,
        "clip": false,
        "turbo": false,
        "twitchcon": false

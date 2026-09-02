@@ -810,8 +810,8 @@
   "description": "This badge was earned by watching WARDOGS for 30 minutes",
   "emoji": "✨",
   "requirement": "Watch 30 minutes",
-  "start": "2026-09-01T15:57:00.000Z",
-  "end": "2026-09-29T15:56:00.000Z",
+  "start": "2026-09-03T18:00:00.000Z",
+  "end": "2026-09-30T17:59:00.000Z",
   "badge": {
    "set": "wardog",
    "version": "1"
@@ -822,6 +822,46 @@
    "type": "category",
    "label": "WARDOGS for 30 minutes category",
    "url": "https://www.twitch.tv/directory/category/wardogs-for-30-minutes"
+  }
+ },
+ {
+  "name": "WARLORD",
+  "channel": "WARDOGS",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the WARDOGS category during the Beta/Early Access period",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-03T18:00:00.000Z",
+  "end": "2026-09-30T17:59:00.000Z",
+  "badge": {
+   "set": "warlord",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "WARDOGS category",
+   "url": "https://www.twitch.tv/directory/category/wardogs"
+  }
+ },
+ {
+  "name": "ZEVENT 2026",
+  "channel": "ZEVENT 2026",
+  "description": "This badge was earned by watching ZEVENT 2026!",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-09-03T00:00:00.000Z",
+  "end": "2026-09-06T23:59:59.000Z",
+  "badge": {
+   "set": "zevent-2026",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "ZEVENT 2026 category",
+   "url": "https://www.twitch.tv/directory/category/zevent-2026"
   }
  },
  {
