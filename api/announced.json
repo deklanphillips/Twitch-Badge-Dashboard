@@ -416,7 +416,9 @@
   "harley-mayhem",
   "sorcerer-rogier-elden-ring",
   "wardog",
-  "mootivation"
+  "mootivation",
+  "the-blood-of-dawnwalker-launch",
+  "the-blood-of-dawnwalker-supporter"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1065,6 +1067,22 @@
    "name": "ZEVENT 2026",
    "requirement": "Watch to earn",
    "description": "This badge was earned by watching ZEVENT 2026!"
+  },
+  "set:the-blood-of-dawnwalker-launch": {
+   "id": "1544872266733719632",
+   "start": 1788393600000,
+   "end": 1790812680000,
+   "name": "The Blood of Dawnwalker Launch",
+   "requirement": "Watch 1 hour",
+   "description": "This badge was earned by watching a streamer in The Blood of Dawnwalker category for 1 hour"
+  },
+  "set:the-blood-of-dawnwalker-supporter": {
+   "id": "1544872271045468241",
+   "start": 1788393600000,
+   "end": 1790812680000,
+   "name": "The Blood of Dawnwalker Supporter",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in The Blood of Dawnwalker category"
   }
  }
 }
