@@ -419,7 +419,8 @@
   "mootivation",
   "the-blood-of-dawnwalker-launch",
   "the-blood-of-dawnwalker-supporter",
-  "zevent-2026"
+  "zevent-2026",
+  "warlord"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1047,8 +1048,8 @@
   },
   "set:wardog": {
    "id": "1544441098208936098",
-   "start": 1788278220000,
-   "end": 1790697360000,
+   "start": 1788458400000,
+   "end": 1790791140000,
    "name": "WARDOG",
    "requirement": "Watch 30 minutes",
    "description": "This badge was earned by watching WARDOGS for 30 minutes"
