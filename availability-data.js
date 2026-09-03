@@ -10555,5 +10555,22 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "onimusha-armament": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-04T04:00Z",
+       "end": "2026-09-18T03:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
  }
 };
