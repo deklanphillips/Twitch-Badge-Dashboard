@@ -1083,6 +1083,14 @@
    "name": "The Blood of Dawnwalker Supporter",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in The Blood of Dawnwalker category"
+  },
+  "set:onimusha-armament": {
+   "id": "1545009994422816808",
+   "start": 1788494400000,
+   "end": 1789703940000,
+   "name": "Onimusha Armament",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Onimusha: Way of the Sword category during the game launch!"
   }
  }
 }
