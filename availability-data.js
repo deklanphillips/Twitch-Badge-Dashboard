@@ -10572,5 +10572,22 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "subtember-2026": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-08-28T17:00Z",
+       "end": "2026-10-01T17:00Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": true,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
  }
 };
