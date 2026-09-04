@@ -363,7 +363,8 @@
   "zevent-2026",
   "onimusha-armament",
   "nopixel-v-launch",
-  "subtember-2026"
+  "subtember-2026",
+  "volume-up"
  ],
  "live": [
   "two-point-museum",
@@ -423,7 +424,8 @@
   "the-blood-of-dawnwalker-supporter",
   "zevent-2026",
   "warlord",
-  "onimusha-armament"
+  "onimusha-armament",
+  "subtember-2026"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1096,6 +1098,14 @@
    "name": "Onimusha Armament",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Onimusha: Way of the Sword category during the game launch!"
+  },
+  "set:subtember-2026": {
+   "id": "1545519695111659593",
+   "start": 1787936400000,
+   "end": 1790874000000,
+   "name": "SUBtember 2026",
+   "requirement": "Sub or gift sub",
+   "description": "Badge given to users who sub, gift, or use bits during SUBtember 2026."
   }
  }
 }
