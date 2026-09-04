@@ -1018,5 +1018,20 @@
    "label": "GTAV category",
    "url": "https://www.twitch.tv/directory/category/gtav"
   }
+ },
+ {
+  "name": "SUBtember 2026",
+  "channel": "Twitch",
+  "description": "Badge given to users who sub, gift, or use bits during SUBtember 2026.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-04T17:15:37Z",
+  "end": null,
+  "badge": {
+   "set": "subtember-2026",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false
  }
 ]
