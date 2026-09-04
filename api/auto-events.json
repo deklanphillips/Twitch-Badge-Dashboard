@@ -998,5 +998,25 @@
    "label": "Onimusha: Way of the Sword category",
    "url": "https://www.twitch.tv/directory/category/onimusha-way-of-the-sword"
   }
+ },
+ {
+  "name": "nopixel V Launch",
+  "channel": "GTAV",
+  "description": "This badge was earned by subscribing to a GTAV streamer during the nopixel V Launch!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-04T00:31:13Z",
+  "end": null,
+  "badge": {
+   "set": "nopixel-v-launch",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "GTAV category",
+   "url": "https://www.twitch.tv/directory/category/gtav"
+  }
  }
 ]
