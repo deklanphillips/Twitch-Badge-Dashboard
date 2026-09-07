@@ -1106,6 +1106,14 @@
    "name": "SUBtember 2026",
    "requirement": "Sub or gift sub",
    "description": "Badge given to users who sub, gift, or use bits during SUBtember 2026."
+  },
+  "set:nopixel-v-launch": {
+   "id": "1546468285745340447",
+   "start": 1788840000000,
+   "end": 1790740740000,
+   "name": "nopixel V Launch",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing to a GTAV streamer during the nopixel V Launch!"
   }
  }
 }
