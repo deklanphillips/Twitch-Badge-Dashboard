@@ -10606,5 +10606,22 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "solasta-2-multiplayer": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-08T10:30Z",
+       "end": "2026-09-29T06:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 30,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
  }
 };
