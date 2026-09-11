@@ -1073,5 +1073,85 @@
    "label": "RuneScape: Dragonwilds category category",
    "url": "https://www.twitch.tv/directory/category/runescape-dragonwilds-category"
   }
+ },
+ {
+  "name": "Chains",
+  "channel": "PAYDAY 3",
+  "description": "This badge was earned by watching a streamer in the PAYDAY 3 category for 30 minutes",
+  "emoji": "✨",
+  "requirement": "Watch 30 minutes",
+  "start": "2026-09-11T18:42:32Z",
+  "end": null,
+  "badge": {
+   "set": "chains",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "PAYDAY 3 category",
+   "url": "https://www.twitch.tv/directory/category/payday-3"
+  }
+ },
+ {
+  "name": "Dallas",
+  "channel": "PAYDAY 3",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the PAYDAY 3 category",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-11T18:42:32Z",
+  "end": null,
+  "badge": {
+   "set": "dallas",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "PAYDAY 3 category",
+   "url": "https://www.twitch.tv/directory/category/payday-3"
+  }
+ },
+ {
+  "name": "Hoxton",
+  "channel": "PAYDAY 3",
+  "description": "This badge was earned by watching a streamer in the PAYDAY 3 category for 60 minutes",
+  "emoji": "✨",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-09-11T18:42:32Z",
+  "end": null,
+  "badge": {
+   "set": "hoxton",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "PAYDAY 3 category",
+   "url": "https://www.twitch.tv/directory/category/payday-3"
+  }
+ },
+ {
+  "name": "Wolf",
+  "channel": "PAYDAY 3",
+  "description": "This badge was earned by watching a streamer in the PAYDAY 3 category for 90 minutes ",
+  "emoji": "✨",
+  "requirement": "Watch 90 minutes",
+  "start": "2026-09-11T18:42:32Z",
+  "end": null,
+  "badge": {
+   "set": "wolf",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "PAYDAY 3 category",
+   "url": "https://www.twitch.tv/directory/category/payday-3"
+  }
  }
 ]
