@@ -436,7 +436,8 @@
   "subtember-2026",
   "nopixel-v-launch",
   "solasta-2-multiplayer",
-  "joker-mayhem"
+  "joker-mayhem",
+  "diablo"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1144,6 +1145,14 @@
    "name": "Joker Mayhem",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a LEGO® Batman™: Legacy of the Dark Knight streamer!"
+  },
+  "set:diablo": {
+   "id": "1548470076183810078",
+   "start": 1789146000000,
+   "end": 1790441940000,
+   "name": "Diablo",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a Diablo streamer during BlizzCon 2026!"
   }
  }
 }
