@@ -1153,5 +1153,25 @@
    "label": "PAYDAY 3 category",
    "url": "https://www.twitch.tv/directory/category/payday-3"
   }
+ },
+ {
+  "name": "Joker Mayhem",
+  "channel": "LEGO® Batman™: Legacy of the Dark Knight",
+  "description": "This badge was earned by subscribing or gifting a sub to a LEGO® Batman™: Legacy of the Dark Knight streamer!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-12T16:37:22Z",
+  "end": null,
+  "badge": {
+   "set": "joker-mayhem",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "LEGO® Batman™: Legacy of the Dark Knight category",
+   "url": "https://www.twitch.tv/directory/category/lego-batman-legacy-of-the-dark-knight"
+  }
  }
 ]
