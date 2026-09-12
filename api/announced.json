@@ -435,7 +435,8 @@
   "onimusha-armament",
   "subtember-2026",
   "nopixel-v-launch",
-  "solasta-2-multiplayer"
+  "solasta-2-multiplayer",
+  "joker-mayhem"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1135,6 +1136,14 @@
    "name": "Solasta 2 Multiplayer",
    "requirement": "Watch 30 minutes",
    "description": "This badge was earned by watching the Solasta II category for 30 minutes!"
+  },
+  "set:joker-mayhem": {
+   "id": "1548405777046175814",
+   "start": 1789196400000,
+   "end": 1790578740000,
+   "name": "Joker Mayhem",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a LEGO® Batman™: Legacy of the Dark Knight streamer!"
   }
  }
 }
