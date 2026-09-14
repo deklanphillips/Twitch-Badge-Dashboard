@@ -10674,5 +10674,22 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "runescape-dragonwilds-eye": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-15T12:00Z",
+       "end": "2026-10-04T16:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 30,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
  }
 };
