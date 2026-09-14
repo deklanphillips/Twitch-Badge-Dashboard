@@ -1173,5 +1173,25 @@
    "label": "LEGO® Batman™: Legacy of the Dark Knight category",
    "url": "https://www.twitch.tv/directory/category/lego-batman-legacy-of-the-dark-knight"
   }
+ },
+ {
+  "name": "Marvel's Wolverine",
+  "channel": "Marvel's Wolverine",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Marvel's Wolverine category during the game launch.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-14T07:59:26Z",
+  "end": null,
+  "badge": {
+   "set": "marvels-wolverine",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Marvel's Wolverine category",
+   "url": "https://www.twitch.tv/directory/category/marvel-s-wolverine"
+  }
  }
 ]
