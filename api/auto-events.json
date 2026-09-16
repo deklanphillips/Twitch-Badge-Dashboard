@@ -1193,5 +1193,25 @@
    "label": "Marvel's Wolverine category",
    "url": "https://www.twitch.tv/directory/category/marvel-s-wolverine"
   }
+ },
+ {
+  "name": "Ultramarine",
+  "channel": "Space Marine 2",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Space Marine 2 category during the anniversary campaign!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-16T18:57:54Z",
+  "end": null,
+  "badge": {
+   "set": "ultramarine",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Space Marine 2 category",
+   "url": "https://www.twitch.tv/directory/category/space-marine-2"
+  }
  }
 ]
