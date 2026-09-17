@@ -442,7 +442,8 @@
   "joker-mayhem",
   "diablo",
   "marvels-wolverine",
-  "runescape-dragonwilds-eye"
+  "runescape-dragonwilds-eye",
+  "blue-creeper-boss"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1174,6 +1175,14 @@
    "name": "RuneScape Dragonwilds Eye",
    "requirement": "Watch 30 minutes",
    "description": "This badge was earned by watching 30 minutes of RuneScape: Dragonwilds category"
+  },
+  "set:blue-creeper-boss": {
+   "id": "1550245991284871228",
+   "start": 1789668000000,
+   "end": 1790060280000,
+   "name": "Blue Creeper Boss",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing to a streamer in the Minecraft category during TGS 2026!"
   }
  }
 }
