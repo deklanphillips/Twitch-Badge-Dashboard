@@ -1233,5 +1233,105 @@
    "label": "Minecraft category",
    "url": "https://www.twitch.tv/directory/category/minecraft"
   }
+ },
+ {
+  "name": "Homo Tenta",
+  "channel": "Metaphor: ReFantazio",
+  "description": "This badge was earned by subscribing to a streamer in the Metaphor: ReFantazio category during the 2026 ATLUS celebration!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-17T23:14:55Z",
+  "end": null,
+  "badge": {
+   "set": "homo-tenta",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Metaphor: ReFantazio category",
+   "url": "https://www.twitch.tv/directory/category/metaphor-refantazio"
+  }
+ },
+ {
+  "name": "Koromaru",
+  "channel": "Persona 3 Reload",
+  "description": "This badge was earned by subscribing to a streamer in the Persona 3 Reload category during the 2026 ATLUS celebration!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-17T23:14:55Z",
+  "end": null,
+  "badge": {
+   "set": "koromaru",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Persona 3 Reload category",
+   "url": "https://www.twitch.tv/directory/category/persona-3-reload"
+  }
+ },
+ {
+  "name": "Morgana",
+  "channel": "Persona 5 Royal",
+  "description": "This badge was earned by subscribing to a streamer in the Persona 5 Royal category during the 2026 ATLUS celebration!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-17T23:14:55Z",
+  "end": null,
+  "badge": {
+   "set": "morgana",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Persona 5 Royal category",
+   "url": "https://www.twitch.tv/directory/category/persona-5-royal"
+  }
+ },
+ {
+  "name": "Nahobiho",
+  "channel": "Shin Megami Tensei V: Vengeance",
+  "description": "This badge was earned by subscribing to a streamer in the Shin Megami Tensei V: Vengeance category during the 2026 ATLUS celebration!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-17T23:14:55Z",
+  "end": null,
+  "badge": {
+   "set": "nahobiho",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Shin Megami Tensei V: Vengeance category",
+   "url": "https://www.twitch.tv/directory/category/shin-megami-tensei-v-vengeance"
+  }
+ },
+ {
+  "name": "Teddie",
+  "channel": "Persona 4 Golden",
+  "description": "This badge was earned by subscribing to a streamer in the Persona 4 Golden category during the 2026 ATLUS celebration!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-17T23:14:55Z",
+  "end": null,
+  "badge": {
+   "set": "teddie",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Persona 4 Golden category",
+   "url": "https://www.twitch.tv/directory/category/persona-4-golden"
+  }
  }
 ]
