@@ -1213,5 +1213,25 @@
    "label": "Space Marine 2 category",
    "url": "https://www.twitch.tv/directory/category/space-marine-2"
   }
+ },
+ {
+  "name": "Blue Creeper Boss",
+  "channel": "Minecraft",
+  "description": "This badge was earned by subscribing to a streamer in the Minecraft category during TGS 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-17T17:51:25Z",
+  "end": null,
+  "badge": {
+   "set": "blue-creeper-boss",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Minecraft category",
+   "url": "https://www.twitch.tv/directory/category/minecraft"
+  }
  }
 ]
