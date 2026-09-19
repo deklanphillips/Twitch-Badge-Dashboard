@@ -1156,5 +1156,18 @@
    "version": "1"
   },
   "confirmed": true
+ },
+ {
+  "name": "WSCI 2026",
+  "channel": "Twitch",
+  "description": "This badge was earned by supporting the 2026 World Star Challengers Invitational!",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-19T16:00:00.000Z",
+  "end": "2026-10-03T15:59:00.000Z",
+  "badge": {
+   "set": "wsci-2026",
+   "version": "1"
+  },
+  "confirmed": true
  }
 ]
