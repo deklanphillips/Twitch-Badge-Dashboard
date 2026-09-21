@@ -1203,6 +1203,22 @@
    "name": "WSCI 2026",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by supporting the 2026 World Star Challengers Invitational!"
+  },
+  "set:dont-eat-the-mold": {
+   "id": "1551685217503412274",
+   "start": 1790085600000,
+   "end": 1791899940000,
+   "name": "Don't Eat The Mold",
+   "requirement": "Watch 1 hour",
+   "description": "This badge was earned by watching a streamer in the CONTROL Resonant category for 1 hour"
+  },
+  "set:the-inverted-man": {
+   "id": "1551685223941541929",
+   "start": 1790085600000,
+   "end": 1791899940000,
+   "name": "The Inverted Man",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the CONTROL Resonant category during the game launch"
   }
  }
 }
