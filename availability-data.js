@@ -10725,5 +10725,39 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "dont-eat-the-mold": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-22T14:00Z",
+       "end": "2026-10-13T13:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "the-inverted-man": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-22T14:00Z",
+       "end": "2026-10-13T13:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
  }
 };
