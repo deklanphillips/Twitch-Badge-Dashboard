@@ -1373,5 +1373,85 @@
    "label": "Dungeon Masters category",
    "url": "https://www.twitch.tv/directory/category/dungeon-masters"
   }
+ },
+ {
+  "name": "Don't Eat The Mold",
+  "channel": "CONTROL Resonant",
+  "description": "This badge was earned by watching a streamer in the CONTROL Resonant category for 1 hour",
+  "emoji": "✨",
+  "requirement": "Watch 1 hour",
+  "start": "2026-09-21T15:12:34Z",
+  "end": null,
+  "badge": {
+   "set": "dont-eat-the-mold",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "CONTROL Resonant category",
+   "url": "https://www.twitch.tv/directory/category/control-resonant"
+  }
+ },
+ {
+  "name": "SEEGSON Synthetics",
+  "channel": "the Alien Isolation category for 30 minutes",
+  "description": "This badge was earned by watching the Alien Isolation category for 30 minutes",
+  "emoji": "✨",
+  "requirement": "Watch 30 minutes",
+  "start": "2026-09-21T15:12:34Z",
+  "end": null,
+  "badge": {
+   "set": "seegson-synthetics",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "the Alien Isolation category for 30 minutes category",
+   "url": "https://www.twitch.tv/directory/category/the-alien-isolation-category-for-30-minutes"
+  }
+ },
+ {
+  "name": "Sevastopol Station",
+  "channel": "Alien Isolation",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Alien Isolation category",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-21T15:12:34Z",
+  "end": null,
+  "badge": {
+   "set": "sevastopol-station",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Alien Isolation category",
+   "url": "https://www.twitch.tv/directory/category/alien-isolation"
+  }
+ },
+ {
+  "name": "The Inverted Man",
+  "channel": "CONTROL Resonant",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the CONTROL Resonant category during the game launch",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-21T15:12:34Z",
+  "end": null,
+  "badge": {
+   "set": "the-inverted-man",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "CONTROL Resonant category",
+   "url": "https://www.twitch.tv/directory/category/control-resonant"
+  }
  }
 ]
