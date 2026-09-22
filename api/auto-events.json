@@ -1453,5 +1453,25 @@
    "label": "CONTROL Resonant category",
    "url": "https://www.twitch.tv/directory/category/control-resonant"
   }
+ },
+ {
+  "name": "Rematch Blue Lock",
+  "channel": "Rematch",
+  "description": "This badge was earned by watching a streamer in the Rematch category for 30 minutes",
+  "emoji": "✨",
+  "requirement": "Watch 30 minutes",
+  "start": "2026-09-22T12:42:54Z",
+  "end": null,
+  "badge": {
+   "set": "rematch-blue-lock",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Rematch category",
+   "url": "https://www.twitch.tv/directory/category/rematch"
+  }
  }
 ]
