@@ -1222,6 +1222,14 @@
    "name": "The Inverted Man",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the CONTROL Resonant category during the game launch"
+  },
+  "set:dron-e": {
+   "id": "1552051392921735248",
+   "start": 1790172000000,
+   "end": 1791899940000,
+   "name": "DRON-E",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Rainbow Six Siege category during Wasteland Circuit."
   }
  }
 }
