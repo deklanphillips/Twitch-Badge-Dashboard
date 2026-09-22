@@ -10799,5 +10799,22 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "rematch-blue-lock": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-23T23:01Z",
+       "end": "2026-10-21T22:58Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 30,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
  }
 };
