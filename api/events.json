@@ -1040,6 +1040,86 @@
   }
  },
  {
+  "name": "Chains",
+  "channel": "PAYDAY 3",
+  "description": "This badge was earned by watching a streamer in the PAYDAY 3 category for 30 minutes",
+  "emoji": "✨",
+  "requirement": "Watch 30 minutes",
+  "start": "2026-09-24T12:00:00.000Z",
+  "end": "2026-10-10T11:59:00.000Z",
+  "badge": {
+   "set": "chains",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "PAYDAY 3 category",
+   "url": "https://www.twitch.tv/directory/category/payday-3"
+  }
+ },
+ {
+  "name": "Dallas",
+  "channel": "PAYDAY 3",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the PAYDAY 3 category",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-24T12:00:00.000Z",
+  "end": "2026-10-10T11:59:00.000Z",
+  "badge": {
+   "set": "dallas",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "PAYDAY 3 category",
+   "url": "https://www.twitch.tv/directory/category/payday-3"
+  }
+ },
+ {
+  "name": "Hoxton",
+  "channel": "PAYDAY 3",
+  "description": "This badge was earned by watching a streamer in the PAYDAY 3 category for 60 minutes",
+  "emoji": "✨",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-09-24T12:00:00.000Z",
+  "end": "2026-10-10T11:59:00.000Z",
+  "badge": {
+   "set": "hoxton",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "PAYDAY 3 category",
+   "url": "https://www.twitch.tv/directory/category/payday-3"
+  }
+ },
+ {
+  "name": "Wolf",
+  "channel": "PAYDAY 3",
+  "description": "This badge was earned by watching a streamer in the PAYDAY 3 category for 90 minutes ",
+  "emoji": "✨",
+  "requirement": "Watch 90 minutes",
+  "start": "2026-09-24T12:00:00.000Z",
+  "end": "2026-10-10T11:59:00.000Z",
+  "badge": {
+   "set": "wolf",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "PAYDAY 3 category",
+   "url": "https://www.twitch.tv/directory/category/payday-3"
+  }
+ },
+ {
   "name": "Joker Mayhem",
   "channel": "LEGO® Batman™: Legacy of the Dark Knight",
   "description": "This badge was earned by subscribing or gifting a sub to a LEGO® Batman™: Legacy of the Dark Knight streamer!",
@@ -1117,6 +1197,26 @@
    "type": "category",
    "label": "Dungeons & Dragons category",
    "url": "https://www.twitch.tv/directory/category/dungeons-dragons"
+  }
+ },
+ {
+  "name": "d20",
+  "channel": "Dungeon Masters",
+  "description": "This badge was earned by watching Dungeon Masters on Twitch.",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-09-24T01:15:00.000Z",
+  "end": "2026-10-21T06:58:00.000Z",
+  "badge": {
+   "set": "d20",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Dungeon Masters category",
+   "url": "https://www.twitch.tv/directory/category/dungeon-masters"
   }
  },
  {

@@ -10781,8 +10781,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-09-24T01:15Z",
+       "end": "2026-10-21T06:58Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
@@ -10828,6 +10828,74 @@ const BADGE_AVAILABILITY = {
        "bits": false,
        "watch": false,
        "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "chains": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-24T12:00Z",
+       "end": "2026-10-10T11:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 30,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "dallas": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-24T12:00Z",
+       "end": "2026-10-10T11:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "hoxton": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-24T12:00Z",
+       "end": "2026-10-10T11:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "wolf": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-24T12:00Z",
+       "end": "2026-10-10T11:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 90,
        "clip": false,
        "turbo": false,
        "twitchcon": false
