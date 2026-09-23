@@ -1238,6 +1238,14 @@
    "name": "Rematch Blue Lock",
    "requirement": "Watch 30 minutes",
    "description": "This badge was earned by watching a streamer in the Rematch category for 30 minutes"
+  },
+  "set:ampersand": {
+   "id": "1552212279112503347",
+   "start": 1790212500000,
+   "end": 1792565880000,
+   "name": "Ampersand",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing to a streamer in the Dungeons & Dragons category."
   }
  }
 }
