@@ -1230,6 +1230,14 @@
    "name": "DRON-E",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Rainbow Six Siege category during Wasteland Circuit."
+  },
+  "set:rematch-blue-lock": {
+   "id": "1552131106566963301",
+   "start": 1790204460000,
+   "end": 1792623480000,
+   "name": "Rematch Blue Lock",
+   "requirement": "Watch 30 minutes",
+   "description": "This badge was earned by watching a streamer in the Rematch category for 30 minutes"
   }
  }
 }
