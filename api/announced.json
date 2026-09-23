@@ -458,7 +458,8 @@
   "blue-creeper-boss",
   "wsci-2026",
   "dont-eat-the-mold",
-  "the-inverted-man"
+  "the-inverted-man",
+  "dron-e"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1246,6 +1247,46 @@
    "name": "Ampersand",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing to a streamer in the Dungeons & Dragons category."
+  },
+  "set:chains": {
+   "id": "1552372491219898428",
+   "start": 1790251200000,
+   "end": 1791633540000,
+   "name": "Chains",
+   "requirement": "Watch 30 minutes",
+   "description": "This badge was earned by watching a streamer in the PAYDAY 3 category for 30 minutes"
+  },
+  "set:dallas": {
+   "id": "1552372495816855752",
+   "start": 1790251200000,
+   "end": 1791633540000,
+   "name": "Dallas",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the PAYDAY 3 category"
+  },
+  "set:hoxton": {
+   "id": "1552372500774785175",
+   "start": 1790251200000,
+   "end": 1791633540000,
+   "name": "Hoxton",
+   "requirement": "Watch 60 minutes",
+   "description": "This badge was earned by watching a streamer in the PAYDAY 3 category for 60 minutes"
+  },
+  "set:wolf": {
+   "id": "1552372504910110720",
+   "start": 1790251200000,
+   "end": 1791633540000,
+   "name": "Wolf",
+   "requirement": "Watch 90 minutes",
+   "description": "This badge was earned by watching a streamer in the PAYDAY 3 category for 90 minutes "
+  },
+  "set:d20": {
+   "id": "1552372508790095984",
+   "start": 1790212500000,
+   "end": 1792565880000,
+   "name": "d20",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned by watching Dungeon Masters on Twitch."
   }
  }
 }
