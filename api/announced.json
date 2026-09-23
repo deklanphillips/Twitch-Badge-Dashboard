@@ -1287,6 +1287,46 @@
    "name": "d20",
    "requirement": "Watch to earn",
    "description": "This badge was earned by watching Dungeon Masters on Twitch."
+  },
+  "set:homo-tenta": {
+   "id": "1552421801487892500",
+   "start": 1790265600000,
+   "end": 1791701880000,
+   "name": "Homo Tenta",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing to a streamer in the Metaphor: ReFantazio category during the 2026 ATLUS celebration!"
+  },
+  "set:koromaru": {
+   "id": "1552421806558683286",
+   "start": 1790265600000,
+   "end": 1791701880000,
+   "name": "Koromaru",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing to a streamer in the Persona 3 Reload category during the 2026 ATLUS celebration!"
+  },
+  "set:morgana": {
+   "id": "1552421813039014058",
+   "start": 1790265600000,
+   "end": 1791701880000,
+   "name": "Morgana",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing to a streamer in the Persona 5 Royal category during the 2026 ATLUS celebration!"
+  },
+  "set:nahobiho": {
+   "id": "1552421817698885653",
+   "start": 1790265600000,
+   "end": 1791701880000,
+   "name": "Nahobiho",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing to a streamer in the Shin Megami Tensei V: Vengeance category during the 2026 ATLUS celebration!"
+  },
+  "set:teddie": {
+   "id": "1552421822257954890",
+   "start": 1790265600000,
+   "end": 1791701880000,
+   "name": "Teddie",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing to a streamer in the Persona 4 Golden category during the 2026 ATLUS celebration!"
   }
  }
 }
