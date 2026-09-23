@@ -3372,7 +3372,27 @@ const BADGE_AVAILABILITY = {
    "added": null
  },
  "final-fantasy-xiv-fan-festival-2026-jp---quest-complete-chat": {
-   "added": null
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "channels": [
+         {
+           "name": "finalfantasyxiv",
+           "href": "https://www.twitch.tv/finalfantasyxiv"
+         }
+       ]
+     }
+   ]
  },
  "invincible-vs": {
    "added": "2026-04-23T20:27:23.026Z",
@@ -10896,6 +10916,91 @@ const BADGE_AVAILABILITY = {
        "bits": false,
        "watch": true,
        "watchMinutes": 90,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "homo-tenta": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-24T16:00Z",
+       "end": "2026-10-11T06:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "koromaru": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-24T16:00Z",
+       "end": "2026-10-11T06:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "morgana": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-24T16:00Z",
+       "end": "2026-10-11T06:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "nahobiho": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-24T16:00Z",
+       "end": "2026-10-11T06:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "teddie": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-24T16:00Z",
+       "end": "2026-10-11T06:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
        "clip": false,
        "turbo": false,
        "twitchcon": false
