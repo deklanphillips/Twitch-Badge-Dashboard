@@ -1493,5 +1493,25 @@
    "label": "Big Walk category",
    "url": "https://www.twitch.tv/directory/category/big-walk"
   }
+ },
+ {
+  "name": "RuneScape Shrimp",
+  "channel": "Old School RuneScape",
+  "description": "This badge was awarded to people who viewed any eligible channel co-streaming RuneFest 2026 in the Old School RuneScape category for one hour. It was added to promote the RuneScape Franchise's RuneFest event.",
+  "emoji": "✨",
+  "requirement": "See badge page",
+  "start": "2026-09-24T17:24:24Z",
+  "end": null,
+  "badge": {
+   "set": "runescape-shrimp",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Old School RuneScape category",
+   "url": "https://www.twitch.tv/directory/category/old-school-runescape"
+  }
  }
 ]
