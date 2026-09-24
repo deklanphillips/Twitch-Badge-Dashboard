@@ -1473,5 +1473,25 @@
    "label": "Rematch category",
    "url": "https://www.twitch.tv/directory/category/rematch"
   }
+ },
+ {
+  "name": "Big Walk",
+  "channel": "Big Walk",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Big Walk category.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-24T06:55:31Z",
+  "end": null,
+  "badge": {
+   "set": "big-walk",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Big Walk category",
+   "url": "https://www.twitch.tv/directory/category/big-walk"
+  }
  }
 ]
