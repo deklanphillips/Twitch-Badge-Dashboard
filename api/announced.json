@@ -390,7 +390,8 @@
   "rematch-blue-lock",
   "clipped-that",
   "big-walk",
-  "runescape-shrimp"
+  "runescape-shrimp",
+  "yellow-party-hat"
  ],
  "live": [
   "two-point-museum",
@@ -474,7 +475,8 @@
   "koromaru",
   "morgana",
   "nahobiho",
-  "teddie"
+  "teddie",
+  "big-walk"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1342,6 +1344,14 @@
    "name": "Teddie",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing to a streamer in the Persona 4 Golden category during the 2026 ATLUS celebration!"
+  },
+  "set:big-walk": {
+   "id": "1553043383784837210",
+   "start": 1790319600000,
+   "end": 1791097080000,
+   "name": "Big Walk",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Big Walk category."
   }
  }
 }
