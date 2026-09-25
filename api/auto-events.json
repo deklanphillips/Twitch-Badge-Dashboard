@@ -1513,5 +1513,25 @@
    "label": "Old School RuneScape category",
    "url": "https://www.twitch.tv/directory/category/old-school-runescape"
   }
+ },
+ {
+  "name": "ACE COMBAT 8 Nugget",
+  "channel": "ACE COMBAT 8",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the ACE COMBAT 8 category during the game's launch!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-25T18:14:23Z",
+  "end": null,
+  "badge": {
+   "set": "ace-combat-8-nugget",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "ACE COMBAT 8 category",
+   "url": "https://www.twitch.tv/directory/category/ace-combat-8"
+  }
  }
 ]
