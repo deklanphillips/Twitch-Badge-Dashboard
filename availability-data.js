@@ -11006,5 +11006,22 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "big-walk": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-09-25T07:00Z",
+       "end": "2026-10-04T06:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
  }
 };
