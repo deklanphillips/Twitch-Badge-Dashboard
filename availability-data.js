@@ -11023,5 +11023,28 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "yellow-party-hat": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "channels": [
+         {
+           "name": "OldSchoolRS",
+           "href": "https://www.twitch.tv/oldschoolrs"
+         }
+       ]
+     }
+   ]
  }
 };
