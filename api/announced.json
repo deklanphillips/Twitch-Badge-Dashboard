@@ -478,7 +478,8 @@
   "morgana",
   "nahobiho",
   "teddie",
-  "big-walk"
+  "big-walk",
+  "ace-combat-8-nugget"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1354,6 +1355,22 @@
    "name": "Big Walk",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Big Walk category."
+  },
+  "set:ace-combat-8-nugget": {
+   "id": "1554254140022980758",
+   "start": 1790632800000,
+   "end": 1792997940000,
+   "name": "ACE COMBAT 8 Nugget",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the ACE COMBAT 8 category during the game's launch!"
+  },
+  "set:wolf-medallion": {
+   "id": "1554254144628596847",
+   "start": 1790676000000,
+   "end": 1793091540000,
+   "name": "Wolf Medallion",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in The Witcher 3 category during launch of The Witcher 3: Wild Hunt – Remastered"
   }
  }
 }
