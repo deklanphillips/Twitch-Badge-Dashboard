@@ -1533,5 +1533,25 @@
    "label": "ACE COMBAT 8 category",
    "url": "https://www.twitch.tv/directory/category/ace-combat-8"
   }
+ },
+ {
+  "name": "Wolf Medallion",
+  "channel": "Witcher 3",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in The Witcher 3 category during launch of The Witcher 3: Wild Hunt – Remastered",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-09-28T16:19:53Z",
+  "end": null,
+  "badge": {
+   "set": "wolf-medallion",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Witcher 3 category",
+   "url": "https://www.twitch.tv/directory/category/witcher-3"
+  }
  }
 ]
