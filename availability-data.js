@@ -11097,5 +11097,22 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "ultramarine": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-10-01T00:00:00Z",
+       "end": "2026-10-29T23:59:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
  }
 };
