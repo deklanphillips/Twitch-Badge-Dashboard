@@ -1553,5 +1553,25 @@
    "label": "Witcher 3 category",
    "url": "https://www.twitch.tv/directory/category/witcher-3"
   }
+ },
+ {
+  "name": "Bloody Finger ELDEN RING",
+  "channel": "ELDEN RING",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the ELDEN RING category.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-01T00:14:55Z",
+  "end": null,
+  "badge": {
+   "set": "bloody-finger-elden-ring",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "ELDEN RING category",
+   "url": "https://www.twitch.tv/directory/category/elden-ring"
+  }
  }
 ]
