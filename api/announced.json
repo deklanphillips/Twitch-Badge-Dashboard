@@ -394,7 +394,9 @@
   "yellow-party-hat",
   "ace-combat-8-nugget",
   "wolf-medallion",
-  "bloody-finger-elden-ring"
+  "bloody-finger-elden-ring",
+  "frekifriend",
+  "thedragonsdogma"
  ],
  "live": [
   "two-point-museum",
@@ -483,7 +485,9 @@
   "ace-combat-8-nugget",
   "wolf-medallion",
   "ultramarine",
-  "bloody-finger-elden-ring"
+  "bloody-finger-elden-ring",
+  "seegson-synthetics",
+  "sevastopol-station"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1354,11 +1358,27 @@
   },
   "set:ultramarine": {
    "id": "1555211852760219738",
-   "start": 1790812800000,
-   "end": 1793318399000,
+   "start": 1790841600000,
+   "end": 1793260740000,
    "name": "Ultramarine",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Space Marine 2 category during the anniversary campaign!"
+  },
+  "set:seegson-synthetics": {
+   "id": "1555295285960384623",
+   "start": 1790845200000,
+   "end": 1793264280000,
+   "name": "SEEGSON Synthetics",
+   "requirement": "Watch 30 minutes",
+   "description": "This badge was earned by watching the Alien Isolation category for 30 minutes"
+  },
+  "set:sevastopol-station": {
+   "id": "1555295290645287062",
+   "start": 1790845200000,
+   "end": 1793264280000,
+   "name": "Sevastopol Station",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Alien Isolation category"
   }
  }
 }
