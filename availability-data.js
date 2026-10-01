@@ -11102,8 +11102,42 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": "2026-10-01T00:00:00Z",
-       "end": "2026-10-29T23:59:59Z",
+       "start": "2026-10-01T08:00Z",
+       "end": "2026-10-29T07:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "seegson-synthetics": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-10-01T09:00Z",
+       "end": "2026-10-29T08:58Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 30,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "sevastopol-station": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-10-01T09:00Z",
+       "end": "2026-10-29T08:58Z",
        "subscription": true,
        "subscriptionGift": true,
        "bits": false,
