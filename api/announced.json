@@ -1373,6 +1373,14 @@
    "name": "Wolf Medallion",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in The Witcher 3 category during launch of The Witcher 3: Wild Hunt – Remastered"
+  },
+  "set:bloody-finger-elden-ring": {
+   "id": "1555100277215076362",
+   "start": 1790838000000,
+   "end": 1793257140000,
+   "name": "Bloody Finger ELDEN RING",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the ELDEN RING category."
   }
  }
 }
