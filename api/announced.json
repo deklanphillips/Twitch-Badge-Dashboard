@@ -487,7 +487,9 @@
   "ultramarine",
   "bloody-finger-elden-ring",
   "seegson-synthetics",
-  "sevastopol-station"
+  "sevastopol-station",
+  "runescape-shrimp",
+  "yellow-party-hat"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1379,6 +1381,22 @@
    "name": "Sevastopol Station",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Alien Isolation category"
+  },
+  "set:runescape-shrimp": {
+   "id": "1555943417090146325",
+   "start": 1791032400000,
+   "end": 1791154740000,
+   "name": "RuneScape Shrimp",
+   "requirement": "See badge page",
+   "description": "This badge was awarded to people who viewed any eligible channel co-streaming RuneFest 2026 in the Old School RuneScape category for one hour. It was added to promote the RuneScape Franchise's RuneFest event."
+  },
+  "set:yellow-party-hat": {
+   "id": "1555943422764912660",
+   "start": 1791032400000,
+   "end": 1791154740000,
+   "name": "Yellow Party Hat",
+   "requirement": "Watch 60 minutes",
+   "description": "This badge was awarded to people who viewed the official 2026 RuneFest livestream for one hour."
   }
  }
 }
