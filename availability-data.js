@@ -11028,8 +11028,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-10-03T13:00Z",
+       "end": "2026-10-04T22:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
@@ -11143,6 +11143,23 @@ const BADGE_AVAILABILITY = {
        "bits": false,
        "watch": false,
        "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "runescape-shrimp": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-10-03T13:00Z",
+       "end": "2026-10-04T22:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
        "clip": false,
        "turbo": false,
        "twitchcon": false
