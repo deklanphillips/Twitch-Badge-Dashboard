@@ -1564,18 +1564,5 @@
    "version": "1"
   },
   "confirmed": true
- },
- {
-  "name": "Yellow Party Hat",
-  "channel": "Twitch",
-  "description": "This badge was awarded to people who viewed the official 2026 RuneFest livestream for one hour.",
-  "requirement": "Watch 60 minutes",
-  "start": "2026-10-03T13:00:00.000Z",
-  "end": "2026-10-04T22:59:00.000Z",
-  "badge": {
-   "set": "yellow-party-hat",
-   "version": "1"
-  },
-  "confirmed": true
  }
 ]
