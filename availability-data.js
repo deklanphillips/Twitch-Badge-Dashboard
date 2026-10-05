@@ -1375,15 +1375,15 @@ const BADGE_AVAILABILITY = {
    ]
  },
  "hunt-crosses": {
-   "added": "2025-12-10T19:35:36.236Z",
+   "added": null,
    "avail": [
      {
-       "start": "2025-12-10T17:00Z",
-       "end": "2026-01-11T07:59Z",
-       "subscription": false,
-       "subscriptionGift": false,
+       "start": "2025-12-12T09:00Z",
+       "end": "2025-12-25T11:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
        "bits": false,
-       "watch": true,
+       "watch": false,
        "watchMinutes": 5,
        "clip": false,
        "turbo": false,
