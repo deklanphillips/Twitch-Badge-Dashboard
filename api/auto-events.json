@@ -1613,5 +1613,65 @@
    "label": "Dragon's Dogma 2: Dark Arisen for 1 hour category",
    "url": "https://www.twitch.tv/directory/category/dragon-s-dogma-2-dark-arisen-for-1-hour"
   }
+ },
+ {
+  "name": "DayZ Yellow King",
+  "channel": "DayZ",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the DayZ category during the DayZ Badlands expansion launch!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-05T18:38:12Z",
+  "end": null,
+  "badge": {
+   "set": "dayz-yellow-king",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "DayZ category",
+   "url": "https://www.twitch.tv/directory/category/dayz"
+  }
+ },
+ {
+  "name": "Vaultbreakers",
+  "channel": "Vaultbreakers",
+  "description": "This badge was earned by watching a streamer in the Vaultbreakers category for 60 minutes",
+  "emoji": "✨",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-10-05T18:38:12Z",
+  "end": null,
+  "badge": {
+   "set": "vaultbreakers",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Vaultbreakers category",
+   "url": "https://www.twitch.tv/directory/category/vaultbreakers"
+  }
+ },
+ {
+  "name": "Vaultbreakers Golden",
+  "channel": "Vaultbreakers",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Vaultbreakers category",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-05T18:38:12Z",
+  "end": null,
+  "badge": {
+   "set": "vaultbreakers-golden",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Vaultbreakers category",
+   "url": "https://www.twitch.tv/directory/category/vaultbreakers"
+  }
  }
 ]
