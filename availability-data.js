@@ -3369,7 +3369,27 @@ const BADGE_AVAILABILITY = {
    "added": "2026-04-21T13:43:19.229Z"
  },
  "final-fantasy-xiv-fan-festival-2026-jp---alpha-chat": {
-   "added": null
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "FINAL FANTASY XIV ONLINE",
+           "href": ""
+         }
+       ]
+     }
+   ]
  },
  "final-fantasy-xiv-fan-festival-2026-jp---quest-complete-chat": {
    "added": null,
@@ -3385,6 +3405,12 @@ const BADGE_AVAILABILITY = {
        "clip": false,
        "turbo": false,
        "twitchcon": false,
+       "categories": [
+         {
+           "name": "FINAL FANTASY XIV ONLINE",
+           "href": ""
+         }
+       ],
        "channels": [
          {
            "name": "finalfantasyxiv",
@@ -10759,7 +10785,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 60,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "CONTROL Resonant",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -10776,7 +10808,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "CONTROL Resonant",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -10793,7 +10831,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Rainbow Six Siege",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -10811,6 +10855,12 @@ const BADGE_AVAILABILITY = {
        "clip": false,
        "turbo": false,
        "twitchcon": false,
+       "categories": [
+         {
+           "name": "Dungeons & Dragons",
+           "href": ""
+         }
+       ],
        "channels": [
          {
            "name": "dnd",
@@ -10833,7 +10883,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 30,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "REMATCH",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -10850,7 +10906,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Dungeons & Dragons",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -10867,7 +10929,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 30,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "PAYDAY 3",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -10884,7 +10952,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "PAYDAY 3",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -10901,7 +10975,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 60,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "PAYDAY 3",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -10918,7 +10998,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 90,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "PAYDAY 3",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -10935,7 +11021,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Metaphor: ReFantazio",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -10952,7 +11044,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "PERSONA3 RELOAD",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -10969,7 +11067,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Persona 5 Royal",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -10986,7 +11090,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Shin Megami Tensei V: Vengeance",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -11003,7 +11113,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Persona 4 Golden",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -11060,7 +11176,17 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "ACE COMBAT 8: WINGS OF THEVE",
+           "href": ""
+         },
+         {
+           "name": "Ace Combat Zero: The Belkan War",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -11077,7 +11203,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "The Witcher 3: Wild Hunt",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -11094,7 +11226,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "ELDEN RING",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -11111,7 +11249,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Warhammer 40,000: Space Marine II",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -11128,7 +11272,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 30,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Alien: Isolation",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -11145,7 +11295,13 @@ const BADGE_AVAILABILITY = {
        "watchMinutes": 0,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Alien: Isolation",
+           "href": ""
+         }
+       ]
      }
    ]
  },
@@ -11163,6 +11319,121 @@ const BADGE_AVAILABILITY = {
        "clip": false,
        "turbo": false,
        "twitchcon": false
+     }
+   ]
+ },
+ "dayz-yellow-king": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "DayZ",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "frekifriend": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Dragon's Dogma II",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "thedragonsdogma": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Dragon's Dogma II",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "vaultbreakers": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Vaultbreakers",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "vaultbreakers-golden": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Vaultbreakers",
+           "href": ""
+         }
+       ]
      }
    ]
  }
