@@ -11436,5 +11436,97 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "crossworlds-world-championship-2026": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Sonic Racing: CrossWorlds",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "gold-stamp": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 240,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Witchspire",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "witch-hat": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Witchspire",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "witchspire-logo": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Witchspire",
+           "href": ""
+         }
+       ]
+     }
+   ]
  }
 };
