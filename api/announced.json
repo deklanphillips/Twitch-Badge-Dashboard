@@ -409,7 +409,11 @@
   "ivysaur",
   "pikachu",
   "venusaur",
-  "wartortle"
+  "wartortle",
+  "crossworlds-world-championship-2026",
+  "gold-stamp",
+  "witch-hat",
+  "witchspire-logo"
  ],
  "live": [
   "two-point-museum",
@@ -1394,6 +1398,46 @@
    "name": "RuneScape Shrimp",
    "requirement": "See badge page",
    "description": "This badge was awarded to people who viewed any eligible channel co-streaming RuneFest 2026 in the Old School RuneScape category for one hour. It was added to promote the RuneScape Franchise's RuneFest event."
+  },
+  "set:frekifriend": {
+   "id": "1557514562381815911",
+   "start": 1791460800000,
+   "end": 1793487480000,
+   "name": "FrekiFriend",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Dragon's Dogma II category during the launch of Dragon's Dogma 2: Dark Arisen!"
+  },
+  "set:thedragonsdogma": {
+   "id": "1557514567129628672",
+   "start": 1791460800000,
+   "end": 1793487480000,
+   "name": "TheDragonsDogma",
+   "requirement": "Watch 1 hour",
+   "description": "This badge was earned by watching Dragon's Dogma 2: Dark Arisen for 1 hour"
+  },
+  "set:dayz-yellow-king": {
+   "id": "1557514572292816987",
+   "start": 1791457200000,
+   "end": 1792400340000,
+   "name": "DayZ Yellow King",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the DayZ category during the DayZ Badlands expansion launch!"
+  },
+  "set:vaultbreakers": {
+   "id": "1557514578194342014",
+   "start": 1791478800000,
+   "end": 1793897940000,
+   "name": "Vaultbreakers",
+   "requirement": "Watch 60 minutes",
+   "description": "This badge was earned by watching a streamer in the Vaultbreakers category for 60 minutes"
+  },
+  "set:vaultbreakers-golden": {
+   "id": "1557514583214923896",
+   "start": 1791478800000,
+   "end": 1793897940000,
+   "name": "Vaultbreakers Golden",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Vaultbreakers category"
   }
  }
 }

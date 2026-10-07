@@ -1673,5 +1673,85 @@
    "label": "Vaultbreakers category",
    "url": "https://www.twitch.tv/directory/category/vaultbreakers"
   }
+ },
+ {
+  "name": "CrossWorlds World Championship 2026",
+  "channel": "Sonic Racing: CrossWorlds",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Sonic Racing: CrossWorlds category during the 2026 World Championship Finals and Club Chaos festivities.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-07T22:06:46Z",
+  "end": null,
+  "badge": {
+   "set": "crossworlds-world-championship-2026",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Sonic Racing: CrossWorlds category",
+   "url": "https://www.twitch.tv/directory/category/sonic-racing-crossworlds"
+  }
+ },
+ {
+  "name": "Gold Stamp",
+  "channel": "Witchspire",
+  "description": "This badge was earned by watching a streamer in the Witchspire category for 240 minutes",
+  "emoji": "✨",
+  "requirement": "Watch 240 minutes",
+  "start": "2026-10-07T22:06:46Z",
+  "end": null,
+  "badge": {
+   "set": "gold-stamp",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Witchspire category",
+   "url": "https://www.twitch.tv/directory/category/witchspire"
+  }
+ },
+ {
+  "name": "Witchspire Logo",
+  "channel": "Witchspire",
+  "description": "This badge was earned by watching a streamer in the Witchspire category for 60 minutes",
+  "emoji": "✨",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-10-07T22:06:46Z",
+  "end": null,
+  "badge": {
+   "set": "witch-hat",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Witchspire category",
+   "url": "https://www.twitch.tv/directory/category/witchspire"
+  }
+ },
+ {
+  "name": "Witch Hat",
+  "channel": "Witchspire",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Witchspire category",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-07T22:06:46Z",
+  "end": null,
+  "badge": {
+   "set": "witchspire-logo",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Witchspire category",
+   "url": "https://www.twitch.tv/directory/category/witchspire"
+  }
  }
 ]
