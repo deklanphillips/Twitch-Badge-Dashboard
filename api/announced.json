@@ -509,7 +509,9 @@
   "yellow-party-hat",
   "frekifriend",
   "thedragonsdogma",
-  "dayz-yellow-king"
+  "dayz-yellow-king",
+  "vaultbreakers",
+  "vaultbreakers-golden"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1441,6 +1443,14 @@
    "name": "Vaultbreakers Golden",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Vaultbreakers category"
+  },
+  "set:crossworlds-world-championship-2026": {
+   "id": "1557869666637193342",
+   "start": 1791561600000,
+   "end": 1794373080000,
+   "name": "CrossWorlds World Championship 2026",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Sonic Racing: CrossWorlds category during the 2026 World Championship Finals and Club Chaos festivities."
   }
  }
 }
