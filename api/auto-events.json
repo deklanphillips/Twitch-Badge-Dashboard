@@ -1753,5 +1753,25 @@
    "label": "Witchspire category",
    "url": "https://www.twitch.tv/directory/category/witchspire"
   }
+ },
+ {
+  "name": "Modern Warfare 4",
+  "channel": "Call of Duty Modern Warfare 4",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Call of Duty Modern Warfare 4 category during the launch.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-10T20:52:04Z",
+  "end": null,
+  "badge": {
+   "set": "modern-warfare-4",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Call of Duty Modern Warfare 4 category",
+   "url": "https://www.twitch.tv/directory/category/call-of-duty-modern-warfare-4"
+  }
  }
 ]
