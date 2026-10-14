@@ -11556,13 +11556,13 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
-       "subscription": true,
-       "subscriptionGift": true,
+       "start": "2026-10-14T16:00Z",
+       "end": "2026-10-27T15:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
        "bits": false,
-       "watch": false,
-       "watchMinutes": 0,
+       "watch": true,
+       "watchMinutes": 30,
        "clip": false,
        "turbo": false,
        "twitchcon": false,
@@ -11648,8 +11648,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-10-14T19:00Z",
+       "end": "2026-11-15T18:59Z",
        "subscription": true,
        "subscriptionGift": true,
        "bits": false,
@@ -11708,6 +11708,29 @@ const BADGE_AVAILABILITY = {
          {
            "name": "Enshrouded",
            "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "streamer-awards-2026-vote": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "channels": [
+         {
+           "name": "QTCinderella",
+           "href": "https://www.twitch.tv/qtcinderella"
          }
        ]
      }
