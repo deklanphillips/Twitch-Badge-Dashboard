@@ -414,7 +414,12 @@
   "gold-stamp",
   "witch-hat",
   "witchspire-logo",
-  "modern-warfare-4"
+  "modern-warfare-4",
+  "heartsteel-fan",
+  "kda-fan",
+  "pentakill-fan",
+  "true-damage-fan",
+  "worlds-2026-supporter"
  ],
  "live": [
   "two-point-museum",
@@ -843,7 +848,8 @@
   "emotesv2_24af7cfb832b4e8791f1fe7ffffad081",
   "emotesv2_f3607c515be64f7c876919a62d5e3326",
   "emotesv2_2860539e1c67458a9037cff847fcc2ef",
-  "emotesv2_06c7261b3e054eb69a3ad2b629d233af"
+  "emotesv2_06c7261b3e054eb69a3ad2b629d233af",
+  "emotesv2_84b6968623de43d780e56bdf9b6363bf"
  ],
  "events": {
   "set:perlica": {
