@@ -11551,5 +11551,120 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "heartsteel-fan": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "League of Legends",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "kda-fan": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "League of Legends",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "pentakill-fan": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "League of Legends",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "true-damage-fan": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "League of Legends",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "worlds-2026-supporter": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "League of Legends",
+           "href": ""
+         }
+       ]
+     }
+   ]
  }
 };
