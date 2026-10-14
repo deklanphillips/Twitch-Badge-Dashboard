@@ -1460,6 +1460,14 @@
    "name": "CrossWorlds World Championship 2026",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Sonic Racing: CrossWorlds category during the 2026 World Championship Finals and Club Chaos festivities."
+  },
+  "set:castlevania-belmonts-curse": {
+   "id": "1559881009187655691",
+   "start": 1792036800000,
+   "end": 1793591940000,
+   "name": "Castlevania Belmont's Curse",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Castlevania: Belmont's Curse category during the game launch!"
   }
  }
 }
