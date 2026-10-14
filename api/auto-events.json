@@ -1773,5 +1773,25 @@
    "label": "Call of Duty Modern Warfare 4 category",
    "url": "https://www.twitch.tv/directory/category/call-of-duty-modern-warfare-4"
   }
+ },
+ {
+  "name": "Castlevania Belmont's Curse",
+  "channel": "Castlevania: Belmont's Curse",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Castlevania: Belmont's Curse category during the game launch!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-14T05:36:46Z",
+  "end": null,
+  "badge": {
+   "set": "castlevania-belmonts-curse",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Castlevania: Belmont's Curse category",
+   "url": "https://www.twitch.tv/directory/category/castlevania-belmont-s-curse"
+  }
  }
 ]
