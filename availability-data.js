@@ -11666,5 +11666,28 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "castlevania-belmonts-curse": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-10-15T04:00Z",
+       "end": "2026-11-02T03:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Castlevania: Belmont's Curse",
+           "href": ""
+         }
+       ]
+     }
+   ]
  }
 };
