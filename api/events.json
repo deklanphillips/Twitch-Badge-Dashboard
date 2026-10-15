@@ -1680,6 +1680,26 @@
   }
  },
  {
+  "name": "Flameborn Sigil",
+  "channel": "Enshrouded",
+  "description": "This badge was earned by watching a streamer in the Enshrouded category during the v1.0 game launch",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-10-15T08:00:00.000Z",
+  "end": "2026-10-29T22:58:00.000Z",
+  "badge": {
+   "set": "flameborn-sigil",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Enshrouded category",
+   "url": "https://www.twitch.tv/directory/category/enshrouded"
+  }
+ },
+ {
   "name": "Heartsteel Fan",
   "channel": "League of Legends",
   "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!",
