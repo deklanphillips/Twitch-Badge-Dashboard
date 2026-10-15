@@ -1700,6 +1700,26 @@
   }
  },
  {
+  "name": "Streamer Awards 2026 Vote",
+  "channel": "and voting",
+  "description": "This badge was earned by watching and voting on the 2026 Streamer Awards!",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-10-16T17:00:00.000Z",
+  "end": "2026-10-17T04:59:00.000Z",
+  "badge": {
+   "set": "streamer-awards-2026-vote",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "and voting category",
+   "url": "https://www.twitch.tv/directory/category/and-voting"
+  }
+ },
+ {
   "name": "Heartsteel Fan",
   "channel": "League of Legends",
   "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!",

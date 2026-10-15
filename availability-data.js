@@ -11717,16 +11717,22 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-10-16T17:00Z",
+       "end": "2026-10-17T04:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
        "watch": true,
-       "watchMinutes": 0,
+       "watchMinutes": 20,
        "clip": false,
        "turbo": false,
        "twitchcon": false,
+       "categories": [
+         {
+           "name": "The Streamer Awards",
+           "href": ""
+         }
+       ],
        "channels": [
          {
            "name": "QTCinderella",
