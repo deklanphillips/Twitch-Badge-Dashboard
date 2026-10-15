@@ -1498,6 +1498,14 @@
    "name": "Flameborn Sigil",
    "requirement": "Watch to earn",
    "description": "This badge was earned by watching a streamer in the Enshrouded category during the v1.0 game launch"
+  },
+  "set:streamer-awards-2026-vote": {
+   "id": "1560376625655451729",
+   "start": 1792170000000,
+   "end": 1792213140000,
+   "name": "Streamer Awards 2026 Vote",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned by watching and voting on the 2026 Streamer Awards!"
   }
  }
 }
