@@ -531,7 +531,17 @@
   "worlds-2026-supporter",
   "castlevania-belmonts-curse",
   "flameborn-sigil",
-  "streamer-awards-2026-vote"
+  "streamer-awards-2026-vote",
+  "blastoise",
+  "charizard",
+  "charmeleon",
+  "gastly",
+  "gengar",
+  "haunter",
+  "ivysaur",
+  "pikachu",
+  "venusaur",
+  "wartortle"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1512,6 +1522,86 @@
    "name": "Streamer Awards 2026 Vote",
    "requirement": "Watch to earn",
    "description": "This badge was earned by watching and voting on the 2026 Streamer Awards!"
+  },
+  "set:blastoise": {
+   "id": "1560771668207472711",
+   "start": 1792170000000,
+   "end": 1795474740000,
+   "name": "Blastoise",
+   "requirement": "Watch 20 minutes",
+   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
+  },
+  "set:charizard": {
+   "id": "1560771672330477709",
+   "start": 1792170000000,
+   "end": 1795474740000,
+   "name": "Charizard",
+   "requirement": "Watch 20 minutes",
+   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
+  },
+  "set:charmeleon": {
+   "id": "1560771677397188728",
+   "start": 1792170000000,
+   "end": 1795474740000,
+   "name": "Charmeleon",
+   "requirement": "Watch 20 minutes",
+   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
+  },
+  "set:gastly": {
+   "id": "1560771681172328590",
+   "start": 1792170000000,
+   "end": 1792969140000,
+   "name": "Gastly",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned during Pokémon Night Out 2026."
+  },
+  "set:gengar": {
+   "id": "1560771685169369139",
+   "start": 1792170000000,
+   "end": 1792969140000,
+   "name": "Gengar",
+   "requirement": "Watch 20 minutes",
+   "description": "This badge was earned by evolving the Night Out 2026 Haunter badge."
+  },
+  "set:haunter": {
+   "id": "1560771720221302935",
+   "start": 1792170000000,
+   "end": 1792969140000,
+   "name": "Haunter",
+   "requirement": "Watch 20 minutes",
+   "description": "This badge was earned by evolving the Night Out 2026 Gastly badge."
+  },
+  "set:ivysaur": {
+   "id": "1560771770703937576",
+   "start": 1792170000000,
+   "end": 1795474740000,
+   "name": "Ivysaur",
+   "requirement": "Watch 20 minutes",
+   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
+  },
+  "set:pikachu": {
+   "id": "1560771821073338459",
+   "start": 1792170000000,
+   "end": 1795474740000,
+   "name": "Pikachu",
+   "requirement": "Watch 20 minutes",
+   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
+  },
+  "set:venusaur": {
+   "id": "1560771871102869539",
+   "start": 1792170000000,
+   "end": 1795474740000,
+   "name": "Venusaur",
+   "requirement": "Watch 20 minutes",
+   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
+  },
+  "set:wartortle": {
+   "id": "1560771921308688706",
+   "start": 1792170000000,
+   "end": 1795474740000,
+   "name": "Wartortle",
+   "requirement": "Watch 20 minutes",
+   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
   }
  }
 }
