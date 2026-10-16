@@ -1863,5 +1863,65 @@
   },
   "auto": true,
   "confirmed": false
+ },
+ {
+  "name": "Edgerunners D",
+  "channel": "Cyberpunk 2077",
+  "description": "This badge was earned by watching a streamer in the Cyberpunk 2077 category during the Cyberpunk: Edgerunners 2: Twitch Co-Streaming",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-10-16T18:30:47Z",
+  "end": null,
+  "badge": {
+   "set": "edgerunners-d",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Cyberpunk 2077 category",
+   "url": "https://www.twitch.tv/directory/category/cyberpunk-2077"
+  }
+ },
+ {
+  "name": "Edgerunners Talia",
+  "channel": "Cyberpunk 2077",
+  "description": "This badge was earned by watching a streamer in the Cyberpunk 2077 category during the Cyberpunk: Edgerunners 2: Twitch Co-Streaming",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-10-16T18:30:47Z",
+  "end": null,
+  "badge": {
+   "set": "edgerunners-talia",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Cyberpunk 2077 category",
+   "url": "https://www.twitch.tv/directory/category/cyberpunk-2077"
+  }
+ },
+ {
+  "name": "Edgerunners Weak",
+  "channel": "Cyberpunk 2077",
+  "description": "This badge was earned by watching a streamer in the Cyberpunk 2077 category during the Cyberpunk: Edgerunners 2: Twitch Co-Streaming",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-10-16T18:30:47Z",
+  "end": null,
+  "badge": {
+   "set": "edgerunners-weak",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Cyberpunk 2077 category",
+   "url": "https://www.twitch.tv/directory/category/cyberpunk-2077"
+  }
  }
 ]
