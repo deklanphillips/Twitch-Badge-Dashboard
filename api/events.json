@@ -1720,6 +1720,84 @@
   }
  },
  {
+  "name": "Blastoise",
+  "channel": "Just Chatting",
+  "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",
+  "requirement": "Watch 20 minutes",
+  "start": "2026-10-16T17:00:00.000Z",
+  "end": "2026-11-23T22:59:00.000Z",
+  "badge": {
+   "set": "blastoise",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Charizard",
+  "channel": "Just Chatting",
+  "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",
+  "requirement": "Watch 20 minutes",
+  "start": "2026-10-16T17:00:00.000Z",
+  "end": "2026-11-23T22:59:00.000Z",
+  "badge": {
+   "set": "charizard",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Charmeleon",
+  "channel": "Just Chatting",
+  "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",
+  "requirement": "Watch 20 minutes",
+  "start": "2026-10-16T17:00:00.000Z",
+  "end": "2026-11-23T22:59:00.000Z",
+  "badge": {
+   "set": "charmeleon",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Gastly",
+  "channel": "DJs",
+  "description": "This badge was earned during Pokémon Night Out 2026.",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-16T17:00:00.000Z",
+  "end": "2026-10-25T22:59:00.000Z",
+  "badge": {
+   "set": "gastly",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Gengar",
+  "channel": "Just Chatting",
+  "description": "This badge was earned by evolving the Night Out 2026 Haunter badge.",
+  "requirement": "Watch 20 minutes",
+  "start": "2026-10-16T17:00:00.000Z",
+  "end": "2026-10-25T22:59:00.000Z",
+  "badge": {
+   "set": "gengar",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Haunter",
+  "channel": "Just Chatting",
+  "description": "This badge was earned by evolving the Night Out 2026 Gastly badge.",
+  "requirement": "Watch 20 minutes",
+  "start": "2026-10-16T17:00:00.000Z",
+  "end": "2026-10-25T22:59:00.000Z",
+  "badge": {
+   "set": "haunter",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
   "name": "Heartsteel Fan",
   "channel": "League of Legends",
   "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!",
@@ -1728,6 +1806,32 @@
   "end": "2026-10-27T15:59:00.000Z",
   "badge": {
    "set": "heartsteel-fan",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Ivysaur",
+  "channel": "DJs",
+  "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",
+  "requirement": "Watch 20 minutes",
+  "start": "2026-10-16T17:00:00.000Z",
+  "end": "2026-11-23T22:59:00.000Z",
+  "badge": {
+   "set": "ivysaur",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Pikachu",
+  "channel": "Just Chatting",
+  "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",
+  "requirement": "Watch 20 minutes",
+  "start": "2026-10-16T17:00:00.000Z",
+  "end": "2026-11-23T22:59:00.000Z",
+  "badge": {
+   "set": "pikachu",
    "version": "1"
   },
   "confirmed": true
@@ -1754,6 +1858,32 @@
   "end": "2026-11-15T23:59:59.000Z",
   "badge": {
    "set": "twitchcon-2026---san-diego---taco",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Venusaur",
+  "channel": "Just Chatting",
+  "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",
+  "requirement": "Watch 20 minutes",
+  "start": "2026-10-16T17:00:00.000Z",
+  "end": "2026-11-23T22:59:00.000Z",
+  "badge": {
+   "set": "venusaur",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Wartortle",
+  "channel": "Just Chatting",
+  "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",
+  "requirement": "Watch 20 minutes",
+  "start": "2026-10-16T17:00:00.000Z",
+  "end": "2026-11-23T22:59:00.000Z",
+  "badge": {
+   "set": "wartortle",
    "version": "1"
   },
   "confirmed": true
