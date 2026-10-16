@@ -11741,5 +11741,74 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "edgerunners-d": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Cyberpunk 2077",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "edgerunners-talia": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Cyberpunk 2077",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "edgerunners-weak": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Cyberpunk 2077",
+           "href": ""
+         }
+       ]
+     }
+   ]
  }
 };
