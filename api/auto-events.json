@@ -1833,5 +1833,35 @@
    "label": "and voting category",
    "url": "https://www.twitch.tv/directory/category/and-voting"
   }
+ },
+ {
+  "name": "BeAGoldfish",
+  "channel": "Twitch",
+  "description": "Subbed to a streamer and got 1 month of Apple TV!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-16T00:53:14Z",
+  "end": null,
+  "badge": {
+   "set": "beagoldfish",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false
+ },
+ {
+  "name": "BelieveInRichmond",
+  "channel": "Twitch",
+  "description": "Subbed to a streamer and got 1 month of Apple TV!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-16T00:53:14Z",
+  "end": null,
+  "badge": {
+   "set": "believeinrichmond",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false
  }
 ]
