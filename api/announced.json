@@ -1558,7 +1558,7 @@
   "set:gengar": {
    "id": "1560771685169369139",
    "start": 1792170000000,
-   "end": 1795474740000,
+   "end": 1801349940000,
    "name": "Gengar",
    "requirement": "Watch 20 minutes",
    "description": "This badge was earned by evolving the Night Out 2026 Haunter badge."
@@ -1566,7 +1566,7 @@
   "set:haunter": {
    "id": "1560771720221302935",
    "start": 1792170000000,
-   "end": 1795474740000,
+   "end": 1801349940000,
    "name": "Haunter",
    "requirement": "Watch 20 minutes",
    "description": "This badge was earned by evolving the Night Out 2026 Gastly badge."
@@ -1582,7 +1582,7 @@
   "set:pikachu": {
    "id": "1560771821073338459",
    "start": 1792170000000,
-   "end": 1795474740000,
+   "end": 1801349940000,
    "name": "Pikachu",
    "requirement": "Watch 20 minutes",
    "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
