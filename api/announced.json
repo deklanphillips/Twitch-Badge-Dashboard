@@ -1526,7 +1526,7 @@
   "set:blastoise": {
    "id": "1560771668207472711",
    "start": 1792170000000,
-   "end": 1795474740000,
+   "end": 1801349940000,
    "name": "Blastoise",
    "requirement": "Watch 20 minutes",
    "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
@@ -1534,7 +1534,7 @@
   "set:charizard": {
    "id": "1560771672330477709",
    "start": 1792170000000,
-   "end": 1795474740000,
+   "end": 1801349940000,
    "name": "Charizard",
    "requirement": "Watch 20 minutes",
    "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
@@ -1542,7 +1542,7 @@
   "set:charmeleon": {
    "id": "1560771677397188728",
    "start": 1792170000000,
-   "end": 1795474740000,
+   "end": 1801349940000,
    "name": "Charmeleon",
    "requirement": "Watch 20 minutes",
    "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
@@ -1550,7 +1550,7 @@
   "set:gastly": {
    "id": "1560771681172328590",
    "start": 1792170000000,
-   "end": 1792969140000,
+   "end": 1795474740000,
    "name": "Gastly",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned during Pokémon Night Out 2026."
@@ -1558,7 +1558,7 @@
   "set:gengar": {
    "id": "1560771685169369139",
    "start": 1792170000000,
-   "end": 1792969140000,
+   "end": 1795474740000,
    "name": "Gengar",
    "requirement": "Watch 20 minutes",
    "description": "This badge was earned by evolving the Night Out 2026 Haunter badge."
@@ -1566,7 +1566,7 @@
   "set:haunter": {
    "id": "1560771720221302935",
    "start": 1792170000000,
-   "end": 1792969140000,
+   "end": 1795474740000,
    "name": "Haunter",
    "requirement": "Watch 20 minutes",
    "description": "This badge was earned by evolving the Night Out 2026 Gastly badge."
@@ -1574,7 +1574,7 @@
   "set:ivysaur": {
    "id": "1560771770703937576",
    "start": 1792170000000,
-   "end": 1795474740000,
+   "end": 1801349940000,
    "name": "Ivysaur",
    "requirement": "Watch 20 minutes",
    "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
@@ -1590,7 +1590,7 @@
   "set:venusaur": {
    "id": "1560771871102869539",
    "start": 1792170000000,
-   "end": 1795474740000,
+   "end": 1801349940000,
    "name": "Venusaur",
    "requirement": "Watch 20 minutes",
    "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
@@ -1598,7 +1598,7 @@
   "set:wartortle": {
    "id": "1560771921308688706",
    "start": 1792170000000,
-   "end": 1795474740000,
+   "end": 1801349940000,
    "name": "Wartortle",
    "requirement": "Watch 20 minutes",
    "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
