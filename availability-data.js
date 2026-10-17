@@ -11905,10 +11905,6 @@ const BADGE_AVAILABILITY = {
          {
            "name": "Pokémon Trading Card Game Live",
            "href": ""
-         },
-         {
-           "name": "Pokémon: Diamond/Pearl",
-           "href": ""
          }
        ]
      }
@@ -12007,10 +12003,6 @@ const BADGE_AVAILABILITY = {
          },
          {
            "name": "Pokémon Trading Card Game Live",
-           "href": ""
-         },
-         {
-           "name": "Pokémon: Diamond/Pearl",
            "href": ""
          }
        ]
@@ -12111,10 +12103,6 @@ const BADGE_AVAILABILITY = {
          {
            "name": "Pokémon Trading Card Game Live",
            "href": ""
-         },
-         {
-           "name": "Pokémon: Diamond/Pearl",
-           "href": ""
          }
        ]
      }
@@ -12213,10 +12201,6 @@ const BADGE_AVAILABILITY = {
          },
          {
            "name": "Pokémon Trading Card Game Live",
-           "href": ""
-         },
-         {
-           "name": "Pokémon: Diamond/Pearl",
            "href": ""
          }
        ]
@@ -12317,10 +12301,6 @@ const BADGE_AVAILABILITY = {
          {
            "name": "Pokémon Trading Card Game Live",
            "href": ""
-         },
-         {
-           "name": "Pokémon: Diamond/Pearl",
-           "href": ""
          }
        ]
      }
@@ -12419,10 +12399,6 @@ const BADGE_AVAILABILITY = {
          },
          {
            "name": "Pokémon Trading Card Game Live",
-           "href": ""
-         },
-         {
-           "name": "Pokémon: Diamond/Pearl",
            "href": ""
          }
        ]
@@ -12523,10 +12499,6 @@ const BADGE_AVAILABILITY = {
          {
            "name": "Pokémon Trading Card Game Live",
            "href": ""
-         },
-         {
-           "name": "Pokémon: Diamond/Pearl",
-           "href": ""
          }
        ]
      }
@@ -12621,10 +12593,6 @@ const BADGE_AVAILABILITY = {
          },
          {
            "name": "Pokémon Trading Card Game Pocket",
-           "href": ""
-         },
-         {
-           "name": "Pokémon: Diamond/Pearl",
            "href": ""
          },
          {
@@ -12729,10 +12697,6 @@ const BADGE_AVAILABILITY = {
          {
            "name": "Pokémon Trading Card Game Live",
            "href": ""
-         },
-         {
-           "name": "Pokémon: Diamond/Pearl",
-           "href": ""
          }
        ]
      }
@@ -12831,10 +12795,6 @@ const BADGE_AVAILABILITY = {
          },
          {
            "name": "Pokémon Trading Card Game Live",
-           "href": ""
-         },
-         {
-           "name": "Pokémon: Diamond/Pearl",
            "href": ""
          }
        ]
