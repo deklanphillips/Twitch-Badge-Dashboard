@@ -12125,107 +12125,9 @@ const BADGE_AVAILABILITY = {
    "avail": [
      {
        "start": "2026-10-16T17:00Z",
-       "end": "2026-10-24T23:59Z",
+       "end": "2026-11-23T22:59Z",
        "subscription": true,
        "subscriptionGift": true,
-       "bits": false,
-       "watch": false,
-       "watchMinutes": 20,
-       "clip": false,
-       "turbo": false,
-       "twitchcon": false,
-       "categories": [
-         {
-           "name": "DJs",
-           "href": ""
-         },
-         {
-           "name": "Just Chatting",
-           "href": ""
-         },
-         {
-           "name": "Art",
-           "href": ""
-         },
-         {
-           "name": "Special Events",
-           "href": ""
-         },
-         {
-           "name": "Sports",
-           "href": ""
-         },
-         {
-           "name": "Music",
-           "href": ""
-         },
-         {
-           "name": "Talk Shows & Podcasts",
-           "href": ""
-         },
-         {
-           "name": "Animals, Aquariums, and Zoos",
-           "href": ""
-         },
-         {
-           "name": "Co-working & Studying",
-           "href": ""
-         },
-         {
-           "name": "Makers & Crafting",
-           "href": ""
-         },
-         {
-           "name": "Pokémon FireRed/LeafGreen",
-           "href": ""
-         },
-         {
-           "name": "Pokémon Pokopia",
-           "href": ""
-         },
-         {
-           "name": "Pokémon UNITE",
-           "href": ""
-         },
-         {
-           "name": "Pokémon Champions",
-           "href": ""
-         },
-         {
-           "name": "Pokémon GO",
-           "href": ""
-         },
-         {
-           "name": "Pokémon Legends: Z-A",
-           "href": ""
-         },
-         {
-           "name": "Pokémon Scarlet/Violet",
-           "href": ""
-         },
-         {
-           "name": "Pokémon Trading Card Game",
-           "href": ""
-         },
-         {
-           "name": "Pokémon Trading Card Game Pocket",
-           "href": ""
-         },
-         {
-           "name": "Pokémon Trading Card Game Live",
-           "href": ""
-         },
-         {
-           "name": "Pokémon: Diamond/Pearl",
-           "href": ""
-         }
-       ]
-     },
-     {
-       "start": "2026-10-16T17:00Z",
-       "end": "2026-11-23T22:59Z",
-       "subscription": false,
-       "subscriptionGift": false,
        "bits": false,
        "watch": true,
        "watchMinutes": 20,
@@ -12234,11 +12136,11 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false,
        "categories": [
          {
-           "name": "Just Chatting",
+           "name": "DJs",
            "href": ""
          },
          {
-           "name": "DJs",
+           "name": "Just Chatting",
            "href": ""
          },
          {
@@ -12310,11 +12212,11 @@ const BADGE_AVAILABILITY = {
            "href": ""
          },
          {
-           "name": "Pokémon: Diamond/Pearl",
+           "name": "Pokémon Trading Card Game Live",
            "href": ""
          },
          {
-           "name": "Pokémon Trading Card Game Live",
+           "name": "Pokémon: Diamond/Pearl",
            "href": ""
          }
        ]
@@ -12326,7 +12228,7 @@ const BADGE_AVAILABILITY = {
    "avail": [
      {
        "start": "2026-10-16T17:00Z",
-       "end": "2026-11-23T22:59Z",
+       "end": "2027-01-30T22:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
@@ -12429,7 +12331,7 @@ const BADGE_AVAILABILITY = {
    "avail": [
      {
        "start": "2026-10-16T17:00Z",
-       "end": "2026-11-23T22:59Z",
+       "end": "2027-01-30T22:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
@@ -12635,7 +12537,7 @@ const BADGE_AVAILABILITY = {
    "avail": [
      {
        "start": "2026-10-16T17:00Z",
-       "end": "2026-11-23T22:59Z",
+       "end": "2027-01-30T22:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
