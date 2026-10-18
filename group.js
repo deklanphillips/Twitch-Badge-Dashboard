@@ -22,15 +22,18 @@ async function load() {
     ]);
 
     // A badge belongs to this campaign if its event carries the group tag
-    // (auto-defined groups like EWC) or the curated map assigns it (groups.js).
+    // (auto-defined groups like EWC), the curated map assigns it (groups.js),
+    // or the auto-derived map assigns it (auto-groups.js).
     const inGroup = (e) =>
       e.badge && (e.group === groupId ||
-        (typeof BADGE_GROUPS !== "undefined" && BADGE_GROUPS[e.badge.set] === groupId));
+        (typeof BADGE_GROUPS !== "undefined" && BADGE_GROUPS[e.badge.set] === groupId) ||
+        (typeof AUTO_BADGE_GROUPS !== "undefined" && AUTO_BADGE_GROUPS[e.badge.set] === groupId));
     const members = events.filter(inGroup);
     if (!members.length) throw new Error(`Campaign "${groupId}" not found.`);
 
     const label =
       (typeof GROUP_LABELS !== "undefined" && GROUP_LABELS[groupId]) ||
+      (typeof AUTO_GROUP_LABELS !== "undefined" && AUTO_GROUP_LABELS[groupId]) ||
       members[0].groupLabel || groupId;
     document.title = `${label} — Twitch Badge Dashboard`;
     breadcrumb.textContent = `HOME / EVENTS / ${label.toUpperCase()}`;
