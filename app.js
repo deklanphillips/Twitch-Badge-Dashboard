@@ -117,6 +117,13 @@ function allEvents() {
   for (const e of autoEvents) {
     if (e.group && e.badge) groupBySet[e.badge.set] = { group: e.group, groupLabel: e.groupLabel };
   }
+  // Curated groups (groups.js) cover badges that come from availability data
+  // and so have no auto-event to carry a tag.
+  if (typeof BADGE_GROUPS !== "undefined") {
+    for (const [set, gid] of Object.entries(BADGE_GROUPS)) {
+      groupBySet[set] = { group: gid, groupLabel: (typeof GROUP_LABELS !== "undefined" && GROUP_LABELS[gid]) || gid };
+    }
+  }
   for (const list of [BADGE_EVENTS, availabilityEvents(), autoEvents]) {
     for (const e of list) {
       const key = e.badge && e.badge.set;

@@ -17,14 +17,21 @@ async function load() {
   }
   try {
     const [events, badges] = await Promise.all([
-      fetch("/api/auto-events.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : [])).catch(() => []),
+      fetch("/api/events.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : [])).catch(() => []),
       twitchData("/api/badges/global", "/api/global-badges.json").then((d) => d.data).catch(() => []),
     ]);
 
-    const members = events.filter((e) => e.group === groupId);
+    // A badge belongs to this campaign if its event carries the group tag
+    // (auto-defined groups like EWC) or the curated map assigns it (groups.js).
+    const inGroup = (e) =>
+      e.badge && (e.group === groupId ||
+        (typeof BADGE_GROUPS !== "undefined" && BADGE_GROUPS[e.badge.set] === groupId));
+    const members = events.filter(inGroup);
     if (!members.length) throw new Error(`Campaign "${groupId}" not found.`);
 
-    const label = members[0].groupLabel || groupId;
+    const label =
+      (typeof GROUP_LABELS !== "undefined" && GROUP_LABELS[groupId]) ||
+      members[0].groupLabel || groupId;
     document.title = `${label} — Twitch Badge Dashboard`;
     breadcrumb.textContent = `HOME / EVENTS / ${label.toUpperCase()}`;
     document.getElementById("groupHeading").textContent = label;
