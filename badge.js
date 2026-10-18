@@ -6,11 +6,17 @@ const detail = document.getElementById("badgeDetail");
 const statusMessage = document.getElementById("statusMessage");
 const breadcrumb = document.getElementById("breadcrumb");
 
-// Twitch slugifies a category by its NAME (lowercase, non-alphanumeric runs
-// become a single "-"), e.g. "Pokémon GO" -> "pok-mon-go". StreamDatabase's
-// own slugs are unreliable (typos, truncation), so always derive from the name.
+// Twitch slugifies a category by its NAME: strip apostrophes/quotes entirely
+// (so "Dragon's Dogma II" -> "dragons-dogma-ii", not "dragon-s-..."), then turn
+// each run of other non-alphanumerics into a single "-", e.g. "Pokémon GO" ->
+// "pok-mon-go". StreamDatabase's own slugs are unreliable (typos, truncation,
+// empty), so always derive from the name.
 function twitchCategorySlug(name) {
-  return String(name || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  return String(name || "")
+    .toLowerCase()
+    .replace(/["'‘’]+/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 function twitchCategoryUrl(name) {
   return `https://www.twitch.tv/directory/category/${twitchCategorySlug(name)}?filter=drops`;
@@ -358,9 +364,8 @@ async function load() {
 
         if (catMatch) {
           const catName = catMatch[1].trim();
-          const slug = catName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
           whereLabel.textContent = "Earned in category";
-          whereLink.href = `https://www.twitch.tv/directory/category/${slug}`;
+          whereLink.href = twitchCategoryUrl(catName);
           whereLink.textContent = `${catName} category ↗`;
         } else {
           whereLabel.textContent = "Find on Twitch";
