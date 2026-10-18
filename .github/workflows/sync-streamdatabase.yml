@@ -21,11 +21,13 @@ jobs:
         run: node scripts/fetch-streamdatabase.js
       - name: Rebuild consolidated events.json
         run: node scripts/generate-events.js
+      - name: Cache-bust assets
+        run: node scripts/stamp-assets.js
       - name: Commit if anything changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add availability-data.js api/events.json
+          git add -A
           if git diff --cached --quiet; then
             echo "No StreamDatabase changes to commit."
           else

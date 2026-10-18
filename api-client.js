@@ -4,14 +4,14 @@
 async function twitchData(serverPath, staticPath) {
   let serverError = null;
   try {
-    const res = await fetch(serverPath);
+    const res = await fetch(serverPath, { cache: "no-store" });
     if (res.ok) return res.json();
     const body = await res.json().catch(() => ({}));
     serverError = new Error(body.error || `Request failed (${res.status})`);
   } catch (err) {
     serverError = err;
   }
-  const res = await fetch(staticPath);
+  const res = await fetch(staticPath, { cache: "no-store" });
   if (!res.ok) throw serverError;
   return res.json();
 }
