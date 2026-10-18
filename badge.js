@@ -6,6 +6,16 @@ const detail = document.getElementById("badgeDetail");
 const statusMessage = document.getElementById("statusMessage");
 const breadcrumb = document.getElementById("breadcrumb");
 
+// Twitch slugifies a category by its NAME (lowercase, non-alphanumeric runs
+// become a single "-"), e.g. "Pokémon GO" -> "pok-mon-go". StreamDatabase's
+// own slugs are unreliable (typos, truncation), so always derive from the name.
+function twitchCategorySlug(name) {
+  return String(name || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
+function twitchCategoryUrl(name) {
+  return `https://www.twitch.tv/directory/category/${twitchCategorySlug(name)}?filter=drops`;
+}
+
 function field(label, value) {
   const wrap = document.createElement("div");
   wrap.className = "detail-field";
@@ -184,14 +194,17 @@ async function load() {
         }
 
         for (const place of [...(a.categories || []), ...(a.channels || [])]) {
+          const isChannel = a.channels && a.channels.includes(place);
           const whereWrap = document.createElement("div");
           whereWrap.className = "where-earn";
           const whereLabel = document.createElement("p");
           whereLabel.className = "detail-label";
-          whereLabel.textContent = a.channels && a.channels.includes(place) ? "Earned on channel" : "Earned in category";
+          whereLabel.textContent = isChannel ? "Earned on channel" : "Earned in category";
           const whereLink = document.createElement("a");
           whereLink.className = "where-link";
-          whereLink.href = place.href;
+          // Channels keep their real profile URL; categories are rebuilt from
+          // the name so an unreliable upstream slug can't 404.
+          whereLink.href = isChannel ? place.href : twitchCategoryUrl(place.name);
           whereLink.target = "_blank";
           whereLink.rel = "noopener";
           whereLink.textContent = `${place.name} ↗`;
