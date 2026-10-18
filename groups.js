@@ -8,10 +8,12 @@
 // The EWC watch tiers are grouped in api/auto-events.json already.
 // Both app.js (timeline) and group.js (campaign page) read this.
 const BADGE_GROUPS = {
-  // Pokémon — the "Watch 20 minutes" set (gastly is sub-only, stays separate)
+  // Pokémon — kept together as one campaign even though gastly is sub-only
+  // and the rest are watch-time (hand-curated exception to the same-req rule).
   pikachu: "pokemon-2026", charizard: "pokemon-2026", charmeleon: "pokemon-2026",
   blastoise: "pokemon-2026", wartortle: "pokemon-2026", venusaur: "pokemon-2026",
   ivysaur: "pokemon-2026", haunter: "pokemon-2026", gengar: "pokemon-2026",
+  gastly: "pokemon-2026",
 
   // TwitchCon San Diego 2026 ticket badges — both "Attend TwitchCon"
   "twitchcon-2026---san-diego---beachball": "twitchcon-sd-2026",
