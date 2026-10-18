@@ -2,5 +2,36 @@
 // Campaign groupings derived from StreamDatabase event bundles: badges in
 // the same event that share a requirement collapse into one timeline bar.
 // Hand-curated overrides live in groups.js and take precedence.
-const AUTO_BADGE_GROUPS = {};
-const AUTO_GROUP_LABELS = {};
+const AUTO_BADGE_GROUPS = {
+  "blastoise": "auto-c0cac201",
+  "charizard": "auto-49ee8979",
+  "charmeleon": "auto-49ee8979",
+  "edgerunners-d": "auto-574ddd53",
+  "edgerunners-talia": "auto-574ddd53",
+  "edgerunners-weak": "auto-574ddd53",
+  "final-fantasy-xiv-fan-festival-2026-jp---alpha-chat": "auto-fb96191f",
+  "final-fantasy-xiv-fan-festival-2026-jp---quest-complete-chat": "auto-fb96191f",
+  "gengar": "auto-e7b71db3",
+  "gold-stamp": "auto-002b50d5",
+  "haunter": "auto-e7b71db3",
+  "ivysaur": "auto-4af09e92",
+  "kda-fan": "auto-ac284ec1",
+  "pentakill-fan": "auto-ac284ec1",
+  "true-damage-fan": "auto-ac284ec1",
+  "twitchcon-2026---san-diego---beachball": "auto-f8babc21",
+  "twitchcon-2026---san-diego---taco": "auto-f8babc21",
+  "venusaur": "auto-4af09e92",
+  "wartortle": "auto-c0cac201",
+  "witchspire-logo": "auto-002b50d5"
+};
+const AUTO_GROUP_LABELS = {
+  "auto-002b50d5": "Witchspire",
+  "auto-49ee8979": "Evolution for Charmander",
+  "auto-4af09e92": "Evolution for Bulbasaur",
+  "auto-574ddd53": "Cyberpunk: Edgerunners 2",
+  "auto-ac284ec1": "Upcoming LoL Groups",
+  "auto-c0cac201": "Evolution for Squirtle",
+  "auto-e7b71db3": "Pokemon Night Out 2026",
+  "auto-f8babc21": "TwitchCon 2026 San Diego",
+  "auto-fb96191f": "Final Fantasy XIV Fan Festival 2026 JP"
+};
