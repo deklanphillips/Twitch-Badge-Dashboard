@@ -1602,6 +1602,46 @@
    "name": "Wartortle",
    "requirement": "Watch 20 minutes",
    "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign."
+  },
+  "set:gold-stamp": {
+   "id": "1561855762823913482",
+   "start": 1792540800000,
+   "end": 1793491199000,
+   "name": "Gold Stamp",
+   "requirement": "Watch 240 minutes",
+   "description": "This badge was earned by watching a streamer in the Witchspire category for 240 minutes"
+  },
+  "set:witch-hat": {
+   "id": "1561855768557396088",
+   "start": 1792540800000,
+   "end": 1793491199000,
+   "name": "Witchspire Logo",
+   "requirement": "Watch 60 minutes",
+   "description": "This badge was earned by watching a streamer in the Witchspire category for 60 minutes"
+  },
+  "set:witchspire-logo": {
+   "id": "1561855773066141726",
+   "start": 1792540800000,
+   "end": 1793491199000,
+   "name": "Witch Hat",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Witchspire category"
+  },
+  "set:final-fantasy-xiv-fan-festival-2026-jp---alpha-chat": {
+   "id": "1561855777361100830",
+   "start": 1793318400000,
+   "end": 1793577599000,
+   "name": "Final Fantasy XIV Fan Festival 2026 JP - Alpha Chat",
+   "requirement": "Watch 60 minutes",
+   "description": "This badge was earned by watching a creator in the Final Fantasy 14 category for 60 minutes during the Fan Fest 2026 - JP"
+  },
+  "set:final-fantasy-xiv-fan-festival-2026-jp---quest-complete-chat": {
+   "id": "1561855782532939907",
+   "start": 1793318400000,
+   "end": 1793577599000,
+   "name": "Final Fantasy XIV Fan Festival 2026 JP - Quest Complete Chat",
+   "requirement": "Watch 60 minutes",
+   "description": "This badge was earned by watching the Fan Fest 2026 for 60 minutes on /finalfantasyxiv"
   }
  }
 }
