@@ -3372,8 +3372,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-10-30T00:00:00Z",
+       "end": "2026-11-01T23:59:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
@@ -3395,8 +3395,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-10-30T00:00:00Z",
+       "end": "2026-11-01T23:59:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
@@ -11464,8 +11464,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-10-21T00:00:00Z",
+       "end": "2026-10-31T23:59:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
@@ -11487,8 +11487,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-10-21T00:00:00Z",
+       "end": "2026-10-31T23:59:59Z",
        "subscription": true,
        "subscriptionGift": true,
        "bits": false,
@@ -11510,8 +11510,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-10-21T00:00:00Z",
+       "end": "2026-10-31T23:59:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
