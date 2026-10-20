@@ -541,7 +541,10 @@
   "ivysaur",
   "pikachu",
   "venusaur",
-  "wartortle"
+  "wartortle",
+  "edgerunners-d",
+  "edgerunners-talia",
+  "edgerunners-weak"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1642,6 +1645,30 @@
    "name": "Final Fantasy XIV Fan Festival 2026 JP - Quest Complete Chat",
    "requirement": "Watch 60 minutes",
    "description": "This badge was earned by watching the Fan Fest 2026 for 60 minutes on /finalfantasyxiv"
+  },
+  "set:edgerunners-d": {
+   "id": "1561903907641364500",
+   "start": 1792447260000,
+   "end": 1792533600000,
+   "name": "Edgerunners D",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned by watching a streamer in the Cyberpunk 2077 category during the Cyberpunk: Edgerunners 2: Twitch Co-Streaming"
+  },
+  "set:edgerunners-talia": {
+   "id": "1561903913995730985",
+   "start": 1792447260000,
+   "end": 1792533600000,
+   "name": "Edgerunners Talia",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned by watching a streamer in the Cyberpunk 2077 category during the Cyberpunk: Edgerunners 2: Twitch Co-Streaming"
+  },
+  "set:edgerunners-weak": {
+   "id": "1561903920291520542",
+   "start": 1792447260000,
+   "end": 1792533600000,
+   "name": "Edgerunners Weak",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned by watching a streamer in the Cyberpunk 2077 category during the Cyberpunk: Edgerunners 2: Twitch Co-Streaming"
   }
  }
 }
