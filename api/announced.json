@@ -427,7 +427,8 @@
   "believeinrichmond",
   "edgerunners-d",
   "edgerunners-talia",
-  "edgerunners-weak"
+  "edgerunners-weak",
+  "gray-zone-warfare-gold"
  ],
  "live": [
   "two-point-museum",
@@ -1608,24 +1609,24 @@
   },
   "set:gold-stamp": {
    "id": "1561855762823913482",
-   "start": 1792540800000,
-   "end": 1793491199000,
+   "start": 1792598400000,
+   "end": 1793433540000,
    "name": "Gold Stamp",
    "requirement": "Watch 240 minutes",
    "description": "This badge was earned by watching a streamer in the Witchspire category for 240 minutes"
   },
   "set:witch-hat": {
    "id": "1561855768557396088",
-   "start": 1792540800000,
-   "end": 1793491199000,
+   "start": 1792598400000,
+   "end": 1793433540000,
    "name": "Witchspire Logo",
    "requirement": "Watch 60 minutes",
    "description": "This badge was earned by watching a streamer in the Witchspire category for 60 minutes"
   },
   "set:witchspire-logo": {
    "id": "1561855773066141726",
-   "start": 1792540800000,
-   "end": 1793491199000,
+   "start": 1792598400000,
+   "end": 1793433540000,
    "name": "Witch Hat",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Witchspire category"
