@@ -428,7 +428,8 @@
   "edgerunners-d",
   "edgerunners-talia",
   "edgerunners-weak",
-  "gray-zone-warfare-gold"
+  "gray-zone-warfare-gold",
+  "the-mox"
  ],
  "live": [
   "two-point-museum",
@@ -545,7 +546,9 @@
   "wartortle",
   "edgerunners-d",
   "edgerunners-talia",
-  "edgerunners-weak"
+  "edgerunners-weak",
+  "beagoldfish",
+  "believeinrichmond"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1670,6 +1673,22 @@
    "name": "Edgerunners Weak",
    "requirement": "Watch to earn",
    "description": "This badge was earned by watching a streamer in the Cyberpunk 2077 category during the Cyberpunk: Edgerunners 2: Twitch Co-Streaming"
+  },
+  "set:beagoldfish": {
+   "id": "1562231152381657088",
+   "start": 1792522800000,
+   "end": 1793735940000,
+   "name": "BeAGoldfish",
+   "requirement": "Sub or gift sub",
+   "description": "Subbed to a streamer and got 1 month of Apple TV!"
+  },
+  "set:believeinrichmond": {
+   "id": "1562231157452447774",
+   "start": 1792522800000,
+   "end": 1793735940000,
+   "name": "BelieveInRichmond",
+   "requirement": "Sub or gift sub",
+   "description": "Subbed to a streamer and got 1 month of Apple TV!"
   }
  }
 }

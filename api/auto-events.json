@@ -1943,5 +1943,25 @@
    "label": "Gray Zone Warfare category",
    "url": "https://www.twitch.tv/directory/category/gray-zone-warfare"
   }
+ },
+ {
+  "name": "The Mox",
+  "channel": "Cyberpunk 2077",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Cyberpunk 2077 category",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-20T22:28:49Z",
+  "end": null,
+  "badge": {
+   "set": "the-mox",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Cyberpunk 2077 category",
+   "url": "https://www.twitch.tv/directory/category/cyberpunk-2077"
+  }
  }
 ]
