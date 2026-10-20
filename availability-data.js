@@ -11464,8 +11464,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": "2026-10-21T00:00:00Z",
-       "end": "2026-10-31T23:59:59Z",
+       "start": "2026-10-21T16:00Z",
+       "end": "2026-10-31T07:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
@@ -11487,8 +11487,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": "2026-10-21T00:00:00Z",
-       "end": "2026-10-31T23:59:59Z",
+       "start": "2026-10-21T16:00Z",
+       "end": "2026-10-31T07:59Z",
        "subscription": true,
        "subscriptionGift": true,
        "bits": false,
@@ -11510,8 +11510,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": "2026-10-21T00:00:00Z",
-       "end": "2026-10-31T23:59:59Z",
+       "start": "2026-10-21T16:00Z",
+       "end": "2026-10-31T07:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
@@ -12795,6 +12795,29 @@ const BADGE_AVAILABILITY = {
          },
          {
            "name": "Pokémon Trading Card Game Live",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "gray-zone-warfare-gold": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Gray Zone Warfare",
            "href": ""
          }
        ]

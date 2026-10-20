@@ -1665,8 +1665,8 @@
   "description": "This badge was earned by watching a streamer in the Witchspire category for 240 minutes",
   "emoji": "✨",
   "requirement": "Watch 240 minutes",
-  "start": "2026-10-21T00:00:00.000Z",
-  "end": "2026-10-31T23:59:59.000Z",
+  "start": "2026-10-21T16:00:00.000Z",
+  "end": "2026-10-31T07:59:00.000Z",
   "badge": {
    "set": "gold-stamp",
    "version": "1"
@@ -1685,8 +1685,8 @@
   "description": "This badge was earned by watching a streamer in the Witchspire category for 60 minutes",
   "emoji": "✨",
   "requirement": "Watch 60 minutes",
-  "start": "2026-10-21T00:00:00.000Z",
-  "end": "2026-10-31T23:59:59.000Z",
+  "start": "2026-10-21T16:00:00.000Z",
+  "end": "2026-10-31T07:59:00.000Z",
   "badge": {
    "set": "witch-hat",
    "version": "1"
@@ -1705,8 +1705,8 @@
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Witchspire category",
   "emoji": "✨",
   "requirement": "Sub or gift sub",
-  "start": "2026-10-21T00:00:00.000Z",
-  "end": "2026-10-31T23:59:59.000Z",
+  "start": "2026-10-21T16:00:00.000Z",
+  "end": "2026-10-31T07:59:00.000Z",
   "badge": {
    "set": "witchspire-logo",
    "version": "1"
