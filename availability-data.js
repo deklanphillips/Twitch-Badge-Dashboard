@@ -12823,5 +12823,62 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "beagoldfish": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-10-20T19:00Z",
+       "end": "2026-11-03T19:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "believeinrichmond": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-10-20T19:00Z",
+       "end": "2026-11-03T19:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
+ },
+ "the-mox": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Cyberpunk 2077",
+           "href": ""
+         }
+       ]
+     }
+   ]
  }
 };

@@ -3,6 +3,8 @@
 // the same event that share a requirement collapse into one timeline bar.
 // Hand-curated overrides live in groups.js and take precedence.
 const AUTO_BADGE_GROUPS = {
+  "beagoldfish": "auto-e76dddb5",
+  "believeinrichmond": "auto-e76dddb5",
   "blastoise": "auto-c0cac201",
   "charizard": "auto-49ee8979",
   "charmeleon": "auto-49ee8979",
@@ -31,6 +33,7 @@ const AUTO_GROUP_LABELS = {
   "auto-574ddd53": "Cyberpunk: Edgerunners 2",
   "auto-ac284ec1": "Upcoming LoL Groups",
   "auto-c0cac201": "Evolution for Squirtle",
+  "auto-e76dddb5": "Apple TV",
   "auto-e7b71db3": "Pokemon Night Out 2026",
   "auto-f8babc21": "TwitchCon 2026 San Diego",
   "auto-fb96191f": "Final Fantasy XIV Fan Festival 2026 JP"
