@@ -2937,11 +2937,11 @@ const BADGE_AVAILABILITY = {
    ]
  },
  "qsmp2": {
-   "added": "2026-03-12T23:43:56.666Z",
+   "added": null,
    "avail": [
      {
        "start": "2026-03-14T18:00Z",
-       "end": "2026-07-01T07:59Z",
+       "end": "2026-07-01T14:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
@@ -2953,7 +2953,7 @@ const BADGE_AVAILABILITY = {
        "categories": [
          {
            "name": "QSMP",
-           "href": "https://www.twitch.tv/directory/category/qsmp?filter=drops"
+           "href": ""
          }
        ],
        "channels": [
@@ -2968,6 +2968,24 @@ const BADGE_AVAILABILITY = {
          {
            "name": "QuackityToo",
            "href": "https://www.twitch.tv/quackitytoo"
+         }
+       ]
+     },
+     {
+       "start": "2026-10-21T13:00Z",
+       "end": "2026-11-18T12:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "QSMP",
+           "href": ""
          }
        ]
      }

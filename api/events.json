@@ -2033,6 +2033,19 @@
   "confirmed": true
  },
  {
+  "name": "QSMP2",
+  "channel": "QSMP",
+  "description": "This badge was earned for watching QSMP during the initial 2026 launch!",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-03-14T18:00:00.000Z",
+  "end": "2026-11-18T12:59:00.000Z",
+  "badge": {
+   "set": "qsmp2",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
   "name": "TwitchCon 2026 - San Diego - BeachBall",
   "channel": "TwitchCon",
   "description": "This badge is given to anyone who purchased a 1-day ticket to TwitchCon San Diego 2026.",
