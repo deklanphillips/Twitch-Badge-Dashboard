@@ -1689,6 +1689,14 @@
    "name": "BelieveInRichmond",
    "requirement": "Sub or gift sub",
    "description": "Subbed to a streamer and got 1 month of Apple TV!"
+  },
+  "set:the-mox": {
+   "id": "1562491648238166016",
+   "start": 1792663200000,
+   "end": 1795082340000,
+   "name": "The Mox",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Cyberpunk 2077 category"
   }
  }
 }
