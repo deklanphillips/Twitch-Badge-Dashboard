@@ -551,7 +551,8 @@
   "believeinrichmond",
   "gold-stamp",
   "witch-hat",
-  "witchspire-logo"
+  "witchspire-logo",
+  "qsmp2"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1700,6 +1701,14 @@
    "name": "The Mox",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Cyberpunk 2077 category"
+  },
+  "set:qsmp2": {
+   "id": "1562599640900050995",
+   "start": 1773511200000,
+   "end": 1795006740000,
+   "name": "QSMP2",
+   "requirement": "Watch 60 minutes",
+   "description": "This badge was earned for watching QSMP during the initial 2026 launch!"
   }
  }
 }
