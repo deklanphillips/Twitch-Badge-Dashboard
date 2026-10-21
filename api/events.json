@@ -1870,6 +1870,26 @@
   }
  },
  {
+  "name": "The Mox",
+  "channel": "Cyberpunk 2077",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Cyberpunk 2077 category",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-22T10:00:00.000Z",
+  "end": "2026-11-19T09:59:00.000Z",
+  "badge": {
+   "set": "the-mox",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Cyberpunk 2077 category",
+   "url": "https://www.twitch.tv/directory/category/cyberpunk-2077"
+  }
+ },
+ {
   "name": "Blastoise",
   "channel": "Just Chatting",
   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",

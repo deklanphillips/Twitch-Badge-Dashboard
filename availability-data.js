@@ -12862,8 +12862,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-10-22T10:00Z",
+       "end": "2026-11-19T09:59Z",
        "subscription": true,
        "subscriptionGift": true,
        "bits": false,
