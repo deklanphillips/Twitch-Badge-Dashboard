@@ -553,7 +553,8 @@
   "witch-hat",
   "witchspire-logo",
   "qsmp2",
-  "the-mox"
+  "the-mox",
+  "gray-zone-warfare-gold"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1710,6 +1711,22 @@
    "name": "QSMP2",
    "requirement": "Watch 60 minutes",
    "description": "This badge was earned for watching QSMP during the initial 2026 launch!"
+  },
+  "set:modern-warfare-4": {
+   "id": "1562928501722583050",
+   "start": 1792774800000,
+   "end": 1794592740000,
+   "name": "Modern Warfare 4",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Call of Duty Modern Warfare 4 category during the launch."
+  },
+  "set:gray-zone-warfare-gold": {
+   "id": "1562928506093043824",
+   "start": 1792684800000,
+   "end": 1793969880000,
+   "name": "Gray Zone Warfare (Gold)",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Gray Zone Warfare category"
   }
  }
 }
