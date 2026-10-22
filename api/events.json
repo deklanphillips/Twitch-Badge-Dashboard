@@ -1720,6 +1720,26 @@
   }
  },
  {
+  "name": "Modern Warfare 4",
+  "channel": "Call of Duty Modern Warfare 4",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Call of Duty Modern Warfare 4 category during the launch.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-23T17:00:00.000Z",
+  "end": "2026-11-13T17:59:00.000Z",
+  "badge": {
+   "set": "modern-warfare-4",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Call of Duty Modern Warfare 4 category",
+   "url": "https://www.twitch.tv/directory/category/call-of-duty-modern-warfare-4"
+  }
+ },
+ {
   "name": "Castlevania Belmont's Curse",
   "channel": "Castlevania: Belmont's Curse",
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Castlevania: Belmont's Curse category during the game launch!",
@@ -1867,6 +1887,26 @@
    "type": "category",
    "label": "Cyberpunk 2077 category",
    "url": "https://www.twitch.tv/directory/category/cyberpunk-2077"
+  }
+ },
+ {
+  "name": "Gray Zone Warfare (Gold)",
+  "channel": "Gray Zone Warfare",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Gray Zone Warfare category",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-22T16:00:00.000Z",
+  "end": "2026-11-06T12:58:00.000Z",
+  "badge": {
+   "set": "gray-zone-warfare-gold",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Gray Zone Warfare category",
+   "url": "https://www.twitch.tv/directory/category/gray-zone-warfare"
   }
  },
  {
