@@ -2060,6 +2060,32 @@
   "confirmed": true
  },
  {
+  "name": "K/DA Fan",
+  "channel": "League of Legends",
+  "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!",
+  "requirement": "Watch to earn",
+  "start": "2026-11-13T00:00:00.000Z",
+  "end": "2026-11-14T23:59:59.000Z",
+  "badge": {
+   "set": "kda-fan",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Pentakill Fan",
+  "channel": "League of Legends",
+  "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!",
+  "requirement": "Watch to earn",
+  "start": "2026-11-07T00:00:00.000Z",
+  "end": "2026-11-11T23:59:59.000Z",
+  "badge": {
+   "set": "pentakill-fan",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
   "name": "Pikachu",
   "channel": "Just Chatting",
   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",
@@ -2081,6 +2107,19 @@
   "end": "2026-11-18T12:59:00.000Z",
   "badge": {
    "set": "qsmp2",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "True Damage Fan",
+  "channel": "League of Legends",
+  "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!",
+  "requirement": "Watch to earn",
+  "start": "2026-10-28T00:00:00.000Z",
+  "end": "2026-11-06T23:59:59.000Z",
+  "badge": {
+   "set": "true-damage-fan",
    "version": "1"
   },
   "confirmed": true
