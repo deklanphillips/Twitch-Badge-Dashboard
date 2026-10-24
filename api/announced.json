@@ -1728,6 +1728,30 @@
    "name": "Gray Zone Warfare (Gold)",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Gray Zone Warfare category"
+  },
+  "set:kda-fan": {
+   "id": "1563343185135018036",
+   "start": 1794528000000,
+   "end": 1794700799000,
+   "name": "K/DA Fan",
+   "requirement": "Watch to earn",
+   "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!"
+  },
+  "set:pentakill-fan": {
+   "id": "1563343189597753529",
+   "start": 1794009600000,
+   "end": 1794441599000,
+   "name": "Pentakill Fan",
+   "requirement": "Watch to earn",
+   "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!"
+  },
+  "set:true-damage-fan": {
+   "id": "1563343193901244499",
+   "start": 1793145600000,
+   "end": 1794009599000,
+   "name": "True Damage Fan",
+   "requirement": "Watch to earn",
+   "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!"
   }
  }
 }
