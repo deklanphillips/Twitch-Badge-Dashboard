@@ -2115,9 +2115,9 @@
   "name": "True Damage Fan",
   "channel": "League of Legends",
   "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!",
-  "requirement": "Watch to earn",
-  "start": "2026-10-28T00:00:00.000Z",
-  "end": "2026-11-06T23:59:59.000Z",
+  "requirement": "Watch 30 minutes",
+  "start": "2026-10-29T16:00:00.000Z",
+  "end": "2026-11-07T15:59:00.000Z",
   "badge": {
    "set": "true-damage-fan",
    "version": "1"
