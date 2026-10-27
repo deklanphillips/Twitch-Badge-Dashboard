@@ -1751,7 +1751,7 @@
   },
   "set:true-damage-fan": {
    "id": "1563343193901244499",
-   "start": 1793289600000,
+   "start": 1793116800000,
    "end": 1794067140000,
    "name": "True Damage Fan",
    "requirement": "Watch 30 minutes",
