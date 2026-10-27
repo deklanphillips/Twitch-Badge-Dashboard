@@ -26,7 +26,7 @@ const AUTO_GROUP_LABELS = {
   "auto-002b50d5": "Witchspire",
   "auto-49ee8979": "Evolution for Charmander",
   "auto-4af09e92": "Evolution for Bulbasaur",
-  "auto-ba4c832e": "Upcoming LoL Groups",
+  "auto-ba4c832e": "LoL Virtual Groups",
   "auto-c0cac201": "Evolution for Squirtle",
   "auto-e76dddb5": "Apple TV",
   "auto-e7b71db3": "Pokemon Night Out 2026",
