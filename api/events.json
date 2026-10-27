@@ -2074,19 +2074,6 @@
   "confirmed": true
  },
  {
-  "name": "Heartsteel Fan",
-  "channel": "League of Legends",
-  "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!",
-  "requirement": "Watch 30 minutes",
-  "start": "2026-10-14T16:00:00.000Z",
-  "end": "2026-10-27T15:59:00.000Z",
-  "badge": {
-   "set": "heartsteel-fan",
-   "version": "1"
-  },
-  "confirmed": true
- },
- {
   "name": "Ivysaur",
   "channel": "DJs",
   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",
