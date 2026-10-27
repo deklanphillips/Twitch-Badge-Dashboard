@@ -431,7 +431,8 @@
   "gray-zone-warfare-gold",
   "the-mox",
   "hunt-red",
-  "hunt-white"
+  "hunt-white",
+  "dbd-halloween-2026"
  ],
  "live": [
   "two-point-museum",
@@ -559,7 +560,8 @@
   "gray-zone-warfare-gold",
   "modern-warfare-4",
   "hunt-red",
-  "hunt-white"
+  "hunt-white",
+  "true-damage-fan"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1508,14 +1510,6 @@
    "name": "Castlevania Belmont's Curse",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Castlevania: Belmont's Curse category during the game launch!"
-  },
-  "set:heartsteel-fan": {
-   "id": "1560096136998428772",
-   "start": 1791993600000,
-   "end": 1793116740000,
-   "name": "Heartsteel Fan",
-   "requirement": "Watch 30 minutes",
-   "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!"
   },
   "set:worlds-2026-supporter": {
    "id": "1560096141482393623",
