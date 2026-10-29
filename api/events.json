@@ -2013,8 +2013,8 @@
   "channel": "FINAL FANTASY XIV ONLINE",
   "description": "This badge was earned by watching a creator in the Final Fantasy 14 category for 60 minutes during the Fan Fest 2026 - JP",
   "requirement": "Watch 60 minutes",
-  "start": "2026-10-30T00:00:00.000Z",
-  "end": "2026-11-01T23:59:59.000Z",
+  "start": "2026-10-30T15:00:00.000Z",
+  "end": "2026-11-01T14:58:00.000Z",
   "badge": {
    "set": "final-fantasy-xiv-fan-festival-2026-jp---alpha-chat",
    "version": "1"
@@ -2026,8 +2026,8 @@
   "channel": "FINAL FANTASY XIV ONLINE",
   "description": "This badge was earned by watching the Fan Fest 2026 for 60 minutes on /finalfantasyxiv",
   "requirement": "Watch 60 minutes",
-  "start": "2026-10-30T00:00:00.000Z",
-  "end": "2026-11-01T23:59:59.000Z",
+  "start": "2026-10-30T15:01:00.000Z",
+  "end": "2026-11-01T14:58:00.000Z",
   "badge": {
    "set": "final-fantasy-xiv-fan-festival-2026-jp---quest-complete-chat",
    "version": "1"
