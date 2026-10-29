@@ -1645,16 +1645,16 @@
   },
   "set:final-fantasy-xiv-fan-festival-2026-jp---alpha-chat": {
    "id": "1561855777361100830",
-   "start": 1793318400000,
-   "end": 1793577599000,
+   "start": 1793372400000,
+   "end": 1793545080000,
    "name": "Final Fantasy XIV Fan Festival 2026 JP - Alpha Chat",
    "requirement": "Watch 60 minutes",
    "description": "This badge was earned by watching a creator in the Final Fantasy 14 category for 60 minutes during the Fan Fest 2026 - JP"
   },
   "set:final-fantasy-xiv-fan-festival-2026-jp---quest-complete-chat": {
    "id": "1561855782532939907",
-   "start": 1793318400000,
-   "end": 1793577599000,
+   "start": 1793372460000,
+   "end": 1793545080000,
    "name": "Final Fantasy XIV Fan Festival 2026 JP - Quest Complete Chat",
    "requirement": "Watch 60 minutes",
    "description": "This badge was earned by watching the Fan Fest 2026 for 60 minutes on /finalfantasyxiv"
