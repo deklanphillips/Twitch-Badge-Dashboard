@@ -2018,5 +2018,25 @@
   },
   "auto": true,
   "confirmed": false
+ },
+ {
+  "name": "Warrior Jar Alexander",
+  "channel": "ELDEN RING",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the ELDEN RING category.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-30T21:13:42Z",
+  "end": null,
+  "badge": {
+   "set": "warrior-jar-alexander",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "ELDEN RING category",
+   "url": "https://www.twitch.tv/directory/category/elden-ring"
+  }
  }
 ]

@@ -432,7 +432,8 @@
   "the-mox",
   "hunt-red",
   "hunt-white",
-  "dbd-halloween-2026"
+  "dbd-halloween-2026",
+  "warrior-jar-alexander"
  ],
  "live": [
   "two-point-museum",
@@ -1772,6 +1773,14 @@
    "name": "Hunt White",
    "requirement": "Watch to earn",
    "description": "This badge was earned by watching a streamer in the Hunt: Showdown 1896 category"
+  },
+  "set:warrior-jar-alexander": {
+   "id": "1565836130018926702",
+   "start": 1793577600000,
+   "end": 1795910399000,
+   "name": "Warrior Jar Alexander",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the ELDEN RING category."
   }
  }
 }
