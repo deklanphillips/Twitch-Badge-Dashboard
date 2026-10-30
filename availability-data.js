@@ -12967,5 +12967,28 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "warrior-jar-alexander": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-11-02T00:00:00Z",
+       "end": "2026-11-28T23:59:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "ELDEN RING",
+           "href": ""
+         }
+       ]
+     }
+   ]
  }
 };
