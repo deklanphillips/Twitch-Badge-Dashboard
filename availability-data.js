@@ -12949,8 +12949,26 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-10-30T21:00Z",
+       "end": "2026-10-31T06:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Dead by Daylight",
+           "href": ""
+         }
+       ]
+     },
+     {
+       "start": "2026-10-31T07:00Z",
+       "end": "2026-11-09T07:58Z",
        "subscription": true,
        "subscriptionGift": true,
        "bits": false,

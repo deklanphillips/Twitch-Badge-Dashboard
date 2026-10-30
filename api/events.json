@@ -1970,6 +1970,21 @@
   }
  },
  {
+  "name": "DbD Halloween 2026",
+  "channel": "Twitch",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer during Twitch Rivals of Terror and Stream-o-Ween 2026!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-10-30T21:00:00.000Z",
+  "end": "2026-11-09T07:58:00.000Z",
+  "badge": {
+   "set": "dbd-halloween-2026",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true
+ },
+ {
   "name": "Warrior Jar Alexander",
   "channel": "ELDEN RING",
   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the ELDEN RING category.",
