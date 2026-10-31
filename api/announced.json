@@ -564,7 +564,8 @@
   "hunt-white",
   "true-damage-fan",
   "final-fantasy-xiv-fan-festival-2026-jp---alpha-chat",
-  "final-fantasy-xiv-fan-festival-2026-jp---quest-complete-chat"
+  "final-fantasy-xiv-fan-festival-2026-jp---quest-complete-chat",
+  "dbd-halloween-2026"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1781,6 +1782,14 @@
    "name": "Warrior Jar Alexander",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the ELDEN RING category."
+  },
+  "set:dbd-halloween-2026": {
+   "id": "1565891627371724850",
+   "start": 1793394000000,
+   "end": 1794211080000,
+   "name": "DbD Halloween 2026",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer during Twitch Rivals of Terror and Stream-o-Ween 2026!"
   }
  }
 }
