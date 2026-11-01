@@ -1647,22 +1647,6 @@
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Witchspire category"
   },
-  "set:final-fantasy-xiv-fan-festival-2026-jp---alpha-chat": {
-   "id": "1561855777361100830",
-   "start": 1793372400000,
-   "end": 1793545080000,
-   "name": "Final Fantasy XIV Fan Festival 2026 JP - Alpha Chat",
-   "requirement": "Watch 60 minutes",
-   "description": "This badge was earned by watching a creator in the Final Fantasy 14 category for 60 minutes during the Fan Fest 2026 - JP"
-  },
-  "set:final-fantasy-xiv-fan-festival-2026-jp---quest-complete-chat": {
-   "id": "1561855782532939907",
-   "start": 1793372460000,
-   "end": 1793545080000,
-   "name": "Final Fantasy XIV Fan Festival 2026 JP - Quest Complete Chat",
-   "requirement": "Watch 60 minutes",
-   "description": "This badge was earned by watching the Fan Fest 2026 for 60 minutes on /finalfantasyxiv"
-  },
   "set:edgerunners-d": {
    "id": "1561903907641364500",
    "start": 1792447260000,
