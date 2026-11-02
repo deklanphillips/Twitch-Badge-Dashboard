@@ -254,7 +254,11 @@ body.with-sidebar { flex-direction: row; }
 .ended-dot { background: #5c5c66; }
 
 .timeline-scroll {
-  overflow-x: auto;
+  /* Fixed-height scroll area so the timeline reserves its space on first paint
+     and never shifts the page when the rows render (fixes CLS). */
+  height: calc(100vh - 230px);
+  min-height: 360px;
+  overflow: auto;
   scrollbar-width: thin;
   scrollbar-color: #2a2a30 var(--bg);
 }
@@ -373,7 +377,7 @@ body.with-sidebar { flex-direction: row; }
 
 .bar-sub {
   font-size: 0.7rem;
-  opacity: 0.85;
+  opacity: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
