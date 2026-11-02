@@ -3,6 +3,7 @@
 // the same event that share a requirement collapse into one timeline bar.
 // Hand-curated overrides live in groups.js and take precedence.
 const AUTO_BADGE_GROUPS = {
+  "alliance": "auto-97cb3c05",
   "beagoldfish": "auto-e76dddb5",
   "believeinrichmond": "auto-e76dddb5",
   "blastoise": "auto-c0cac201",
@@ -13,6 +14,7 @@ const AUTO_BADGE_GROUPS = {
   "gengar": "auto-e7b71db3",
   "gold-stamp": "auto-002b50d5",
   "haunter": "auto-e7b71db3",
+  "horde": "auto-97cb3c05",
   "ivysaur": "auto-4af09e92",
   "kda-fan": "auto-ba4c832e",
   "pentakill-fan": "auto-ba4c832e",
@@ -26,6 +28,7 @@ const AUTO_GROUP_LABELS = {
   "auto-002b50d5": "Witchspire",
   "auto-49ee8979": "Evolution for Charmander",
   "auto-4af09e92": "Evolution for Bulbasaur",
+  "auto-97cb3c05": "World of Warcraft: Forever",
   "auto-ba4c832e": "LoL Virtual Groups",
   "auto-c0cac201": "Evolution for Squirtle",
   "auto-e76dddb5": "Apple TV",
