@@ -2038,5 +2038,35 @@
    "label": "ELDEN RING category",
    "url": "https://www.twitch.tv/directory/category/elden-ring"
   }
+ },
+ {
+  "name": "Alliance",
+  "channel": "Twitch",
+  "description": "FOR THE ALLIANCE! This badge was unlocked by subscribing or gifting a sub to a streamer during the launch of WoW: Forever.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-02T23:44:30Z",
+  "end": null,
+  "badge": {
+   "set": "alliance",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false
+ },
+ {
+  "name": "Horde",
+  "channel": "Twitch",
+  "description": "FOR THE HORDE! This badge was unlocked by subscribing or gifting a sub to a streamer during the launch of WoW: Forever.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-02T23:44:30Z",
+  "end": null,
+  "badge": {
+   "set": "horde",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false
  }
 ]
