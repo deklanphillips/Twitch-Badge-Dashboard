@@ -6,6 +6,7 @@
   --text: #efeff1;
   --text-muted: #adadb8;
   --purple: #9147ff;
+  --purple-text: #a970ff;
   --purple-soft: rgba(145, 71, 255, 0.18);
   --green: #00f593;
   --red: #f55353;
@@ -38,7 +39,7 @@ body {
   font-size: 1.15rem;
 }
 
-.brand strong { color: var(--purple); }
+.brand strong { color: var(--purple-text); }
 .brand-icon { width: 26px; height: 26px; color: var(--purple); }
 
 /* Sidebar layout (events page) */
@@ -670,13 +671,13 @@ a.badge-tile[hidden] { display: none; }
   cursor: pointer;
   text-align: left;
 }
-.social-card.notify { background: #00c853; border-color: transparent; }
+.social-card.notify { background: #00c853; border-color: transparent; color: #0b2e18; }
 .install-hint { margin-top: 12px; color: var(--text-muted); font-size: 14px; }
 .install-hint strong { color: var(--text); }
 .social-icon { width: 34px; height: 34px; flex-shrink: 0; }
 .social-text { display: flex; flex-direction: column; line-height: 1.25; }
 .social-text strong { font-size: 17px; font-weight: 800; }
-.social-text span { font-size: 13px; opacity: 0.85; }
+.social-text span { font-size: 13px; opacity: 1; }
 
 /* Where-to-earn link on badge detail page */
 .where-earn { margin: 10px 0 14px; }
@@ -720,7 +721,7 @@ a.badge-tile[hidden] { display: none; }
 .legend-now-link:hover { color: var(--red); }
 
 /* Footer credit link */
-.footer-link { color: var(--purple); font-weight: 700; text-decoration: none; }
+.footer-link { color: var(--purple-text); font-weight: 700; text-decoration: none; }
 .footer-link:hover { text-decoration: underline; }
 
 /* Legal pages (Terms of Service, Privacy) */
