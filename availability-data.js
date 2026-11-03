@@ -13013,8 +13013,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-11-04T16:00Z",
+       "end": "2026-12-01T07:58Z",
        "subscription": true,
        "subscriptionGift": true,
        "bits": false,
@@ -13036,6 +13036,75 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
+       "start": "2026-11-04T16:00Z",
+       "end": "2026-12-01T07:58Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "World of Warcraft",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "clover": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 30,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "PAYDAY 3",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "joy": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 90,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "PAYDAY 3",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "kawaiidozer": {
+   "added": null,
+   "avail": [
+     {
        "start": null,
        "end": null,
        "subscription": true,
@@ -13048,7 +13117,30 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false,
        "categories": [
          {
-           "name": "World of Warcraft",
+           "name": "PAYDAY 3",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "pearl": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "PAYDAY 3",
            "href": ""
          }
        ]

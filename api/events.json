@@ -2005,6 +2005,36 @@
   }
  },
  {
+  "name": "Alliance",
+  "channel": "Twitch",
+  "description": "FOR THE ALLIANCE! This badge was unlocked by subscribing or gifting a sub to a streamer during the launch of WoW: Forever.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-04T16:00:00.000Z",
+  "end": "2026-12-01T07:58:00.000Z",
+  "badge": {
+   "set": "alliance",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true
+ },
+ {
+  "name": "Horde",
+  "channel": "Twitch",
+  "description": "FOR THE HORDE! This badge was unlocked by subscribing or gifting a sub to a streamer during the launch of WoW: Forever.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-04T16:00:00.000Z",
+  "end": "2026-12-01T07:58:00.000Z",
+  "badge": {
+   "set": "horde",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true
+ },
+ {
   "name": "Blastoise",
   "channel": "Just Chatting",
   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",

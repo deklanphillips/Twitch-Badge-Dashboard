@@ -9,11 +9,14 @@ const AUTO_BADGE_GROUPS = {
   "blastoise": "auto-c0cac201",
   "charizard": "auto-49ee8979",
   "charmeleon": "auto-49ee8979",
+  "clover": "auto-093c15ed",
   "gengar": "auto-e7b71db3",
   "haunter": "auto-e7b71db3",
   "horde": "auto-97cb3c05",
   "ivysaur": "auto-4af09e92",
+  "joy": "auto-093c15ed",
   "kda-fan": "auto-ba4c832e",
+  "pearl": "auto-093c15ed",
   "pentakill-fan": "auto-ba4c832e",
   "twitchcon-2026---san-diego---beachball": "auto-f8babc21",
   "twitchcon-2026---san-diego---taco": "auto-f8babc21",
@@ -21,6 +24,7 @@ const AUTO_BADGE_GROUPS = {
   "wartortle": "auto-c0cac201"
 };
 const AUTO_GROUP_LABELS = {
+  "auto-093c15ed": "Payday 3",
   "auto-49ee8979": "Evolution for Charmander",
   "auto-4af09e92": "Evolution for Bulbasaur",
   "auto-97cb3c05": "World of Warcraft: Forever",
