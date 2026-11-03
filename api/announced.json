@@ -435,7 +435,11 @@
   "dbd-halloween-2026",
   "warrior-jar-alexander",
   "alliance",
-  "horde"
+  "horde",
+  "clover",
+  "joy",
+  "kawaiidozer",
+  "pearl"
  ],
  "live": [
   "two-point-museum",
@@ -903,7 +907,9 @@
   "emotesv2_bea88a2caa044e409c1b32ee0850b825",
   "emotesv2_e455cf70a96e44db9da533b89d40f062",
   "emotesv2_688a35afcf564c7597940322074c73dd",
-  "emotesv2_cb4c93c8bef44ae6888cf239f98754b7"
+  "emotesv2_cb4c93c8bef44ae6888cf239f98754b7",
+  "emotesv2_78e97af8c91b4564b67dfb44bd4fe2cb",
+  "emotesv2_42bfaeaef5524da18a103fb556ead0f9"
  ],
  "events": {
   "set:perlica": {
@@ -1777,6 +1783,22 @@
    "name": "DbD Halloween 2026",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer during Twitch Rivals of Terror and Stream-o-Ween 2026!"
+  },
+  "set:alliance": {
+   "id": "1567262700806078548",
+   "start": 1793808000000,
+   "end": 1796111880000,
+   "name": "Alliance",
+   "requirement": "Sub or gift sub",
+   "description": "FOR THE ALLIANCE! This badge was unlocked by subscribing or gifting a sub to a streamer during the launch of WoW: Forever."
+  },
+  "set:horde": {
+   "id": "1567262705159643328",
+   "start": 1793808000000,
+   "end": 1796111880000,
+   "name": "Horde",
+   "requirement": "Sub or gift sub",
+   "description": "FOR THE HORDE! This badge was unlocked by subscribing or gifting a sub to a streamer during the launch of WoW: Forever."
   }
  }
 }
