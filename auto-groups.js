@@ -9,10 +9,7 @@ const AUTO_BADGE_GROUPS = {
   "blastoise": "auto-c0cac201",
   "charizard": "auto-49ee8979",
   "charmeleon": "auto-49ee8979",
-  "final-fantasy-xiv-fan-festival-2026-jp---alpha-chat": "auto-fb96191f",
-  "final-fantasy-xiv-fan-festival-2026-jp---quest-complete-chat": "auto-fb96191f",
   "gengar": "auto-e7b71db3",
-  "gold-stamp": "auto-002b50d5",
   "haunter": "auto-e7b71db3",
   "horde": "auto-97cb3c05",
   "ivysaur": "auto-4af09e92",
@@ -21,11 +18,9 @@ const AUTO_BADGE_GROUPS = {
   "twitchcon-2026---san-diego---beachball": "auto-f8babc21",
   "twitchcon-2026---san-diego---taco": "auto-f8babc21",
   "venusaur": "auto-4af09e92",
-  "wartortle": "auto-c0cac201",
-  "witchspire-logo": "auto-002b50d5"
+  "wartortle": "auto-c0cac201"
 };
 const AUTO_GROUP_LABELS = {
-  "auto-002b50d5": "Witchspire",
   "auto-49ee8979": "Evolution for Charmander",
   "auto-4af09e92": "Evolution for Bulbasaur",
   "auto-97cb3c05": "World of Warcraft: Forever",
@@ -33,6 +28,5 @@ const AUTO_GROUP_LABELS = {
   "auto-c0cac201": "Evolution for Squirtle",
   "auto-e76dddb5": "Apple TV",
   "auto-e7b71db3": "Pokemon Night Out 2026",
-  "auto-f8babc21": "TwitchCon 2026 San Diego",
-  "auto-fb96191f": "Final Fantasy XIV Fan Festival 2026 JP"
+  "auto-f8babc21": "TwitchCon 2026 San Diego"
 };
