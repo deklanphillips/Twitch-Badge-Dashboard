@@ -4,8 +4,6 @@
 // Hand-curated overrides live in groups.js and take precedence.
 const AUTO_BADGE_GROUPS = {
   "alliance": "auto-97cb3c05",
-  "beagoldfish": "auto-e76dddb5",
-  "believeinrichmond": "auto-e76dddb5",
   "blastoise": "auto-c0cac201",
   "charizard": "auto-49ee8979",
   "charmeleon": "auto-49ee8979",
@@ -24,13 +22,12 @@ const AUTO_BADGE_GROUPS = {
   "wartortle": "auto-c0cac201"
 };
 const AUTO_GROUP_LABELS = {
-  "auto-093c15ed": "Payday 3",
+  "auto-093c15ed": "PAYDAY 3",
   "auto-49ee8979": "Evolution for Charmander",
   "auto-4af09e92": "Evolution for Bulbasaur",
   "auto-97cb3c05": "World of Warcraft: Forever",
   "auto-ba4c832e": "LoL Virtual Groups",
   "auto-c0cac201": "Evolution for Squirtle",
-  "auto-e76dddb5": "Apple TV",
   "auto-e7b71db3": "Pokemon Night Out 2026",
   "auto-f8babc21": "TwitchCon 2026 San Diego"
 };

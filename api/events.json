@@ -2035,6 +2035,86 @@
   "confirmed": true
  },
  {
+  "name": "Clover",
+  "channel": "Payday 3",
+  "description": "This badge was earned by watching a streamer in the Payday 3 category for 30 minutes",
+  "emoji": "✨",
+  "requirement": "Watch 30 minutes",
+  "start": "2026-11-06T12:00:00.000Z",
+  "end": "2026-11-27T11:59:00.000Z",
+  "badge": {
+   "set": "clover",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Payday 3 category",
+   "url": "https://www.twitch.tv/directory/category/payday-3"
+  }
+ },
+ {
+  "name": "Joy",
+  "channel": "Payday 3",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Payday 3 category for 90 minutes",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-06T12:00:00.000Z",
+  "end": "2026-11-27T11:59:00.000Z",
+  "badge": {
+   "set": "joy",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Payday 3 category",
+   "url": "https://www.twitch.tv/directory/category/payday-3"
+  }
+ },
+ {
+  "name": "KawaiiDozer",
+  "channel": "Payday 3",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Payday 3 category",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-06T12:00:00.000Z",
+  "end": "2026-11-27T11:59:00.000Z",
+  "badge": {
+   "set": "kawaiidozer",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Payday 3 category",
+   "url": "https://www.twitch.tv/directory/category/payday-3"
+  }
+ },
+ {
+  "name": "Pearl",
+  "channel": "Payday 3",
+  "description": "This badge was earned by watching a streamer in the Payday 3 category for 60 minutes",
+  "emoji": "✨",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-11-06T12:00:00.000Z",
+  "end": "2026-11-27T11:59:00.000Z",
+  "badge": {
+   "set": "pearl",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Payday 3 category",
+   "url": "https://www.twitch.tv/directory/category/payday-3"
+  }
+ },
+ {
   "name": "Blastoise",
   "channel": "Just Chatting",
   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",
