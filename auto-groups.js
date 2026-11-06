@@ -13,9 +13,7 @@ const AUTO_BADGE_GROUPS = {
   "horde": "auto-97cb3c05",
   "ivysaur": "auto-4af09e92",
   "joy": "auto-093c15ed",
-  "kda-fan": "auto-ba4c832e",
   "pearl": "auto-093c15ed",
-  "pentakill-fan": "auto-ba4c832e",
   "twitchcon-2026---san-diego---beachball": "auto-f8babc21",
   "twitchcon-2026---san-diego---taco": "auto-f8babc21",
   "venusaur": "auto-4af09e92",
@@ -26,7 +24,6 @@ const AUTO_GROUP_LABELS = {
   "auto-49ee8979": "Evolution for Charmander",
   "auto-4af09e92": "Evolution for Bulbasaur",
   "auto-97cb3c05": "World of Warcraft: Forever",
-  "auto-ba4c832e": "LoL Virtual Groups",
   "auto-c0cac201": "Evolution for Squirtle",
   "auto-e7b71db3": "Pokemon Night Out 2026",
   "auto-f8babc21": "TwitchCon 2026 San Diego"
