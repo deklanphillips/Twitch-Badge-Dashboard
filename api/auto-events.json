@@ -2148,5 +2148,45 @@
    "label": "Payday 3 category",
    "url": "https://www.twitch.tv/directory/category/payday-3"
   }
+ },
+ {
+  "name": "DOOM: The Dark Ages",
+  "channel": "DOOM: The Dark Ages",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the DOOM: The Dark Ages category during the launch of Slaughter Mode!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-06T22:30:51Z",
+  "end": null,
+  "badge": {
+   "set": "doom-the-dark-ages",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "DOOM: The Dark Ages category",
+   "url": "https://www.twitch.tv/directory/category/doom-the-dark-ages"
+  }
+ },
+ {
+  "name": "Gallica",
+  "channel": "Metaphor: ReFantazio",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Metaphor: ReFantazio category during the Switch 2 launch!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-06T22:30:51Z",
+  "end": null,
+  "badge": {
+   "set": "gallica",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Metaphor: ReFantazio category",
+   "url": "https://www.twitch.tv/directory/category/metaphor-refantazio"
+  }
  }
 ]
