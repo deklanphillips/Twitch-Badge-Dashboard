@@ -13146,5 +13146,51 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "doom-the-dark-ages": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "DOOM: The Dark Ages",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "gallica": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Metaphor: ReFantazio",
+           "href": ""
+         }
+       ]
+     }
+   ]
  }
 };
