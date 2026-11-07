@@ -2258,19 +2258,6 @@
   "confirmed": true
  },
  {
-  "name": "True Damage Fan",
-  "channel": "League of Legends",
-  "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!",
-  "requirement": "Watch 30 minutes",
-  "start": "2026-10-27T16:00:00.000Z",
-  "end": "2026-11-07T15:59:00.000Z",
-  "badge": {
-   "set": "true-damage-fan",
-   "version": "1"
-  },
-  "confirmed": true
- },
- {
   "name": "TwitchCon 2026 - San Diego - BeachBall",
   "channel": "TwitchCon",
   "description": "This badge is given to anyone who purchased a 1-day ticket to TwitchCon San Diego 2026.",
