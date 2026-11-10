@@ -13192,5 +13192,22 @@ const BADGE_AVAILABILITY = {
        ]
      }
    ]
+ },
+ "jordan-x-space-jam": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-11-13T00:00:00Z",
+       "end": "2026-11-15T23:59:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
+     }
+   ]
  }
 };
