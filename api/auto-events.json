@@ -2188,5 +2188,25 @@
    "label": "Metaphor: ReFantazio category",
    "url": "https://www.twitch.tv/directory/category/metaphor-refantazio"
   }
+ },
+ {
+  "name": "Jordan x Space Jam",
+  "channel": "Jordan x Space Jam",
+  "description": "This badge was earned by watching Jordan x Space Jam streams during TwitchCon San Diego 2026!",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-11-10T21:34:46Z",
+  "end": null,
+  "badge": {
+   "set": "jordan-x-space-jam",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Jordan x Space Jam category",
+   "url": "https://www.twitch.tv/directory/category/jordan-x-space-jam"
+  }
  }
 ]
