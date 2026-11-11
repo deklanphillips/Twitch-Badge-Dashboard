@@ -1834,6 +1834,14 @@
    "name": "Pearl",
    "requirement": "Watch 60 minutes",
    "description": "This badge was earned by watching a streamer in the Payday 3 category for 60 minutes"
+  },
+  "set:jordan-x-space-jam": {
+   "id": "1569888230701142079",
+   "start": 1794528000000,
+   "end": 1794787199000,
+   "name": "Jordan x Space Jam",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned by watching Jordan x Space Jam streams during TwitchCon San Diego 2026!"
   }
  }
 }
