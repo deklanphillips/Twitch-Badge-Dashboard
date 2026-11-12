@@ -1741,10 +1741,10 @@
   },
   "set:kda-fan": {
    "id": "1563343185135018036",
-   "start": 1794528000000,
-   "end": 1794700799000,
+   "start": 1794585600000,
+   "end": 1794758340000,
    "name": "K/DA Fan",
-   "requirement": "Watch to earn",
+   "requirement": "Watch 30 minutes",
    "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!"
   },
   "set:pentakill-fan": {
