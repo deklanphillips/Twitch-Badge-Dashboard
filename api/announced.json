@@ -443,7 +443,17 @@
   "doom-the-dark-ages",
   "gallica",
   "jordan-x-space-jam",
-  "minecraft-golden-frog"
+  "minecraft-golden-frog",
+  "bleed-miami",
+  "bronze-chain",
+  "diamond-chain",
+  "gold-chain",
+  "golden-iguana",
+  "miami-chain",
+  "purple-chain",
+  "scored-big",
+  "silver-chain",
+  "welcome-2-miami"
  ],
  "live": [
   "two-point-museum",
@@ -1837,6 +1847,14 @@
    "name": "Jordan x Space Jam",
    "requirement": "Watch to earn",
    "description": "This badge was earned by watching Jordan x Space Jam streams during TwitchCon San Diego 2026!"
+  },
+  "set:gallica": {
+   "id": "1570925552901034054",
+   "start": 1794679200000,
+   "end": 1797098340000,
+   "name": "Gallica",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Metaphor: ReFantazio category during the Switch 2 launch!"
   }
  }
 }
