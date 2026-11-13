@@ -2259,19 +2259,6 @@
   "confirmed": true
  },
  {
-  "name": "Pentakill Fan",
-  "channel": "League of Legends",
-  "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!",
-  "requirement": "Watch 30 minutes",
-  "start": "2026-11-07T16:00:00.000Z",
-  "end": "2026-11-13T15:59:00.000Z",
-  "badge": {
-   "set": "pentakill-fan",
-   "version": "1"
-  },
-  "confirmed": true
- },
- {
   "name": "Pikachu",
   "channel": "Just Chatting",
   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",

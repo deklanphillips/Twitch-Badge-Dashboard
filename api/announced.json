@@ -584,7 +584,8 @@
   "kawaiidozer",
   "pearl",
   "pentakill-fan",
-  "jordan-x-space-jam"
+  "jordan-x-space-jam",
+  "kda-fan"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1746,14 +1747,6 @@
    "start": 1794585600000,
    "end": 1794758340000,
    "name": "K/DA Fan",
-   "requirement": "Watch 30 minutes",
-   "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!"
-  },
-  "set:pentakill-fan": {
-   "id": "1563343189597753529",
-   "start": 1794067200000,
-   "end": 1794585540000,
-   "name": "Pentakill Fan",
    "requirement": "Watch 30 minutes",
    "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!"
   },
