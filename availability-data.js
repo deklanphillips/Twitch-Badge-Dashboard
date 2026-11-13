@@ -13233,5 +13233,34 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "minecraft-golden-frog": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-11-13T03:00Z",
+       "end": "2026-11-13T05:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 15,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "The Streamer Awards",
+           "href": ""
+         }
+       ],
+       "channels": [
+         {
+           "name": "QTCinderella",
+           "href": "https://www.twitch.tv/qtcinderella"
+         }
+       ]
+     }
+   ]
  }
 };
