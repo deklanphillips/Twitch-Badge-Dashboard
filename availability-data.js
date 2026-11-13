@@ -13198,8 +13198,8 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": null,
-       "end": null,
+       "start": "2026-11-14T18:00Z",
+       "end": "2026-12-12T17:59Z",
        "subscription": true,
        "subscriptionGift": true,
        "bits": false,
@@ -13221,16 +13221,28 @@ const BADGE_AVAILABILITY = {
    "added": null,
    "avail": [
      {
-       "start": "2026-11-13T00:00:00Z",
-       "end": "2026-11-15T23:59:59Z",
+       "start": "2026-11-13T20:25Z",
+       "end": "2026-11-13T21:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
        "watch": true,
-       "watchMinutes": 0,
+       "watchMinutes": 15,
        "clip": false,
        "turbo": false,
-       "twitchcon": false
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "IRL",
+           "href": ""
+         }
+       ],
+       "channels": [
+         {
+           "name": "Samham",
+           "href": "https://www.twitch.tv/samham"
+         }
+       ]
      }
    ]
  },
@@ -13258,6 +13270,213 @@ const BADGE_AVAILABILITY = {
          {
            "name": "QTCinderella",
            "href": "https://www.twitch.tv/qtcinderella"
+         }
+       ]
+     }
+   ]
+ },
+ "bleed-miami": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Grand Theft Auto VI",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "bronze-chain": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Grand Theft Auto VI",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "diamond-chain": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Grand Theft Auto VI",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "gold-chain": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Grand Theft Auto VI",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "miami-chain": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Grand Theft Auto VI",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "purple-chain": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Grand Theft Auto VI",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "scored-big": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Grand Theft Auto VI",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "silver-chain": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Grand Theft Auto VI",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "welcome-2-miami": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Grand Theft Auto VI",
+           "href": ""
          }
        ]
      }

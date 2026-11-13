@@ -2115,13 +2115,33 @@
   }
  },
  {
+  "name": "Gallica",
+  "channel": "Metaphor: ReFantazio",
+  "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Metaphor: ReFantazio category during the Switch 2 launch!",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-14T18:00:00.000Z",
+  "end": "2026-12-12T17:59:00.000Z",
+  "badge": {
+   "set": "gallica",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Metaphor: ReFantazio category",
+   "url": "https://www.twitch.tv/directory/category/metaphor-refantazio"
+  }
+ },
+ {
   "name": "Jordan x Space Jam",
   "channel": "Jordan x Space Jam",
   "description": "This badge was earned by watching Jordan x Space Jam streams during TwitchCon San Diego 2026!",
   "emoji": "✨",
   "requirement": "Watch to earn",
-  "start": "2026-11-13T00:00:00.000Z",
-  "end": "2026-11-15T23:59:59.000Z",
+  "start": "2026-11-13T20:25:00.000Z",
+  "end": "2026-11-13T21:59:00.000Z",
   "badge": {
    "set": "jordan-x-space-jam",
    "version": "1"

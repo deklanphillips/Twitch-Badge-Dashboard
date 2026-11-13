@@ -5,26 +5,37 @@
 const AUTO_BADGE_GROUPS = {
   "alliance": "auto-97cb3c05",
   "blastoise": "auto-c0cac201",
+  "bleed-miami": "auto-4e68538d",
+  "bronze-chain": "auto-fa89f134",
   "charizard": "auto-49ee8979",
   "charmeleon": "auto-49ee8979",
   "clover": "auto-093c15ed",
+  "diamond-chain": "auto-fa89f134",
   "gengar": "auto-e7b71db3",
+  "gold-chain": "auto-fa89f134",
   "haunter": "auto-e7b71db3",
   "horde": "auto-97cb3c05",
   "ivysaur": "auto-4af09e92",
   "joy": "auto-093c15ed",
+  "miami-chain": "auto-fa89f134",
   "pearl": "auto-093c15ed",
+  "purple-chain": "auto-fa89f134",
+  "scored-big": "auto-4e68538d",
+  "silver-chain": "auto-fa89f134",
   "twitchcon-2026---san-diego---beachball": "auto-f8babc21",
   "twitchcon-2026---san-diego---taco": "auto-f8babc21",
   "venusaur": "auto-4af09e92",
-  "wartortle": "auto-c0cac201"
+  "wartortle": "auto-c0cac201",
+  "welcome-2-miami": "auto-4e68538d"
 };
 const AUTO_GROUP_LABELS = {
   "auto-093c15ed": "PAYDAY 3",
   "auto-49ee8979": "Evolution for Charmander",
   "auto-4af09e92": "Evolution for Bulbasaur",
+  "auto-4e68538d": "Grand Theft Auto VI",
   "auto-97cb3c05": "World of Warcraft: Forever",
   "auto-c0cac201": "Evolution for Squirtle",
   "auto-e7b71db3": "Pokemon Night Out 2026",
-  "auto-f8babc21": "TwitchCon 2026 San Diego"
+  "auto-f8babc21": "TwitchCon 2026 San Diego",
+  "auto-fa89f134": "Grand Theft Auto VI"
 };
