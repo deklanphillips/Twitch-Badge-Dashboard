@@ -32,10 +32,10 @@ const AUTO_GROUP_LABELS = {
   "auto-093c15ed": "PAYDAY 3",
   "auto-49ee8979": "Evolution for Charmander",
   "auto-4af09e92": "Evolution for Bulbasaur",
-  "auto-4e68538d": "Grand Theft Auto VI",
+  "auto-4e68538d": "Grand Theft Auto VI (Subscribe)",
   "auto-97cb3c05": "World of Warcraft: Forever",
   "auto-c0cac201": "Evolution for Squirtle",
   "auto-e7b71db3": "Pokemon Night Out 2026",
   "auto-f8babc21": "TwitchCon 2026 San Diego",
-  "auto-fa89f134": "Grand Theft Auto VI"
+  "auto-fa89f134": "Grand Theft Auto VI (Watch)"
 };
