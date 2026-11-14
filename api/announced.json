@@ -1842,8 +1842,8 @@
   },
   "set:jordan-x-space-jam": {
    "id": "1569888230701142079",
-   "start": 1794528000000,
-   "end": 1794787199000,
+   "start": 1794601500000,
+   "end": 1794700799000,
    "name": "Jordan x Space Jam",
    "requirement": "Watch to earn",
    "description": "This badge was earned by watching Jordan x Space Jam streams during TwitchCon San Diego 2026!"
@@ -1855,6 +1855,86 @@
    "name": "Gallica",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Metaphor: ReFantazio category during the Switch 2 launch!"
+  },
+  "set:bleed-miami": {
+   "id": "1570989770232832132",
+   "start": 1794999600000,
+   "end": 1796111940000,
+   "name": "Bleed Miami",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subbing to a GTAVI streamer during launch."
+  },
+  "set:bronze-chain": {
+   "id": "1570989774074945572",
+   "start": 1794999600000,
+   "end": 1796111940000,
+   "name": "Bronze Chain",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned for watching 2 days of GTAVI during launch week."
+  },
+  "set:diamond-chain": {
+   "id": "1570989791317852351",
+   "start": 1794999600000,
+   "end": 1796111940000,
+   "name": "Diamond Chain",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned for watching 5 days of GTAVI during launch week."
+  },
+  "set:gold-chain": {
+   "id": "1570989795486867598",
+   "start": 1794999600000,
+   "end": 1796111940000,
+   "name": "Gold Chain",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned for watching 4 days of GTAVI during launch week."
+  },
+  "set:miami-chain": {
+   "id": "1570989799723245600",
+   "start": 1794999600000,
+   "end": 1796111940000,
+   "name": "Miami Chain",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned for watching 6 days of GTAVI during launch week."
+  },
+  "set:purple-chain": {
+   "id": "1570989822301044766",
+   "start": 1794999600000,
+   "end": 1796111940000,
+   "name": "Purple Chain",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned for watching 1 day of GTAVI during launch week."
+  },
+  "set:scored-big": {
+   "id": "1570989872884490283",
+   "start": 1794999600000,
+   "end": 1796111940000,
+   "name": "Scored Big",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subbing to a GTAVI streamer during launch."
+  },
+  "set:silver-chain": {
+   "id": "1570989923324928010",
+   "start": 1794999600000,
+   "end": 1796111940000,
+   "name": "Silver Chain",
+   "requirement": "Watch to earn",
+   "description": "This badge was earned for watching 3 days of GTAVI during launch week."
+  },
+  "set:welcome-2-miami": {
+   "id": "1570989973472280579",
+   "start": 1794999600000,
+   "end": 1796111940000,
+   "name": "Welcome 2 Miami",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subbing to a GTAVI streamer during launch."
+  },
+  "set:golden-iguana": {
+   "id": "1570990026450280579",
+   "start": 1794999600000,
+   "end": 1796111940000,
+   "name": "Golden Iguana",
+   "requirement": "See badge page",
+   "description": "This badge was earned by securing all the Emotes and Badges from the GTAVI launch. "
   }
  }
 }
