@@ -2141,7 +2141,7 @@
   "emoji": "✨",
   "requirement": "Watch to earn",
   "start": "2026-11-13T20:25:00.000Z",
-  "end": "2026-11-13T21:59:00.000Z",
+  "end": "2026-11-14T23:59:59.000Z",
   "badge": {
    "set": "jordan-x-space-jam",
    "version": "1"
@@ -2172,6 +2172,186 @@
    "type": "category",
    "label": "The Streamer Awards 2026 category",
    "url": "https://www.twitch.tv/directory/category/the-streamer-awards-2026"
+  }
+ },
+ {
+  "name": "Bleed Miami",
+  "channel": "GTAVI",
+  "description": "This badge was earned by subbing to a GTAVI streamer during launch.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-18T11:00:00.000Z",
+  "end": "2026-12-01T07:59:00.000Z",
+  "badge": {
+   "set": "bleed-miami",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "GTAVI category",
+   "url": "https://www.twitch.tv/directory/category/gtavi"
+  }
+ },
+ {
+  "name": "Bronze Chain",
+  "channel": "2 days of GTAVI",
+  "description": "This badge was earned for watching 2 days of GTAVI during launch week.",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-11-18T11:00:00.000Z",
+  "end": "2026-12-01T07:59:00.000Z",
+  "badge": {
+   "set": "bronze-chain",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "2 days of GTAVI category",
+   "url": "https://www.twitch.tv/directory/category/2-days-of-gtavi"
+  }
+ },
+ {
+  "name": "Diamond Chain",
+  "channel": "5 days of GTAVI",
+  "description": "This badge was earned for watching 5 days of GTAVI during launch week.",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-11-18T11:00:00.000Z",
+  "end": "2026-12-01T07:59:00.000Z",
+  "badge": {
+   "set": "diamond-chain",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "5 days of GTAVI category",
+   "url": "https://www.twitch.tv/directory/category/5-days-of-gtavi"
+  }
+ },
+ {
+  "name": "Gold Chain",
+  "channel": "4 days of GTAVI",
+  "description": "This badge was earned for watching 4 days of GTAVI during launch week.",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-11-18T11:00:00.000Z",
+  "end": "2026-12-01T07:59:00.000Z",
+  "badge": {
+   "set": "gold-chain",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "4 days of GTAVI category",
+   "url": "https://www.twitch.tv/directory/category/4-days-of-gtavi"
+  }
+ },
+ {
+  "name": "Miami Chain",
+  "channel": "6 days of GTAVI",
+  "description": "This badge was earned for watching 6 days of GTAVI during launch week.",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-11-18T11:00:00.000Z",
+  "end": "2026-12-01T07:59:00.000Z",
+  "badge": {
+   "set": "miami-chain",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "6 days of GTAVI category",
+   "url": "https://www.twitch.tv/directory/category/6-days-of-gtavi"
+  }
+ },
+ {
+  "name": "Purple Chain",
+  "channel": "1 day of GTAVI",
+  "description": "This badge was earned for watching 1 day of GTAVI during launch week.",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-11-18T11:00:00.000Z",
+  "end": "2026-12-01T07:59:00.000Z",
+  "badge": {
+   "set": "purple-chain",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "1 day of GTAVI category",
+   "url": "https://www.twitch.tv/directory/category/1-day-of-gtavi"
+  }
+ },
+ {
+  "name": "Scored Big",
+  "channel": "GTAVI",
+  "description": "This badge was earned by subbing to a GTAVI streamer during launch.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-18T11:00:00.000Z",
+  "end": "2026-12-01T07:59:00.000Z",
+  "badge": {
+   "set": "scored-big",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "GTAVI category",
+   "url": "https://www.twitch.tv/directory/category/gtavi"
+  }
+ },
+ {
+  "name": "Silver Chain",
+  "channel": "3 days of GTAVI",
+  "description": "This badge was earned for watching 3 days of GTAVI during launch week.",
+  "emoji": "✨",
+  "requirement": "Watch to earn",
+  "start": "2026-11-18T11:00:00.000Z",
+  "end": "2026-12-01T07:59:00.000Z",
+  "badge": {
+   "set": "silver-chain",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "3 days of GTAVI category",
+   "url": "https://www.twitch.tv/directory/category/3-days-of-gtavi"
+  }
+ },
+ {
+  "name": "Welcome 2 Miami",
+  "channel": "GTAVI",
+  "description": "This badge was earned by subbing to a GTAVI streamer during launch.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-18T11:00:00.000Z",
+  "end": "2026-12-01T07:59:00.000Z",
+  "badge": {
+   "set": "welcome-2-miami",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "GTAVI category",
+   "url": "https://www.twitch.tv/directory/category/gtavi"
   }
  },
  {
@@ -2235,6 +2415,19 @@
   "end": "2027-01-30T22:59:00.000Z",
   "badge": {
    "set": "gengar",
+   "version": "1"
+  },
+  "confirmed": true
+ },
+ {
+  "name": "Golden Iguana",
+  "channel": "Twitch",
+  "description": "This badge was earned by securing all the Emotes and Badges from the GTAVI launch. ",
+  "requirement": "See badge page",
+  "start": "2026-11-18T11:00:00.000Z",
+  "end": "2026-12-01T07:59:00.000Z",
+  "badge": {
+   "set": "golden-iguana",
    "version": "1"
   },
   "confirmed": true
