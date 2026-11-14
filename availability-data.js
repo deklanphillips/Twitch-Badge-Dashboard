@@ -13245,16 +13245,22 @@ const BADGE_AVAILABILITY = {
        ]
      },
      {
-       "start": "2026-11-14T20:00Z",
-       "end": "2026-11-14T23:59:59Z",
+       "start": "2026-11-14T18:15Z",
+       "end": "2026-11-14T19:29Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
        "watch": true,
-       "watchMinutes": 0,
+       "watchMinutes": 15,
        "clip": false,
        "turbo": false,
        "twitchcon": false,
+       "categories": [
+         {
+           "name": "IRL",
+           "href": ""
+         }
+       ],
        "channels": [
          {
            "name": "RealKatieB",
