@@ -22,8 +22,6 @@ const AUTO_BADGE_GROUPS = {
   "purple-chain": "auto-fa89f134",
   "scored-big": "auto-4e68538d",
   "silver-chain": "auto-fa89f134",
-  "twitchcon-2026---san-diego---beachball": "auto-f8babc21",
-  "twitchcon-2026---san-diego---taco": "auto-f8babc21",
   "venusaur": "auto-4af09e92",
   "wartortle": "auto-c0cac201",
   "welcome-2-miami": "auto-4e68538d"
@@ -36,6 +34,5 @@ const AUTO_GROUP_LABELS = {
   "auto-97cb3c05": "World of Warcraft: Forever",
   "auto-c0cac201": "Evolution for Squirtle",
   "auto-e7b71db3": "Pokemon Night Out 2026",
-  "auto-f8babc21": "TwitchCon 2026 San Diego",
   "auto-fa89f134": "Grand Theft Auto VI (Watch)"
 };
