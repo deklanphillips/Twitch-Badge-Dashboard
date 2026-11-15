@@ -13270,7 +13270,7 @@ const BADGE_AVAILABILITY = {
      },
      {
        "start": "2026-11-15T20:00Z",
-       "end": "2026-11-15T23:59:59Z",
+       "end": "2026-11-15T22:59Z",
        "subscription": false,
        "subscriptionGift": false,
        "bits": false,
