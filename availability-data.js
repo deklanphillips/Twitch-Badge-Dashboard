@@ -13267,6 +13267,18 @@ const BADGE_AVAILABILITY = {
            "href": "https://www.twitch.tv/realkatieb"
          }
        ]
+     },
+     {
+       "start": "2026-11-15T20:00Z",
+       "end": "2026-11-15T23:59:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 15,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false
      }
    ]
  },
