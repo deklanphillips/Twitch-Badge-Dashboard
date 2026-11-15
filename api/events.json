@@ -2459,19 +2459,6 @@
   "confirmed": true
  },
  {
-  "name": "K/DA Fan",
-  "channel": "League of Legends",
-  "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!",
-  "requirement": "Watch 30 minutes",
-  "start": "2026-11-13T16:00:00.000Z",
-  "end": "2026-11-15T15:59:00.000Z",
-  "badge": {
-   "set": "kda-fan",
-   "version": "1"
-  },
-  "confirmed": true
- },
- {
   "name": "Pikachu",
   "channel": "Just Chatting",
   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",
@@ -2545,19 +2532,6 @@
   "end": "2027-01-30T22:59:00.000Z",
   "badge": {
    "set": "wartortle",
-   "version": "1"
-  },
-  "confirmed": true
- },
- {
-  "name": "Worlds 2026 Supporter",
-  "channel": "League of Legends",
-  "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!",
-  "requirement": "Sub or gift sub",
-  "start": "2026-10-14T19:00:00.000Z",
-  "end": "2026-11-15T18:59:00.000Z",
-  "badge": {
-   "set": "worlds-2026-supporter",
    "version": "1"
   },
   "confirmed": true

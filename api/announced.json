@@ -1553,14 +1553,6 @@
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Castlevania: Belmont's Curse category during the game launch!"
   },
-  "set:worlds-2026-supporter": {
-   "id": "1560096141482393623",
-   "start": 1792004400000,
-   "end": 1794769140000,
-   "name": "Worlds 2026 Supporter",
-   "requirement": "Sub or gift sub",
-   "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!"
-  },
   "set:flameborn-sigil": {
    "id": "1560170936412536893",
    "start": 1792051200000,
@@ -1752,14 +1744,6 @@
    "name": "Gray Zone Warfare (Gold)",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Gray Zone Warfare category"
-  },
-  "set:kda-fan": {
-   "id": "1563343185135018036",
-   "start": 1794585600000,
-   "end": 1794758340000,
-   "name": "K/DA Fan",
-   "requirement": "Watch 30 minutes",
-   "description": "This Chat Badge was earned by supporting the 2026 League of Legends World Championship!"
   },
   "set:hunt-red": {
    "id": "1564371279694405643",
