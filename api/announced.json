@@ -1073,22 +1073,6 @@
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Meccha Chameleon category during Summer Drops Fest 2026!"
   },
-  "set:twitchcon-2026---san-diego---beachball": {
-   "id": "1527327389242101806",
-   "start": 1784678400000,
-   "end": 1794787199000,
-   "name": "TwitchCon 2026 - San Diego - BeachBall",
-   "requirement": "Attend TwitchCon",
-   "description": "This badge is given to anyone who purchased a 1-day ticket to TwitchCon San Diego 2026."
-  },
-  "set:twitchcon-2026---san-diego---taco": {
-   "id": "1527327423274811463",
-   "start": 1784678400000,
-   "end": 1794787199000,
-   "name": "TwitchCon 2026 - San Diego - Taco",
-   "requirement": "Attend TwitchCon",
-   "description": "This badge is given to anyone who purchased a 3-day ticket to TwitchCon San Diego 2026."
-  },
   "set:sand": {
    "id": "1527412110189920538",
    "start": 1784226900000,
@@ -1920,6 +1904,14 @@
    "name": "Golden Iguana",
    "requirement": "See badge page",
    "description": "This badge was earned by securing all the Emotes and Badges from the GTAVI launch. "
+  },
+  "set:doom-the-dark-ages": {
+   "id": "1571677324418617395",
+   "start": 1794848400000,
+   "end": 1797008340000,
+   "name": "DOOM: The Dark Ages",
+   "requirement": "Sub or gift sub",
+   "description": "This badge was earned by subscribing or gifting a sub to a streamer in the DOOM: The Dark Ages category during the launch of Slaughter Mode!"
   }
  }
 }
