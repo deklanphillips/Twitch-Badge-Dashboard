@@ -453,7 +453,12 @@
   "purple-chain",
   "scored-big",
   "silver-chain",
-  "welcome-2-miami"
+  "welcome-2-miami",
+  "runescape-bones",
+  "runescape-gnome-plush",
+  "runescape-quest-icon",
+  "runescape-sant-hat",
+  "runescape-santa-hat"
  ],
  "live": [
   "two-point-museum",
@@ -597,7 +602,17 @@
   "jordan-x-space-jam",
   "kda-fan",
   "gallica",
-  "doom-the-dark-ages"
+  "doom-the-dark-ages",
+  "bleed-miami",
+  "bronze-chain",
+  "diamond-chain",
+  "gold-chain",
+  "miami-chain",
+  "purple-chain",
+  "scored-big",
+  "silver-chain",
+  "welcome-2-miami",
+  "golden-iguana"
  ],
  "emotes": [
   "emotesv2_09a0aeda7a6b4722b97429ddb591e028",
@@ -1705,14 +1720,6 @@
    "name": "The Mox",
    "requirement": "Sub or gift sub",
    "description": "This badge was earned by subscribing or gifting a sub to a streamer in the Cyberpunk 2077 category"
-  },
-  "set:qsmp2": {
-   "id": "1562599640900050995",
-   "start": 1773511200000,
-   "end": 1795006740000,
-   "name": "QSMP2",
-   "requirement": "Watch 60 minutes",
-   "description": "This badge was earned for watching QSMP during the initial 2026 launch!"
   },
   "set:modern-warfare-4": {
    "id": "1562928501722583050",

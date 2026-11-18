@@ -2492,19 +2492,6 @@
   "confirmed": true
  },
  {
-  "name": "QSMP2",
-  "channel": "QSMP",
-  "description": "This badge was earned for watching QSMP during the initial 2026 launch!",
-  "requirement": "Watch 60 minutes",
-  "start": "2026-03-14T18:00:00.000Z",
-  "end": "2026-11-18T12:59:00.000Z",
-  "badge": {
-   "set": "qsmp2",
-   "version": "1"
-  },
-  "confirmed": true
- },
- {
   "name": "Venusaur",
   "channel": "Just Chatting",
   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",

@@ -2408,5 +2408,105 @@
    "label": "GTAVI category",
    "url": "https://www.twitch.tv/directory/category/gtavi"
   }
+ },
+ {
+  "name": "RuneScape Bones",
+  "channel": "Old School RuneScape",
+  "description": "Watch 60 minutes of any channel streaming in the Old School RuneScape category.",
+  "emoji": "✨",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-11-18T17:23:58Z",
+  "end": null,
+  "badge": {
+   "set": "runescape-bones",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Old School RuneScape category",
+   "url": "https://www.twitch.tv/directory/category/old-school-runescape"
+  }
+ },
+ {
+  "name": "RuneScape Gnome Plush",
+  "channel": "Old School RuneScape",
+  "description": "Subscribe or Gift 1 sub to any channel streaming in the Old School RuneScape category.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-18T17:23:58Z",
+  "end": null,
+  "badge": {
+   "set": "runescape-gnome-plush",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Old School RuneScape category",
+   "url": "https://www.twitch.tv/directory/category/old-school-runescape"
+  }
+ },
+ {
+  "name": "RuneScape Quest Icon",
+  "channel": "RuneScape",
+  "description": "Watch 60 minutes of any channel streaming in the RuneScape category",
+  "emoji": "✨",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-11-18T17:23:58Z",
+  "end": null,
+  "badge": {
+   "set": "runescape-quest-icon",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "RuneScape category",
+   "url": "https://www.twitch.tv/directory/category/runescape"
+  }
+ },
+ {
+  "name": "RuneScape Sant Hat",
+  "channel": "Old School RuneScape",
+  "description": "Watch 60 minutes of any channel streaming in the Old School RuneScape category during December 2026.",
+  "emoji": "✨",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-11-18T17:23:58Z",
+  "end": null,
+  "badge": {
+   "set": "runescape-sant-hat",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Old School RuneScape category",
+   "url": "https://www.twitch.tv/directory/category/old-school-runescape"
+  }
+ },
+ {
+  "name": "RuneScape Santa Hat",
+  "channel": "Old School RuneScape",
+  "description": "Watch 60 minutes of any channel streaming in the Old School RuneScape category during December 2026.",
+  "emoji": "✨",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-11-18T17:23:58Z",
+  "end": null,
+  "badge": {
+   "set": "runescape-santa-hat",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": false,
+  "where": {
+   "type": "category",
+   "label": "Old School RuneScape category",
+   "url": "https://www.twitch.tv/directory/category/old-school-runescape"
+  }
  }
 ]
