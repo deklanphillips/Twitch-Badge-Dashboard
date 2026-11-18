@@ -2375,6 +2375,46 @@
   }
  },
  {
+  "name": "RuneScape Bones",
+  "channel": "Old School RuneScape",
+  "description": "Watch 60 minutes of any channel streaming in the Old School RuneScape category.",
+  "emoji": "✨",
+  "requirement": "Watch 60 minutes",
+  "start": "2026-11-18T13:04:00.000Z",
+  "end": "2026-11-30T23:59:00.000Z",
+  "badge": {
+   "set": "runescape-bones",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Old School RuneScape category",
+   "url": "https://www.twitch.tv/directory/category/old-school-runescape"
+  }
+ },
+ {
+  "name": "RuneScape Gnome Plush",
+  "channel": "Old School RuneScape",
+  "description": "Subscribe or Gift 1 sub to any channel streaming in the Old School RuneScape category.",
+  "emoji": "✨",
+  "requirement": "Sub or gift sub",
+  "start": "2026-11-18T13:04:00.000Z",
+  "end": "2026-11-30T23:59:00.000Z",
+  "badge": {
+   "set": "runescape-gnome-plush",
+   "version": "1"
+  },
+  "auto": true,
+  "confirmed": true,
+  "where": {
+   "type": "category",
+   "label": "Old School RuneScape category",
+   "url": "https://www.twitch.tv/directory/category/old-school-runescape"
+  }
+ },
+ {
   "name": "Blastoise",
   "channel": "Just Chatting",
   "description": "This badge was earned by evolving a badge from the Pokémon First Partners Collection campaign.",

@@ -13522,5 +13522,97 @@ const BADGE_AVAILABILITY = {
        "twitchcon": false
      }
    ]
+ },
+ "runescape-bones": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-11-18T13:04Z",
+       "end": "2026-11-30T23:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Old School RuneScape",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "runescape-gnome-plush": {
+   "added": null,
+   "avail": [
+     {
+       "start": "2026-11-18T13:04Z",
+       "end": "2026-11-30T23:59Z",
+       "subscription": true,
+       "subscriptionGift": true,
+       "bits": false,
+       "watch": false,
+       "watchMinutes": 0,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Old School RuneScape",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "runescape-quest-icon": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "RuneScape",
+           "href": ""
+         }
+       ]
+     }
+   ]
+ },
+ "runescape-santa-hat": {
+   "added": null,
+   "avail": [
+     {
+       "start": null,
+       "end": null,
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 60,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Old School RuneScape",
+           "href": ""
+         }
+       ]
+     }
+   ]
  }
 };
