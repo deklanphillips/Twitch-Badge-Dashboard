@@ -13267,6 +13267,30 @@ const BADGE_AVAILABILITY = {
            "href": "https://www.twitch.tv/realkatieb"
          }
        ]
+     },
+     {
+       "start": "2026-11-19T20:00Z",
+       "end": "2026-11-20T19:59Z",
+       "subscription": false,
+       "subscriptionGift": false,
+       "bits": false,
+       "watch": true,
+       "watchMinutes": 15,
+       "clip": false,
+       "turbo": false,
+       "twitchcon": false,
+       "categories": [
+         {
+           "name": "Grand Theft Auto VI",
+           "href": ""
+         }
+       ],
+       "channels": [
+         {
+           "name": "Samham",
+           "href": "https://www.twitch.tv/samham"
+         }
+       ]
      }
    ]
  },
