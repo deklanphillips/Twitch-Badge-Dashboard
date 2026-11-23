@@ -2454,19 +2454,6 @@
   "confirmed": true
  },
  {
-  "name": "Gastly",
-  "channel": "DJs",
-  "description": "This badge was earned during Pokémon Night Out 2026.",
-  "requirement": "Sub or gift sub",
-  "start": "2026-10-16T17:00:00.000Z",
-  "end": "2026-11-23T22:59:00.000Z",
-  "badge": {
-   "set": "gastly",
-   "version": "1"
-  },
-  "confirmed": true
- },
- {
   "name": "Gengar",
   "channel": "Just Chatting",
   "description": "This badge was earned by evolving the Night Out 2026 Haunter badge.",
